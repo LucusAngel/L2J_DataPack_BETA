@@ -24,22 +24,23 @@ import com.l2jserver.gameserver.network.serverpackets.ExChooseInventoryAttribute
 public class EnchantAttribute implements IItemHandler
 {
 	@Override
-	public void useItem(L2Playable playable, L2ItemInstance item, boolean forceUse)
+	public boolean useItem(L2Playable playable, L2ItemInstance item, boolean forceUse)
 	{
 		if (!(playable instanceof L2PcInstance))
-			return;
+			return false;
 		
 		final L2PcInstance activeChar = (L2PcInstance) playable;
 		if (activeChar.isCastingNow())
-			return;
+			return false;
 		
 		if (activeChar.isEnchanting())
 		{
 			activeChar.sendPacket(SystemMessageId.ENCHANTMENT_ALREADY_IN_PROGRESS);
-			return;
+			return false;
 		}
 		
 		activeChar.setActiveEnchantAttrItem(item);
 		activeChar.sendPacket(new ExChooseInventoryAttributeItem(item));
+		return true;
 	}
 }

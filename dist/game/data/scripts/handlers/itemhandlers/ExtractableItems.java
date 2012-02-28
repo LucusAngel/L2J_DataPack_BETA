@@ -12,7 +12,6 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-
 package handlers.itemhandlers;
 
 import java.util.List;
@@ -37,46 +36,41 @@ public class ExtractableItems implements IItemHandler
 	private static Logger _log = Logger.getLogger(ItemTable.class.getName());
 	
 	@Override
-	public void useItem(L2Playable playable, L2ItemInstance item, boolean forceUse)
+	public boolean useItem(L2Playable playable, L2ItemInstance item, boolean forceUse)
 	{
 		if (!(playable instanceof L2PcInstance))
 		{
-			return;
+			return false;
 		}
 		
 		final L2PcInstance activeChar = playable.getActingPlayer();
-		
-		final int itemID = item.getItemId();
 		final L2EtcItem etcitem = (L2EtcItem) item.getItem();
 		final List<L2ExtractableProduct> exitem = etcitem.getExtractableItems();
 		if (exitem == null)
 		{
 			_log.info("No extractable data defined for " + etcitem);
-			return;
+			return false;
 		}
 		
 		//destroy item
 		if (!activeChar.destroyItem("Extract", item.getObjectId(), 1, activeChar, true))
 		{
-			return;
+			return false;
 		}
 		
 		boolean created = false;
 		// calculate extraction
+		int min;
+		int max;
+		int createitemAmount;
 		for (L2ExtractableProduct expi : exitem)
 		{
 			if (Rnd.get(100000) <= expi.getChance())
 			{
-				int min = expi.getMin();
-				int max = expi.getMax();
+				min = (int) (expi.getMin() * Config.RATE_EXTRACTABLE);
+				max = (int) (expi.getMax() * Config.RATE_EXTRACTABLE);
 				
-				if (((itemID >= 6411) && (itemID <= 6518)) || ((itemID >= 7726) && (itemID <= 7860)) || ((itemID >= 8403) && (itemID <= 8483)))
-				{
-					min *= Config.RATE_EXTR_FISH;
-					max *= Config.RATE_EXTR_FISH;
-				}
-				
-				final int createitemAmount = (max == min) ? min : (Rnd.get(max - min + 1) + min);
+				createitemAmount = (max == min) ? min : (Rnd.get(max - min + 1) + min);
 				activeChar.addItem("Extract", expi.getId(), createitemAmount, activeChar, true);
 				created = true;
 			}
@@ -86,5 +80,6 @@ public class ExtractableItems implements IItemHandler
 		{
 			activeChar.sendPacket(SystemMessageId.NOTHING_INSIDE_THAT);
 		}
+		return true;
 	}
 }
