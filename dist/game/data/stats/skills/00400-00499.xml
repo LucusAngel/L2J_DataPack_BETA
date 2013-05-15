@@ -33,7 +33,6 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="4000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -46,6 +45,7 @@
 			<using kind="Sword,Big Sword,Blunt,Big Blunt" />
 		</cond>
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="80" >
 				<basemul order="0x30" stat="rCrit" val="#rCrit" />
 				<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
@@ -64,6 +64,7 @@
 			<effect name="TargetMe" noicon="1" val="0" />
 		</for>
 		<enchant2for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="#ench2Power" >
 				<basemul order="0x30" stat="rCrit" val="-0.5" />
 				<mul order="0x30" stat="swordWpnVuln" val="1.2" />
@@ -82,6 +83,7 @@
 			<effect name="TargetMe" noicon="1" val="0" />
 		</enchant2for>
 		<enchant3for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="80" >
 				<mul order="0x30" stat="cAtk" val="#ench3cAtk" />
 				<basemul order="0x30" stat="rCrit" val="-0.5" />
@@ -136,7 +138,6 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="4000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -151,6 +152,7 @@
 			<using kind="Sword,Big Sword,Blunt,Big Blunt,Dual Sword" />
 		</cond>
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="80" >
 				<mul order="0x30" stat="cAtk" val="#cAtk" />
 				<mul order="0x30" stat="swordWpnVuln" val="#vuln" />
@@ -169,6 +171,7 @@
 			<effect name="TargetMe" noicon="1" val="0" />
 		</for>
 		<enchant2for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="80" >
 				<mul order="0x30" stat="cAtk" val="0.65" />
 				<mul order="0x30" stat="swordWpnVuln" val="1.2" />
@@ -187,6 +190,7 @@
 			<effect name="TargetMe" noicon="1" val="0" />
 		</enchant2for>
 		<enchant3for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="80" >
 				<basemul order="0x30" stat="rCrit" val="#ench3rCrit" />
 				<mul order="0x30" stat="cAtk" val="0.65" />
@@ -321,7 +325,6 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A1" />
-		<set name="power" val="30" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="4000" />
 		<set name="skillType" val="FEAR" />
@@ -330,10 +333,8 @@
 		<enchant1 name="mpConsume" val="#ench1Cost" />
 		<enchant2 name="lethalStrikeRate" val="#ench2LethalStrikeRate" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
-		<enchant2 name="power" val="#ench2Chance" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="power" val="#ench3Attack" />
-		<enchant3 name="skillType" val="PDAM" />
 		<enchant4 name="element" val="4" /> <!-- Holy -->
 		<enchant4 name="elementPower" val="#ench4HolyAttack" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
@@ -341,10 +342,17 @@
 			<target race_id="1" /> <!-- Undead -->
 		</cond>
 		<for>
-			<effect count="10" name="Fear" val="0" />
+			<effect name="Fear" abnormalTime="20" val="0" effectPower="30" />
+			<effect name="Lethal" noicon="1" val="0" />
 		</for>
+		<enchant2for>
+			<effect name="Fear" abnormalTime="20" val="0" effectPower="#ench2Chance" />
+			<effect name="Lethal" noicon="1" val="0" />
+		</enchant2for>
 		<enchant3for>
-			<effect count="10" name="Fear" val="0" effectPower="30" />
+			<effect name="Fear" abnormalTime="20" val="0" effectPower="30" />
+			<effect name="Lethal" noicon="1" val="0" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 		</enchant3for>
 	</skill>
 	<skill id="406" levels="3" name="Angelic Icon" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1" enchantGroup4="1">
@@ -476,10 +484,10 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AURA" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="40" >
 				<mul order="0x30" stat="runSpd" val="#debuff" />
 				<mul order="0x30" stat="pAtkSpd" val="#debuff" />
@@ -511,13 +519,13 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AURA" />
 		<cond msgId="113" addName="1">
 			<using kind="Dual Sword" />
 		</cond>
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Debuff" val="0" effectPower="80" >
 				<mul order="0x30" stat="mAtk" val="#debuff" />
 				<mul order="0x30" stat="pAtk" val="#debuff" />
@@ -555,7 +563,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1Power" />
@@ -582,6 +589,8 @@
 			<effect self="1" name="Buff" val="0">
 				<mul order="0x30" stat="blowRate" val="#blowRate" />
 			</effect>
+			<effect name="FatalBlow" noicon="1" val="0" />
+			<effect name="Lethal" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="410" levels="3" name="Mortal Strike" enchantGroup1="2" enchantGroup2="2">
@@ -1041,28 +1050,27 @@
 		<table name="#magicLvl"> 58 66 74 </table>
 		<table name="#mpConsume"> 11 13 14 </table>
 		<table name="#ench1accCombat"> 5 5 5 5 5 5 5 5 5 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 7 </table>
-		<table name="#ench2mpConsume"> 0.195 0.19 0.185 0.18 0.175 0.17 0.165 0.16 0.155 0.15 0.145 0.14 0.135 0.13 0.125 0.12 0.115 0.11 0.105 0.1 0.095 0.09 0.085 0.08 0.075 0.07 0.065 0.06 0.055 0.05 </table>
+		<table name="#ench2mpConsume"> 0.49 0.48 0.47 0.46 0.45 0.44 0.43 0.42 0.41 0.4 0.39 0.38 0.37 0.36 0.35 0.34 0.33 0.32 0.31 0.3 0.29 0.28 0.27 0.26 0.25 0.24 0.23 0.22 0.21 0.2 </table>
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.2">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.5">
 				<add order="0x40" stat="accCombat" val="#accCombat">
 					<using kind="Pole" />
 				</add>
 			</effect>
 		</for>
 		<enchant1for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.2">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.5">
 				<add order="0x40" stat="accCombat" val="#ench1accCombat">
 					<using kind="Pole" />
 				</add>
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="#ench2mpConsume">
+			<effect name="MpConsumePerLevel" ticks="3" val="#ench2mpConsume">
 				<add order="0x40" stat="accCombat" val="4">
 					<using kind="Pole" />
 				</add>
@@ -1099,26 +1107,25 @@
 		<table name="#stunVuln"> 5 10 15 </table>
 		<table name="#ench1sleepVuln"> 31 31 31 32 32 32 33 33 33 34 34 34 34 35 35 35 36 36 36 37 37 37 37 38 38 38 39 39 39 40 </table>
 		<table name="#ench1stunVuln"> 16 16 16 17 17 17 18 18 18 19 19 19 19 20 20 20 21 21 21 22 22 22 22 23 23 23 24 24 24 25 </table>
-		<table name="#ench2mpConsume"> 0.195 0.19 0.185 0.18 0.175 0.17 0.165 0.16 0.155 0.15 0.145 0.14 0.135 0.13 0.125 0.12 0.115 0.11 0.105 0.1 0.095 0.09 0.085 0.08 0.075 0.07 0.065 0.06 0.055 0.05 </table>
+		<table name="#ench2mpConsume"> 0.98 0.97 0.96 0.94 0.93 0.92 0.9 0.89 0.88 0.86 0.85 0.84 0.82 0.81 0.8 0.78 0.77 0.76 0.74 0.73 0.72 0.7 0.69 0.68 0.66 0.65 0.64 0.62 0.61 0.6 </table>
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.2">
+			<effect name="MpConsumePerLevel" ticks="3" val="1">
 				<sub order="0x40" stat="stunVuln" val="#stunVuln" />
 				<sub order="0x40" stat="sleepVuln" val="#sleepVuln" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.2">
+			<effect name="MpConsumePerLevel" ticks="3" val="1">
 				<sub order="0x40" stat="stunVuln" val="#ench1stunVuln" />
 				<sub order="0x40" stat="sleepVuln" val="#ench1sleepVuln" />
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="#ench2mpConsume">
+			<effect name="MpConsumePerLevel" ticks="3" val="#ench2mpConsume">
 				<sub order="0x40" stat="stunVuln" val="25" />
 				<sub order="0x40" stat="sleepVuln" val="40" />
 			</effect>
@@ -1510,10 +1517,8 @@
 			<effect name="Paralyze" val="0">
 				<mul order="0x30" stat="pDef" val="0.2" />
 			</effect>
-			<!-- 60HP * 3 during 60 seconds -->
-			<effect count="20" name="HealOverTime" noicon="1" val="180" />
-			<!-- 10MP * 3 during 60 seconds -->
-			<effect count="20" name="ManaHealOverTime" noicon="1" val="30" />
+			<effect name="HealOverTime" noicon="1" ticks="3" val="60" />
+			<effect name="ManaHealOverTime" noicon="1" ticks="3" val="10" />
 		</for>
 	</skill>
 	<skill id="442" levels="1" name="Sonic Barrier">
@@ -1709,7 +1714,6 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="operateType" val="A1" />
-		<set name="power" val="30" /> <!-- Base Land Rate -->
 		<set name="pvp" val="true" />
 		<set name="reuseDelay" val="4000" />
 		<set name="skillType" val="FEAR" />
@@ -1718,10 +1722,8 @@
 		<enchant1 name="mpConsume" val="#ench1Cost" />
 		<enchant2 name="lethalStrikeRate" val="#ench2LethalStrikeRate" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
-		<enchant2 name="power" val="#ench2Chance" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="power" val="#ench3Attack" />
-		<enchant3 name="skillType" val="PDAM" />
 		<enchant4 name="element" val="5" /> <!-- Dark -->
 		<enchant4 name="elementPower" val="#ench4DarkAttack" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
@@ -1729,10 +1731,17 @@
 			<target race_id="8" /> <!-- Angels -->
 		</cond>
 		<for>
-			<effect count="10" name="Fear" val="0" />
+			<effect name="Fear" abnormalTime="20" val="0" effectPower="30" />
+			<effect name="Lethal" noicon="1" val="0" />
 		</for>
+		<enchant2for>
+			<effect name="Fear" abnormalTime="20" val="0" effectPower="#ench2Chance" />
+			<effect name="Lethal" noicon="1" val="0" />
+		</enchant2for>
 		<enchant3for>
-			<effect count="10" name="Fear" val="0" effectPower="30" />
+			<effect name="Fear" abnormalTime="20" val="0" effectPower="30" />
+			<effect name="Lethal" noicon="1" val="0" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 		</enchant3for>
 	</skill>
 	<skill id="451" levels="2" name="Sonic Move">
@@ -1835,7 +1844,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect count="24" name="Signet" val="0" />
+			<!-- FIXME: Remove ticks from here -->
+			<effect ticks="24" name="Signet" val="0" />
 		</for>
 	</skill>
 	<skill id="455" levels="1" name="Symbol of Noise">
@@ -1860,7 +1870,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect count="6" name="SignetNoise" val="0" />
+			<!-- FIXME: Remove ticks from here -->
+			<effect ticks="6" name="SignetNoise" val="0" />
 		</for>
 	</skill>
 	<skill id="456" levels="1" name="Symbol of Resistance">
@@ -1883,7 +1894,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect count="24" name="Signet" val="0" />
+			<!-- FIXME: Remove ticks from here -->
+			<effect ticks="24" name="Signet" val="0" />
 		</for>
 	</skill>
 	<skill id="457" levels="1" name="Symbol of Honor">
@@ -1906,7 +1918,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect count="24" name="Signet" val="0" />
+			<!-- FIXME: Remove ticks from here -->
+			<effect ticks="24" name="Signet" val="0" />
 		</for>
 	</skill>
 	<skill id="458" levels="1" name="Symbol of Energy">
@@ -1929,7 +1942,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect count="24" name="Signet" val="0" />
+			<!-- FIXME: Remove ticks from here -->
+			<effect ticks="24" name="Signet" val="0" />
 		</for>
 	</skill>
 	<skill id="459" levels="1" name="Symbol of the Sniper">
@@ -1952,7 +1966,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect count="24" name="Signet" val="0" />
+			<!-- FIXME: Remove ticks from here -->
+			<effect ticks="24" name="Signet" val="0" />
 		</for>
 	</skill>
 	<skill id="460" levels="1" name="Symbol of the Assassin">
@@ -1975,7 +1990,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect count="24" name="Signet" val="0" />
+			<!-- FIXME: Remove ticks from here -->
+			<effect ticks="24" name="Signet" val="0" />
 		</for>
 	</skill>
 	<skill id="461" levels="2" name="Break Duress">
@@ -2132,12 +2148,14 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<using kind="Sword,Big Sword,Blunt,Big Blunt,Rapier" />
 		</cond>
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="469" levels="1" name="Rapid Attack">
 		<!-- Confirmed CT2.5 -->
@@ -2191,7 +2209,7 @@
 		<set name="skillType" val="REMOVE_TRAP" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="109">
-			<target npcType="L2Trap" />
+			<target npcType="L2TrapInstance" />
 		</cond>
 	</skill>
 	<skill id="472" levels="45" name="Ancient Sword Mastery" enchantGroup1="1" enchantGroup2="1">
@@ -2301,10 +2319,9 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="magicLvl" val="20" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.2">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.2">
 				<add order="0x40" stat="vengeancePdam" val="3" />
 			</effect>
 		</for>
@@ -2326,13 +2343,15 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<using kind="Sword,Big Sword,Blunt,Big Blunt,Ancient" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="477" levels="37" name="Dark Smash" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
 		<!-- Confirmed CT2.5 -->
@@ -2356,7 +2375,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -2372,6 +2390,9 @@
 		<cond msgId="113" addName="1">
 			<using kind="Ancient" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="478" levels="15" name="Double Thrust">
 		<!-- Confirmed CT2.5 -->
@@ -2390,22 +2411,23 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<using kind="Rapier" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="479" levels="1" name="Hard March">
 		<!-- Confirmed CT2.5 -->
 		<set name="magicLvl" val="24" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.4">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.4">
 				<add order="0x40" stat="runSpd" val="20" />
 			</effect>
 		</for>
@@ -2414,10 +2436,9 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="magicLvl" val="36" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="darkPower" val="10" />
 			</effect>
 		</for>
@@ -2428,10 +2449,9 @@
 		<table name="#magicLvl"> 32 43 </table>
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="darkRes" val="#darkRes" />
 			</effect>
 		</for>
@@ -2598,13 +2618,15 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<using kind="Crossbow" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="489" levels="1" name="Shift Target">
 		<!-- Confirmed CT2.5 -->
@@ -2703,7 +2725,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="4000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="targetType" val="AURA" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -2711,6 +2732,9 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<enchant2 name="power" val="#ench2Power" />
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="493" levels="28" name="Storm Assault" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -2739,7 +2763,6 @@
 		<set name="operateType" val="DA1" />
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AREA" />
@@ -2768,6 +2791,9 @@
 				<target mindistance="200" />
 			</and>
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="494" levels="37" name="Shoulder Charge" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -2799,7 +2825,6 @@
 		<set name="power" val="1" />
 		<set name="reuseDelay" val="4000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -2828,10 +2853,12 @@
 			</and>
 		</cond>
 		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="70" />
 			<effect name="EnemyCharge" noicon="1" val="0" />
 		</for>
 		<enchant2for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="#ench2Chance" />
 			<effect name="EnemyCharge" noicon="1" val="0" />
 		</enchant2for>
@@ -2871,7 +2898,6 @@
 		<set name="power" val="1" />
 		<set name="reuseDelay" val="4000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
@@ -2889,13 +2915,16 @@
 			</and>
 		</cond>
 		<for>
-			<effect count="20" name="DamOverTime" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 		<enchant1for>
-			<effect count="20" name="DamOverTime" val="#ench1Power" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="#ench1Power" abnormalVisualEffect="bleed" effectPower="50" />
 		</enchant1for>
 		<enchant2for>
-			<effect count="20" name="DamOverTime" val="134" abnormalVisualEffect="bleed" effectPower="#ench2Chance" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="134" abnormalVisualEffect="bleed" effectPower="#ench2Chance" />
 		</enchant2for>
 	</skill>
 	<skill id="496" levels="31" name="Slashing Blade" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -2920,7 +2949,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="4000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AURA" />
@@ -2946,6 +2974,9 @@
 		<cond msgId="113" addName="1">
 			<using kind="Ancient" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="497" levels="16" name="Crushing Pain" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -2971,7 +3002,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="7000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -2997,6 +3027,9 @@
 		<cond msgId="113" addName="1">
 			<using kind="Ancient" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="498" levels="12" name="Contagion" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<!-- Confirmed CT2.5 -->
@@ -3021,7 +3054,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="7000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -3037,6 +3069,9 @@
 				<target abnormal="1" /> <!-- bleed -->
 			</and>
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="499" levels="3" name="Courage">
 		<!-- Confirmed CT2.5 -->

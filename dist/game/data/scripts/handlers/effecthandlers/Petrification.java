@@ -18,6 +18,7 @@
  */
 package handlers.effecthandlers;
 
+import com.l2jserver.gameserver.ai.CtrlEvent;
 import com.l2jserver.gameserver.model.effects.AbnormalEffect;
 import com.l2jserver.gameserver.model.effects.EffectFlag;
 import com.l2jserver.gameserver.model.effects.EffectTemplate;
@@ -25,11 +26,20 @@ import com.l2jserver.gameserver.model.effects.L2Effect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
+/**
+ * Petrification effect implementation.
+ */
 public class Petrification extends L2Effect
 {
 	public Petrification(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.PARALYZED.getMask() | EffectFlag.INVUL.getMask();
 	}
 	
 	@Override
@@ -39,30 +49,20 @@ public class Petrification extends L2Effect
 	}
 	
 	@Override
+	public void onExit()
+	{
+		getEffected().stopAbnormalEffect(AbnormalEffect.HOLD_2);
+		if (!getEffected().isPlayer())
+		{
+			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+		}
+	}
+	
+	@Override
 	public boolean onStart()
 	{
 		getEffected().startAbnormalEffect(AbnormalEffect.HOLD_2);
 		getEffected().startParalyze();
 		return super.onStart();
-	}
-	
-	@Override
-	public void onExit()
-	{
-		getEffected().stopAbnormalEffect(AbnormalEffect.HOLD_2);
-		getEffected().stopParalyze(false);
-		super.onExit();
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
-	}
-	
-	@Override
-	public int getEffectFlags()
-	{
-		return EffectFlag.PARALYZED.getMask() | EffectFlag.INVUL.getMask();
 	}
 }

@@ -26,7 +26,7 @@ import com.l2jserver.gameserver.model.stats.Env;
 import com.l2jserver.gameserver.network.SystemMessageId;
 
 /**
- * Summon Agathion effect.
+ * Summon Agathion effect implementation.
  * @author Zoey76
  */
 public class SummonAgathion extends L2Effect
@@ -34,6 +34,30 @@ public class SummonAgathion extends L2Effect
 	public SummonAgathion(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public L2EffectType getEffectType()
+	{
+		return L2EffectType.NONE;
+	}
+	
+	@Override
+	public boolean onActionTime()
+	{
+		return true;
+	}
+	
+	@Override
+	public void onExit()
+	{
+		super.onExit();
+		final L2PcInstance player = getEffector().getActingPlayer();
+		if (player != null)
+		{
+			player.setAgathionId(0);
+			player.broadcastUserInfo();
+		}
 	}
 	
 	@Override
@@ -56,36 +80,12 @@ public class SummonAgathion extends L2Effect
 		return true;
 	}
 	
-	@Override
-	public void onExit()
-	{
-		super.onExit();
-		final L2PcInstance player = getEffector().getActingPlayer();
-		if (player != null)
-		{
-			player.setAgathionId(0);
-			player.broadcastUserInfo();
-		}
-	}
-	
 	/**
 	 * Set the player's agathion Id.
-	 * @param player the player to set the agathion Id.
+	 * @param player the player to set the agathion Id
 	 */
 	protected void setAgathionId(L2PcInstance player)
 	{
 		player.setAgathionId((getSkill() == null) ? 0 : getSkill().getNpcId());
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return true;
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.SUMMON_AGATHION;
 	}
 }

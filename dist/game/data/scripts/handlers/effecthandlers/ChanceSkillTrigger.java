@@ -24,6 +24,9 @@ import com.l2jserver.gameserver.model.effects.L2Effect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
+/**
+ * Chance Skill Trigger effect implementation.
+ */
 public class ChanceSkillTrigger extends L2Effect
 {
 	public ChanceSkillTrigger(Env env, EffectTemplate template)
@@ -49,30 +52,9 @@ public class ChanceSkillTrigger extends L2Effect
 	}
 	
 	@Override
-	public boolean onStart()
+	public ChanceCondition getTriggeredChanceCondition()
 	{
-		getEffected().addChanceTrigger(this);
-		getEffected().onStartChanceEffect(getSkill().getElement());
-		return super.onStart();
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		getEffected().onActionTimeChanceEffect(getSkill().getElement());
-		return false;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		// trigger only if effect in use and successfully ticked to the end
-		if (isInUse() && (getCount() == 0))
-		{
-			getEffected().onExitChanceEffect(getSkill().getElement());
-		}
-		getEffected().removeChanceEffect(this);
-		super.onExit();
+		return getEffectTemplate().getChanceCondition();
 	}
 	
 	@Override
@@ -88,14 +70,35 @@ public class ChanceSkillTrigger extends L2Effect
 	}
 	
 	@Override
-	public boolean triggersChanceSkill()
+	public boolean onActionTime()
 	{
-		return getEffectTemplate().getTriggeredId() > 1;
+		getEffected().onActionTimeChanceEffect(getSkill().getElement());
+		return false;
 	}
 	
 	@Override
-	public ChanceCondition getTriggeredChanceCondition()
+	public void onExit()
 	{
-		return getEffectTemplate().getChanceCondition();
+		// trigger only if effect in use and successfully ticked to the end
+		if (isInUse() && (getTickCount() == getEffectTemplate().getTotalTickCount()))
+		{
+			getEffected().onExitChanceEffect(getSkill().getElement());
+		}
+		getEffected().removeChanceEffect(this);
+		super.onExit();
+	}
+	
+	@Override
+	public boolean onStart()
+	{
+		getEffected().addChanceTrigger(this);
+		getEffected().onStartChanceEffect(getSkill().getElement());
+		return super.onStart();
+	}
+	
+	@Override
+	public boolean triggersChanceSkill()
+	{
+		return getEffectTemplate().getTriggeredId() > 1;
 	}
 }

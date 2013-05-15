@@ -30,6 +30,7 @@ import com.l2jserver.gameserver.network.serverpackets.DeleteObject;
 import com.l2jserver.gameserver.network.serverpackets.L2GameServerPacket;
 
 /**
+ * Hide effect implementation.
  * @author ZaKaX, nBd
  */
 public class Hide extends L2Effect
@@ -45,9 +46,29 @@ public class Hide extends L2Effect
 	}
 	
 	@Override
+	public boolean calcSuccess()
+	{
+		return true;
+	}
+	
+	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.HIDE;
+	}
+	
+	@Override
+	public void onExit()
+	{
+		if (getEffected().isPlayer())
+		{
+			L2PcInstance activeChar = getEffected().getActingPlayer();
+			if (!activeChar.inObserverMode())
+			{
+				activeChar.getAppearance().setVisible();
+			}
+			activeChar.stopAbnormalEffect(AbnormalEffect.STEALTH);
+		}
 	}
 	
 	@Override
@@ -88,25 +109,5 @@ public class Hide extends L2Effect
 			}
 		}
 		return true;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		if (getEffected().isPlayer())
-		{
-			L2PcInstance activeChar = getEffected().getActingPlayer();
-			if (!activeChar.inObserverMode())
-			{
-				activeChar.getAppearance().setVisible();
-			}
-			activeChar.stopAbnormalEffect(AbnormalEffect.STEALTH);
-		}
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
 	}
 }

@@ -25,9 +25,9 @@ import com.l2jserver.gameserver.model.effects.EffectTemplate;
 import com.l2jserver.gameserver.model.effects.L2Effect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
-import com.l2jserver.gameserver.network.serverpackets.MyTargetSelected;
 
 /**
+ * Target Me effect implementation.
  * @author -Nemesiss-
  */
 public class TargetMe extends L2Effect
@@ -41,6 +41,15 @@ public class TargetMe extends L2Effect
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.TARGET_ME;
+	}
+	
+	@Override
+	public void onExit()
+	{
+		if (getEffected().isPlayable())
+		{
+			((L2Playable) getEffected()).setLockedTarget(null);
+		}
 	}
 	
 	@Override
@@ -61,10 +70,6 @@ public class TargetMe extends L2Effect
 				{
 					// Target is different
 					getEffected().setTarget(getEffector());
-					if (getEffected().isPlayer())
-					{
-						getEffected().sendPacket(new MyTargetSelected(getEffector().getObjectId(), 0));
-					}
 				}
 			}
 			((L2Playable) getEffected()).setLockedTarget(getEffector());
@@ -75,21 +80,6 @@ public class TargetMe extends L2Effect
 			return true;
 		}
 		
-		return false;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		if (getEffected().isPlayable())
-		{
-			((L2Playable) getEffected()).setLockedTarget(null);
-		}
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
 		return false;
 	}
 }

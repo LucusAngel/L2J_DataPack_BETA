@@ -25,6 +25,7 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
 /**
+ * Noblesse Blessing effect implementation.
  * @author earendil
  */
 public class NoblesseBless extends L2Effect
@@ -34,7 +35,6 @@ public class NoblesseBless extends L2Effect
 		super(env, template);
 	}
 	
-	// Special constructor to steal this effect
 	public NoblesseBless(Env env, L2Effect effect)
 	{
 		super(env, effect);
@@ -47,6 +47,12 @@ public class NoblesseBless extends L2Effect
 	}
 	
 	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.NOBLESS_BLESSING.getMask();
+	}
+	
+	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.NOBLESSE_BLESSING;
@@ -55,24 +61,6 @@ public class NoblesseBless extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		return true;
-	}
-	
-	@Override
-	public void onExit()
-	{
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		// just stop this effect
-		return false;
-	}
-	
-	@Override
-	public int getEffectFlags()
-	{
-		return EffectFlag.NOBLESS_BLESSING.getMask();
+		return (getEffector() != null) && (getEffected() != null) && getEffected().isPlayable();
 	}
 }

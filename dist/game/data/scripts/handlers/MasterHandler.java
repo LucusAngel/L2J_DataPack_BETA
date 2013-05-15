@@ -124,7 +124,6 @@ import handlers.admincommandhandlers.AdminTvTEvent;
 import handlers.admincommandhandlers.AdminUnblockIp;
 import handlers.admincommandhandlers.AdminVitality;
 import handlers.admincommandhandlers.AdminZone;
-import handlers.bypasshandlers.ArenaBuff;
 import handlers.bypasshandlers.Augment;
 import handlers.bypasshandlers.Buy;
 import handlers.bypasshandlers.BuyShadowItem;
@@ -151,7 +150,6 @@ import handlers.bypasshandlers.ReceivePremium;
 import handlers.bypasshandlers.ReleaseAttribute;
 import handlers.bypasshandlers.RemoveDeathPenalty;
 import handlers.bypasshandlers.RentPet;
-import handlers.bypasshandlers.RideWyvern;
 import handlers.bypasshandlers.Rift;
 import handlers.bypasshandlers.SkillList;
 import handlers.bypasshandlers.SupportBlessing;
@@ -208,9 +206,7 @@ import handlers.itemhandlers.SummonItems;
 import handlers.itemhandlers.TeleportBookmark;
 import handlers.skillhandlers.BallistaBomb;
 import handlers.skillhandlers.BeastSkills;
-import handlers.skillhandlers.Blow;
 import handlers.skillhandlers.Continuous;
-import handlers.skillhandlers.CpDamPercent;
 import handlers.skillhandlers.Craft;
 import handlers.skillhandlers.DeluxeKey;
 import handlers.skillhandlers.Detection;
@@ -220,18 +216,12 @@ import handlers.skillhandlers.Fishing;
 import handlers.skillhandlers.FishingSkill;
 import handlers.skillhandlers.GetPlayer;
 import handlers.skillhandlers.GiveReco;
-import handlers.skillhandlers.GiveVitality;
 import handlers.skillhandlers.InstantJump;
-import handlers.skillhandlers.Manadam;
-import handlers.skillhandlers.Mdam;
 import handlers.skillhandlers.NornilsPower;
-import handlers.skillhandlers.Pdam;
 import handlers.skillhandlers.RefuelAirShip;
 import handlers.skillhandlers.Resurrect;
 import handlers.skillhandlers.ShiftTarget;
 import handlers.skillhandlers.Sow;
-import handlers.skillhandlers.StealBuffs;
-import handlers.skillhandlers.StrSiegeAssault;
 import handlers.skillhandlers.SummonFriend;
 import handlers.skillhandlers.TakeCastle;
 import handlers.skillhandlers.TakeFort;
@@ -267,6 +257,7 @@ import handlers.targethandlers.PartyNotMe;
 import handlers.targethandlers.PartyOther;
 import handlers.targethandlers.Pet;
 import handlers.targethandlers.Self;
+import handlers.targethandlers.Servitor;
 import handlers.targethandlers.Summon;
 import handlers.targethandlers.Unlockable;
 import handlers.telnethandlers.ChatsHandler;
@@ -427,7 +418,6 @@ public class MasterHandler
 		{
 			// Bypass Handlers
 			Augment.class,
-			ArenaBuff.class,
 			Buy.class,
 			BuyShadowItem.class,
 			ChatLink.class,
@@ -453,7 +443,6 @@ public class MasterHandler
 			ReleaseAttribute.class,
 			RemoveDeathPenalty.class,
 			RentPet.class,
-			RideWyvern.class,
 			Rift.class,
 			SkillList.class,
 			SupportBlessing.class,
@@ -519,9 +508,7 @@ public class MasterHandler
 			// Skill Handlers
 			BallistaBomb.class,
 			BeastSkills.class,
-			Blow.class,
 			Continuous.class,
-			CpDamPercent.class,
 			Craft.class,
 			DeluxeKey.class,
 			Detection.class,
@@ -531,18 +518,12 @@ public class MasterHandler
 			FishingSkill.class,
 			GetPlayer.class,
 			GiveReco.class,
-			GiveVitality.class,
 			InstantJump.class,
-			Manadam.class,
-			Mdam.class,
 			NornilsPower.class,
-			Pdam.class,
 			RefuelAirShip.class,
 			Resurrect.class,
 			ShiftTarget.class,
 			Sow.class,
-			StealBuffs.class,
-			StrSiegeAssault.class,
 			SummonFriend.class,
 			TakeCastle.class,
 			TakeFort.class,
@@ -613,6 +594,7 @@ public class MasterHandler
 			PartyOther.class,
 			Pet.class,
 			Self.class,
+			Servitor.class,
 			Summon.class,
 			Unlockable.class,
 		},

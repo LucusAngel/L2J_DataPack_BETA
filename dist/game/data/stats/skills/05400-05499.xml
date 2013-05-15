@@ -208,7 +208,7 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect count="6" name="DamOverTime" val="#dot">
+			<effect name="DamOverTime" ticks="3" val="#dot">
 				<add order="0x40" stat="mAtk" val="#mAtk" />
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
@@ -216,7 +216,7 @@
 	</skill>
 	<skill id="5423" levels="12" name="Poison">
 		<!-- Condition causing target to be poisoned. -->
-		<table name="#dot"> 40 105 285 455 665 895 1115 1255 1445 1590 1620 1770 </table>
+		<table name="#dot"> 8 21 57 91 133 179 223 251 289 318 324 354 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
@@ -234,14 +234,14 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect count="6" name="DamOverTime" val="#dot" abnormalVisualEffect="poison">
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="poison">
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
 		</for>
 	</skill>
 	<skill id="5424" levels="12" name="Bleed">
 		<!-- Condition causing target to instantly decrease HP by bleeding. Effect 2-10. -->
-		<table name="#dot"> 75 105 215 275 445 515 700 840 870 1160 1325 1475 </table>
+		<table name="#dot"> 15 21 43 55 89 103 140 168 174 232 265 295 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
@@ -258,7 +258,7 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="6" name="DamOverTime" val="#dot" abnormalVisualEffect="bleed">
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed">
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
 		</for>
@@ -357,8 +357,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="115" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="CLAN" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5431" levels="1" name="Slow">
 		<!-- Condition causing target to temporarily decrease attack speed and casting speed. -->
@@ -398,10 +400,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="GUST" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="90" />
 			<effect name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_EXIT" triggeredId="5494" />
 		</for>
@@ -421,10 +423,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="GUST" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="90" />
 			<effect name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_EXIT" triggeredId="5494" />
 		</for>
@@ -518,9 +520,11 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="10000" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5443" levels="4" name="Cry of the Wolf">
 		<table name="#magicLvl"> 55 60 65 70 </table>
@@ -552,7 +556,7 @@
 		<table name="#magicLvl"> 65 70 </table>
 		<table name="#mpConsume"> 66 71 </table>
 		<table name="#power"> 917 1084 </table>
-		<table name="#val"> 325 335 </table>
+		<table name="#dot"> 62 67 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="20" />
 		<set name="abnormalType" val="BLEEDING" />
@@ -570,12 +574,12 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="11000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="4" name="DamOverTime" val="#val" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="5445" levels="1" name="Awakening">
@@ -662,7 +666,7 @@
 	<skill id="5450" levels="7" name="Thin Skin">
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvls"> 4 5 5 6 7 8 8 </table>
-		<table name="#dot"> 1090 1330 1330 1535 1535 1675 1675 </table>
+		<table name="#dot"> 218 266 266 307 307 335 335 </table>
 		<table name="#magicLvl"> 46 52 58 62 66 70 74 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="5" />
@@ -676,7 +680,7 @@
 		<set name="skillType" val="BLEED" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="1" name="DamOverTime" val="#dot" abnormalVisualEffect="bleed" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" />
 		</for>
 	</skill>
 	<skill id="5451" levels="1" name="Enervation">
@@ -724,8 +728,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MANADAM" />
 		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="MagicalAttackMp" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5454" levels="1" name="Shadow Bind">
 		<!-- Immobilized. -->
@@ -819,8 +825,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5462" levels="1" name="Fire Attacks">
 		<set name="operateType" val="P" />
@@ -862,8 +870,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5469" levels="1" name="Raid Boss - Level 22">
 		<!-- This Skill Is Only For Description In The Client -->
@@ -1043,8 +1053,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="17000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5493" levels="1" name="Naia Production">
 		<set name="hitTime" val="25000" />
@@ -1082,12 +1094,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="2616" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<!-- 71HP * 5 during 20 seconds -->
-			<effect count="4" name="DamOverTime" val="355" abnormalVisualEffect="bleed" effectPower="100" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="71" abnormalVisualEffect="bleed" effectPower="100" />
 		</for>
 	</skill>
 	<skill id="5496" levels="1" name="Dark Fireball">
@@ -1104,8 +1115,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="607" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5497" levels="1" name="Horn of Rising Darkness">
 		<!-- Confirmed CT2.5 -->
@@ -1125,12 +1138,11 @@
 		<set name="operateType" val="A2" />
 		<set name="power" val="2319" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="80" />
-			<!-- 52HP * 1 during 9 seconds -->
-			<effect count="9" name="DamOverTime" noicon="1" val="52" effectPower="80" />
+			<effect name="DamOverTime" noicon="1" ticks="3" val="52" effectPower="80" />
 		</for>
 	</skill>
 	<skill id="5498" levels="1" name="Self-Destruct">
@@ -1164,7 +1176,9 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 </list>

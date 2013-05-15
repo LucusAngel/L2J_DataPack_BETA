@@ -23,11 +23,10 @@ import com.l2jserver.gameserver.model.effects.L2Effect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 import com.l2jserver.gameserver.network.SystemMessageId;
-import com.l2jserver.gameserver.network.serverpackets.StatusUpdate;
 import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 
 /**
- * Mp By Level effect.
+ * Mp By Level effect implementation.
  * @author Zoey76
  */
 public class MpByLevel extends L2Effect
@@ -35,6 +34,12 @@ public class MpByLevel extends L2Effect
 	public MpByLevel(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public L2EffectType getEffectType()
+	{
+		return L2EffectType.BUFF;
 	}
 	
 	@Override
@@ -49,26 +54,10 @@ public class MpByLevel extends L2Effect
 		final double absorb = ((getEffected().getCurrentMp() + abs) > getEffected().getMaxMp() ? getEffected().getMaxMp() : (getEffected().getCurrentMp() + abs));
 		final int restored = (int) (absorb - getEffected().getCurrentMp());
 		getEffected().setCurrentMp(absorb);
-		// Status update
-		final StatusUpdate su = new StatusUpdate(getEffected());
-		su.addAttribute(StatusUpdate.CUR_MP, (int) absorb);
-		getEffected().sendPacket(su);
 		// System message
 		final SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S1_MP_RESTORED);
 		sm.addNumber(restored);
 		getEffected().sendPacket(sm);
 		return true;
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.BUFF;
 	}
 }

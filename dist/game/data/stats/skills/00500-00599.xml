@@ -11,12 +11,11 @@
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.4">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.4">
 				<mul order="0x30" stat="pAtk" val="#amount" />
 				<mul order="0x30" stat="pAtkSpd" val="#amount" />
 				<add order="0x40" stat="accCombat" val="#amount2" />
@@ -25,7 +24,7 @@
 			</effect>
 		</for>
 		<enchant1for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="0.4">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.4">
 				<mul order="0x30" stat="pAtk" val="#ench1Power" />
 				<mul order="0x30" stat="pAtkSpd" val="1.08" />
 				<add order="0x40" stat="accCombat" val="#ench1Power2" />
@@ -34,7 +33,7 @@
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect count="0x7fffffff" name="MpConsumePerLevel" val="#ench2Cost">
+			<effect name="MpConsumePerLevel" ticks="3" val="#ench2Cost">
 				<mul order="0x30" stat="pAtk" val="1.08" />
 				<mul order="0x30" stat="pAtkSpd" val="1.08" />
 				<add order="0x40" stat="accCombat" val="4" />
@@ -160,7 +159,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -186,6 +184,9 @@
 		<cond msgId="113" addName="1">
 			<using kind="Rapier" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="505" levels="28" name="Shining Edge" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -212,7 +213,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="BLOW" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -238,6 +238,9 @@
 		<cond msgId="113" addName="1">
 			<using kind="Rapier" />
 		</cond>
+		<for>
+			<effect name="SoulBlow" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="506" levels="4" name="Checkmate" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
 		<!-- Confirmed CT2.5 -->
@@ -263,7 +266,6 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -283,6 +285,9 @@
 				<target active_effect_id="1435" />
 			</and>
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="507" levels="37" name="Twin Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -306,7 +311,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -331,6 +335,9 @@
 		<cond msgId="113" addName="1">
 			<using kind="Crossbow" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="508" levels="31" name="Rising Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
 		<!-- Confirmed CT2.5 -->
@@ -355,7 +362,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AREA" />
@@ -380,6 +386,9 @@
 		<cond msgId="113" addName="1">
 			<using kind="Crossbow" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="509" levels="34" name="Bleeding Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
 		<!-- Confirmed CT2.5 -->
@@ -411,7 +420,6 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
@@ -425,10 +433,12 @@
 			<using kind="Crossbow" />
 		</cond>
 		<for>
-			<effect count="20" name="DamOverTime" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 		<enchant3for>
-			<effect count="20" name="DamOverTime" val="67" abnormalVisualEffect="bleed" effectPower="#ench3Power" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="67" abnormalVisualEffect="bleed" effectPower="#ench3Power" />
 		</enchant3for>
 	</skill>
 	<skill id="510" levels="5" name="Deadly Roulette" enchantGroup1="2" enchantGroup2="2">
@@ -464,6 +474,9 @@
 				<player hp="10" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Lethal" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="511" levels="1" name="Temptation">
 		<!-- Confirmed CT2.5 -->
@@ -502,15 +515,12 @@
 	</skill>
 	<skill id="513" levels="1" name="Create Dark Seed">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="1" />
-		<set name="create_item_id" val="10112" />
 		<set name="hitTime" val="3000" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="62" />
 		<set name="mpConsume" val="58" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="150000" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="soulMaxConsumeCount" val="1" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="2195">
@@ -522,136 +532,211 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="10112" itemCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="514" levels="9" name="Fire Trap" enchantGroup1="2" enchantGroup2="2">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 28 36 43 49 55 60 64 68 72 </table>
-		<table name="#triggerSkillLvl"> 1 2 3 4 5 6 7 8 9 </table>
-		<table name="#ench1trigger"> 10 10 10 11 11 11 12 12 12 13 13 13 14 14 14 15 15 15 16 16 16 17 17 17 18 18 18 19 19 20 </table>
+		<table name="#npcId"> 13037 13038 13039 13040 13041 13042 13043 13044 13045 </table>
+		<table name="#ench1npcId"> 13202 13202 13202 13203 13203 13203 13204 13204 13204 13205 13205 13205 13206 13206 13206 13207 13207 13207 13208 13208 13208 13209 13209 13209 13210 13210 13210 13211 13211 13212 </table>
 		<table name="#ench2reuse"> 44000 42000 42000 41000 40000 39000 38000 37000 36000 35000 34000 33000 32000 31000 30000 29000 28000 27000 26000 25000 24000 22000 22000 21000 20000 19000 18000 17000 16000 15000 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
-		<set name="affectRange" val="150" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="40" />
 		<set name="mpInitialConsume" val="10" />
-		<set name="npcId" val="13037" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="45000" />
-		<set name="skillType" val="SUMMON_TRAP" />
 		<set name="staticReuse" val="true" />
-		<set name="summonTotalLifeTime" val="30000" />
 		<set name="targetType" val="SELF" />
-		<set name="triggerSkillId" val="5267" />
-		<set name="triggerSkillLvl" val="#triggerSkillLvl" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
-		<enchant1 name="triggerSkillLvl" val="#ench1trigger" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuse" />
+		<cond msgId="113" addName="1">
+			<player npcIdRadius="#npcId,150,false" />
+		</cond>
+		<enchant1cond msgId="113" addName="1">
+			<player npcIdRadius="#ench1npcId,150,false" />
+		</enchant1cond>
+		<for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#npcId" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#ench1npcId" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="13045" />
+			</effect>
+		</enchant2for>
 	</skill>
 	<skill id="515" levels="6" name="Poison Trap" enchantGroup1="2" enchantGroup2="2">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 49 55 60 64 68 72 </table>
-		<table name="#triggerSkillLvl"> 1 2 3 4 5 6 </table>
-		<table name="#ench1trigger"> 7 7 7 8 8 8 9 9 9 10 10 10 11 11 11 12 12 12 13 13 13 14 14 14 15 15 15 16 16 17 </table>
+		<table name="#npcId"> 13046 13047 13048 13049 13050 13051 </table>
+		<table name="#ench1npcId"> 13213 13213 13213 13214 13214 13214 13215 13215 13215 13216 13216 13216 13217 13217 13217 13218 13218 13218 13219 13219 13219 13220 13220 13220 13221 13221 13221 13222 13222 13223 </table>
 		<table name="#ench2reuse"> 44000 42000 42000 41000 40000 39000 38000 37000 36000 35000 34000 33000 32000 31000 30000 29000 28000 27000 26000 25000 24000 22000 22000 21000 20000 19000 18000 17000 16000 15000 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
-		<set name="affectRange" val="150" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="40" />
 		<set name="mpInitialConsume" val="10" />
-		<set name="npcId" val="13037" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="45000" />
-		<set name="skillType" val="SUMMON_TRAP" />
 		<set name="staticReuse" val="true" />
-		<set name="summonTotalLifeTime" val="30000" />
 		<set name="targetType" val="SELF" />
-		<set name="triggerSkillId" val="5268" />
-		<set name="triggerSkillLvl" val="#triggerSkillLvl" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
-		<enchant1 name="triggerSkillLvl" val="#ench1trigger" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuse" />
+		<cond msgId="113" addName="1">
+			<player npcIdRadius="#npcId,150,false" />
+		</cond>
+		<enchant1cond msgId="113" addName="1">
+			<player npcIdRadius="#ench1npcId,150,false" />
+		</enchant1cond>
+		<for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#npcId" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#ench1npcId" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="13051" />
+			</effect>
+		</enchant2for>
 	</skill>
 	<skill id="516" levels="6" name="Slow Trap" enchantGroup1="2" enchantGroup2="2">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 52 58 62 66 70 74 </table>
-		<table name="#triggerSkillLvl"> 1 2 3 4 5 6 </table>
-		<table name="#ench1trigger"> 7 7 7 8 8 8 9 9 9 10 10 10 11 11 11 12 12 12 13 13 13 14 14 14 15 15 15 16 16 17 </table>
+		<table name="#npcId"> 13065 13066 13067 13068 13069 13070 </table>
+		<table name="#ench1npcId"> 13224 13224 13224 13225 13225 13225 13226 13226 13226 13227 13227 13227 13228 13228 13228 13229 13229 13229 13230 13230 13230 13231 13231 13231 13232 13232 13232 13233 13233 13234 </table>
 		<table name="#ench2reuse"> 44000 42000 42000 41000 40000 39000 38000 37000 36000 35000 34000 33000 32000 31000 30000 29000 28000 27000 26000 25000 24000 22000 22000 21000 20000 19000 18000 17000 16000 15000 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
-		<set name="affectRange" val="150" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="40" />
 		<set name="mpInitialConsume" val="10" />
-		<set name="npcId" val="13037" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="45000" />
-		<set name="skillType" val="SUMMON_TRAP" />
 		<set name="staticReuse" val="true" />
-		<set name="summonTotalLifeTime" val="30000" />
 		<set name="targetType" val="SELF" />
-		<set name="triggerSkillId" val="5269" />
-		<set name="triggerSkillLvl" val="#triggerSkillLvl" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
-		<enchant1 name="triggerSkillLvl" val="#ench1trigger" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuse" />
+		<cond msgId="113" addName="1">
+			<player npcIdRadius="#npcId,150,false" />
+		</cond>
+		<enchant1cond msgId="113" addName="1">
+			<player npcIdRadius="#ench1npcId,150,false" />
+		</enchant1cond>
+		<for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#npcId" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#ench1npcId" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="13070" />
+			</effect>
+		</enchant2for>
 	</skill>
 	<skill id="517" levels="5" name="Flash Trap" enchantGroup1="2" enchantGroup2="2">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 55 60 64 68 72 </table>
-		<table name="#triggerSkillLvl"> 1 2 3 4 5 </table>
-		<table name="#ench1trigger"> 6 6 6 7 7 7 8 8 8 9 9 9 10 10 10 11 11 11 12 12 12 13 13 13 14 14 14 15 15 16 </table>
+		<table name="#npcId"> 13052 13053 13054 13055 13056 </table>
+		<table name="#ench1npcId"> 13235 13235 13235 13236 13236 13236 13237 13237 13237 13238 13238 13238 13239 13239 13239 13240 13240 13240 13241 13241 13241 13242 13242 13242 13243 13243 13243 13244 13244 13245 </table>
 		<table name="#ench2reuse"> 44000 42000 42000 41000 40000 39000 38000 37000 36000 35000 34000 33000 32000 31000 30000 29000 28000 27000 26000 25000 24000 22000 22000 21000 20000 19000 18000 17000 16000 15000 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
-		<set name="affectRange" val="150" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="40" />
 		<set name="mpInitialConsume" val="10" />
-		<set name="npcId" val="13037" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="45000" />
-		<set name="skillType" val="SUMMON_TRAP" />
 		<set name="staticReuse" val="true" />
-		<set name="summonTotalLifeTime" val="30000" />
 		<set name="targetType" val="SELF" />
-		<set name="triggerSkillId" val="5270" />
-		<set name="triggerSkillLvl" val="#triggerSkillLvl" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
-		<enchant1 name="triggerSkillLvl" val="#ench1trigger" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuse" />
+		<cond msgId="113" addName="1">
+			<player npcIdRadius="#npcId,150,false" />
+		</cond>
+		<enchant1cond msgId="113" addName="1">
+			<player npcIdRadius="#ench1npcId,150,false" />
+		</enchant1cond>
+		<for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#npcId" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#ench1npcId" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="13056" />
+			</effect>
+		</enchant2for>
 	</skill>
 	<skill id="518" levels="8" name="Binding Trap" enchantGroup1="2" enchantGroup2="2">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 40 46 52 58 62 66 70 74 </table>
-		<table name="#triggerSkillLvl"> 1 2 3 4 5 6 7 8 </table>
-		<table name="#ench1trigger"> 9 9 9 10 10 10 11 11 11 12 12 12 13 13 13 14 14 14 15 15 15 16 16 16 17 17 17 18 18 19 </table>
+		<table name="#npcId"> 13057 13058 13059 13060 13061 13062 13063 13064 </table>
+		<table name="#ench1npcId"> 13246 13246 13246 13247 13247 13247 13248 13248 13248 13249 13249 13249 13250 13250 13250 13251 13251 13251 13252 13252 13252 13253 13253 13253 13254 13254 13254 13255 13255 13256 </table>
 		<table name="#ench2reuse"> 44000 42000 42000 41000 40000 39000 38000 37000 36000 35000 34000 33000 32000 31000 30000 29000 28000 27000 26000 25000 24000 22000 22000 21000 20000 19000 18000 17000 16000 15000 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
-		<set name="affectRange" val="150" />
 		<set name="hitTime" val="1500" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="40" />
 		<set name="mpInitialConsume" val="10" />
-		<set name="npcId" val="13037" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="45000" />
-		<set name="skillType" val="SUMMON_TRAP" />
 		<set name="staticReuse" val="true" />
-		<set name="summonTotalLifeTime" val="30000" />
 		<set name="targetType" val="SELF" />
-		<set name="triggerSkillId" val="5271" />
-		<set name="triggerSkillLvl" val="#triggerSkillLvl" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
-		<enchant1 name="triggerSkillLvl" val="#ench1trigger" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuse" />
+		<cond msgId="113" addName="1">
+			<player npcIdRadius="#npcId,150,false" />
+		</cond>
+		<enchant1cond msgId="113" addName="1">
+			<player npcIdRadius="#ench1npcId,150,false" />
+		</enchant1cond>
+		<for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#npcId" />
+			</effect>
+		</for>
+		<enchant1for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#ench1npcId" />
+			</effect>
+		</enchant1for>
+		<enchant2for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="13056" />
+			</effect>
+		</enchant2for>
 	</skill>
 	<skill id="519" levels="1" name="Quiver of Bolts: A-Grade">
 		<!-- Confirmed CT2.5 -->
@@ -851,7 +936,7 @@
 	</skill>
 	<skill id="523" levels="7" name="Imbue Dark Seed">
 		<!-- Confirmed CT2.5 -->
-		<table name="#dot"> 380 380 380 380 415 415 415 </table>
+		<table name="#dot"> 76 76 76 76 83 83 83 </table>
 		<table name="#effectLevel"> 1 2 3 4 5 6 7 </table>
 		<table name="#magicLvl"> 62 64 66 68 70 72 74 </table>
 		<table name="#triggeredLevel"> 1 2 3 4 5 6 7 </table>
@@ -878,8 +963,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<!-- 76 76 76 76 83 83 83 HP * 5 during 20 seconds -->
-			<effect count="4" name="DamOverTime" val="#dot" abnormalVisualEffect="bleed" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" />
 			<effect name="ChanceSkillTrigger" noicon="1" val="0" chanceType="ON_EXIT" triggeredId="5447" triggeredLevel="#triggeredLevel" />
 		</for>
 	</skill>
@@ -913,11 +997,8 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
-		<set name="npcId" val="#npcId" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="600000" />
-		<set name="skillType" val="DECOY" />
-		<set name="summonTotalLifeTime" val="20000" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="mpConsume" val="#ench1MpConsume" />
@@ -925,7 +1006,16 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="reuseDelay" val="#ench2reuseDelay" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
-		<enchant3 name="npcId" val="#ench3npcId" />
+		<for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="#npcId" npcCount="1" />
+			</effect>
+		</for>
+		<enchant3for>
+			<effect name="SummonNpc" noicon="1" val="0">
+				<param npcId="#ench3npcId" npcCount="1" />
+			</effect>
+		</enchant3for>
 	</skill>
 	<skill id="526" levels="1" name="Enuma Elish" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6">
 		<!-- Confirmed CT2.5 -->
@@ -950,7 +1040,6 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="6060" />
 		<set name="reuseDelay" val="75000" />
-		<set name="skillType" val="PDAM" />
 		<set name="soulMaxConsumeCount" val="5" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="FRONT_AREA" />
@@ -965,6 +1054,9 @@
 		<enchant3 name="mpConsume" val="#enchmpConsume" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="pvpPower" val="#ench4Duel" />
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="527" levels="1" name="Iron Shield">
 		<!-- Confirmed CT2.5 -->
@@ -1160,7 +1252,6 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="60" />
 		<set name="abnormalType" val="MULTI_BUFF" />
-		<set name="cpConsume" val="99999" /> <!-- When the skill is used, all of your CP are consumed. -->
 		<set name="hitTime" val="2000" />
 		<set name="mpConsume" val="143" />
 		<set name="operateType" val="A2" />
@@ -1171,6 +1262,7 @@
 			<player cp="80" />
 		</cond>
 		<for>
+			<effect name="CpDamPercent" noicon="1" val="100" />
 			<effect name="Buff" val="0">
 				<mul order="0x30" stat="maxHp" val="1.35" />
 				<mul order="0x30" stat="regHp" val="1.15" />
@@ -1255,9 +1347,11 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="2583" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="540" levels="1" name="Wing Assault">
 		<!-- Confirmed CT2.5 -->
@@ -1275,12 +1369,14 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="DA1" />
 		<set name="power" val="2067" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="AREA" />
 		<cond msgId="113" addName="1">
 			<target mindistance="200" />
 		</cond>
+		<for>
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="541" levels="1" name="Transform Grail Apostle">
 		<!-- Confirmed CT2.5 -->
@@ -1792,11 +1888,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="2" name="DamOverTime" val="615" effectPower="50" abnormalVisualEffect="bleed" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="123" effectPower="50" abnormalVisualEffect="bleed" />
 		</for>
 	</skill>
 	<skill id="560" levels="4" name="Power Slash">
@@ -1817,8 +1913,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="561" levels="4" name="Bless of Angel">
 		<table name="#mpConsume"> 61 63 67 70 </table>
@@ -1873,8 +1971,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="564" levels="4" name="Gravity Control">
 		<!-- Confirmed CT2.5 -->
@@ -1922,8 +2022,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="567" levels="4" name="Light of Heal">
 		<!-- Confirmed CT2.5 -->
@@ -1963,11 +2065,13 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="CHARGEDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<player Charges="2" />
 		</cond>
+		<for>
+			<effect name="EnergyAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="569" levels="4" name="Attack Storm">
 		<!-- Confirmed CT2.5 -->
@@ -1987,11 +2091,13 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="CHARGEDAM" />
 		<set name="targetType" val="AREA" />
 		<cond msgId="113" addName="1">
 			<player Charges="3" />
 		</cond>
+		<for>
+			<effect name="EnergyAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="570" levels="4" name="Attack Rage">
 		<!-- Confirmed CT2.5 -->
@@ -2008,10 +2114,10 @@
 		<set name="operateType" val="A1" />
 		<set name="overHit" val="true" />
 		<set name="power" val="1" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect self="1" count="#maxCharges" name="IncreaseCharges" noicon="1" val="1" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect self="1" name="FocusEnergy" noicon="1" val="#maxCharges" />
 		</for>
 	</skill>
 	<skill id="571" levels="4" name="Poison Dust">
@@ -2041,7 +2147,7 @@
 		<set name="targetType" val="AREA" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect count="10" name="DamOverTime" val="174" abnormalVisualEffect="poison" />
+			<effect name="DamOverTime" ticks="3" val="58" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="572" levels="4" name="Double Slasher">
@@ -2058,8 +2164,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="573" levels="4" name="Earthquake">
 		<!-- Confirmed CT2.5 -->
@@ -2083,10 +2191,10 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="SHOCK" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="50" />
 		</for>
 	</skill>
@@ -2094,19 +2202,18 @@
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 60 63 66 69 </table>
 		<table name="#npcId"> 13040 13041 13042 13043 </table>
-		<table name="#triggerSkillLvl"> 4 5 6 7 </table>
 		<set name="hitTime" val="3000" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="40" />
 		<set name="mpInitialConsume" val="10" />
-		<set name="npcId" val="#npcId" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="SUMMON_TRAP" />
-		<set name="summonTotalLifeTime" val="30000" />
 		<set name="targetType" val="SELF" />
-		<set name="triggerSkillId" val="5267" />
-		<set name="triggerSkillLvl" val="#triggerSkillLvl" />
+		<for>
+			<effect name="SummonTrap" noicon="1" val="0">
+				<param npcId="#npcId" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="575" levels="4" name="Steel Cutter">
 		<!-- Confirmed CT2.5 -->
@@ -2123,9 +2230,11 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="576" levels="4" name="Paw Strike">
 		<!-- Confirmed CT2.5 -->
@@ -2144,8 +2253,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="577" levels="4" name="Fire Breath">
 		<!-- Confirmed CT2.5 -->
@@ -2168,13 +2279,15 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="578" levels="4" name="Blaze Quake">
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvls"> 6 6 7 7 </table>
-		<table name="#dot"> 81 81 93 93 </table>
+		<table name="#dot"> 27 27 31 31 </table>
 		<table name="#magicLvl"> 60 63 66 69 </table>
 		<table name="#mpConsume"> 61 63 67 70 </table>
 		<table name="#power"> 625 703 784 867 </table>
@@ -2196,10 +2309,10 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect count="3" name="DamOverTime" val="#dot" abnormalVisualEffect="poison" effectPower="60" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="poison" effectPower="60" />
 		</for>
 	</skill>
 	<skill id="579" levels="4" name="Fire Armor">
@@ -2247,8 +2360,11 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="FatalBlow" noicon="1" val="0" />
+			<effect name="Lethal" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="581" levels="4" name="Sand Cloud">
 		<!-- Confirmed CT2.5 -->
@@ -2301,11 +2417,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="3" name="DamOverTime" val="369" abnormalVisualEffect="bleed" effectPower="50" />
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="123" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 	</skill>
 	<skill id="583" levels="4" name="Assimilation">
@@ -2336,9 +2452,11 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="1008" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="585" levels="1" name="Fast Moving">
 		<!-- CT2.2 retail confirmed -->
@@ -2372,8 +2490,10 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="4000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="587" levels="2" name="Earth Storm">
 		<!-- CT2.2 retail confirmed -->
@@ -2389,13 +2509,15 @@
 		<set name="overHit" val="true" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="3000" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2.0" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="588" levels="2" name="Curse of Darkness">
 		<!-- CT2.2 retail confirmed -->
-		<table name="#dmg"> 215 336 </table>
+		<table name="#dmg"> 88 101 </table>
 		<table name="#mpConsume"> 54 58 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
@@ -2413,7 +2535,7 @@
 		<set name="skillType" val="DOT" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="5" name="DamOverTime" val="#dmg" />
+			<effect name="DamOverTime" ticks="3" val="#dmg" />
 		</for>
 	</skill>
 	<skill id="589" levels="2" name="Darkness Energy Drain">
@@ -2430,7 +2552,7 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="CORPSE_MOB" />
 		<for>
-			<effect self="1" name="HpByLevel" noicon="1" val="#drainHp" />
+			<effect name="HpByLevel" noicon="1" val="#drainHp" />
 			<effect name="ConsumeBody" noicon="1" val="0" />
 		</for>
 	</skill>

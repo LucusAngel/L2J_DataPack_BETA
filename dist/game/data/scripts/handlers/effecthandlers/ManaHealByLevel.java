@@ -25,10 +25,10 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 import com.l2jserver.gameserver.model.stats.Stats;
 import com.l2jserver.gameserver.network.SystemMessageId;
-import com.l2jserver.gameserver.network.serverpackets.StatusUpdate;
 import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 
 /**
+ * Mana Heal By Level effect implementation.
  * @author UnAfraid
  */
 public class ManaHealByLevel extends L2Effect
@@ -109,9 +109,6 @@ public class ManaHealByLevel extends L2Effect
 		if (amount != 0)
 		{
 			target.setCurrentMp(amount + target.getCurrentMp());
-			StatusUpdate su = new StatusUpdate(target);
-			su.addAttribute(StatusUpdate.CUR_MP, (int) target.getCurrentMp());
-			target.sendPacket(su);
 		}
 		SystemMessage sm;
 		if (getEffector().getObjectId() != target.getObjectId())
@@ -126,11 +123,5 @@ public class ManaHealByLevel extends L2Effect
 		sm.addNumber((int) amount);
 		target.sendPacket(sm);
 		return true;
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
 	}
 }

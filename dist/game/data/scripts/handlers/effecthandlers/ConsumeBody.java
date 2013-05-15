@@ -25,7 +25,7 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
 /**
- * Consume Body effect.
+ * Consume Body effect implementation.
  * @author Zoey76
  */
 public class ConsumeBody extends L2Effect
@@ -33,6 +33,18 @@ public class ConsumeBody extends L2Effect
 	public ConsumeBody(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public L2EffectType getEffectType()
+	{
+		return L2EffectType.NONE;
+	}
+	
+	@Override
+	public boolean onActionTime()
+	{
+		return false;
 	}
 	
 	@Override
@@ -44,17 +56,5 @@ public class ConsumeBody extends L2Effect
 		}
 		((L2Npc) getEffected()).endDecayTask();
 		return true;
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
 	}
 }

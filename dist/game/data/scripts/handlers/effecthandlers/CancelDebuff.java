@@ -26,9 +26,10 @@ import com.l2jserver.gameserver.model.effects.L2Effect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.skills.L2Skill;
 import com.l2jserver.gameserver.model.stats.Env;
-import com.l2jserver.gameserver.model.stats.Formulas;
+import com.l2jserver.util.Rnd;
 
 /**
+ * Cancel Debuff effect implementation.
  * @author UnAfraid
  */
 public class CancelDebuff extends L2Effect
@@ -36,6 +37,12 @@ public class CancelDebuff extends L2Effect
 	public CancelDebuff(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public boolean calcSuccess()
+	{
+		return true;
 	}
 	
 	@Override
@@ -48,12 +55,6 @@ public class CancelDebuff extends L2Effect
 	public boolean onStart()
 	{
 		return cancel(getEffector(), getEffected(), getSkill(), getEffectPower());
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
 	}
 	
 	private static boolean cancel(L2Character caster, L2Character target, L2Skill skill, double baseRate)
@@ -84,7 +85,7 @@ public class CancelDebuff extends L2Effect
 				continue;
 			}
 			
-			if (!Formulas.calcCancelSuccess(e, skill.getMagicLevel(), (int) baseRate, skill))
+			if (Rnd.get(100) > baseRate)
 			{
 				continue;
 			}

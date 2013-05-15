@@ -92,8 +92,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4315" levels="12" name="Hold">
 		<!-- Freya retail confirmed -->
@@ -125,7 +127,6 @@
 		<table name="#magicLvl"> 14 24 34 44 54 64 74 79 84 89 94 99 </table>
 		<table name="#mpConsume"> 31 51 71 94 121 149 175 186 195 202 206 209 </table>
 		<table name="#power"> 11 16 22 29 38 46 54 58 61 63 65 66 </table>
-		<set name="absorbPart" val="0.4" />
 		<set name="affectRange" val="150" />
 		<set name="castRange" val="750" />
 		<set name="effectRange" val="1250" />
@@ -137,8 +138,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="HpDrain" noicon="1" val="0.4" />
+		</for>
 	</skill>
 	<skill id="4317" levels="5" name="Increase Rage Might">
 		<!-- Freya retail confirmed -->
@@ -206,7 +209,7 @@
 	<skill id="4320" levels="12" name="Poison">
 		<!-- Freya retail confirmed -->
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#dot"> 48 72 96 123 150 174 189 189 198 198 204 204 </table>
+		<table name="#dot"> 16 24 32 41 50 58 63 63 66 66 68 68 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
 		<set name="abnormalTime" val="30" />
@@ -222,7 +225,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect count="10" name="DamOverTime" val="#dot" abnormalVisualEffect="poison" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="poison" />
 		</for>
 		<table name="#mpConsume"> 13 20 27 35 45 55 65 69 73 83 77 78 </table>
 		<set name="mpConsume" val="#mpConsume" />
@@ -1167,7 +1170,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="27.78" />
+			<effect name="ManaHealOverTime" ticks="3" val="9.26" />
 		</for>
 	</skill>
 	<skill id="4368" levels="1" name="Clan Hall Manager Buff">
@@ -1180,7 +1183,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="55.56">
+			<effect name="ManaHealOverTime" ticks="3" val="18.52">
 				<add stat="maxMp" order="0x40" val="5000" />
 			</effect>
 		</for>
@@ -1195,7 +1198,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="83.34">
+			<effect name="ManaHealOverTime" ticks="3" val="27.78">
 				<add stat="maxMp" order="0x40" val="10000" />
 			</effect>
 		</for>
@@ -1210,7 +1213,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="183.33">
+			<effect name="ManaHealOverTime" ticks="3" val="61.11">
 				<add stat="maxMp" order="0x40" val="28000" />
 			</effect>
 		</for>
@@ -1225,7 +1228,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="350.1">
+			<effect name="ManaHealOverTime" ticks="3" val="116.7">
 				<add stat="maxMp" order="0x40" val="58000" />
 			</effect>
 		</for>
@@ -1240,7 +1243,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="600">
+			<effect name="ManaHealOverTime" ticks="3" val="200">
 				<add stat="maxMp" order="0x40" val="103000" />
 			</effect>
 		</for>
@@ -1255,7 +1258,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="616.8">
+			<effect name="ManaHealOverTime" ticks="3" val="205.6">
 				<add stat="maxMp" order="0x40" val="106000" />
 			</effect>
 		</for>
@@ -1270,7 +1273,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="866.7">
+			<effect name="ManaHealOverTime" ticks="3" val="288.9">
 				<add stat="maxMp" order="0x40" val="151000" />
 			</effect>
 		</for>
@@ -1285,7 +1288,7 @@
 		<set name="skillType" val="BUFF" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect count="1200" name="ManaHealOverTime" val="1116.6">
+			<effect name="ManaHealOverTime" ticks="3" val="372.2">
 				<add stat="maxMp" order="0x40" val="196000" />
 			</effect>
 		</for>
@@ -1314,8 +1317,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4378" levels="12" name="Self Damage Shield">
 		<!-- Freya retail confirmed -->
@@ -1368,6 +1373,7 @@
 	<skill id="4382" levels="12" name="Curse of Lake Ghost">
 		<!-- Freya retail confirmed -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
+		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
 		<table name="#power"> 46 105 219 417 722 1136 1626 1876 2112 2320 2487 2617 </table>
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
@@ -1377,16 +1383,15 @@
 		<set name="hitTime" val="1000" />
 		<set name="isDebuff" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
+		<set name="mpConsume" val="#mpConsume" />
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A2" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="BigHead" val="0" abnormalVisualEffect="bighead" effectPower="80" />
 		</for>
-		<table name="#mpConsume"> 13 20 28 38 50 61 71 76 80 83 84 85 </table>
-		<set name="mpConsume" val="#mpConsume" />
 	</skill>
 	<skill id="4383" levels="1" name="NPC Hate Stone">
 		<!-- Freya retail confirmed -->

@@ -18,6 +18,7 @@
  */
 package handlers.effecthandlers;
 
+import com.l2jserver.gameserver.ai.CtrlEvent;
 import com.l2jserver.gameserver.model.effects.EffectFlag;
 import com.l2jserver.gameserver.model.effects.EffectTemplate;
 import com.l2jserver.gameserver.model.effects.L2Effect;
@@ -25,6 +26,7 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
 /**
+ * Root effect implementation.
  * @author mkizub
  */
 public class Root extends L2Effect
@@ -35,34 +37,31 @@ public class Root extends L2Effect
 	}
 	
 	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.ROOTED.getMask();
+	}
+	
+	@Override
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.ROOT;
 	}
 	
 	@Override
-	public boolean onStart()
-	{
-		getEffected().startRooted();
-		return true;
-	}
-	
-	@Override
 	public void onExit()
 	{
-		getEffected().stopRooting(false);
+		if (!getEffected().isPlayer())
+		{
+			getEffected().getAI().notifyEvent(CtrlEvent.EVT_THINK);
+		}
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public boolean onStart()
 	{
-		// just stop this effect
-		return false;
-	}
-	
-	@Override
-	public int getEffectFlags()
-	{
-		return EffectFlag.ROOTED.getMask();
+		getEffected().stopMove(null);
+		getEffected().getAI().notifyEvent(CtrlEvent.EVT_ROOTED);
+		return true;
 	}
 }

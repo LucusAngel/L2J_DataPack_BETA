@@ -489,7 +489,6 @@
 	</skill>
 	<skill id="3436" levels="1" name="Blue Talisman - Self destruction">
 		<!-- Confirmed CT2.5 -->
-		<!-- set name="affectLimit = "6;12" / -->
 		<set name="affectLimit" val="6-12" />
 		<set name="affectRange" val="200" />
 		<set name="hitTime" val="3000" />
@@ -499,8 +498,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="200" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="3437" levels="1" name="Blue Talisman - Magic Explosive Power">
 		<!-- Confirmed CT2.5 -->

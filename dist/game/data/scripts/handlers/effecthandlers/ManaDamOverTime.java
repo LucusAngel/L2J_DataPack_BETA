@@ -24,6 +24,9 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 import com.l2jserver.gameserver.network.SystemMessageId;
 
+/**
+ * Mana Dam Over Time effect implementation.
+ */
 public class ManaDamOverTime extends L2Effect
 {
 	public ManaDamOverTime(Env env, EffectTemplate template)
@@ -45,8 +48,7 @@ public class ManaDamOverTime extends L2Effect
 			return false;
 		}
 		
-		double manaDam = calc();
-		
+		final double manaDam = calc() * getEffectTemplate().getTotalTickCount();
 		if (manaDam > getEffected().getCurrentMp())
 		{
 			if (getSkill().isToggle())

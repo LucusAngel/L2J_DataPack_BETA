@@ -127,10 +127,9 @@
 	<skill id="4517" levels="1" name="Quest - BOSS Defend">
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="runSpd" val="0.5" />
 				<mul order="0x30" stat="pAtk" val="0.5" />
 				<mul order="0x30" stat="pDef" val="10" />
@@ -140,10 +139,9 @@
 	<skill id="4518" levels="1" name="Quest - BOSS Rampage">
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pAtkSpd" val="1.3" />
 				<mul order="0x30" stat="pAtk" val="1.3" />
 				<mul order="0x30" stat="pDef" val="0.5" />
@@ -153,10 +151,9 @@
 	<skill id="4519" levels="1" name="Quest - BOSS Defend">
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="runSpd" val="0.5" />
 				<mul order="0x30" stat="bowWpnVuln" val="0.1" />
 			</effect>
@@ -165,10 +162,9 @@
 	<skill id="4520" levels="1" name="Quest - BOSS Rampage">
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="runSpd" val="0.7" />
 				<mul order="0x30" stat="bowWpnVuln" val="1.1" />
 			</effect>
@@ -243,10 +239,9 @@
 	<skill id="4525" levels="1" name="Quest - BOSS Defend">
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<mul order="0x30" stat="pDef" val="10" />
 				<mul order="0x30" stat="mDef" val="10" />
 				<sub order="0x40" stat="sleepVuln" val="70" />
@@ -307,8 +302,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="56" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4530" levels="1" name="Quest - Summoned HP Heal">
 		<set name="affectRange" val="200" />
@@ -335,10 +332,9 @@
 	<skill id="4532" levels="1" name="Quest - BOSS Reflect">
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="reflectDam" val="100" />
 				<mul order="0x30" stat="mDef" val="10" />
 			</effect>
@@ -578,10 +574,9 @@
 	<skill id="4545" levels="1" name="Quest - BOSS Reflect">
 		<set name="magicLvl" val="76" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="0">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="reflectDam" val="100" />
 				<mul order="0x30" stat="pDef" val="10" />
 				<mul order="0x30" stat="runSpd" val="0.7" />
@@ -842,8 +837,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4561" levels="12" name="NPC Fire Burn - Magic">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -860,8 +857,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4562" levels="12" name="NPC Solar Flare">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -881,8 +880,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4563" levels="12" name="NPC Solar Flare - Magic">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -901,8 +902,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4564" levels="12" name="NPC Solar Flare - Slow">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -921,8 +924,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4565" levels="12" name="NPC Eruption">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -941,8 +946,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4566" levels="12" name="NPC Eruption - Magic">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -960,8 +967,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4567" levels="12" name="NPC Eruption - Slow">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -979,8 +988,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4568" levels="12" name="NPC AE Solar Flare">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1001,8 +1012,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4569" levels="12" name="NPC AE Solar Flare - Magic">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1022,8 +1035,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4570" levels="12" name="NPC AE Solar Flare - Slow">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1043,8 +1058,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4571" levels="12" name="NPC Blazing Circle">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1061,8 +1078,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4572" levels="12" name="NPC Triple Sonic Slash">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1079,8 +1098,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4573" levels="12" name="NPC Sonic Blaster">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1096,8 +1117,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4574" levels="12" name="NPC Sonic Storm">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1114,8 +1137,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="4575" levels="2" name="NPC Clan Buff - Haste">
 		<table name="#abnormalLvls"> 1 2 </table>
@@ -1222,7 +1247,7 @@
 	</skill>
 	<skill id="4579" levels="12" name="Bleed">
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#damage"> 27 39 51 66 81 93 102 102 105 105 108 108 </table>
+		<table name="#damage"> 18 25 34 44 54 62 67 67 70 70 71 71 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume"> 25 40 56 76 99 121 142 151 159 165 168 170 </table>
 		<table name="#power"> 137 314 656 1249 2164 3408 4878 5627 6335 6960 7461 7850 </table>
@@ -1242,11 +1267,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="BLOW" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="7" name="DamOverTime" val="#damage" abnormalVisualEffect="bleed" effectPower="100" />
+			<effect name="FatalBlow" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="#damage" abnormalVisualEffect="bleed" effectPower="100" />
 		</for>
 	</skill>
 	<skill id="4580" levels="12" name="Decrease P. Atk.">
@@ -1305,7 +1330,7 @@
 	</skill>
 	<skill id="4582" levels="12" name="Poison">
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#dmg"> 36 54 72 93 114 132 144 144 150 150 153 153 </table>
+		<table name="#dmg"> 16 24 32 41 50 58 63 63 66 66 68 68 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume"> 24 39 54 73 94 116 136 144 152 158 161 163 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
@@ -1327,7 +1352,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect count="10" name="DamOverTime" val="#dmg" abnormalVisualEffect="poison" />
+			<effect name="DamOverTime" ticks="3" val="#dmg" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="4583" levels="12" name="Decrease Speed">
@@ -1377,10 +1402,10 @@
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="6000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="80">
 				<mul order="0x30" stat="pDef" val="#pDef" />
 			</effect>
@@ -1724,7 +1749,7 @@
 	</skill>
 	<skill id="4596" levels="12" name="Bleed">
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#damage"> 27 39 51 66 81 93 102 102 105 105 108 108 </table>
+		<table name="#damage"> 18 25 34 44 54 62 67 67 70 70 71 71 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume"> 29 47 64 88 113 138 162 173 180 188 192 194 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
@@ -1747,12 +1772,12 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="7" name="DamOverTime" val="#damage" abnormalVisualEffect="bleed" />
+			<effect name="DamOverTime" ticks="3" val="#damage" abnormalVisualEffect="bleed" />
 		</for>
 	</skill>
 	<skill id="4597" levels="12" name="Bleed">
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#damage"> 27 39 51 66 81 93 102 102 105 105 108 108 </table>
+		<table name="#damage"> 18 25 34 44 54 62 67 67 70 70 71 71 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume"> 20 34 47 63 82 100 117 124 130 135 138 140 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
@@ -1774,12 +1799,12 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="7" name="DamOverTime" val="#damage" abnormalVisualEffect="bleed" />
+			<effect name="DamOverTime" ticks="3" val="#damage" abnormalVisualEffect="bleed" />
 		</for>
 	</skill>
 	<skill id="4598" levels="12" name="Bleed">
 		<table name="#abnormalLvls"> 2 3 4 5 6 7 8 8 9 9 10 10 </table>
-		<table name="#damage"> 27 39 51 66 81 93 102 102 105 105 108 108 </table>
+		<table name="#damage"> 18 25 34 44 54 62 67 67 70 70 71 71 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume"> 20 34 47 63 82 100 117 124 130 135 138 140 </table>
 		<set name="abnormalLvl" val="#abnormalLvls" />
@@ -1801,7 +1826,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect count="7" name="DamOverTime" val="#damage" abnormalVisualEffect="bleed" />
+			<effect name="DamOverTime" ticks="3" val="#damage" abnormalVisualEffect="bleed" />
 		</for>
 	</skill>
 	<skill id="4599" levels="12" name="Decrease Speed">

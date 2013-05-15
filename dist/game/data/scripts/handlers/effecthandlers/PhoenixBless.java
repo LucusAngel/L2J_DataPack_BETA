@@ -18,7 +18,6 @@
  */
 package handlers.effecthandlers;
 
-import com.l2jserver.gameserver.model.actor.L2Playable;
 import com.l2jserver.gameserver.model.effects.EffectFlag;
 import com.l2jserver.gameserver.model.effects.EffectTemplate;
 import com.l2jserver.gameserver.model.effects.L2Effect;
@@ -26,6 +25,7 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
 /**
+ * Phoenix Blessing effect implementation.
  * @author Faror
  */
 public class PhoenixBless extends L2Effect
@@ -33,6 +33,12 @@ public class PhoenixBless extends L2Effect
 	public PhoenixBless(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.PHOENIX_BLESSING.getMask();
 	}
 	
 	@Override
@@ -44,28 +50,6 @@ public class PhoenixBless extends L2Effect
 	@Override
 	public boolean onStart()
 	{
-		return true;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		if (getEffected().isPlayable())
-		{
-			((L2Playable) getEffected()).stopPhoenixBlessing(this);
-		}
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		// just stop this effect
-		return false;
-	}
-	
-	@Override
-	public int getEffectFlags()
-	{
-		return EffectFlag.PHOENIX_BLESSING.getMask();
+		return (getEffector() != null) && (getEffected() != null) && getEffected().isPlayer();
 	}
 }

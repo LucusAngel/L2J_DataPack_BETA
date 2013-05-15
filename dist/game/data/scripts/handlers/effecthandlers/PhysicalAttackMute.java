@@ -25,6 +25,7 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
 /**
+ * Physical Attack Mute effect implementation.
  * @author -Rnn-
  */
 public class PhysicalAttackMute extends L2Effect
@@ -32,6 +33,12 @@ public class PhysicalAttackMute extends L2Effect
 	public PhysicalAttackMute(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public int getEffectFlags()
+	{
+		return EffectFlag.PSYCHICAL_ATTACK_MUTED.getMask();
 	}
 	
 	@Override
@@ -45,24 +52,5 @@ public class PhysicalAttackMute extends L2Effect
 	{
 		getEffected().startPhysicalAttackMuted();
 		return true;
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		// Simply stop the effect
-		return false;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		getEffected().stopPhysicalAttackMuted(this);
-	}
-	
-	@Override
-	public int getEffectFlags()
-	{
-		return EffectFlag.PSYCHICAL_ATTACK_MUTED.getMask();
 	}
 }

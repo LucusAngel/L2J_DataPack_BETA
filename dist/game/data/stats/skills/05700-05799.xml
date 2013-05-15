@@ -112,8 +112,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="160" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5709" levels="2" name="Whirlpool">
 		<set name="castRange" val="40" />
@@ -124,8 +126,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="220" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5710" levels="2" name="Triple Sword">
 		<set name="affectLimit" val="5-15" />
@@ -137,8 +141,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="320" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="FRONT_AREA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5711" levels="1" name="Power of Rage">
 		<set name="abnormalLvl" val="1" />
@@ -200,11 +206,10 @@
 		<set name="power" val="213" />
 		<set name="reuseDelay" val="5000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<!-- 55HP * 5 During 30 seconds -->
-			<effect count="6" name="DamOverTime" val="275" abnormalVisualEffect="bleed" effectPower="80">
+			<effect name="MagicalAttack" noicon="1" val="0" />
+			<effect name="DamOverTime" ticks="3" val="55" abnormalVisualEffect="bleed" effectPower="80">
 				<mul order="0x30" stat="runSpd" val="0.77" />
 			</effect>
 		</for>
@@ -268,8 +273,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5721" levels="6" name="Blade Strike">
 		<!-- Confirmed CT2.5 -->
@@ -286,8 +293,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5722" levels="6" name="Hammer Assault">
 		<!-- Confirmed CT2.5 -->
@@ -304,8 +313,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5723" levels="6" name="Hammer Swing">
 		<!-- Confirmed CT2.5 -->
@@ -323,8 +334,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5724" levels="6" name="Broom Strike">
 		<!-- Confirmed CT2.5 -->
@@ -341,8 +354,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5725" levels="6" name="Broom Trusting">
 		<!-- Confirmed CT2.5 -->
@@ -359,8 +374,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5726" levels="6" name="Scissors Attack">
 		<!-- Confirmed CT2.5 -->
@@ -377,8 +394,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5727" levels="6" name="Scissors Strike">
 		<!-- Confirmed CT2.5 -->
@@ -395,8 +414,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="30000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5728" levels="6" name="Shobel Attack">
 		<!-- Confirmed CT2.5 -->
@@ -413,8 +434,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5729" levels="6" name="Shobel Whirlwind">
 		<!-- Confirmed CT2.5 -->
@@ -430,8 +453,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5730" levels="6" name="Made Fireball">
 		<!-- Confirmed CT2.5 -->
@@ -453,8 +478,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5731" levels="6" name="Incense of Death">
 		<!-- Confirmed CT2.5 -->
@@ -473,8 +500,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5732" levels="6" name="Flame Strike">
 		<!-- Confirmed CT2.5 -->
@@ -498,8 +527,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AREA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5733" levels="6" name="Fear of Steward">
 		<!-- Confirmed CT2.5 -->
@@ -526,11 +557,11 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect count="5" name="Fear" val="0" effectPower="20" />
+			<effect name="MagicalAttack" noicon="1" val="0" />
+			<effect name="Fear" val="0" effectPower="20" />
 		</for>
 	</skill>
 	<skill id="5734" levels="6" name="Gust of Wind">
@@ -553,8 +584,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="8000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5735" levels="6" name="Curse of Steward">
 		<!-- Confirmed CT2.5 -->
@@ -581,10 +614,10 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
 		<set name="saveVs" val="MEN" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SLEEP" />
 		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
 			<effect name="Sleep" val="0" effectPower="25" />
 		</for>
 	</skill>
@@ -603,8 +636,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="6000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5737" levels="6" name="Power Stamp">
 		<!-- Confirmed CT2.5 -->
@@ -620,8 +655,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5738" levels="6" name="Power Roar">
 		<!-- Confirmed CT2.5 -->
@@ -637,8 +674,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5739" levels="1" name="Invincible">
 		<!-- Confirmed CT2.5 -->
@@ -721,7 +760,6 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<and>
@@ -729,6 +767,9 @@
 				<player active_effect_id="5753" />
 			</and>
 		</cond>
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5746" levels="12" name="Double Attack">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -745,8 +786,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="15000" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5747" levels="12" name="Spin Attack">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -769,10 +812,10 @@
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="13000" />
 		<set name="saveVs" val="CON" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="50" />
 		</for>
 	</skill>
@@ -802,8 +845,10 @@
 		<set name="power" val="#pvePower" />
 		<set name="pvpPower" val="#pvpPower" />
 		<set name="reuseDelay" val="5000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5750" levels="12" name="Flash">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -821,8 +866,10 @@
 		<set name="power" val="#pvePower" />
 		<set name="pvpPower" val="#pvpPower" />
 		<set name="reuseDelay" val="2000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5751" levels="12" name="Lightning Wave">
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -840,8 +887,10 @@
 		<set name="power" val="#pvePower" />
 		<set name="pvpPower" val="#pvpPower" />
 		<set name="reuseDelay" val="5000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5752" levels="12" name="Flare">
 		<table name="#hpConsume"> 49 79 112 152 197 242 283 302 318 329 336 340 </table>
@@ -861,11 +910,13 @@
 		<set name="power" val="#pvePower" />
 		<set name="pvpPower" val="#pvpPower" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
 			<player active_effect_id="5753" />
 		</cond>
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5753" levels="1" name="Awakening">
 		<set name="abnormalLvl" val="1" />
@@ -943,9 +994,11 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="20000" />
-		<set name="skillType" val="PDAM" />
 		<set name="SSBoost" val="2" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5762" levels="1" name="Blessing of Pathfinder">
 		<set name="abnormalLvl" val="1" />
@@ -988,8 +1041,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="4472" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5766" levels="1" name="Naia Sprout">
 		<set name="affectRange" val="150" />
@@ -1002,8 +1057,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="4472" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5767" levels="1" name="Naia Sprout">
 		<set name="affectRange" val="150" />
@@ -1016,8 +1073,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="4472" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5768" levels="1" name="Naia Sprout">
 		<set name="affectRange" val="150" />
@@ -1030,8 +1089,10 @@
 		<set name="offensive" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="4472" />
-		<set name="skillType" val="PDAM" />
 		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="PhysicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="5769" levels="12" name="not_used">
 		<set name="hitTime" val="4000" />
@@ -1085,12 +1146,18 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="5774" levels="2" name="Pailaka Reward Energy Replenishing">
-		<!-- lvl1 restore 50%, lvl2 restore 100% of vitality -->
-		<!-- lvl1 used on pailaka 40, lvl2 used on pailaka 60/70 -->
+		<!-- Confirmed CT2.5 -->
+		<table name="#value"> 10000 20000 </table>
+		<set name="aggroPoints" val="100" />
+		<set name="castRange" val="900" />
+		<set name="effectRange" val="1400" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="skillType" val="NOTDONE" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="VitalityPointUp" noicon="1" val="#value" />
+		</for>
 	</skill>
 	<skill id="5775" levels="1" name="Great Blessing of Pathfinder">
 		<set name="abnormalLvl" val="1" />

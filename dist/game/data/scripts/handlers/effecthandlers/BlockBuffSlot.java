@@ -24,7 +24,7 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
 /**
- * Block Buff Slot effect.
+ * Block Buff Slot effect implementation.
  * @author Zoey76
  */
 public class BlockBuffSlot extends L2Effect
@@ -35,14 +35,9 @@ public class BlockBuffSlot extends L2Effect
 	}
 	
 	@Override
-	public boolean onStart()
+	public L2EffectType getEffectType()
 	{
-		if ((getEffector() == null) || (getEffected() == null) || ((getSkill() == null) && !getSkill().getBlockBuffSlots().isEmpty()))
-		{
-			return false;
-		}
-		getEffected().addBlockedBuffSlots(getSkill().getBlockBuffSlots());
-		return true;
+		return L2EffectType.NONE;
 	}
 	
 	@Override
@@ -50,19 +45,18 @@ public class BlockBuffSlot extends L2Effect
 	{
 		if ((getEffected() != null) && (getSkill() != null) && !getSkill().getBlockBuffSlots().isEmpty())
 		{
-			getEffected().removeBlockedBuffSlots(getSkill().getBlockBuffSlots());
+			getEffected().getEffectList().removeBlockedBuffSlots(getSkill().getBlockBuffSlots());
 		}
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public boolean onStart()
 	{
-		return false;
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.NONE;
+		if ((getEffector() == null) || (getEffected() == null) || ((getSkill() == null) && !getSkill().getBlockBuffSlots().isEmpty()))
+		{
+			return false;
+		}
+		getEffected().getEffectList().addBlockedBuffSlots(getSkill().getBlockBuffSlots());
+		return true;
 	}
 }

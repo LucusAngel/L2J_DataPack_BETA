@@ -3,7 +3,7 @@
 	<skill id="1001" levels="10" name="Soul Cry" enchantGroup1="1">
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 1 14 25 35 40 48 56 60 66 72 </table>
-		<table name="#mdot"> 0 0 5 10 10 10 15 15 20 20 </table>
+		<table name="#mdot"> 0 0 1 2 2 2 3 3 4 4 </table>
 		<table name="#mpInitialConsume"> 1 2 3 3 4 5 6 6 7 7 </table>
 		<table name="#pAtk"> 4.5 14 33.5 66.5 90.5 141.5 208.5 247 310 375.5 </table>
 		<table name="#ench1patk"> 418 421 424 427 430 433 436 439 442 445 448 451 454 457 460 463 466 469 472 475 478 481 484 487 490 493 496 499 502 505 </table>
@@ -11,16 +11,15 @@
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpInitialConsume" val="#mpInitialConsume" />
 		<set name="operateType" val="T" />
-		<set name="skillType" val="CONT" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="#mdot">
+			<effect name="ManaDamOverTime" ticks="3" val="#mdot">
 				<add order="0x40" stat="pAtk" val="#pAtk" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect count="0x7fffffff" name="ManaDamOverTime" val="20">
+			<effect name="ManaDamOverTime" ticks="3" val="4">
 				<add order="0x40" stat="pAtk" val="#ench1patk" />
 			</effect>
 		</enchant1for>
@@ -601,7 +600,6 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant1 name="power" val="#ench1power" />
@@ -615,6 +613,9 @@
 		<cond msgId="144">
 			<target race_id="1" /> <!-- Undead -->
 		</cond>
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="1031" levels="8" name="Disrupt Undead">
 		<table name="#magicLvl"> 17 20 23 25 28 30 33 35 </table>
@@ -634,11 +635,13 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="1000" />
-		<set name="skillType" val="MDAM" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="144">
 			<target race_id="1" /> <!-- Undead -->
 		</cond>
+		<for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
+		</for>
 	</skill>
 	<skill id="1032" levels="3" name="Invigor" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
 		<table name="#abnormalLvls"> 1 2 3 </table>
@@ -928,7 +931,6 @@
 		<enchant3 name="elementPower" val="20" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="power" val="#ench3Attack" />
-		<enchant3 name="skillType" val="MDAM" />
 		<cond msgId="144">
 			<target race_id="1" /> <!-- Undead -->
 		</cond>
@@ -936,6 +938,7 @@
 			<effect name="Paralyze" val="0" />
 		</for>
 		<enchant3for>
+			<effect name="MagicalAttack" noicon="1" val="0" />
 			<effect name="Paralyze" val="0" effectPower="40" />
 		</enchant3for>
 	</skill>
@@ -1930,7 +1933,6 @@
 		<table name="#mpConsume"> 22 32 40 46 54 63 </table>
 		<table name="#mpInitialConsume"> 5 8 10 12 14 16 </table>
 		<table name="#power"> 15 21 26 32 38 44 </table>
-		<set name="absorbPart" val="0.8" /> <!-- absorbs 80% of damage -->
 		<set name="castRange" val="600" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="4000" />
@@ -1942,8 +1944,10 @@
 		<set name="operateType" val="A1" />
 		<set name="power" val="#power" />
 		<set name="reuseDelay" val="2000" />
-		<set name="skillType" val="DRAIN" />
 		<set name="targetType" val="ONE" />
+		<for>
+			<effect name="HpDrain" noicon="1" val="0.8" />
+		</for>
 	</skill>
 	<skill id="1092" levels="19" name="Fear" enchantGroup1="1" enchantGroup2="1">
 		<table name="#magicLvl"> 14 20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -1979,12 +1983,12 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect count="5" name="Fear" val="0" />
+			<effect name="Fear" val="0" />
 		</for>
 	</skill>
 	<skill id="1095" levels="5" name="Venom">
 		<table name="#abnormalLvls"> 1 2 3 5 6 </table>
-		<table name="#dot"> 33 48 72 123 150 </table>
+		<table name="#dot"> 11 16 24 41 50 </table>
 		<table name="#magicLvl"> 7 14 20 40 52 </table>
 		<table name="#mpConsume"> 8 12 16 28 38 </table>
 		<table name="#mpInitialConsume"> 2 3 4 7 10 </table>
@@ -2009,8 +2013,7 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<!-- Retail Values CT2.3: 11 16 24 41 50HP * 3 Sec -->
-			<effect count="10" name="DamOverTime" val="#dot" abnormalVisualEffect="poison" />
+			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="poison" />
 		</for>
 	</skill>
 	<skill id="1096" levels="16" name="Seal of Chaos" enchantGroup1="1" enchantGroup2="1">

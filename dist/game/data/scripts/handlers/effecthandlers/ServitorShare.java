@@ -18,10 +18,8 @@
  */
 package handlers.effecthandlers;
 
-import java.util.List;
-
-import com.l2jserver.gameserver.model.actor.L2Summon;
-import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.ThreadPoolManager;
+import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.effects.EffectFlag;
 import com.l2jserver.gameserver.model.effects.EffectTemplate;
 import com.l2jserver.gameserver.model.effects.L2Effect;
@@ -29,61 +27,34 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
 /**
- * Synchronizing effects on player and servitor if one of them gets removed for some reason the same will happen to another.
- * @author UnAfraid
+ * Servitor Share effect implementation.<br>
+ * Synchronizing effects on player and servitor if one of them gets removed for some reason the same will happen to another. Partner's effect exit is executed in own thread, since there is no more queue to schedule the effects,<br>
+ * partner's effect is called while this effect is still exiting issuing an exit call for the effect, causing a stack over flow.
+ * @author UnAfraid, Zoey76
  */
 public class ServitorShare extends L2Effect
 {
+	private static final class ScheduledEffectExitTask implements Runnable
+	{
+		private final L2Character _effected;
+		private final int _skillId;
+		
+		public ScheduledEffectExitTask(L2Character effected, int skillId)
+		{
+			_effected = effected;
+			_skillId = skillId;
+		}
+		
+		@Override
+		public void run()
+		{
+			_effected.stopSkillEffects(_skillId);
+		}
+	}
+	
 	public ServitorShare(Env env, EffectTemplate template)
 	{
 		super(env, template);
-	}
-	
-	@Override
-	public L2EffectType getEffectType()
-	{
-		return L2EffectType.BUFF;
-	}
-	
-	@Override
-	public void onExit()
-	{
-		List<L2Effect> effects = null;
-		if (getEffected().isPlayer())
-		{
-			L2Summon summon = getEffector().getSummon();
-			if ((summon != null) && summon.isServitor())
-			{
-				effects = summon.getAllEffects();
-			}
-		}
-		else if (getEffected().isServitor())
-		{
-			L2PcInstance owner = getEffected().getActingPlayer();
-			if (owner != null)
-			{
-				effects = owner.getAllEffects();
-			}
-		}
-		
-		if (effects != null)
-		{
-			for (L2Effect eff : effects)
-			{
-				if (eff.getSkill().getId() == getSkill().getId())
-				{
-					eff.exit();
-					break;
-				}
-			}
-		}
-		super.onExit();
-	}
-	
-	@Override
-	public boolean onActionTime()
-	{
-		return false;
 	}
 	
 	@Override
@@ -96,5 +67,22 @@ public class ServitorShare extends L2Effect
 	public int getEffectFlags()
 	{
 		return EffectFlag.SERVITOR_SHARE.getMask();
+	}
+	
+	@Override
+	public L2EffectType getEffectType()
+	{
+		return L2EffectType.BUFF;
+	}
+	
+	@Override
+	public void onExit()
+	{
+		final L2Character effected = getEffected().isPlayer() ? getEffected().getSummon() : getEffected().getActingPlayer();
+		if (effected != null)
+		{
+			ThreadPoolManager.getInstance().scheduleEffect(new ScheduledEffectExitTask(effected, getSkill().getId()), 100);
+		}
+		super.onExit();
 	}
 }

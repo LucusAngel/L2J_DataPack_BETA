@@ -23,8 +23,10 @@ import com.l2jserver.gameserver.model.effects.L2Effect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 import com.l2jserver.gameserver.network.serverpackets.ExRegMax;
-import com.l2jserver.gameserver.network.serverpackets.StatusUpdate;
 
+/**
+ * Heal Over Time effect implementation.
+ */
 public class HealOverTime extends L2Effect
 {
 	public HealOverTime(Env env, EffectTemplate template)
@@ -32,10 +34,15 @@ public class HealOverTime extends L2Effect
 		super(env, template);
 	}
 	
-	// Special constructor to steal this effect
 	public HealOverTime(Env env, L2Effect effect)
 	{
 		super(env, effect);
+	}
+	
+	@Override
+	public boolean calcSuccess()
+	{
+		return true;
 	}
 	
 	@Override
@@ -48,16 +55,6 @@ public class HealOverTime extends L2Effect
 	public L2EffectType getEffectType()
 	{
 		return L2EffectType.HEAL_OVER_TIME;
-	}
-	
-	@Override
-	public boolean onStart()
-	{
-		if (getEffected().isPlayer())
-		{
-			getEffected().sendPacket(new ExRegMax(calc(), getTotalCount() * getAbnormalTime(), getAbnormalTime()));
-		}
-		return true;
 	}
 	
 	@Override
@@ -74,16 +71,22 @@ public class HealOverTime extends L2Effect
 		// Not needed to set the HP and send update packet if player is already at max HP
 		if (hp >= maxhp)
 		{
-			return true;
+			return false;
 		}
 		
-		hp += calc();
+		hp += calc() * getEffectTemplate().getTotalTickCount();
 		hp = Math.min(hp, maxhp);
-		
 		getEffected().setCurrentHp(hp);
-		StatusUpdate suhp = new StatusUpdate(getEffected());
-		suhp.addAttribute(StatusUpdate.CUR_HP, (int) hp);
-		getEffected().sendPacket(suhp);
+		return false;
+	}
+	
+	@Override
+	public boolean onStart()
+	{
+		if (getEffected().isPlayer())
+		{
+			getEffected().sendPacket(new ExRegMax(calc(), getEffectTemplate().getTotalTickCount() * getAbnormalTime(), getAbnormalTime()));
+		}
 		return true;
 	}
 }
