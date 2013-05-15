@@ -335,6 +335,7 @@
 		</for>
 	</skill>
 	<skill id="6631" levels="1" name="Energy of Power">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="PA_UP" />
@@ -353,6 +354,7 @@
 		</for>
 	</skill>
 	<skill id="6632" levels="1" name="Energy of Enchant">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MA_UP" />
@@ -363,6 +365,7 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6633" levels="1" name="Energy of Attack Speed">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
@@ -381,6 +384,7 @@
 		</for>
 	</skill>
 	<skill id="6634" levels="1" name="Energy of Casting Speed">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CASTING_TIME_DOWN" />
@@ -391,6 +395,7 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6635" levels="1" name="Energy of Crt Rate">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CRITICAL_PROB_UP" />
@@ -409,6 +414,7 @@
 		</for>
 	</skill>
 	<skill id="6636" levels="1" name="Energy of Moving Speed">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="SPEED_UP" />
@@ -428,6 +434,7 @@
 	</skill>
 	<skill id="6637" levels="1" name="Vampiric Aura">
 		<!-- Confirmed CT2.5 -->
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="4" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
@@ -452,6 +459,7 @@
 		</for>
 	</skill>
 	<skill id="6638" levels="1" name="Aura of Mystery">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="BIG_HEAD" />
@@ -477,6 +485,7 @@
 		</for>
 	</skill>
 	<skill id="6639" levels="1" name="Bane of Auras - Damage">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CRITICAL_DMG_UP" />
@@ -495,6 +504,7 @@
 		</for>
 	</skill>
 	<skill id="6640" levels="1" name="Energizing Aura">
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="VP_UP" />
@@ -892,6 +902,7 @@
 	</skill>
 	<skill id="6674" levels="1" name="Energy of Range Increment">
 		<!-- Bow/Crossbow range is temporarily increased by 50. -->
+		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="10" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="SIGNAL_B" />
@@ -1059,15 +1070,12 @@
 	<skill id="6685" levels="1" name="Santa Claus's Gift">
 		<!-- Confirmed CT2.5 -->
 		<set name="coolTime" val="1000" />
-		<set name="create_item_count" val="1" />
-		<set name="create_item_id" val="17003" />
 		<set name="hitTime" val="2700" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="55" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="1800000" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -1075,6 +1083,11 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="17003" itemCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="6686" levels="1" name="Sacred Protector Cancel">
 		<!-- Confirmed CT2.5 -->

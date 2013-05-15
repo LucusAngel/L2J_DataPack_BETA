@@ -216,14 +216,12 @@ import handlers.skillhandlers.Fishing;
 import handlers.skillhandlers.FishingSkill;
 import handlers.skillhandlers.GetPlayer;
 import handlers.skillhandlers.GiveReco;
-import handlers.skillhandlers.GiveVitality;
 import handlers.skillhandlers.InstantJump;
 import handlers.skillhandlers.NornilsPower;
 import handlers.skillhandlers.RefuelAirShip;
 import handlers.skillhandlers.Resurrect;
 import handlers.skillhandlers.ShiftTarget;
 import handlers.skillhandlers.Sow;
-import handlers.skillhandlers.StealBuffs;
 import handlers.skillhandlers.SummonFriend;
 import handlers.skillhandlers.TakeCastle;
 import handlers.skillhandlers.TakeFort;
@@ -520,14 +518,12 @@ public class MasterHandler
 			FishingSkill.class,
 			GetPlayer.class,
 			GiveReco.class,
-			GiveVitality.class,
 			InstantJump.class,
 			NornilsPower.class,
 			RefuelAirShip.class,
 			Resurrect.class,
 			ShiftTarget.class,
 			Sow.class,
-			StealBuffs.class,
 			SummonFriend.class,
 			TakeCastle.class,
 			TakeFort.class,

@@ -1056,21 +1056,21 @@
 		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.5">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.5">
 				<add order="0x40" stat="accCombat" val="#accCombat">
 					<using kind="Pole" />
 				</add>
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.5">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.5">
 				<add order="0x40" stat="accCombat" val="#ench1accCombat">
 					<using kind="Pole" />
 				</add>
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="#ench2mpConsume">
+			<effect name="MpConsumePerLevel" ticks="3" val="#ench2mpConsume">
 				<add order="0x40" stat="accCombat" val="4">
 					<using kind="Pole" />
 				</add>
@@ -1113,19 +1113,19 @@
 		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="1">
+			<effect name="MpConsumePerLevel" ticks="3" val="1">
 				<sub order="0x40" stat="stunVuln" val="#stunVuln" />
 				<sub order="0x40" stat="sleepVuln" val="#sleepVuln" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="1">
+			<effect name="MpConsumePerLevel" ticks="3" val="1">
 				<sub order="0x40" stat="stunVuln" val="#ench1stunVuln" />
 				<sub order="0x40" stat="sleepVuln" val="#ench1sleepVuln" />
 			</effect>
 		</enchant1for>
 		<enchant2for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="#ench2mpConsume">
+			<effect name="MpConsumePerLevel" ticks="3" val="#ench2mpConsume">
 				<sub order="0x40" stat="stunVuln" val="25" />
 				<sub order="0x40" stat="sleepVuln" val="40" />
 			</effect>
@@ -2209,7 +2209,7 @@
 		<set name="skillType" val="REMOVE_TRAP" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="109">
-			<target npcType="L2Trap" />
+			<target npcType="L2TrapInstance" />
 		</cond>
 	</skill>
 	<skill id="472" levels="45" name="Ancient Sword Mastery" enchantGroup1="1" enchantGroup2="1">
@@ -2321,7 +2321,7 @@
 		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.2">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.2">
 				<add order="0x40" stat="vengeancePdam" val="3" />
 			</effect>
 		</for>
@@ -2350,7 +2350,7 @@
 			<using kind="Sword,Big Sword,Blunt,Big Blunt,Ancient" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="477" levels="37" name="Dark Smash" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
@@ -2391,7 +2391,7 @@
 			<using kind="Ancient" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="478" levels="15" name="Double Thrust">
@@ -2418,7 +2418,7 @@
 			<using kind="Rapier" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="479" levels="1" name="Hard March">
@@ -2427,7 +2427,7 @@
 		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="MpConsumePerLevel" ticks="3" abnormalTime="-1" val="0.4">
+			<effect name="MpConsumePerLevel" ticks="3" val="0.4">
 				<add order="0x40" stat="runSpd" val="20" />
 			</effect>
 		</for>
@@ -2438,7 +2438,7 @@
 		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="-1" val="0">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="darkPower" val="10" />
 			</effect>
 		</for>
@@ -2451,7 +2451,7 @@
 		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Buff" abnormalTime="-1" val="0">
+			<effect name="Buff" val="0">
 				<add order="0x40" stat="darkRes" val="#darkRes" />
 			</effect>
 		</for>
@@ -2625,7 +2625,7 @@
 			<using kind="Crossbow" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="489" levels="1" name="Shift Target">
@@ -2733,7 +2733,7 @@
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<enchant2 name="power" val="#ench2Power" />
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="493" levels="28" name="Storm Assault" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -2792,7 +2792,7 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="494" levels="37" name="Shoulder Charge" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -2853,12 +2853,12 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="70" />
 			<effect name="EnemyCharge" noicon="1" val="0" />
 		</for>
 		<enchant2for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="Stun" val="0" effectPower="#ench2Chance" />
 			<effect name="EnemyCharge" noicon="1" val="0" />
 		</enchant2for>
@@ -2915,15 +2915,15 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="DamOverTime" ticks="3" val="#dot" abnormalVisualEffect="bleed" effectPower="50" />
 		</for>
 		<enchant1for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="DamOverTime" ticks="3" val="#ench1Power" abnormalVisualEffect="bleed" effectPower="50" />
 		</enchant1for>
 		<enchant2for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="DamOverTime" ticks="3" val="134" abnormalVisualEffect="bleed" effectPower="#ench2Chance" />
 		</enchant2for>
 	</skill>
@@ -2975,7 +2975,7 @@
 			<using kind="Ancient" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="497" levels="16" name="Crushing Pain" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -3028,7 +3028,7 @@
 			<using kind="Ancient" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="498" levels="12" name="Contagion" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
@@ -3070,7 +3070,7 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 		</for>
 	</skill>
 	<skill id="499" levels="3" name="Courage">

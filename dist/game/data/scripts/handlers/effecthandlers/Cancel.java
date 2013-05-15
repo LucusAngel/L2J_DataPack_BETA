@@ -38,15 +38,15 @@ public class Cancel extends L2Effect
 	}
 	
 	@Override
-	public L2EffectType getEffectType()
+	public boolean calcSuccess()
 	{
-		return L2EffectType.CANCEL;
+		return true;
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public L2EffectType getEffectType()
 	{
-		return false;
+		return L2EffectType.CANCEL;
 	}
 	
 	@Override

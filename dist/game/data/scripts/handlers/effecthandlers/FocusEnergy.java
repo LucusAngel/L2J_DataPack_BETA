@@ -35,15 +35,15 @@ public class FocusEnergy extends L2Effect
 	}
 	
 	@Override
-	public L2EffectType getEffectType()
+	public boolean calcSuccess()
 	{
-		return L2EffectType.FOCUS_ENERGY;
+		return true;
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public L2EffectType getEffectType()
 	{
-		return false;
+		return L2EffectType.FOCUS_ENERGY;
 	}
 	
 	@Override

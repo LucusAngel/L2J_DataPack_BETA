@@ -41,15 +41,15 @@ public class PhysicalAttackHpLink extends L2Effect
 	}
 	
 	@Override
-	public L2EffectType getEffectType()
+	public boolean calcSuccess()
 	{
-		return L2EffectType.PHYSICAL_ATTACK_HP_LINK;
+		return !Formulas.calcPhysicalSkillEvasion(getEffector(), getEffected(), getSkill());
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public L2EffectType getEffectType()
 	{
-		return false;
+		return L2EffectType.PHYSICAL_ATTACK_HP_LINK;
 	}
 	
 	@Override
@@ -71,12 +71,6 @@ public class PhysicalAttackHpLink extends L2Effect
 			return false;
 		}
 		
-		// Check if skill is evaded.
-		if (Formulas.calcPhysicalSkillEvasion(activeChar, target, getSkill()))
-		{
-			return false;
-		}
-		
 		final byte shld = Formulas.calcShldUse(activeChar, target, getSkill());
 		// Physical damage critical rate is only affected by STR.
 		boolean crit = false;
@@ -94,7 +88,7 @@ public class PhysicalAttackHpLink extends L2Effect
 			activeChar.sendDamageMessage(target, damage, false, crit, false);
 			target.reduceCurrentHp(damage, activeChar, getSkill());
 			// Check if damage should be reflected.
-			Formulas.isDamageReflected(activeChar, target, getSkill());
+			Formulas.calcDamageReflected(activeChar, target, getSkill(), crit);
 		}
 		else
 		{

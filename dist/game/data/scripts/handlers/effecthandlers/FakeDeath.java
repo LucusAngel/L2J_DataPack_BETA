@@ -27,7 +27,7 @@ import com.l2jserver.gameserver.network.serverpackets.ChangeWaitType;
 import com.l2jserver.gameserver.network.serverpackets.Revive;
 
 /**
- * Fake Death effect.
+ * Fake Death effect implementation.
  * @author mkizub
  */
 public class FakeDeath extends L2Effect
@@ -44,9 +44,24 @@ public class FakeDeath extends L2Effect
 	}
 	
 	@Override
-	public boolean onStart()
+	public boolean onActionTime()
 	{
-		getEffected().startFakeDeath();
+		if (getEffected().isDead())
+		{
+			return false;
+		}
+		
+		final double manaDam = calc() * getEffectTemplate().getTotalTickCount();
+		if (manaDam > getEffected().getCurrentMp())
+		{
+			if (getSkill().isToggle())
+			{
+				getEffected().sendPacket(SystemMessageId.SKILL_REMOVED_DUE_LACK_MP);
+				return false;
+			}
+		}
+		
+		getEffected().reduceCurrentMp(manaDam);
 		return true;
 	}
 	
@@ -64,25 +79,9 @@ public class FakeDeath extends L2Effect
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public boolean onStart()
 	{
-		if (getEffected().isDead())
-		{
-			return false;
-		}
-		
-		double manaDam = calc() * getTickCount();
-		
-		if (manaDam > getEffected().getCurrentMp())
-		{
-			if (getSkill().isToggle())
-			{
-				getEffected().sendPacket(SystemMessageId.SKILL_REMOVED_DUE_LACK_MP);
-				return false;
-			}
-		}
-		
-		getEffected().reduceCurrentMp(manaDam);
+		getEffected().startFakeDeath();
 		return true;
 	}
 }

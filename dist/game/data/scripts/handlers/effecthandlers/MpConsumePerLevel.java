@@ -24,6 +24,9 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 import com.l2jserver.gameserver.network.SystemMessageId;
 
+/**
+ * Mp Consume Per Level effect implementation.
+ */
 public class MpConsumePerLevel extends L2Effect
 {
 	public MpConsumePerLevel(Env env, EffectTemplate template)
@@ -45,7 +48,7 @@ public class MpConsumePerLevel extends L2Effect
 			return false;
 		}
 		
-		double base = calc() * getTickCount();
+		final double base = calc() * getEffectTemplate().getTotalTickCount();
 		double consume = ((getEffected().getLevel() - 1) / 7.5) * base * getAbnormalTime();
 		if (consume > getEffected().getCurrentMp())
 		{

@@ -27,6 +27,7 @@ import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 
 /**
+ * Cp Heal Percent effect implementation.
  * @author UnAfraid
  */
 public class CpHealPercent extends L2Effect
@@ -34,6 +35,12 @@ public class CpHealPercent extends L2Effect
 	public CpHealPercent(Env env, EffectTemplate template)
 	{
 		super(env, template);
+	}
+	
+	@Override
+	public boolean calcSuccess()
+	{
+		return true;
 	}
 	
 	@Override

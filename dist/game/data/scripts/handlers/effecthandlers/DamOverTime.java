@@ -24,6 +24,9 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 import com.l2jserver.gameserver.network.SystemMessageId;
 
+/**
+ * Dam Over Time effect implementation.
+ */
 public class DamOverTime extends L2Effect
 {
 	public DamOverTime(Env env, EffectTemplate template)
@@ -45,7 +48,7 @@ public class DamOverTime extends L2Effect
 			return false;
 		}
 		
-		double damage = calc() * getTickCount();
+		double damage = calc() * getEffectTemplate().getTotalTickCount();
 		if (damage >= (getEffected().getCurrentHp() - 1))
 		{
 			if (getSkill().isToggle())
@@ -62,7 +65,6 @@ public class DamOverTime extends L2Effect
 				{
 					return true;
 				}
-				
 				damage = getEffected().getCurrentHp() - 1;
 			}
 		}

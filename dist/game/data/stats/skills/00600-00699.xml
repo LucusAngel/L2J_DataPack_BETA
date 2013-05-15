@@ -263,15 +263,12 @@
 	</skill>
 	<skill id="621" levels="1" name="Create Special Bolt">
 		<!-- Confirmed CT2.5 -->
-		<set name="create_item_count" val="1" />
-		<set name="create_item_id" val="10113" />
 		<set name="hitTime" val="3000" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="43" />
 		<set name="mpConsume" val="38" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="150000" />
-		<set name="skillType" val="CREATE_ITEM" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="129">
 			<and>
@@ -279,6 +276,11 @@
 				<player weight="80" />
 			</and>
 		</cond>
+		<for>
+			<effect name="Restoration" noicon="1" val="0">
+				<param itemId="10113" itemCount="1" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="622" levels="2" name="Ultimate Escape">
 		<!-- Confirmed CT2.5 -->
@@ -334,7 +336,7 @@
 		<set name="skillType" val="REMOVE_TRAP" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="109">
-			<target npcType="L2Trap" />
+			<target npcType="L2TrapInstance" />
 		</cond>
 	</skill>
 	<skill id="625" levels="1" name="Soul Gathering" enchantGroup1="1" enchantGroup2="1">
@@ -433,15 +435,15 @@
 			<using kind="Crossbow" />
 		</cond>
 		<for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="Fear" val="0" effectPower="40" />
 		</for>
 		<enchant3for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="Fear" val="0" effectPower="40" />
 		</enchant3for>
 		<enchant4for>
-			<effect name="PhysicalAttack" noicon="1" val="0" />
+			<effect name="PhysicalSoulAttack" noicon="1" val="0" />
 			<effect name="Fear" val="0" effectPower="#ench4Chance" />
 		</enchant4for>
 	</skill>

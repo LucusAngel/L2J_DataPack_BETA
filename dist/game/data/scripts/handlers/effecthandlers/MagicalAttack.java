@@ -40,15 +40,15 @@ public class MagicalAttack extends L2Effect
 	}
 	
 	@Override
-	public L2EffectType getEffectType()
+	public boolean calcSuccess()
 	{
-		return L2EffectType.MAGICAL_ATTACK;
+		return true;
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public L2EffectType getEffectType()
 	{
-		return false;
+		return L2EffectType.MAGICAL_ATTACK;
 	}
 	
 	@Override
@@ -63,30 +63,16 @@ public class MagicalAttack extends L2Effect
 			return false;
 		}
 		
-		boolean sps = getSkill().useSpiritShot() && activeChar.isChargedShot(ShotType.SPIRITSHOTS);
-		boolean bss = getSkill().useSpiritShot() && activeChar.isChargedShot(ShotType.BLESSED_SPIRITSHOTS);
-		
 		if (target.isPlayer() && target.getActingPlayer().isFakeDeath())
 		{
 			target.stopFakeDeath(true);
 		}
 		
+		boolean sps = getSkill().useSpiritShot() && activeChar.isChargedShot(ShotType.SPIRITSHOTS);
+		boolean bss = getSkill().useSpiritShot() && activeChar.isChargedShot(ShotType.BLESSED_SPIRITSHOTS);
 		final boolean mcrit = Formulas.calcMCrit(activeChar.getMCriticalHit(target, getSkill()));
 		final byte shld = Formulas.calcShldUse(activeChar, target, getSkill());
 		int damage = (int) Formulas.calcMagicDam(activeChar, target, getSkill(), shld, sps, bss, mcrit);
-		
-		// Curse of Divinity Formula (each buff increase +30%)
-		if (getSkill().getDependOnTargetBuff())
-		{
-			damage *= (((target.getBuffCount() * 0.3) + 1.3) / 4);
-		}
-		
-		if ((getSkill().getMaxSoulConsumeCount() > 0) && activeChar.isPlayer())
-		{
-			// Souls Formula (each soul increase +4%)
-			int chargedSouls = (activeChar.getActingPlayer().getChargedSouls() <= getSkill().getMaxSoulConsumeCount()) ? activeChar.getActingPlayer().getChargedSouls() : getSkill().getMaxSoulConsumeCount();
-			damage *= 1 + (chargedSouls * 0.04);
-		}
 		
 		if (damage > 0)
 		{

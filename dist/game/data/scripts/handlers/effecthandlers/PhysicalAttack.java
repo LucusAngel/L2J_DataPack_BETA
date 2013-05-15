@@ -41,15 +41,15 @@ public class PhysicalAttack extends L2Effect
 	}
 	
 	@Override
-	public L2EffectType getEffectType()
+	public boolean calcSuccess()
 	{
-		return L2EffectType.PHYSICAL_ATTACK;
+		return !Formulas.calcPhysicalSkillEvasion(getEffector(), getEffected(), getSkill());
 	}
 	
 	@Override
-	public boolean onActionTime()
+	public L2EffectType getEffectType()
 	{
-		return false;
+		return L2EffectType.PHYSICAL_ATTACK;
 	}
 	
 	@Override
@@ -65,7 +65,7 @@ public class PhysicalAttack extends L2Effect
 		
 		if (((getSkill().getFlyRadius() > 0) || (getSkill().getFlyType() != null)) && activeChar.isMovementDisabled())
 		{
-			SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S1_CANNOT_BE_USED);
+			final SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S1_CANNOT_BE_USED);
 			sm.addSkillName(getSkill());
 			activeChar.sendPacket(sm);
 			return false;
@@ -74,12 +74,6 @@ public class PhysicalAttack extends L2Effect
 		if (target.isPlayer() && target.getActingPlayer().isFakeDeath())
 		{
 			target.stopFakeDeath(true);
-		}
-		
-		// Check if skill is evaded
-		if (Formulas.calcPhysicalSkillEvasion(activeChar, target, getSkill()))
-		{
-			return false;
 		}
 		
 		int damage = 0;
@@ -94,12 +88,6 @@ public class PhysicalAttack extends L2Effect
 		
 		damage = (int) Formulas.calcPhysDam(activeChar, target, getSkill(), shld, false, ss);
 		
-		if ((getSkill().getMaxSoulConsumeCount() > 0) && activeChar.isPlayer())
-		{
-			// Souls Formula (each soul increase +4%)
-			int chargedSouls = (activeChar.getActingPlayer().getChargedSouls() <= getSkill().getMaxSoulConsumeCount()) ? activeChar.getActingPlayer().getChargedSouls() : getSkill().getMaxSoulConsumeCount();
-			damage *= 1 + (chargedSouls * 0.04);
-		}
 		if (crit)
 		{
 			damage *= 2;
@@ -110,7 +98,7 @@ public class PhysicalAttack extends L2Effect
 			activeChar.sendDamageMessage(target, damage, false, crit, false);
 			target.reduceCurrentHp(damage, activeChar, getSkill());
 			// Check if damage should be reflected
-			Formulas.isDamageReflected(activeChar, target, getSkill());
+			Formulas.calcDamageReflected(activeChar, target, getSkill(), crit);
 		}
 		else
 		{

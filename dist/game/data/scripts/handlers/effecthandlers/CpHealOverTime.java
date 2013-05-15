@@ -23,6 +23,9 @@ import com.l2jserver.gameserver.model.effects.L2Effect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.stats.Env;
 
+/**
+ * Cp Heal Over Time effect implementation.
+ */
 public class CpHealOverTime extends L2Effect
 {
 	public CpHealOverTime(Env env, EffectTemplate template)
@@ -30,10 +33,15 @@ public class CpHealOverTime extends L2Effect
 		super(env, template);
 	}
 	
-	// Special constructor to steal this effect
 	public CpHealOverTime(Env env, L2Effect effect)
 	{
 		super(env, effect);
+	}
+	
+	@Override
+	public boolean calcSuccess()
+	{
+		return true;
 	}
 	
 	@Override
@@ -65,7 +73,7 @@ public class CpHealOverTime extends L2Effect
 			return false;
 		}
 		
-		cp += calc() * getTickCount();
+		cp += calc() * getEffectTemplate().getTotalTickCount();
 		cp = Math.min(cp, maxcp);
 		getEffected().setCurrentCp(cp);
 		return false;
