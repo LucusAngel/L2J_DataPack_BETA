@@ -306,8 +306,8 @@ public final class Q00456_DontKnowDontCare extends Quest
 		if (!allowedPlayers.isEmpty())
 		{
 			// this depends on the boss respawn delay being at least 5 minutes
-			allowedPlayerMap.put(npc.getObjectId(), allowedPlayers);
-			addSpawn(MONSTER_NPCS.get(npc.getId()), npc, true, 0);
+			L2Npc spawned = addSpawn(MONSTER_NPCS.get(npc.getId()), npc, true, 0);
+			allowedPlayerMap.put(spawned.getObjectId(), allowedPlayers);
 			startQuestTimer("unspawnRaidCorpse", 300000, npc, null);
 		}
 		
