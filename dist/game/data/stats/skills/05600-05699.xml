@@ -52,7 +52,9 @@
 			<effect name="Debuff">
 				<mul order="0x30" stat="maxRecoverableHp" val="0.1" />
 			</effect>
-			<effect name="HealPercent" val="-99" />
+			<effect name="HealPercent">
+				<param power="-99" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5603" levels="1" name="Dagger Mastery">
@@ -272,7 +274,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="ManaHeal" val="#amount" />
+			<effect name="ManaHeal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5622" levels="7" name="Double Skill Attack">
@@ -932,7 +936,8 @@
 			<player olympiad="false" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="319">
+			<effect name="Transformation">
+				<param id="319" />
 				<sub order="0x40" stat="vitalityConsumeRate" val="10" />
 			</effect>
 		</for>
@@ -1209,7 +1214,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="63" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="63" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5669" levels="1" name="Stun">
@@ -1361,7 +1368,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaHeal" val="41" />
+			<effect name="ManaHeal">
+				<param power="41" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5677" levels="1" name="Steal Mana">
@@ -1372,7 +1381,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaHeal" val="51" />
+			<effect name="ManaHeal">
+				<param power="51" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5678" levels="1" name="Steal Mana">
@@ -1383,7 +1394,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaHeal" val="59" />
+			<effect name="ManaHeal">
+				<param power="59" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5679" levels="3" name="Oblivion Trap">
@@ -1432,7 +1445,9 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="CpHeal" val="200" />
+			<effect name="CpHeal">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5682" levels="1" name="PvP Weapon - Cancel">
@@ -1665,7 +1680,9 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="200" />
+			<effect name="Heal">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5693" levels="1" name="PvP Armor - Speed Down">
@@ -1727,7 +1744,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="5" />
+			<effect name="FocusEnergy">
+				<param charge="5" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5696" levels="1" name="Dizziness">
@@ -1782,7 +1801,9 @@
 		<set name="reuseDelay" val="4000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5699" levels="7" name="Decrease P. Def">

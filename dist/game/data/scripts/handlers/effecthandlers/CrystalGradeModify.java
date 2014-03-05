@@ -35,7 +35,8 @@ public final class CrystalGradeModify extends AbstractEffect
 	public CrystalGradeModify(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
-		_grade = params != null ? params.getInt("grade", 0) : 0;
+		
+		_grade = params.getInt("grade", 0);
 	}
 	
 	@Override

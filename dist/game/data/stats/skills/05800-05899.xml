@@ -358,7 +358,9 @@
 		<set name="trait" val="BLEED" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="70" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="70" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5832" levels="1" name="Hate Aura">
@@ -441,7 +443,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="CLAN_MEMBER" />
 		<for>
-			<effect name="HealPercent" val="10" />
+			<effect name="HealPercent">
+				<param power="10" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5836" levels="1" name="Greater Heal">
@@ -462,8 +466,12 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="CLAN" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="270" />
-			<effect name="HealPercent" val="20" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="270" />
+			</effect>
+			<effect name="HealPercent">
+				<param power="20" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5837" levels="1" name="Double Throwing Javelin">
@@ -1105,7 +1113,9 @@
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpByLevel" val="73" />
+			<effect name="HpByLevel">
+				<param power="73" />
+			</effect>
 			<effect name="Debuff">
 				<mul order="0x30" stat="mAtkSpd" val="0.8" />
 			</effect>
@@ -1132,7 +1142,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="145" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="145" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5880" levels="2" name="Vicious Mutilation">
@@ -1215,7 +1227,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="145" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="145" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5884" levels="2" name="Weakened Sweep">

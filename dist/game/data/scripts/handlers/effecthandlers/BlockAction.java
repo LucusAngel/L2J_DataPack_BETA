@@ -18,8 +18,8 @@
  */
 package handlers.effecthandlers;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.l2jserver.gameserver.datatables.BotReportTable;
 import com.l2jserver.gameserver.instancemanager.PunishmentManager;
@@ -37,25 +37,16 @@ import com.l2jserver.gameserver.model.skills.BuffInfo;
  */
 public final class BlockAction extends AbstractEffect
 {
-	private final List<Integer> _blockedActions;
+	private final Set<Integer> _blockedActions = new HashSet<>();
 	
 	public BlockAction(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
 		
-		String[] rawActions = params.getString("blockedActions").split(",");
-		_blockedActions = new ArrayList<>(rawActions.length);
-		for (String act : rawActions)
+		final String[] actions = params.getString("blockedActions").split(",");
+		for (String action : actions)
 		{
-			int id = -1;
-			try
-			{
-				id = Integer.parseInt(act);
-				_blockedActions.add(id);
-			}
-			catch (Exception e)
-			{
-			}
+			_blockedActions.add(Integer.parseInt(action));
 		}
 	}
 	

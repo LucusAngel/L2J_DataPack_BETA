@@ -39,7 +39,9 @@
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="ManaHealOverTime" ticks="5" val="#mdot" />
+			<effect name="ManaHealOverTime" ticks="5">
+				<param power="#mdot" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6302" levels="1" name="Cold Air">
@@ -157,7 +159,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="139" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="139" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6307" levels="1" name="Opus of the Hand">
@@ -377,7 +381,9 @@
 		<set name="reuseDelay" val="5000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="15" />
+			<effect name="HealPercent">
+				<param power="15" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6317" levels="1" name="Sacred Tacit">
@@ -675,7 +681,9 @@
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealPercent" val="5" />
+			<effect name="HealPercent">
+				<param power="5" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6331" levels="1" name="Camp Fire Tired">
@@ -748,7 +756,9 @@
 		<set name="trait" val="BLEED" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="200" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6334" levels="1" name="Shock">
@@ -880,7 +890,9 @@
 		<set name="trait" val="BLEED" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="200" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6340" levels="1" name="Shock">
@@ -1293,7 +1305,9 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="93" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="93" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6383" levels="1" name="Bistakon Deadly Roar">
@@ -1363,7 +1377,9 @@
 		<set name="targetType" val="FRONT_AREA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="95" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="95" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6386" levels="1" name="Bistakon Earth Rise">
@@ -1580,7 +1596,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="93" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="93" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6396" levels="1" name="Cokrakon Panic">

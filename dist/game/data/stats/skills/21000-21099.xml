@@ -604,8 +604,12 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="100" />
-			<effect name="ManaHealPercent" val="50" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
+			<effect name="ManaHealPercent">
+				<param power="50" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="21043" levels="1" name="Agathion Seal Cancel - Red Sumo Wrestler">
@@ -733,7 +737,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="110" />
+			<effect name="Transformation">
+				<param id="110" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="21052" levels="1" name="Bless the Body">
@@ -878,8 +884,12 @@
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="ETC" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="30" />
-			<effect name="Heal" val="444" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="30" />
+			</effect>
+			<effect name="Heal">
+				<param power="444" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="21060" levels="1" name="Death Whisper">
@@ -1182,8 +1192,12 @@
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="ETC" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="30" />
-			<effect name="Heal" val="444" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="30" />
+			</effect>
+			<effect name="Heal">
+				<param power="444" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="21076" levels="1" name="Resist Unholy">
@@ -1332,8 +1346,12 @@
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="ETC" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="30" />
-			<effect name="Heal" val="444" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="30" />
+			</effect>
+			<effect name="Heal">
+				<param power="444" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="21084" levels="1" name="Energy Recovery">

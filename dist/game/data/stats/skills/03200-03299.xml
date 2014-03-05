@@ -1230,8 +1230,12 @@
 		<set name="reuseDelay" val="300000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="200" />
-			<effect name="CpHeal" val="200" />
+			<effect name="Heal">
+				<param power="200" />
+			</effect>
+			<effect name="CpHeal">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="3274" levels="1" name="Blue Talisman of Protection">
@@ -1359,7 +1363,9 @@
 			<effect name="Paralyze">
 				<mul order="0x30" stat="pDef" val="0.1" />
 			</effect>
-			<effect name="ManaHealOverTime" ticks="5" val="27" />
+			<effect name="ManaHealOverTime" ticks="5">
+				<param power="27" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="3280" levels="1" name="Blue Talisman of Invisibility">

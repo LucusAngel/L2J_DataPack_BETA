@@ -302,8 +302,12 @@
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="30" />
-			<effect name="Heal" val="450" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="30" />
+			</effect>
+			<effect name="Heal">
+				<param power="450" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6725" levels="1" name="Bless the Blood of Elcadia">
@@ -333,7 +337,9 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="458" />
+			<effect name="Heal">
+				<param power="458" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6727" levels="1" name="Vampiric Rage of Elcadia">
@@ -367,7 +373,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="ManaHealByLevel" val="136" />
+			<effect name="ManaHealByLevel">
+				<param power="136" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6729" levels="1" name="Resist Holy of Elcadia">
@@ -400,7 +408,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="858" />
+			<effect name="Heal">
+				<param power="858" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6731" levels="1" name="Etis Shadow">
@@ -463,7 +473,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="800" />
+			<effect name="Heal">
+				<param power="800" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6738" levels="1" name="Hold">
@@ -515,7 +527,8 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="200">
+			<effect name="DamOverTime" ticks="1">
+				<param power="200" />
 				<sub order="0x40" stat="darkRes" val="60" />
 			</effect>
 		</for>
@@ -627,7 +640,9 @@
 		<set name="reuseDelay" val="900000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6753" levels="1" name="Death Blow">
@@ -672,7 +687,9 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="200" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6755" levels="1" name="Death Strike">
@@ -881,7 +898,9 @@
 		<set name="reuseDelay" val="900000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6766" levels="1" name="Earth Tremor">
@@ -974,7 +993,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="CLAN" />
 		<for>
-			<effect name="Heal" val="800" />
+			<effect name="Heal">
+				<param power="800" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6771" levels="1" name="Death Strike">
@@ -1141,7 +1162,8 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="200">
+			<effect name="DamOverTime" ticks="1">
+				<param power="200" />
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 			<effect name="Petrification" />

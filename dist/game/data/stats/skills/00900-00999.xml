@@ -121,7 +121,9 @@
 		<set name="trait" val="POISON" />
 		<for>
 			<effect name="MagicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="230" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="230" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="905" levels="6" name="Dark Detonation">
@@ -249,7 +251,8 @@
 		<set name="trait" val="POISON" />
 		<for>
 			<effect name="MagicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="230">
+			<effect name="DamOverTime" ticks="5">
+				<param power="230" />
 				<mul order="0x30" stat="runSpd" val="0.3" />
 				<mul order="0x30" stat="pAtkSpd" val="0.8" />
 				<mul order="0x30" stat="mAtkSpd" val="0.8" />
@@ -469,7 +472,7 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusMaxEnergy" val="8" />
+			<effect name="FocusMaxEnergy" />
 		</for>
 	</skill>
 	<skill id="919" levels="1" name="Maximum Focus Sonic">
@@ -681,7 +684,9 @@
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="1" val="#dot" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="#dot" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="928" levels="1" name="Dual Blow">
@@ -733,7 +738,8 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="219">
+			<effect name="Transformation">
+				<param id="219" />
 				<mul order="0x30" stat="pAtk" val="1.4" />
 				<mul order="0x30" stat="mAtk" val="1.4" />
 				<mul order="0x30" stat="pDef" val="1.3" />
@@ -762,7 +768,8 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="221">
+			<effect name="Transformation">
+				<param id="221" />
 				<mul order="0x30" stat="pAtk" val="1.4" />
 				<mul order="0x30" stat="mAtk" val="1.4" />
 				<mul order="0x30" stat="pDef" val="1.3" />
@@ -791,7 +798,8 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="220">
+			<effect name="Transformation">
+				<param id="220" />
 				<mul order="0x30" stat="pAtk" val="1.4" />
 				<mul order="0x30" stat="mAtk" val="1.4" />
 				<mul order="0x30" stat="pDef" val="1.3" />
@@ -963,7 +971,9 @@
 			<effect name="PhysicalAttack" />
 		</for>
 		<selfEffects>
-			<effect name="FocusSouls" val="1" />
+			<effect name="FocusSouls">
+				<param charge="1" />
+			</effect>
 		</selfEffects>
 	</skill>
 	<skill id="940" levels="1" name="Fake Attack">
@@ -1113,7 +1123,9 @@
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="1" val="92" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="92" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="950" levels="7" name="Nail Attack">
@@ -1203,7 +1215,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusSouls" val="5" />
+			<effect name="FocusSouls">
+				<param charge="5" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="954" levels="1" name="Strider Bite">
@@ -1233,7 +1247,9 @@
 		<set name="trait" val="BLEED" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="52" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="52" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="955" levels="1" name="Strider Dash">

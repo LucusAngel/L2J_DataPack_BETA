@@ -228,7 +228,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="#maxCharges" />
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6814" levels="8" name="Focus Force">
@@ -246,7 +248,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="#maxCharges" />
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6815" levels="16" name="Deadly Poison">
@@ -268,7 +272,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6818" levels="1" name="Powerful Rage">
@@ -554,7 +560,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6847" levels="1" name="Self Heal">
@@ -592,7 +600,6 @@
 		<set name="affectRange" val="200" />
 		<set name="effectPoint" val="-100" />
 		<set name="hitTime" val="3000" />
-		<set name="isSuicideAttack" val="true" />
 		<set name="magicLvl" val="81" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="3000" />
@@ -828,7 +835,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="100" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6863" levels="1" name="Poison">
@@ -854,7 +863,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="120" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="120" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6864" levels="1" name="Summon">
@@ -881,7 +892,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="100" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6866" levels="1" name="Vampiric Claw">
@@ -900,7 +913,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6867" levels="1" name="Magic Strike">
@@ -963,7 +978,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6871" levels="1" name="Range Magic Attack">
@@ -1072,7 +1089,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="#dmg" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="#dmg" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6876" levels="1" name="Power Strike">
@@ -1157,7 +1176,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6880" levels="1" name="Silence">
@@ -1280,7 +1301,9 @@
 		<set name="reuseDelay" val="900000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6887" levels="1" name="Fatal Strike">

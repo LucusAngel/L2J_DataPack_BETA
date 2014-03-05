@@ -74,12 +74,6 @@ public final class MagicalSoulAttack extends AbstractEffect
 		final byte shld = Formulas.calcShldUse(activeChar, target, info.getSkill());
 		int damage = (int) Formulas.calcMagicDam(activeChar, target, info.getSkill(), shld, sps, bss, mcrit);
 		
-		// Curse of Divinity Formula (each buff increase +30%)
-		if (info.getSkill().getDependOnTargetBuff())
-		{
-			damage *= (((target.getBuffCount() * 0.3) + 1.3) / 4);
-		}
-		
 		if ((info.getSkill().getMaxSoulConsumeCount() > 0) && activeChar.isPlayer())
 		{
 			// Souls Formula (each soul increase +4%)

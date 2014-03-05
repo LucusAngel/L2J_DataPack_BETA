@@ -27,7 +27,9 @@
 		<set name="power" val="111" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5002" levels="1" name="Giselle - Vampiric Rage">
@@ -174,7 +176,9 @@
 			<effect name="DispelByCategory">
 				<param slot="buff" rate="#activateRate" max="#maxNegated" />
 			</effect>
-			<effect name="HealPercent" val="#healPercent" />
+			<effect name="HealPercent">
+				<param power="#healPercent" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5009" levels="1" name="Frintezza's Ghostly Fighter">
@@ -269,7 +273,9 @@
 		<set name="power" val="61" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5014" levels="3" name="Frintezza's Daemon Attack">
@@ -370,7 +376,9 @@
 			<effect name="Grow">
 				<mul order="0x30" stat="runSpd" val="1.22" />
 			</effect>
-			<effect name="HealPercent" val="20" />
+			<effect name="HealPercent">
+				<param power="20" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5018" levels="2" name="Frintezza's Daemon Field">
@@ -406,7 +414,9 @@
 		<set name="power" val="314" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5020" levels="1" name="Forced Action">
@@ -628,7 +638,9 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="#hot" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5041" levels="1" name="Charm of Courage">
@@ -1330,9 +1342,11 @@
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="POISON" />
-		<effect name="DamOverTime" ticks="5" val="12">
-			<param canKill="true" />
-		</effect>
+		<for>
+			<effect name="DamOverTime" ticks="5">
+				<param canKill="true" power="12" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="5087" levels="2" name="Berserk">
 		<!-- Confirmed CT2.5 -->

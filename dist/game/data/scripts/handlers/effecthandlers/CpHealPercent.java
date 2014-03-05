@@ -33,9 +33,13 @@ import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
  */
 public final class CpHealPercent extends AbstractEffect
 {
+	private final double _power;
+	
 	public CpHealPercent(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
+		
+		_power = params.getDouble("power", 0);
 	}
 	
 	@Override
@@ -53,14 +57,14 @@ public final class CpHealPercent extends AbstractEffect
 	@Override
 	public void onStart(BuffInfo info)
 	{
-		L2Character target = info.getEffected();
+		final L2Character target = info.getEffected();
 		if ((target == null) || target.isDead() || target.isDoor())
 		{
 			return;
 		}
 		
 		double amount = 0;
-		double power = getValue();
+		double power = _power;
 		boolean full = (power == 100.0);
 		
 		amount = full ? target.getMaxCp() : (target.getMaxCp() * power) / 100.0;

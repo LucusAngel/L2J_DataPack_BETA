@@ -1170,7 +1170,9 @@
 		<set name="reuseDelay" val="600000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="2300" />
+			<effect name="Heal">
+				<param power="2300" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="9075" levels="1" name="Awful Soup">
@@ -1412,7 +1414,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="CpHeal" val="300" />
+			<effect name="CpHeal">
+				<param power="300" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="9087" levels="1" name="Create Item">
