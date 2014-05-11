@@ -59,12 +59,12 @@
 				<add order="0x40" stat="maxHp" val="540" /> <!-- Max HP +540 -->
 				<add order="0x40" stat="accCombat" val="4" /> <!-- Increases Accuracy by 4 -->
 				<add order="0x40" stat="runSpd" val="5" /> <!-- Increases Speed by 5 -->
-				<mul order="0x30" stat="magicDamVul" val="0.99" /> <!-- Increases M. Def by 1% -->
-				<add order="0x10" stat="cloak" val="1" />
+				<mul order="0x30" stat="magicSuccRes" val="1.01" /> <!-- Resistance to magic damage by 1% -->
 				<mul order="0x30" stat="pvpMagicalDef" val="1.05" />
 				<mul order="0x30" stat="pvpPhysSkillsDef" val="1.05" />
 				<mul order="0x30" stat="pvpPhysDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8303" levels="1" name="Vesper Light Armor Set for Adults">
@@ -106,7 +106,6 @@
 				<add order="0x40" stat="maxMp" val="354" /> <!-- Max MP by 354 -->
 				<add order="0x40" stat="rEvas" val="3" /> <!-- Increases Evasion by 3 -->
 				<add order="0x40" stat="cAtkAdd" val="172" /> <!-- Increases Critical Damage by 172 -->
-				<add order="0x10" stat="cloak" val="1" />
 				<mul order="0x30" stat="pvpMagicalDef" val="1.05" />
 				<mul order="0x30" stat="pvpPhysSkillsDef" val="1.05" />
 				<mul order="0x30" stat="pvpPhysDef" val="1.05" />
@@ -118,6 +117,7 @@
 				<param skillId="5694" skillLevel="1" /> <!-- PvP Armor - Mirage -->
 				<param targetType="ONE" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8305" levels="1" name="Vesper Robe Set for Adults">
@@ -168,11 +168,11 @@
 				<sub order="0x40" stat="cancel" val="30" /> <!-- decreases the damage to be cancelled by magic by 30 -->
 				<add order="0x40" stat="runSpd" val="7" /> <!-- Increases Speed by 7 -->
 				<mul order="0x30" stat="MagicalMpConsumeRate" val="0.97" /> <!-- Decreases MP consumption for magic skills by 3% -->
-				<add order="0x10" stat="cloak" val="1" />
 				<mul order="0x30" stat="pvpMagicalDef" val="1.05" />
 				<mul order="0x30" stat="pvpPhysSkillsDef" val="1.05" />
 				<mul order="0x30" stat="pvpPhysDef" val="1.05" />
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8307" levels="1" name="Boing Hammer's Effect of Doubt">
@@ -240,7 +240,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="magicDamVul" val="0.98" />
+				<mul order="0x30" stat="magicSuccRes" val="1.02" />
 				<sub order="0x40" stat="cancel" val="13" />
 			</effect>
 		</for>
@@ -252,7 +252,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="magicDamVul" val="0.98" />
+				<mul order="0x30" stat="magicSuccRes" val="1.02" />
 				<add order="0x40" stat="darkRes" val="2" />
 			</effect>
 		</for>
@@ -763,6 +763,7 @@
 			<effect name="Buff">
 				<mul order="0x30" stat="pvpPhysDef" val="#pvp" />
 				<mul order="0x30" stat="pvpMagicalDef" val="#pvp" />
+				<mul order="0x30" stat="pvpPhysSkillsDef" val="#pvp" />
 			</effect>
 		</for>
 	</skill>
@@ -804,6 +805,7 @@
 			<effect name="Buff">
 				<mul order="0x30" stat="pvpPhysDef" val="#pvp" />
 				<mul order="0x30" stat="pvpMagicalDef" val="#pvp" />
+				<mul order="0x30" stat="pvpPhysSkillsDef" val="#pvp" />
 			</effect>
 		</for>
 	</skill>
@@ -1467,13 +1469,13 @@
 				<param SHOCK="50" />
 				<mul order="0x30" stat="pAtk" val="1.0426" /> <!-- Atk Power +4.26% -->
 				<mul order="0x30" stat="pAtkSpd" val="1.04" /> <!-- Atk. Spd. +4% -->
-				<mul order="0x30" stat="magicDamVul" val="0.98" /> <!-- Resistance to Damage Magic +2% -->
+				<mul order="0x30" stat="magicSuccRes" val="1.02" /> <!-- Resistance to Damage Magic +2% -->
 				<add order="0x40" stat="fireRes" val="3" /> <!-- resistance to fire attributes +3 -->
 				<add order="0x40" stat="waterRes" val="3" /> <!-- resistance to water attributes +3 -->
 				<add order="0x40" stat="windRes" val="3" /> <!-- resistance to wind attributes +3 -->
 				<add order="0x40" stat="earthRes" val="3" /> <!-- resistance to earth attributes +3 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8398" levels="1" name="Moirai Leather Armor Set">
@@ -1492,8 +1494,8 @@
 				<add order="0x40" stat="waterRes" val="3" /> <!-- resistance to water attributes +3 -->
 				<add order="0x40" stat="windRes" val="3" /> <!-- resistance to wind attributes +3 -->
 				<add order="0x40" stat="earthRes" val="3" /> <!-- resistance to earth attributes +3 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="8399" levels="1" name="Moirai Robe Set">
@@ -1511,8 +1513,8 @@
 				<add order="0x40" stat="waterRes" val="5" /> <!-- resistance to water attributes +5 -->
 				<add order="0x40" stat="windRes" val="5" /> <!-- resistance to wind attributes +5 -->
 				<add order="0x40" stat="earthRes" val="5" /> <!-- resistance to earth attributes +5 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 </list>

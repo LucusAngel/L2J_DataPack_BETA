@@ -17,8 +17,9 @@
 		</for>
 	</skill>
 	<skill id="5601" levels="12" name="Short-Range Physical Attack Resistance">
+		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
-		<table name="#traits"> 5 5 10 10 15 15 20 20 25 25 30 30 35 35 40 40 45 45 55 55 70 70 100 100 </table>
+		<table name="#traits"> 5 10 15 20 25 30 35 40 45 55 70 100 </table>
 		<set name="icon" val="icon.skill5601" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="P" />
@@ -113,7 +114,7 @@
 				<mul order="0x30" stat="mDef" val="1.05"> <!-- magic defense power is increased by 5% -->
 					<using kind="HEAVY" />
 				</mul>
-				<sub order="0x40" stat="critAddVuln" val="3"> <!-- critical damage is decreased by 3 -->
+				<sub order="0x40" stat="defCritRateAdd" val="30"> <!-- critical damage is decreased by 3 -->
 					<using kind="HEAVY" />
 				</sub>
 				<add order="0x40" stat="rCrit" val="#rCrit" />
@@ -138,7 +139,7 @@
 				<add order="0x40" stat="rEvas" val="2"> <!-- evasion is increased by 2 -->
 					<using kind="LIGHT" />
 				</add>
-				<sub order="0x40" stat="critAddVuln" val="86"> <!-- critical damage is decreased by 86 -->
+				<sub order="0x40" stat="defCritDamageAdd" val="86"> <!-- critical damage is decreased by 86 -->
 					<using kind="LIGHT" />
 				</sub>
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
@@ -244,8 +245,9 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="5620" levels="12" name="Short-Range Physical Attack Weakness">
+		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
-		<table name="#traits"> -5 -5 -10 -10 -15 -15 -20 -20 -25 -25 -30 -30 -35 -35 -40 -40 -45 -45 -55 -55 -70 -70 -100 -100 </table>
+		<table name="#traits"> -5 -10 -15 -20 -25 -30 -35 -40 -45 -55 -70 -100 </table>
 		<set name="icon" val="icon.skill5620" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="P" />
@@ -931,9 +933,6 @@
 		<set name="targetType" val="SELF" />
 		<cond>
 			<player canTransform="true" />
-		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
 		</cond>
 		<for>
 			<effect name="Transformation">
@@ -1664,8 +1663,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="critDamEvas" val="1.15" />
-				<mul order="0x30" stat="critVuln" val="0.85" />
+				<mul order="0x30" stat="defCritRate" val="0.85" />
+				<mul order="0x30" stat="defCritDamage" val="0.85" />
 			</effect>
 		</for>
 	</skill>

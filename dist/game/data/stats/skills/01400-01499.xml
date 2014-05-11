@@ -238,7 +238,9 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="EnlargeAbnormalSlot" val="#slots" />
+			<effect name="EnlargeAbnormalSlot">
+				<param slots="#slots" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1406" levels="1" name="Summon Feline King" enchantGroup1="5">
@@ -489,7 +491,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="669" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1414" />
@@ -554,7 +556,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="RESIST_DEBUFF_DISPEL" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="669" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1415" />
@@ -583,7 +585,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CP_UP" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="669" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1416" />
@@ -700,9 +702,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
@@ -730,9 +729,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
@@ -760,9 +756,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
@@ -782,9 +775,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="SummonNpc">
 				<param npcId="13028" npcCount="1" />
@@ -814,9 +804,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
@@ -837,9 +824,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="SummonNpc">
 				<param npcId="13030" npcCount="1" />
@@ -862,9 +846,6 @@
 		<set name="reuseDelay" val="1200000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="CLAN" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="DispelByCategory">
 				<param slot="debuff" rate="100" max="10" />
@@ -885,9 +866,6 @@
 		<set name="reuseDelay" val="3600000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="CLAN" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="HealPercent">
 				<param power="100" />
@@ -914,9 +892,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="PARTY_CLAN" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="Invincible" />
 		</for>
@@ -935,9 +910,6 @@
 		<set name="reuseDelay" val="3600000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="PARTY" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="ManaHealByLevel">
 				<param power="1500" />
@@ -2188,7 +2160,7 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="critVuln" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 	</skill>
