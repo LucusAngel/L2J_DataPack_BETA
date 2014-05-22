@@ -228,6 +228,7 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -240,17 +241,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="1" />
+			<effect name="Transformation">
+				<param id="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="618" levels="1" name="Transform Death Blader">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -263,11 +264,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="2" />
+			<effect name="Transformation">
+				<param id="2" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="619" levels="1" name="Transform Dispel">
@@ -424,7 +424,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusSouls" val="50" />
+			<effect name="FocusSouls">
+				<param charge="50" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="626" levels="4" name="Critical Sense" enchantGroup1="1" enchantGroup2="1">
@@ -503,7 +505,7 @@
 		<enchant4 name="activateRate" val="#ench4ActivateRates" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Crossbow" />
+			<using kind="CROSSBOW" />
 		</cond>
 		<for>
 			<effect name="PhysicalSoulAttack" />
@@ -569,8 +571,7 @@
 		<table name="#pAtkBow"> 21.7 41.4 59.2 75 88.8 98.7 </table>
 		<table name="#pAtkCBow"> 13.3 25.4 36.3 46 54.4 60.5 </table>
 		<table name="#pAtkDagger"> 7.4 14 20.1 25.4 30.1 33.4 </table>
-		<table name="#pAtkDBlunt"> 1.8 3.5 5 6.3 7.4 8.3 </table>
-		<table name="#pAtkDSword"> 1.8 3.5 5 6.3 7.4 8.3 </table>
+		<table name="#pAtkDSwordBlunt"> 1.8 3.5 5 6.3 7.4 8.3 </table>
 		<table name="#pAtkDual"> 10.2 19.5 27.9 35.3 41.8 46.5 </table>
 		<table name="#pAtkRapier"> 7.8 15 21.4 27.1 32.1 35.6 </table>
 		<table name="#pAtkSBP"> 8.4 16 22.9 29 34.4 38.2 </table>
@@ -582,31 +583,31 @@
 		<for>
 			<effect name="Buff">
 				<add order="0x40" stat="pAtk" val="#pAtkSBP">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</add>
 				<add order="0x40" stat="pAtk" val="#pAtkDual">
-					<using kind="Dual Sword,Dual Fist" />
+					<using kind="DUAL,DUALFIST" />
 				</add>
 				<add order="0x40" stat="pAtk" val="#pAtkDagger">
-					<using kind="Dagger,Dual Dagger" />
+					<using kind="DAGGER,DUALDAGGER" />
 				</add>
 				<add order="0x40" stat="pAtk" val="#pAtkBow">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<add order="0x40" stat="pAtk" val="#pAtkCBow">
-					<using kind="Crossbow" />
+					<using kind="CROSSBOW" />
 				</add>
-				<add order="0x40" stat="pAtk" val="#pAtkDSword">
-					<using kind="Big Sword" />
-				</add>
-				<add order="0x40" stat="pAtk" val="#pAtkDBlunt">
-					<using kind="Big Sword" />
+				<add order="0x40" stat="pAtk" val="#pAtkDSwordBlunt">
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<add order="0x40" stat="pAtk" val="#pAtkRapier">
-					<using kind="Rapier" />
+					<using kind="RAPIER" />
 				</add>
 				<add order="0x40" stat="pAtk" val="#pAtkAncient">
-					<using kind="Ancient" />
+					<using kind="ANCIENTSWORD" />
 				</add>
 			</effect>
 		</for>
@@ -625,13 +626,13 @@
 		<for>
 			<effect name="Buff">
 				<add order="0x40" stat="pDef" val="#pDefHeavy">
-					<using kind="Heavy" />
+					<using kind="HEAVY" />
 				</add>
 				<add order="0x40" stat="pDef" val="#pDefLight">
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</add>
 				<add order="0x40" stat="pDef" val="#pDefRobe">
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</add>
 			</effect>
 		</for>
@@ -692,28 +693,31 @@
 		<for>
 			<effect name="Buff">
 				<add order="0x40" stat="pAtk" val="22.9">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</add>
 				<add order="0x40" stat="pAtk" val="27.9">
-					<using kind="Dual Sword,Dual Fist" />
+					<using kind="DUAL,DUALFIST" />
 				</add>
 				<add order="0x40" stat="pAtk" val="20.1">
-					<using kind="Dagger,Dual Dagger" />
+					<using kind="DAGGER,DUALDAGGER" />
 				</add>
 				<add order="0x40" stat="pAtk" val="59.2">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 				<add order="0x40" stat="pAtk" val="36.3">
-					<using kind="Crossbow" />
+					<using kind="CROSSBOW" />
 				</add>
 				<add order="0x40" stat="pAtk" val="5">
-					<using kind="Big Sword" />
+					<and>
+						<using kind="SWORD" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<add order="0x40" stat="pAtk" val="21.4">
-					<using kind="Rapier" />
+					<using kind="RAPIER" />
 				</add>
 				<add order="0x40" stat="pAtk" val="24.8">
-					<using kind="Ancient" />
+					<using kind="ANCIENTSWORD" />
 				</add>
 			</effect>
 		</for>
@@ -818,7 +822,7 @@
 		<for>
 			<effect name="Buff">
 				<add order="0x40" stat="pAtkRange" val="100">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</add>
 			</effect>
 		</for>
@@ -966,7 +970,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="253" />
+			<effect name="Transformation">
+				<param id="253" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="657" levels="3" name="Transform Divine Knight">
@@ -989,7 +995,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="252" />
+			<effect name="Transformation">
+				<param id="252" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="658" levels="3" name="Transform Divine Rogue">
@@ -1012,7 +1020,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="254" />
+			<effect name="Transformation">
+				<param id="254" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="659" levels="3" name="Transform Divine Wizard">
@@ -1035,7 +1045,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="256" />
+			<effect name="Transformation">
+				<param id="256" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="660" levels="3" name="Transform Divine Summoner">
@@ -1058,7 +1070,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="258" />
+			<effect name="Transformation">
+				<param id="258" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="661" levels="3" name="Transform Divine Healer">
@@ -1081,7 +1095,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="255" />
+			<effect name="Transformation">
+				<param id="255" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="662" levels="3" name="Transform Divine Enchanter">
@@ -1104,13 +1120,16 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="257" />
+			<effect name="Transformation">
+				<param id="257" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="663" levels="1" name="Transform Zaken">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1124,17 +1143,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="305" />
+			<effect name="Transformation">
+				<param id="305" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="664" levels="1" name="Transform Anakim">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1148,17 +1167,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="306" />
+			<effect name="Transformation">
+				<param id="306" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="665" levels="1" name="Transform Venom">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1172,17 +1191,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="307" />
+			<effect name="Transformation">
+				<param id="307" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="666" levels="1" name="Transform Gordon">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1196,17 +1215,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="308" />
+			<effect name="Transformation">
+				<param id="308" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="667" levels="1" name="Transform Ranku">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1220,17 +1239,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="309" />
+			<effect name="Transformation">
+				<param id="309" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="668" levels="1" name="Transform Kechi">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1244,17 +1263,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="310" />
+			<effect name="Transformation">
+				<param id="310" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="669" levels="1" name="Transform Demon Prince">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1268,17 +1287,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="311" />
+			<effect name="Transformation">
+				<param id="311" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="670" levels="1" name="Transform Heretic">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1292,17 +1311,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="3" />
+			<effect name="Transformation">
+				<param id="3" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="671" levels="1" name="Transform Vale Master">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1316,17 +1335,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="4" />
+			<effect name="Transformation">
+				<param id="4" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="672" levels="1" name="Transform Saber Tooth Tiger">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1340,17 +1359,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="5" />
+			<effect name="Transformation">
+				<param id="5" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="673" levels="1" name="Transform Oel Mahum">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1364,17 +1383,17 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="6" />
+			<effect name="Transformation">
+				<param id="6" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="674" levels="1" name="Transform Doll Blader">
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skilltransform1" />
@@ -1388,11 +1407,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="7" />
+			<effect name="Transformation">
+				<param id="7" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="675" levels="1" name="Divine Warrior Cross Slash">
@@ -1732,7 +1750,9 @@
 		<set name="trait" val="BLEED" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="139" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="139" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="689" levels="1" name="Divine Rogue Deadly Blow">
@@ -1976,7 +1996,9 @@
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="946" />
+			<effect name="Heal">
+				<param power="946" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="699" levels="1" name="Divine Healer Battle Heal">
@@ -1992,7 +2014,9 @@
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="826" />
+			<effect name="Heal">
+				<param power="826" />
+			</effect>
 		</for>
 	</skill>
 </list>

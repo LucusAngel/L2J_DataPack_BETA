@@ -744,7 +744,7 @@
 		<set name="trait" val="SHOCK" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Bow" />
+				<using kind="BOW" />
 				<player insideZoneId="2234" />
 			</and>
 		</cond>
@@ -863,46 +863,73 @@
 		<set name="effectRange" val="300" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="8379" />
+		<set name="itemConsumeId" val="8030" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<player insideZoneId="2240123" />
+			<and>
+				<player insideZoneId="2240123" />
+				<target npcRace="HUMANOID" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="2241" levels="1" name="Hot Spring Mineral Water">
+		<!-- Confirmed CT2.5 -->
+		<set name="castRange" val="40" />
 		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="300" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="8031" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="2000" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<player insideZoneId="2240123" />
+			<and>
+				<player insideZoneId="2240123" />
+				<target npcRace="HUMANOID" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="2242" levels="1" name="Hot Spring Fountain Water">
+		<!-- Confirmed CT2.5 -->
+		<set name="castRange" val="40" />
 		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="300" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="8032" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="2000" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<player insideZoneId="2240123" />
+			<and>
+				<player insideZoneId="2240123" />
+				<target npcRace="HUMANOID" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="2243" levels="1" name="Hot Spring Sulfur">
+		<!-- Confirmed CT2.5 -->
+		<set name="castRange" val="40" />
 		<set name="effectPoint" val="100" />
+		<set name="effectRange" val="300" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="8032" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="2000" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<player insideZoneId="2240123" />
+			<and>
+				<player insideZoneId="2240123" />
+				<target npcRace="HUMANOID" />
+			</and>
 		</cond>
 	</skill>
 	<skill id="2244" levels="1" name="Herb of Life">
@@ -918,8 +945,12 @@
 			<player flyMounted="false" />
 		</cond>
 		<for>
-			<effect name="Heal" val="60" />
-			<effect name="HealPercent" val="17" />
+			<effect name="Heal">
+				<param power="60" />
+			</effect>
+			<effect name="HealPercent">
+				<param power="17" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2245" levels="1" name="Herb of Mana">
@@ -935,8 +966,12 @@
 			<player flyMounted="false" />
 		</cond>
 		<for>
-			<effect name="ManaHeal" val="20" />
-			<effect name="ManaHealPercent" val="4" />
+			<effect name="ManaHeal">
+				<param power="20" />
+			</effect>
+			<effect name="ManaHealPercent">
+				<param power="4" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2246" levels="1" name="Herb of Power">
@@ -958,10 +993,10 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.25">
-					<using kind="Fist,Sword,Big Sword,Dagger,Dual Dagger,Dual Fist,Dual Sword,Blunt,Big Blunt,Ancient,Rapier,Etc" />
+					<using kind="FIST,SWORD,DAGGER,DUALDAGGER,DUALFIST,DUAL,BLUNT,ANCIENTSWORD,RAPIER,ETC" />
 				</mul>
 				<mul order="0x30" stat="pAtk" val="1.15">
-					<using kind="Bow,Pole,Crossbow" />
+					<using kind="BOW,POLE,CROSSBOW" />
 				</mul>
 			</effect>
 		</for>
@@ -1599,7 +1634,9 @@
 			<player flyMounted="false" />
 		</cond>
 		<for>
-			<effect name="HealPercent" val="#amount" />
+			<effect name="HealPercent">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2279" levels="3" name="Herb of Mana">
@@ -1616,7 +1653,9 @@
 			<player flyMounted="false" />
 		</cond>
 		<for>
-			<effect name="ManaHealPercent" val="#amount" />
+			<effect name="ManaHealPercent">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2280" levels="1" name="Herb of Power">
@@ -1788,7 +1827,9 @@
 			<player levelRange="#levelRange" />
 		</cond>
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2288" levels="6" name="Elixir of Mental Strength">
@@ -1804,7 +1845,9 @@
 			<player levelRange="#levelRange" />
 		</cond>
 		<for>
-			<effect name="ManaHeal" val="#amount" />
+			<effect name="ManaHeal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2289" levels="6" name="Elixir of CP">
@@ -1820,7 +1863,9 @@
 			<player levelRange="#levelRange" />
 		</cond>
 		<for>
-			<effect name="CpHeal" val="#amount" />
+			<effect name="CpHeal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2290" levels="1" name="Coffer of Shadows">

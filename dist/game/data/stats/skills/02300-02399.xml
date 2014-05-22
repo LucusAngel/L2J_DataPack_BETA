@@ -926,9 +926,9 @@
 	</skill>
 	<skill id="2353" levels="1" name="Nornil's Power">
 		<set name="affectRange" val="600" />
-		<set name="itemConsumeId" val="9713" />
-		<set name="itemConsumeCount" val="1" />
 		<set name="hitTime" val="200" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="9713" />
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="AURA" />
@@ -1218,7 +1218,9 @@
 			<target npcId="18482" />
 		</cond>
 		<for>
-			<effect name="HealPercent" val="30" />
+			<effect name="HealPercent">
+				<param power="30" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2369" levels="1" name="Water Dragon Scale">
@@ -1255,7 +1257,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="104" />
+			<effect name="Transformation">
+				<param id="104" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2371" levels="1" name="Transform Sealbook - Onyx Beast">
@@ -1275,7 +1279,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="1" />
+			<effect name="Transformation">
+				<param id="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2372" levels="1" name="Transform Sealbook - Death Blader">
@@ -1295,7 +1301,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="2" />
+			<effect name="Transformation">
+				<param id="2" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2373" levels="1" name="Transform Sealbook - Grail Apostle">
@@ -1315,7 +1323,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="202" />
+			<effect name="Transformation">
+				<param id="202" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2374" levels="1" name="Transform Sealbook - Unicorn">
@@ -1335,7 +1345,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="205" />
+			<effect name="Transformation">
+				<param id="205" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2375" levels="1" name="Transform Sealbook - Lilim Knight">
@@ -1355,7 +1367,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="208" />
+			<effect name="Transformation">
+				<param id="208" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2376" levels="1" name="Transform Sealbook - Golem Guardian">
@@ -1375,7 +1389,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="211" />
+			<effect name="Transformation">
+				<param id="211" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2377" levels="1" name="Transform Sealbook - Inferno Drake">
@@ -1395,7 +1411,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="214" />
+			<effect name="Transformation">
+				<param id="214" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2378" levels="1" name="Transform Sealbook - Dragon Bomber">
@@ -1415,7 +1433,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="217" />
+			<effect name="Transformation">
+				<param id="217" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2379" levels="1" name="Wind">
@@ -1693,7 +1713,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="304" />
+			<effect name="Transformation">
+				<param id="304" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2395" levels="1" name="Lesser Battlefield Healing Potion">
@@ -1711,7 +1733,9 @@
 			</and>
 		</cond>
 		<for>
-			<effect name="Heal" val="1900" />
+			<effect name="Heal">
+				<param power="1900" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2396" levels="1" name="Mental Potion">

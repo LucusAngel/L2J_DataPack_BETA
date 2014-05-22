@@ -5,6 +5,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_maid_hairband_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -23,6 +24,7 @@
 	</skill>
 	<skill id="21101" levels="1" name="Blessed Escape">
 		<!-- Can use the ability of Blessed Return. Reuse Delay 12 hours. -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="200" />
 		<set name="icon" val="BranchSys.icon.br_babypanda_cap_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -46,6 +48,7 @@
 	</skill>
 	<skill id="21102" levels="1" name="Blessed Resurrection">
 		<!-- Can use the ability of Blessed Resurrection. Reuse Delay 12 hours. -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="1" />
 		<set name="effectRange" val="900" />
@@ -67,6 +70,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_kungfupanda_cap_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -88,6 +92,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="INSTINCT" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="BranchSys.icon.br_gatekeeper_of_hat_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -185,6 +190,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_headphone_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -206,6 +212,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_headphone_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -227,6 +234,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_headphone_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -248,6 +256,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -269,6 +278,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -290,6 +300,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -311,6 +322,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -333,6 +345,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -355,6 +368,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -398,6 +412,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -420,6 +435,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -442,6 +458,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -464,6 +481,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -486,6 +504,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -508,6 +527,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -530,6 +550,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -552,6 +573,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -574,6 +596,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -598,6 +621,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -621,6 +645,7 @@
 		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="STEALTH" />
 		<set name="abnormalVisualEffect" val="STEALTH" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill5739" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -681,6 +706,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="BR_EVENT_BUF1" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="486" />
 		<set name="hitTime" val="3000" />
 		<set name="icon" val="BranchSys.icon.br_golden_jack0_mask_i00" />
@@ -706,6 +732,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -728,6 +755,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -750,6 +778,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -772,6 +801,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -796,6 +826,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1528" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -966,6 +997,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="MAX_HP_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="operateType" val="A2" />
@@ -982,6 +1014,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="operateType" val="A2" />
@@ -998,6 +1031,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_bigrat_cap_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -1020,6 +1054,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="BranchSys.icon.br_goldrat_cap_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -1218,7 +1253,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="20000" />
+			<effect name="Transformation">
+				<param id="20000" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="21170" levels="1" name="Blessed Soul">
@@ -1226,6 +1263,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="MAX_MP_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="4000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="operateType" val="A2" />
@@ -1242,6 +1280,7 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="icon" val="icon.skilltransform3" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -1251,11 +1290,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="20001" />
+			<effect name="Transformation">
+				<param id="20001" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="21172" levels="1" name="Enhanced Authority - CON+1 STR+1">
@@ -1264,6 +1302,7 @@
 		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="BR_EVENT_BUF10" />
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00" />
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
@@ -1277,6 +1316,7 @@
 		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="BR_EVENT_BUF10" />
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00" />
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
@@ -1290,6 +1330,7 @@
 		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="BR_EVENT_BUF10" />
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00" />
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
@@ -1303,6 +1344,7 @@
 		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="BR_EVENT_BUF10" />
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00" />
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
@@ -1313,6 +1355,7 @@
 	<skill id="21176" levels="1" name="Divine Protection - Divinity">
 		<!-- Increases divinity type P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1321,6 +1364,7 @@
 	<skill id="21177" levels="1" name="Divine Protection - Water">
 		<!-- Increases water type P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1329,6 +1373,7 @@
 	<skill id="21178" levels="1" name="Divine Protection - Fire">
 		<!-- Increases fire type P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1337,6 +1382,7 @@
 	<skill id="21179" levels="1" name="Divine Protection - Wind">
 		<!-- Increases wind type P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1345,6 +1391,7 @@
 	<skill id="21180" levels="1" name="Divine Protection - Earth">
 		<!-- Increases earth type P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1353,6 +1400,7 @@
 	<skill id="21181" levels="1" name="Divine Protection - Darkness">
 		<!-- Increases darkness type P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1362,6 +1410,7 @@
 		<!-- TODO: Implement me! -->
 		<!-- Raises resistance to hold by 40%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1376,6 +1425,7 @@
 		<!-- TODO: Implement me! -->
 		<!-- Raises resistance to paralysis by 40%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1390,6 +1440,7 @@
 		<!-- TODO: Implement me! -->
 		<!-- Raises resistance to sleep by 40%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1403,6 +1454,7 @@
 	<skill id="21185" levels="1" name="Blessing of Resistance - Movement Speed Decrease">
 		<!-- Raises resistance to decreased moving speed by 40%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1412,6 +1464,7 @@
 		<!-- TODO: Implement me! -->
 		<!-- Raises resistance to bleed by 40%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1426,6 +1479,7 @@
 		<!-- TODO: Implement me! -->
 		<!-- Raises resistance to stun by 40%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1439,6 +1493,7 @@
 	<skill id="21188" levels="1" name="Recovery Power - HP">
 		<!-- Increases HP recovery bonus by 20%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_regen_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1447,6 +1502,7 @@
 	<skill id="21189" levels="1" name="Recovery Power - MP">
 		<!-- Increases MP recovery bonus by 20%. Continuously consumes energy. -->
 		<set name="abnormalVisualEffect" val="BR_SOUL_AVATAR" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_regen_i00" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="T" />
@@ -1458,6 +1514,7 @@
 		<set name="abnormalTime" val="10" />
 		<set name="abnormalType" val="PD_UP_SPECIAL" />
 		<set name="abnormalVisualEffect" val="ULTIMATE_DEFENCE" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_soulavatar_active_i00" />
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
@@ -1484,6 +1541,7 @@
 		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="STEALTH" />
 		<set name="abnormalVisualEffect" val="STEALTH" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="2000" />
 		<set name="icon" val="BranchSys2.icon.br_fox_japan_cap_i00" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -1503,6 +1561,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_paiwan_cap_i00" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="-1" />
@@ -1530,6 +1589,7 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="500" />
 		<set name="icon" val="icon.skilltransform3" />
@@ -1541,11 +1601,9 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="20002">
+			<effect name="Transformation">
+				<param id="20002" />
 				<sub order="0x40" stat="vitalityConsumeRate" val="1" />
 			</effect>
 		</for>
@@ -1555,6 +1613,7 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="500" />
 		<set name="icon" val="icon.skilltransform3" />
@@ -1566,17 +1625,16 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="20003">
+			<effect name="Transformation">
+				<param id="20003" />
 				<sub order="0x40" stat="vitalityConsumeRate" val="1" />
 			</effect>
 		</for>
 	</skill>
 	<skill id="21197" levels="1" name="Buff of Virtue">
 		<!-- Recovers all HP, MP, and CP with the power of virtue. Reuse delay 30 minutes. It can only be used when HP, MP, and CP are all below 30%. When you use the skill, 1 Proof of a Warrior is consumed. -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_a_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="1" />
@@ -1590,6 +1648,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
 		<set name="activateRate" val="0" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="486" />
 		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_b_i00" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -1604,6 +1663,7 @@
 		<set name="abnormalLvl" val="26" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="VP_KEEP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="500" />
 		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_c_i00" />

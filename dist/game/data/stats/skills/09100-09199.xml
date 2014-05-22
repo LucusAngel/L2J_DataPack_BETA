@@ -869,11 +869,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="306" />
+			<effect name="Transformation">
+				<param id="306" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="9160" levels="1" name="Transformation Scroll - Zaken">
@@ -892,11 +891,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="305" />
+			<effect name="Transformation">
+				<param id="305" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="9161" levels="1" name="Vesper's Mighty Power">
@@ -1054,6 +1052,7 @@
 	</skill>
 	<skill id="9174" levels="1" name="500,000 SP scroll">
 		<!-- High Five Skill -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -1068,6 +1067,7 @@
 	</skill>
 	<skill id="9175" levels="1" name="1,000,000 SP scroll">
 		<!-- High Five Skill -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="itemConsumeCount" val="1" />
 		<set name="magicLvl" val="1" />
@@ -1089,6 +1089,7 @@
 		<!-- High Five Skill -->
 		<!-- TODO: The last group of items should be "13722,1,200,8621,1,1,1", but require support -->
 		<table name="#extractableItems"> 13722,350,85.8;13722,250,13750,1,7.4;13722,200,13751,1,0.6;13722,200,13752,1,0.6;13722,200,13754,1,0.4;13722,200,13753,1,0.3;13722,250,6622,1,3.9;13722,1,8621,1,1 </table>
+		<set name="blockedInOlympiad" val="true" />
 		<set name="capsuled_items_skill" val="#extractableItems" />
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -1113,6 +1114,7 @@
 	<skill id="9179" levels="1" name="Antharas's Blood Crystal">
 		<!-- High Five Skill -->
 		<set name="affectLimit" val="50-50" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="578" />
 		<set name="effectRange" val="2000" />
 		<set name="hitTime" val="3000" />

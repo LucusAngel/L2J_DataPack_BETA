@@ -2,6 +2,7 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="2100" levels="1" name="Escape: 1 second">
 		<!-- Confirmed CT2.5 -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="1000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="1" />
@@ -602,8 +603,12 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="3" />
-			<effect name="ManaHealPercent" val="1" />
+			<effect name="HealPercent">
+				<param power="3" />
+			</effect>
+			<effect name="ManaHealPercent">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2137" levels="1" name="Summon Regular Tree">
@@ -818,7 +823,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="FocusEnergy" val="2" />
+			<effect name="FocusEnergy">
+				<param charge="2" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2166" levels="2" name="CP Gauge Potion">
@@ -829,7 +836,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="CpHeal" val="#amount" />
+			<effect name="CpHeal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="2167" levels="4" name="Scroll of SP">

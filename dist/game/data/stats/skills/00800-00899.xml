@@ -36,7 +36,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="magicDamVul" val="0.95" />
+				<mul order="0x30" stat="magicSuccRes" val="1.05" />
 			</effect>
 		</for>
 	</skill>
@@ -63,7 +63,7 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="critVuln" val="0.95" />
+				<mul order="0x30" stat="defCritDamage" val="0.95" />
 			</effect>
 		</for>
 	</skill>
@@ -169,10 +169,14 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="312">
+			<effect name="Transformation">
+				<param id="312" />
 				<mul order="0x30" stat="sDef" val="0.5" />
 				<add order="0x40" stat="accCombat" val="1">
-					<using kind="Big Sword" />
+					<and>
+						<using kind="SWORD" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 			</effect>
 		</for>
@@ -194,10 +198,14 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="313">
+			<effect name="Transformation">
+				<param id="313" />
 				<mul order="0x30" stat="sDef" val="0.5" />
 				<mul order="0x30" stat="pAtkSpd" val="1.08">
-					<using kind="Dual Sword" />
+					<and>
+						<using kind="SWORD" />
+						<using slot="lrhand" />
+					</and>
 				</mul>
 			</effect>
 		</for>
@@ -219,10 +227,14 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="314">
+			<effect name="Transformation">
+				<param id="314" />
 				<mul order="0x30" stat="sDef" val="0.5" />
 				<add order="0x40" stat="accCombat" val="1">
-					<using kind="Big Sword" />
+					<and>
+						<using kind="SWORD" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 			</effect>
 		</for>
@@ -244,10 +256,11 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="315">
+			<effect name="Transformation">
+				<param id="315" />
 				<mul order="0x30" stat="sDef" val="0.5" />
 				<mul order="0x30" stat="pAtkSpd" val="1.08">
-					<using kind="Dual Sword" />
+					<using kind="DUAL" />
 				</mul>
 			</effect>
 		</for>
@@ -274,7 +287,10 @@
 		<set name="reuseDelay" val="11000" />
 		<set name="targetType" val="AURA" />
 		<cond msgId="113" addName="1">
-			<using kind="Big Sword,Big Blunt" />
+			<and>
+				<using kind="SWORD,BLUNT" />
+				<using slot="lrhand" />
+			</and>
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -302,7 +318,7 @@
 		<set name="reuseDelay" val="11000" />
 		<set name="targetType" val="AURA" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -332,7 +348,10 @@
 		<set name="reuseDelay" val="4000" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Big Sword,Big Blunt" />
+			<and>
+				<using kind="SWORD,BLUNT" />
+				<using slot="lrhand" />
+			</and>
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -361,7 +380,7 @@
 		<set name="reuseDelay" val="4000" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -432,9 +451,13 @@
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="SERVITOR" />
-		<!-- FIXME: It shouldn't affect all summons, missing condition for target race "construct" -->
+		<cond msgId="144">
+			<target npcRace="CONSTRUCT" />
+		</cond>
 		<for>
-			<effect name="HealPercent" val="#amount" />
+			<effect name="HealPercent">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="823" levels="3" name="Strengthen Golem">
@@ -458,7 +481,9 @@
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="SERVITOR" />
-		<!-- FIXME: It shouldn't affect all summons, missing condition for target race "construct" -->
+		<cond msgId="144">
+			<target npcRace="CONSTRUCT" />
+		</cond>
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="#pAtk" />
@@ -487,7 +512,9 @@
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="SERVITOR" />
-		<!-- FIXME: It shouldn't affect all summons, missing condition for target race "construct" -->
+		<cond msgId="144">
+			<target npcRace="CONSTRUCT" />
+		</cond>
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pDef" val="#pDef" />
@@ -514,10 +541,10 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.05">
-					<using kind="Sword,Big Sword,Dagger,Dual Dagger,Pole,Rapier,Ancient,Dual Sword,Dual Fist" />
+					<using kind="SWORD,DAGGER,DUALDAGGER,POLE,RAPIER,ANCIENTSWORD,DUAL,DUALFIST" />
 				</mul>
 				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="Sword,Big Sword,Dagger,Dual Dagger,Pole,Rapier,Ancient,Dual Sword,Dual Fist" />
+					<using kind="SWORD,DAGGER,DUALDAGGER,POLE,RAPIER,ANCIENTSWORD,DUAL,DUALFIST" />
 				</basemul>
 			</effect>
 		</for>
@@ -541,7 +568,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.05">
-					<using kind="Blunt,Big Blunt" />
+					<using kind="BLUNT" />
 				</mul>
 			</effect>
 			<effect name="AttackTrait">
@@ -568,10 +595,10 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.05">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</mul>
 				<add order="0x40" stat="pAtkRange" val="100">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</add>
 			</effect>
 		</for>
@@ -595,7 +622,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pDef" val="1.1">
-					<using kind="Heavy" />
+					<using kind="HEAVY" />
 				</mul>
 			</effect>
 		</for>
@@ -619,10 +646,10 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pDef" val="1.05">
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</mul>
 				<add order="0x40" stat="rEvas" val="2">
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</add>
 			</effect>
 		</for>
@@ -646,10 +673,10 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pDef" val="1.05">
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</mul>
 				<add order="0x40" stat="regMp" val="2">
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</add>
 			</effect>
 		</for>
@@ -700,7 +727,9 @@
 		<set name="reuseDelay" val="900000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="834" levels="1" name="Blood Pact">
@@ -724,10 +753,10 @@
 		</for>
 	</skill>
 	<skill id="835" levels="4" name="Imbue Seed of Destruction">
+		<table name="#calledSkillLevel"> 1 2 3 4 </table>
 		<table name="#effectPoints"> -317 -323 -328 -333 </table>
 		<table name="#magicLvl"> 68 70 72 74 </table>
 		<table name="#mdot"> 16 17 17 17 </table>
-		<table name="#calledSkillLevel"> 1 2 3 4 </table>
 		<set name="abnormalLvl" val="8" />
 		<set name="abnormalTime" val="20" />
 		<set name="abnormalType" val="DARK_SEED" />
@@ -752,7 +781,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="ManaDamOverTime" ticks="5" val="#mdot" />
+			<effect name="ManaDamOverTime" ticks="5">
+				<param power="#mdot" />
+			</effect>
 		</for>
 		<endEffects>
 			<effect name="CallSkill">
@@ -855,7 +886,8 @@
 			<player souls="20" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="260">
+			<effect name="Transformation">
+				<param id="260" />
 				<mul order="0x30" stat="pDef" val="0.7" />
 				<mul order="0x30" stat="mDef" val="0.7" />
 			</effect>
@@ -882,7 +914,8 @@
 			<player landingZone="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="8">
+			<effect name="Transformation">
+				<param id="8" />
 				<mul order="0x30" stat="pDef" val="0.7" />
 				<mul order="0x30" stat="mDef" val="0.7" />
 			</effect>
@@ -909,7 +942,8 @@
 			<player landingZone="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="9">
+			<effect name="Transformation">
+				<param id="9" />
 				<mul order="0x30" stat="pDef" val="0.7" />
 				<mul order="0x30" stat="mDef" val="0.7" />
 			</effect>
@@ -1135,7 +1169,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="10" />
+			<effect name="Transformation">
+				<param id="10" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="858" levels="1" name="Elf Mercenary">
@@ -1155,7 +1191,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="11" />
+			<effect name="Transformation">
+				<param id="11" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="859" levels="1" name="Dark Elf Mercenary">
@@ -1175,7 +1213,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="12" />
+			<effect name="Transformation">
+				<param id="12" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="860" levels="1" name="Orc Mercenary">
@@ -1195,7 +1235,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="13" />
+			<effect name="Transformation">
+				<param id="13" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="861" levels="1" name="Dwarf Mercenary">
@@ -1215,7 +1257,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="14" />
+			<effect name="Transformation">
+				<param id="14" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="862" levels="1" name="Kamael Mercenary">
@@ -1235,7 +1279,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="15" />
+			<effect name="Transformation">
+				<param id="15" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="863" levels="1" name="Royal Guard Captain">
@@ -1255,7 +1301,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="16" />
+			<effect name="Transformation">
+				<param id="16" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="864" levels="1" name="Archer Captain">
@@ -1275,7 +1323,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="17" />
+			<effect name="Transformation">
+				<param id="17" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="865" levels="1" name="Magic Leader">
@@ -1295,7 +1345,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="18" />
+			<effect name="Transformation">
+				<param id="18" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="866" levels="1" name="Kamael Guard Captain">
@@ -1315,7 +1367,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="19" />
+			<effect name="Transformation">
+				<param id="19" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="867" levels="1" name="Knight of Dawn">
@@ -1335,7 +1389,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="20" />
+			<effect name="Transformation">
+				<param id="20" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="868" levels="1" name="Fortress Captain">
@@ -1355,7 +1411,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="21" />
+			<effect name="Transformation">
+				<param id="21" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="869" levels="9" name="Mercenary Power Strike">
@@ -1462,7 +1520,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtkSpd" val="1.12">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</mul>
 			</effect>
 		</for>

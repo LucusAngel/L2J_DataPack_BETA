@@ -277,7 +277,7 @@
 		<for>
 			<effect name="PhysicalAttack" />
 			<effect name="Stun">
-				<mul order="0x30" stat="critDamEvas" val="1.5" />
+				<mul order="0x30" stat="defCritRate" val="0.5" />
 			</effect>
 		</for>
 	</skill>
@@ -313,7 +313,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealPercent" val="15" />
+			<effect name="HealPercent">
+				<param power="15" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6626" levels="2" name="Energy of Life's Power">
@@ -327,7 +329,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealPercent" val="25" />
+			<effect name="HealPercent">
+				<param power="25" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6627" levels="3" name="Energy of Life's Highest Power">
@@ -341,7 +345,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6628" levels="1" name="Energy of Mana">
@@ -355,7 +361,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="ManaHealPercent" val="11" />
+			<effect name="ManaHealPercent">
+				<param power="11" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6629" levels="2" name="Energy of Mana's Power">
@@ -369,7 +377,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="ManaHealPercent" val="18" />
+			<effect name="ManaHealPercent">
+				<param power="18" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6630" levels="3" name="Energy of Mana's Highest Power">
@@ -383,7 +393,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="ManaHealPercent" val="100" />
+			<effect name="ManaHealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6631" levels="1" name="Energy of Power">
@@ -692,6 +704,7 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1800" />
 		<set name="abnormalType" val="TRANSFORM" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="icon" val="icon.skilltransform1" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -703,7 +716,9 @@
 			<player canTransform="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="126" />
+			<effect name="Transformation">
+				<param id="126" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6650" levels="1" name="Tacrakahn's Alienation">
@@ -813,7 +828,9 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Paralyze" />
-			<effect name="DamOverTime" ticks="#ticks" val="115" />
+			<effect name="DamOverTime" ticks="#ticks">
+				<param power="115" />
+			</effect>
 			<effect name="CallSkill">
 				<param skillId="6302" skillLevel="1" />
 			</effect>
@@ -1017,7 +1034,7 @@
 		<for>
 			<effect name="Buff">
 				<add order="0x40" stat="pAtkRange" val="50">
-					<using kind="Bow, Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</add>
 			</effect>
 		</for>
@@ -1259,7 +1276,8 @@
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="CLAN" /> <!-- FIXME: Aura Friendly ? -->
 		<for>
-			<effect name="DamOverTimePercent" ticks="5" val="0.02">
+			<effect name="DamOverTimePercent" ticks="5">
+				<param power="0.02" />
 				<mul order="0x30" stat="pAtkSpd" val="1.2" />
 			</effect>
 		</for>
@@ -1371,8 +1389,12 @@
 		<set name="targetType" val="AURA" />
 		<for>
 			<effect name="Paralyze" />
-			<effect name="DamOverTime" ticks="5" val="115" />
-			<effect name="ManaDamOverTime" ticks="5" val="5" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="115" />
+			</effect>
+			<effect name="ManaDamOverTime" ticks="5">
+				<param power="5" />
+			</effect>
 		</for>
 		<endEffects>
 			<effect name="CallSkill">
@@ -1382,6 +1404,7 @@
 	</skill>
 	<skill id="6699" levels="1" name="Ball Trapping Gnosian Agathion Cute Trick">
 		<!-- You can see the summoned spirit's cute tricks. -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="icon.skill_agathion_cute" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="NONE" />

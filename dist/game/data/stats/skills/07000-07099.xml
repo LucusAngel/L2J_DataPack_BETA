@@ -930,7 +930,9 @@
 				<add order="0x40" stat="accCombat" val="4" />
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
-			<effect name="HealPercent" val="20" />
+			<effect name="HealPercent">
+				<param power="20" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="7065" levels="1" name="Test - Charge">
@@ -1397,10 +1399,10 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.05">
-					<using kind="Sword,Big Sword,Dual Sword,Ancient,Rapier,Dagger,Dual Dagger,Pole,Dual Fist" />
+					<using kind="SWORD,DUAL,ANCIENTSWORD,RAPIER,DAGGER,DUALDAGGER,POLE,DUALFIST" />
 				</mul>
 				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="Sword,Big Sword,Dual Sword,Ancient,Rapier,Dagger,Dual Dagger,Pole,Dual Fist" />
+					<using kind="SWORD,DUAL,ANCIENTSWORD,RAPIER,DAGGER,DUALDAGGER,POLE,DUALFIST" />
 				</basemul>
 			</effect>
 		</for>
@@ -1424,7 +1426,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pDef" val="1.1">
-					<using kind="Heavy" />
+					<using kind="HEAVY" />
 				</mul>
 			</effect>
 		</for>

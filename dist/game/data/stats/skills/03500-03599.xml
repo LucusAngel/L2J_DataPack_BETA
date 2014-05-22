@@ -494,7 +494,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.08"> <!-- Archery P. Atk. +8% -->
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</mul>
 				<add order="0x40" stat="maxMp" val="240" /> <!-- MP +240 -->
 				<add order="0x40" stat="weightPenalty" val="5759" /> <!-- Point at which a weight penalty is applied +5759 -->
@@ -1037,7 +1037,6 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
-		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SHOCK" />
 		<for>
@@ -1153,7 +1152,6 @@
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="84" />
 		<set name="operateType" val="A2" />
-		<set name="power" val="100" /> <!-- Activation chance is defined in SQL, not through power. -->
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="HOLD" />
 		<for>
@@ -1531,7 +1529,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="3597" levels="1" name="Special Ability: Infinity Rod">
@@ -1567,7 +1567,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="3599" levels="1" name="Polearm Multi-attack">

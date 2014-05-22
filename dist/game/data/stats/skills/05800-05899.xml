@@ -155,69 +155,86 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="5815" levels="1" name="Presentation - Mercenary Troops Shout">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="2300" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5816" levels="1" name="Presentation - Female Priest Transformation">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="7700" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5817" levels="1" name="Presentation - Dragon Shout">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="3000" />
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5818" levels="1" name="Presentation - Repentance">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="2430" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5819" levels="1" name="Presentation - Victory">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="5930" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5820" levels="1" name="Presentation - Removal">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="7000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5821" levels="1" name="Presentation - Female Priest Exit">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="5330" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5822" levels="1" name="Drake Bait">
+		<!-- Confirmed CT2.5 -->
+		<set name="castRange" val="600" />
 		<set name="effectPoint" val="-1000" />
+		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="3000" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="itemConsumeId" val="13879" />
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="600000" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="ONE" />
+		<cond msgId="109">
+			<target npcId="18781" />
+		</cond>
 	</skill>
 	<skill id="5823" levels="1" name="Presentation - District1 Boss Defeat">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5824" levels="1" name="Presentation - District1 Boss Arise">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="2500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="85" />
@@ -225,10 +242,11 @@
 		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5825" levels="1" name="Presentation - Algraia Exit">
+		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="5330" />
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A1" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="5826" levels="3" name="Fire Breath">
 		<table name="#effectPoints"> -684 -687 -689 </table>
@@ -358,7 +376,9 @@
 		<set name="trait" val="BLEED" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="70" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="70" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5832" levels="1" name="Hate Aura">
@@ -441,7 +461,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="CLAN_MEMBER" />
 		<for>
-			<effect name="HealPercent" val="10" />
+			<effect name="HealPercent">
+				<param power="10" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5836" levels="1" name="Greater Heal">
@@ -462,8 +484,12 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="CLAN" />
 		<for>
-			<effect name="HealOverTime" ticks="1" val="270" />
-			<effect name="HealPercent" val="20" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="270" />
+			</effect>
+			<effect name="HealPercent">
+				<param power="20" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5837" levels="1" name="Double Throwing Javelin">
@@ -768,6 +794,7 @@
 		<set name="trait" val="SHOCK" />
 	</skill>
 	<skill id="5856" levels="1" name="Transform Tow">
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="TRANSFORM" />
@@ -776,12 +803,18 @@
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 		<cond>
 			<player canTransform="true" />
 		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="117" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="5857" levels="1" name="Transform Lure Tow">
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="TRANSFORM" />
@@ -790,12 +823,18 @@
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 		<cond>
 			<player canTransform="true" />
 		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="118" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="5858" levels="1" name="Transform Heavy Tow">
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="TRANSFORM" />
@@ -804,12 +843,18 @@
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 		<cond>
 			<player canTransform="true" />
 		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="119" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="5859" levels="1" name="Transform Wing Tow">
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="3600" />
 		<set name="abnormalType" val="TRANSFORM" />
@@ -818,10 +863,15 @@
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="-1" />
 		<set name="operateType" val="A2" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 		<cond>
 			<player canTransform="true" />
 		</cond>
+		<for>
+			<effect name="Transformation">
+				<param id="120" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="5860" levels="1" name="Wrath of Valakas">
 		<set name="abnormalLvl" val="1" />
@@ -1105,7 +1155,9 @@
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpByLevel" val="73" />
+			<effect name="HpByLevel">
+				<param power="73" />
+			</effect>
 			<effect name="Debuff">
 				<mul order="0x30" stat="mAtkSpd" val="0.8" />
 			</effect>
@@ -1132,7 +1184,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="145" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="145" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5880" levels="2" name="Vicious Mutilation">
@@ -1215,7 +1269,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="145" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="145" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5884" levels="2" name="Weakened Sweep">

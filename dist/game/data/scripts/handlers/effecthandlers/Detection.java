@@ -26,9 +26,10 @@ import com.l2jserver.gameserver.model.skills.AbnormalType;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
 
 /**
+ * Detection effect implementation.
  * @author UnAfraid
  */
-public class Detection extends AbstractEffect
+public final class Detection extends AbstractEffect
 {
 	public Detection(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
@@ -44,18 +45,18 @@ public class Detection extends AbstractEffect
 	@Override
 	public void onStart(BuffInfo info)
 	{
-		super.onStart(info);
 		if (!info.getEffector().isPlayer() || !info.getEffected().isPlayer())
 		{
 			return;
 		}
+		
 		final L2PcInstance player = info.getEffector().getActingPlayer();
 		final L2PcInstance target = info.getEffected().getActingPlayer();
 		final boolean hasParty = player.isInParty();
 		final boolean hasClan = player.getClanId() > 0;
 		final boolean hasAlly = player.getAllyId() > 0;
 		
-		if (target.getAppearance().getInvisible())
+		if (target.isInvisible())
 		{
 			if (hasParty && (target.isInParty()) && (player.getParty().getLeaderObjectId() == target.getParty().getLeaderObjectId()))
 			{

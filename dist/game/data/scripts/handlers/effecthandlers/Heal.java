@@ -24,8 +24,8 @@ import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.conditions.Condition;
 import com.l2jserver.gameserver.model.effects.AbstractEffect;
 import com.l2jserver.gameserver.model.effects.L2EffectType;
-import com.l2jserver.gameserver.model.items.L2Item;
 import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
+import com.l2jserver.gameserver.model.items.type.CrystalType;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
 import com.l2jserver.gameserver.model.stats.Formulas;
 import com.l2jserver.gameserver.model.stats.Stats;
@@ -38,9 +38,13 @@ import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
  */
 public final class Heal extends AbstractEffect
 {
+	private final double _power;
+	
 	public Heal(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
+		
+		_power = params.getDouble("power", 0);
 	}
 	
 	@Override
@@ -65,7 +69,7 @@ public final class Heal extends AbstractEffect
 			return;
 		}
 		
-		double amount = getValue();
+		double amount = _power;
 		double staticShotBonus = 0;
 		int mAtkMul = 1;
 		boolean sps = info.getSkill().isMagic() && activeChar.isChargedShot(ShotType.SPIRITSHOTS);
@@ -89,7 +93,7 @@ public final class Heal extends AbstractEffect
 			final L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
 			if (weaponInst != null)
 			{
-				mAtkMul = weaponInst.getItem().getItemGrade() == L2Item.CRYSTAL_S84 ? 4 : weaponInst.getItem().getItemGrade() == L2Item.CRYSTAL_S80 ? 2 : 1;
+				mAtkMul = weaponInst.getItem().getItemGrade() == CrystalType.S84 ? 4 : weaponInst.getItem().getItemGrade() == CrystalType.S80 ? 2 : 1;
 			}
 			// shot dynamic bonus
 			mAtkMul = bss ? mAtkMul * 4 : mAtkMul + 1;

@@ -35,7 +35,8 @@ public final class VitalityPointUp extends AbstractEffect
 	public VitalityPointUp(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
-		_value = params != null ? params.getFloat("value", 0) : 0;
+		
+		_value = params.getFloat("value", 0);
 	}
 	
 	@Override

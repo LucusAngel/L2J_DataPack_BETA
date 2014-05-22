@@ -16,12 +16,14 @@
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="ManaDamOverTime" ticks="5" val="#mdot">
+			<effect name="ManaDamOverTime" ticks="5">
+				<param power="#mdot" />
 				<add order="0x40" stat="pAtk" val="#pAtk" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="ManaDamOverTime" ticks="5" val="4">
+			<effect name="ManaDamOverTime" ticks="5">
+				<param power="4" />
 				<add order="0x40" stat="pAtk" val="#ench1patk" />
 			</effect>
 		</enchant1for>
@@ -77,7 +79,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="PA_UP" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="#effectPoints" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1003" />
@@ -114,7 +116,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="CASTING_TIME_DOWN" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="#effectPoints" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1004" />
@@ -151,7 +153,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="PD_UP" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="#effectPoints" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1005" />
@@ -260,7 +262,7 @@
 		<set name="abnormalTime" val="1200" />
 		<set name="abnormalType" val="MD_UP" />
 		<set name="affectLimit" val="50-50" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="#effectPoints" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1008" />
@@ -373,7 +375,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="#effectPoints" />
+			<effect name="Heal">
+				<param power="#effectPoints" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1012" levels="3" name="Cure Poison">
@@ -432,10 +436,14 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="ManaHealByLevel" val="#amount" />
+			<effect name="ManaHealByLevel">
+				<param power="#amount" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="ManaHealByLevel" val="#ench1amount" />
+			<effect name="ManaHealByLevel">
+				<param power="#ench1amount" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1015" levels="15" name="Battle Heal">
@@ -457,7 +465,9 @@
 		<set name="reuseDelay" val="1000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1016" levels="9" name="Resurrection">
@@ -466,6 +476,7 @@
 		<table name="#mpConsume"> 47 70 97 121 144 156 165 182 191 </table>
 		<table name="#mpInitialConsume"> 12 18 25 31 36 39 42 46 48 </table>
 		<table name="#power"> 0 20 30 40 50 55 60 65 70 </table>
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="#effectPoints" />
 		<set name="effectRange" val="900" />
@@ -537,13 +548,17 @@
 		<enchant2 name="mpConsume" val="#ench2mpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="#dispelAbnormals" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Heal" val="#ench1amount" />
+			<effect name="Heal">
+				<param power="#ench1amount" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="POISON,9;BLEEDING,9" />
 			</effect>
@@ -566,7 +581,9 @@
 		<set name="reuseDelay" val="6000" />
 		<set name="targetType" val="PARTY" />
 		<for>
-			<effect name="Heal" val="#effectPoints" />
+			<effect name="Heal">
+				<param power="#effectPoints" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1028" levels="19" name="Might of Heaven" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
@@ -1141,6 +1158,7 @@
 		<table name="#magicLvl"> 40 56 </table>
 		<table name="#mpConsume"> 84 122 </table>
 		<table name="#mpInitialConsume"> 21 31 </table>
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="#hitTime" />
 		<set name="icon" val="icon.skill1050" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -1858,7 +1876,9 @@
 		<set name="reuseDelay" val="2000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1092" levels="19" name="Fear" enchantGroup1="1" enchantGroup2="1">
@@ -1931,7 +1951,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="#dot" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dot" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1096" levels="16" name="Seal of Chaos" enchantGroup1="1" enchantGroup2="1">

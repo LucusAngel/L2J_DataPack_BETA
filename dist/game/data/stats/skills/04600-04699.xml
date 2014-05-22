@@ -216,7 +216,9 @@
 		<set name="trait" val="POISON" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="3" val="#dot" />
+			<effect name="DamOverTime" ticks="3">
+				<param power="#dot" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4607" levels="1" name="Magma Attack">
@@ -373,7 +375,9 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="CLAN" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4614" levels="12" name="NPC Death Bomb">
@@ -419,7 +423,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="#dmg" />
+			<effect name="DamOverTime" ticks="3">
+				<param power="#dmg" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4616" levels="1" name="Fake Petrification">
@@ -532,7 +538,9 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4622" levels="12" name="NPC AE - 80% HP Drain - Magic">
@@ -553,7 +561,9 @@
 		<set name="power" val="#power" />
 		<set name="targetType" val="AREA" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4623" levels="12" name="NPC AE - 80% HP Drain - Slow">
@@ -573,7 +583,9 @@
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4624" levels="12" name="Decrease HP Regeneration Rate">
@@ -692,7 +704,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4630" levels="12" name="NPC MR - Twister">
@@ -1195,7 +1209,9 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="3" val="#dot" />
+			<effect name="DamOverTime" ticks="3">
+				<param power="#dot" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4650" levels="1" name="NPC AE - Dispel Hold">
@@ -1248,7 +1264,7 @@
 		</for>
 	</skill>
 	<skill id="4653" levels="12" name="NPC Corpse Life Drain">
-		<table name="#heal"> 131 201 271 351 451 551 651 691 731 751 771 781 </table>
+		<table name="#amount"> 131 201 271 351 451 551 651 691 731 751 771 781 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume"> 13 20 27 35 45 55 65 69 73 75 77 78 </table>
 		<set name="castRange" val="400" />
@@ -1262,7 +1278,9 @@
 		<set name="reuseDelay" val="20000" />
 		<set name="targetType" val="CORPSE" />
 		<for>
-			<effect name="Heal" val="#heal" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 			<effect name="ConsumeBody" />
 		</for>
 	</skill>
@@ -1349,7 +1367,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="HOLD" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 			<effect name="Root" />
 		</for>
 	</skill>
@@ -1380,7 +1400,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="HOLD" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 			<effect name="Root" />
 		</for>
 	</skill>
@@ -1411,7 +1433,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="HOLD" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 			<effect name="Root" />
 		</for>
 	</skill>
@@ -1444,7 +1468,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SLEEP" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 			<effect name="Sleep" />
 		</for>
 	</skill>
@@ -1476,7 +1502,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SLEEP" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 			<effect name="Sleep" />
 		</for>
 	</skill>
@@ -1508,7 +1536,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="SLEEP" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 			<effect name="Sleep" />
 		</for>
 	</skill>
@@ -1545,7 +1575,9 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4665" levels="12" name="NPC 100% HP Drain - Magic">
@@ -1567,7 +1599,9 @@
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4666" levels="12" name="NPC 100% HP Drain - Slow">
@@ -1589,7 +1623,9 @@
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4667" levels="12" name="NPC Strong 100% HP Drain">
@@ -1612,7 +1648,9 @@
 		<set name="reuseDelay" val="8000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4668" levels="12" name="NPC Strong 100% HP Drain - Magic">
@@ -1634,7 +1672,9 @@
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4669" levels="12" name="NPC Strong 100% HP Drain - Slow">
@@ -1656,7 +1696,9 @@
 		<set name="power" val="#power" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4670" levels="12" name="Short Stun">
@@ -1928,7 +1970,9 @@
 		<set name="targetType" val="FRONT_AREA" />
 		<for>
 			<effect name="MagicalAttack" />
-			<effect name="DamOverTime" ticks="3" val="216" />
+			<effect name="DamOverTime" ticks="3">
+				<param power="216" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4684" levels="1" name="Valakas Dragon Breath">
@@ -1958,7 +2002,9 @@
 		<set name="targetType" val="FRONT_AREA" />
 		<for>
 			<effect name="MagicalAttack" />
-			<effect name="DamOverTime" ticks="3" val="216" />
+			<effect name="DamOverTime" ticks="3">
+				<param power="216" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="4685" levels="1" name="Valakas Tail Stomp">

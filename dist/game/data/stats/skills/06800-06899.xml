@@ -2,16 +2,19 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="6800" levels="1" name="Presentation - Yellow Portal Ray">
 		<!-- none -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6801" levels="1" name="Presentation - Yellow-Green Portal Ray">
 		<!-- none -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="6802" levels="1" name="Presentation - SSQ2 General Purpose 6">
 		<!-- none -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="icon.skill0922" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="NONE" />
@@ -22,6 +25,7 @@
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="495" />
 		<set name="effectRange" val="900" />
@@ -41,6 +45,7 @@
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="SPEED_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="285" />
 		<set name="effectRange" val="900" />
@@ -60,6 +65,7 @@
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MA_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="495" />
 		<set name="effectRange" val="900" />
@@ -79,6 +85,7 @@
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CASTING_TIME_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="457" />
 		<set name="effectRange" val="900" />
@@ -98,6 +105,7 @@
 		<set name="abnormalLvl" val="6" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CANCEL_PROB_DOWN" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="624" />
 		<set name="effectRange" val="900" />
@@ -117,6 +125,7 @@
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="PA_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="379" />
 		<set name="effectRange" val="900" />
@@ -136,6 +145,7 @@
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="HIT_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="532" />
 		<set name="effectRange" val="900" />
@@ -155,6 +165,7 @@
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CRITICAL_PROB_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="495" />
 		<set name="effectRange" val="900" />
@@ -174,6 +185,7 @@
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CRITICAL_DMG_UP" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="532" />
 		<set name="effectRange" val="900" />
@@ -193,6 +205,7 @@
 		<set name="abnormalLvl" val="2" />
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="BERSERKER" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="495" />
 		<set name="effectRange" val="900" />
@@ -217,6 +230,7 @@
 		<!-- High Five Skill -->
 		<table name="#magicLvl"> 40 43 49 55 60 66 70 79 </table>
 		<table name="#maxCharges"> 1 2 3 4 5 6 7 8 </table>
+		<set name="blockedInOlympiad" val="true" />
 		<set name="isTriggeredSkill" val="true" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
@@ -228,7 +242,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="#maxCharges" />
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6814" levels="8" name="Focus Force">
@@ -246,7 +262,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="#maxCharges" />
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6815" levels="16" name="Deadly Poison">
@@ -261,6 +279,7 @@
 	</skill>
 	<skill id="6817" levels="1" name="Arena HP Recovery">
 		<!-- Arena Skill -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="562" />
 		<set name="effectRange" val="900" />
@@ -268,7 +287,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6818" levels="1" name="Powerful Rage">
@@ -340,6 +361,7 @@
 	</skill>
 	<skill id="6824" levels="1" name="Piercing Storm">
 		<!-- none -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="-100" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="NONE" />
@@ -349,6 +371,7 @@
 		<set name="abnormalTime" val="10" />
 		<set name="activateRate" val="100" />
 		<set name="basicProperty" val="CON" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="-100" />
 		<set name="icon" val="icon.skill0096" />
 		<set name="operateType" val="P" />
@@ -416,6 +439,7 @@
 	</skill>
 	<skill id="6834" levels="1" name="Range Magic Attack">
 		<!-- none -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="-100" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="NONE" />
@@ -477,6 +501,7 @@
 		<set name="abnormalTime" val="60" />
 		<set name="abnormalType" val="PA_UP" />
 		<set name="affectRange" val="600" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="100" />
 		<set name="hitTime" val="3000" />
 		<set name="icon" val="icon.skill1086" />
@@ -554,7 +579,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6847" levels="1" name="Self Heal">
@@ -592,7 +619,6 @@
 		<set name="affectRange" val="200" />
 		<set name="effectPoint" val="-100" />
 		<set name="hitTime" val="3000" />
-		<set name="isSuicideAttack" val="true" />
 		<set name="magicLvl" val="81" />
 		<set name="operateType" val="A1" />
 		<set name="power" val="3000" />
@@ -650,6 +676,7 @@
 		<set name="abnormalType" val="SLEEP" />
 		<set name="activateRate" val="80" />
 		<set name="basicProperty" val="MEN" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="600" />
 		<set name="effectPoint" val="-100" />
 		<set name="effectRange" val="1100" />
@@ -676,6 +703,7 @@
 		<set name="abnormalType" val="ROOT_MAGICALLY" />
 		<set name="activateRate" val="80" />
 		<set name="basicProperty" val="MEN" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="600" />
 		<set name="effectPoint" val="-100" />
 		<set name="effectRange" val="1100" />
@@ -789,6 +817,7 @@
 		<set name="abnormalTime" val="60" />
 		<set name="abnormalType" val="PA_UP" />
 		<set name="affectRange" val="600" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="100" />
 		<set name="hitTime" val="2000" />
 		<set name="icon" val="icon.skill1086" />
@@ -828,7 +857,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="100" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6863" levels="1" name="Poison">
@@ -854,7 +885,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="120" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="120" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6864" levels="1" name="Summon">
@@ -881,7 +914,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="100" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6866" levels="1" name="Vampiric Claw">
@@ -900,7 +935,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6867" levels="1" name="Magic Strike">
@@ -930,6 +967,7 @@
 	<skill id="6869" levels="1" name="Detonate">
 		<!-- High Five Skill -->
 		<!-- FIXME: value unconfirmed -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="effectPoint" val="-100" />
 		<set name="effectRange" val="1400" />
@@ -963,7 +1001,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6871" levels="1" name="Range Magic Attack">
@@ -991,6 +1031,7 @@
 		<!-- High Five Skill -->
 		<!-- FIXME: value unconfirmed -->
 		<set name="affectRange" val="200" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="-100" />
 		<set name="element" val="5" /> <!-- Dark -->
 		<set name="elementPower" val="20" />
@@ -1072,7 +1113,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="#dmg" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="#dmg" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6876" levels="1" name="Power Strike">
@@ -1157,7 +1200,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="1" />
+			<effect name="HpDrain">
+				<param power="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6880" levels="1" name="Silence">
@@ -1233,6 +1278,7 @@
 		<!-- none -->
 		<set name="abnormalTime" val="60" />
 		<set name="activateRate" val="80" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="operateType" val="P" />
 		<set name="targetType" val="NONE" />
@@ -1247,6 +1293,7 @@
 		<table name="#rCrit"> 0.1 0.3 0.5 </table>
 		<table name="#traits"> 50 80 90 </table>
 		<set name="abnormalTime" val="60" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="100" />
 		<set name="icon" val="icon.skill6885" />
 		<set name="magicLvl" val="85" />
@@ -1280,7 +1327,9 @@
 		<set name="reuseDelay" val="900000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6887" levels="1" name="Fatal Strike">

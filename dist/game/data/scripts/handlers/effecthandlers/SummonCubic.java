@@ -24,7 +24,6 @@ import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.conditions.Condition;
 import com.l2jserver.gameserver.model.effects.AbstractEffect;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
-import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.util.Rnd;
 
 /**
@@ -49,6 +48,7 @@ public final class SummonCubic extends AbstractEffect
 	public SummonCubic(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
+		
 		_cubicId = params.getInt("cubicId", -1);
 		// Custom AI data.
 		_cubicPower = params.getInt("cubicPower", 0);
@@ -107,17 +107,7 @@ public final class SummonCubic extends AbstractEffect
 		{
 			// If maximum amount is reached, random cubic is removed.
 			// Players with no mastery can have only one cubic.
-			int allowedCubicCount = 1;
-			// TODO: Unhardcode skill ID check so effect could work on any skill.
-			if (player.isAffectedBySkill(Skill.SKILL_CUBIC_MASTERY))
-			{
-				final BuffInfo cubicMastery = player.getEffectList().getBuffInfoBySkillId(Skill.SKILL_CUBIC_MASTERY);
-				for (AbstractEffect effect : cubicMastery.getEffects())
-				{
-					allowedCubicCount = effect != null ? (int) effect.getValue() : 1;
-				}
-			}
-			
+			final int allowedCubicCount = info.getEffected().getActingPlayer().getStat().getMaxCubicCount();
 			final int currentCubicCount = player.getCubics().size();
 			// Extra cubics are removed, one by one, randomly.
 			for (int i = 0; i <= (currentCubicCount - allowedCubicCount); i++)

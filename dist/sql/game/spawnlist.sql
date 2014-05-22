@@ -4823,6 +4823,8 @@ INSERT INTO `spawnlist` VALUES
 ("FantasyIsle", 1, 4323, -61155, -57755, -2008, 0, 0, 0, 60, 0, 0, 0),
 -- Fantasy Isle Paddies
 ("FantasyIsle", 1, 32378, -59234, -56897, -2032, 0, 0, 0, 60, 0, 0, 0),
+-- Fantasy Isle Warehouse
+("FantasyIsle", 1, 4315, -59234, -56825, -2039, 0, 0, 65275, 60, 0, 0, 0),
 -- Entrance Manager
 ("unset", 1, 32521, -57712, -61490, -2376, 0, 0, 16384, 60, 0, 0, 0),
 -- Entrance Manager
@@ -34166,7 +34168,7 @@ INSERT INTO `spawnlist` VALUES
 -- Dimensional Merchant
 ("unset", 1, 32478, 115656, 76620, -2664, 0, 0, 60000, 60, 0, 0, 0),
 -- Separated Soul
-("dragon_valley", 1, 32864, 117173, 76850, -2695, 0, 0, 36510, 60, 0, 0, 0),
+("dragon_valley", 1, 32864, 117168, 76834, -2695, 0, 0, 36510, 60, 0, 0, 0),
 -- Metar
 ("aden14_npc2320_125", 1, 32887, 117410, 75082, -2648, 0, 0, 15377, 60, 0, 0, 0),
 -- Manor Manager

@@ -97,10 +97,14 @@
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Heal" val="#ench1amount" />
+			<effect name="Heal">
+				<param power="#ench1amount" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1402" levels="5" name="Major Group Heal" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
@@ -135,19 +139,27 @@
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Heal" val="#ench1amount" />
+			<effect name="Heal">
+				<param power="#ench1amount" />
+			</effect>
 		</enchant1for>
 		<enchant3for>
-			<effect name="Heal" val="#ench34amount" />
+			<effect name="Heal">
+				<param power="#ench34amount" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="#ench3dispelAbnormals" />
 			</effect>
 		</enchant3for>
 		<enchant4for>
-			<effect name="Heal" val="#ench34amount" />
+			<effect name="Heal">
+				<param power="#ench34amount" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="#ench4dispelAbnormals" />
 			</effect>
@@ -226,7 +238,9 @@
 		<set name="operateType" val="P" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="EnlargeAbnormalSlot" val="#slots" />
+			<effect name="EnlargeAbnormalSlot">
+				<param slots="#slots" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1406" levels="1" name="Summon Feline King" enchantGroup1="5">
@@ -451,10 +465,10 @@
 			<effect name="Buff">
 				<mul order="0x30" stat="maxMp" val="1.15" />
 				<add order="0x40" stat="regMp" val="1.5">
-					<using kind="Heavy,Light" />
+					<using kind="HEAVY,LIGHT" />
 				</add>
 				<add order="0x40" stat="regMp" val="4">
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</add>
 				<mul order="0x30" stat="mDef" val="1.3" />
 				<mul order="0x30" stat="mAtk" val="1.3" />
@@ -477,7 +491,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MULTI_BUFF" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="669" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1414" />
@@ -509,7 +523,9 @@
 				<sub order="0x40" stat="debuffVuln" val="10" />
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
-			<effect name="CpHealPercent" val="20" />
+			<effect name="CpHealPercent">
+				<param power="20" />
+			</effect>
 		</for>
 		<enchant3for>
 			<effect name="Buff">
@@ -527,7 +543,9 @@
 				<sub order="0x40" stat="debuffVuln" val="10" />
 				<mul order="0x30" stat="runSpd" val="#ench3decreasePenalty" />
 			</effect>
-			<effect name="CpHealPercent" val="20" />
+			<effect name="CpHealPercent">
+				<param power="20" />
+			</effect>
 		</enchant3for>
 	</skill>
 	<skill id="1415" levels="1" name="Pa'agrio's Emblem" enchantGroup1="5" enchantGroup2="5">
@@ -538,7 +556,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="RESIST_DEBUFF_DISPEL" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="669" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1415" />
@@ -567,7 +585,7 @@
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CP_UP" />
 		<set name="affectLimit" val="50-100" />
-		<set name="affectRange" val="900" />
+		<set name="affectRange" val="1000" />
 		<set name="effectPoint" val="669" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill1416" />
@@ -586,13 +604,17 @@
 			<effect name="Buff">
 				<add order="0x40" stat="maxCp" val="800" />
 			</effect>
-			<effect name="CpHeal" val="800" />
+			<effect name="CpHeal">
+				<param power="800" />
+			</effect>
 		</for>
 		<enchant1for>
 			<effect name="Buff">
 				<add order="0x40" stat="maxCp" val="#ench1amount" />
 			</effect>
-			<effect name="CpHeal" val="#ench1amount" />
+			<effect name="CpHeal">
+				<param power="#ench1amount" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1417" levels="5" name="Aura Flash" enchantGroup1="2" enchantGroup2="2">
@@ -660,6 +682,7 @@
 	<skill id="1419" levels="1" name="Volcano">
 		<set name="affectLimit" val="15-25" />
 		<set name="affectRange" val="180" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="channelingTickInterval" val="2" />
 		<set name="effectPoint" val="-676" />
@@ -679,9 +702,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
@@ -689,6 +709,7 @@
 	<skill id="1420" levels="1" name="Cyclone">
 		<set name="affectLimit" val="15-25" />
 		<set name="affectRange" val="180" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="channelingTickInterval" val="2" />
 		<set name="effectPoint" val="-676" />
@@ -708,9 +729,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
@@ -718,6 +736,7 @@
 	<skill id="1421" levels="1" name="Raging Waves">
 		<set name="affectLimit" val="15-25" />
 		<set name="affectRange" val="180" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="channelingTickInterval" val="2" />
 		<set name="effectPoint" val="-676" />
@@ -737,14 +756,12 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
 	</skill>
 	<skill id="1422" levels="1" name="Day of Doom">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="hitTime" val="5000" />
 		<set name="icon" val="icon.skill1422" />
@@ -758,9 +775,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="SummonNpc">
 				<param npcId="13028" npcCount="1" />
@@ -770,6 +784,7 @@
 	<skill id="1423" levels="1" name="Gehenna">
 		<set name="affectLimit" val="15-25" />
 		<set name="affectRange" val="180" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="channelingTickInterval" val="2" />
 		<set name="effectPoint" val="-676" />
@@ -789,14 +804,12 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<channelingEffects>
 			<effect name="MagicalAttack" />
 		</channelingEffects>
 	</skill>
 	<skill id="1424" levels="1" name="Anti-Summoning Field">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="hitTime" val="5000" />
 		<set name="icon" val="icon.skill1424" />
@@ -811,9 +824,6 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="GROUND" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="SummonNpc">
 				<param npcId="13030" npcCount="1" />
@@ -822,6 +832,7 @@
 	</skill>
 	<skill id="1425" levels="1" name="Purification Field">
 		<set name="affectRange" val="180" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="900" />
 		<set name="hitTime" val="3000" />
 		<set name="icon" val="icon.skill1425" />
@@ -835,9 +846,6 @@
 		<set name="reuseDelay" val="1200000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="CLAN" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="DispelByCategory">
 				<param slot="debuff" rate="100" max="10" />
@@ -846,6 +854,7 @@
 	</skill>
 	<skill id="1426" levels="1" name="Miracle">
 		<set name="affectRange" val="900" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="5000" />
 		<set name="icon" val="icon.skill1426" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -857,11 +866,10 @@
 		<set name="reuseDelay" val="3600000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="CLAN" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="HealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1427" levels="1" name="Flames of Invincibility">
@@ -870,6 +878,7 @@
 		<set name="abnormalType" val="INVINCIBILITY" />
 		<set name="abnormalVisualEffect" val="INVINCIBILITY" />
 		<set name="affectRange" val="900" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="5000" />
 		<set name="icon" val="icon.skill1427" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -883,15 +892,13 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="PARTY_CLAN" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
 			<effect name="Invincible" />
 		</for>
 	</skill>
 	<skill id="1428" levels="1" name="Mass Recharge">
 		<set name="affectRange" val="1000" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="5000" />
 		<set name="icon" val="icon.skill1428" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
@@ -903,11 +910,10 @@
 		<set name="reuseDelay" val="3600000" />
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="PARTY" />
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="ManaHealByLevel" val="1500" />
+			<effect name="ManaHealByLevel">
+				<param power="1500" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1429" levels="1" name="Gate Chant">
@@ -946,6 +952,7 @@
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="FORCE_MEDITATION" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="1" />
 		<set name="hitTime" val="2000" />
 		<set name="icon" val="icon.skill1430" />
@@ -962,7 +969,9 @@
 			<effect name="Paralyze">
 				<mul order="0x30" stat="pDef" val="0.1" />
 			</effect>
-			<effect name="ManaHealOverTime" ticks="5" val="#mhot" />
+			<effect name="ManaHealOverTime" ticks="5">
+				<param power="#mhot" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1431" levels="6" name="Fallen Arrow">
@@ -1111,13 +1120,15 @@
 		<enchant2 name="activateRate" val="#ench2ActivateRates" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="#dmg">
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dmg" />
 				<mul order="0x30" stat="pDef" val="#amount" />
 				<mul order="0x30" stat="mDef" val="#amount" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="DamOverTime" ticks="5" val="#ench1dmg">
+			<effect name="DamOverTime" ticks="5">
+				<param power="#ench1dmg" />
 				<mul order="0x30" stat="pDef" val="0.77" />
 				<mul order="0x30" stat="mDef" val="0.77" />
 			</effect>
@@ -1299,7 +1310,6 @@
 		<table name="#power"> 96 99 102 105 108 </table>
 		<set name="castRange" val="600" />
 		<set name="coolTime" val="200" />
-		<set name="dependOnTargetBuff" val="true" />
 		<set name="effectPoint" val="#effectPoints" />
 		<set name="effectRange" val="1100" />
 		<set name="hitTime" val="1200" />
@@ -1314,7 +1324,7 @@
 		<set name="reuseDelay" val="4000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="MagicalAttack" />
+			<effect name="MagicalAttackByAbnormal" />
 		</for>
 	</skill>
 	<skill id="1440" levels="5" name="Steal Divinity">
@@ -1488,7 +1498,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.1">
-					<using kind="Ancient,Crossbow,Rapier" />
+					<using kind="ANCIENTSWORD,CROSSBOW,RAPIER" />
 				</mul>
 				<mul order="0x30" stat="mAtk" val="1.1" />
 				<mul order="0x30" stat="blowRate" val="1.1" />
@@ -1497,7 +1507,7 @@
 		<enchant1for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="#enchIncrease">
-					<using kind="Ancient,Crossbow,Rapier" />
+					<using kind="ANCIENTSWORD,CROSSBOW,RAPIER" />
 				</mul>
 				<mul order="0x30" stat="mAtk" val="1.1" />
 				<mul order="0x30" stat="blowRate" val="1.1" />
@@ -1506,7 +1516,7 @@
 		<enchant2for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.1">
-					<using kind="Ancient,Crossbow,Rapier" />
+					<using kind="ANCIENTSWORD,CROSSBOW,RAPIER" />
 				</mul>
 				<mul order="0x30" stat="mAtk" val="#enchIncrease" />
 				<mul order="0x30" stat="blowRate" val="1.1" />
@@ -1515,7 +1525,7 @@
 		<enchant3for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.1">
-					<using kind="Ancient,Crossbow,Rapier" />
+					<using kind="ANCIENTSWORD,CROSSBOW,RAPIER" />
 				</mul>
 				<mul order="0x30" stat="mAtk" val="1.1" />
 				<mul order="0x30" stat="blowRate" val="#enchIncrease" />
@@ -1717,7 +1727,9 @@
 			<target races="Kamael" />
 		</cond>
 		<for>
-			<effect name="FocusSouls" val="1" />
+			<effect name="FocusSouls">
+				<param charge="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="1450" levels="1" name="Chain Lightning" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6">
@@ -1831,10 +1843,14 @@
 		<enchant3 name="elementPower" val="#ench3elementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="173" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="173" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="DamOverTime" ticks="5" val="#ench1Power" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="#ench1Power" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1453" levels="1" name="Ice Vortex Crusher" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
@@ -1946,10 +1962,14 @@
 		<enchant3 name="elementPower" val="#ench3elementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="173" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="173" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="DamOverTime" ticks="5" val="#ench1Power" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="#ench1Power" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1456" levels="1" name="Wind Vortex Slug" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
@@ -2047,10 +2067,14 @@
 		<enchant3 name="elementPower" val="#ench3elementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="173" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="173" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="DamOverTime" ticks="5" val="#ench1Power" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="#ench1Power" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1459" levels="1" name="Divine Power" enchantGroup1="5" enchantGroup2="5">
@@ -2136,7 +2160,7 @@
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="critVuln" val="0.7" />
+				<mul order="0x30" stat="defCritDamage" val="0.7" />
 			</effect>
 		</for>
 	</skill>
@@ -2712,7 +2736,9 @@
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="reuseDelay" val="#ench3Reuse" />
 		<for>
-			<effect name="ManaHealOverTime" ticks="1" val="200" />
+			<effect name="ManaHealOverTime" ticks="1">
+				<param power="200" />
+			</effect>
 			<effect name="Paralyze">
 				<mul order="0x30" stat="pDef" val="0.1" />
 			</effect>
@@ -3042,10 +3068,14 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="HealOverTime" ticks="1" val="#hot" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="#hot" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="HealOverTime" ticks="1" val="#ench1Heal" />
+			<effect name="HealOverTime" ticks="1">
+				<param power="#ench1Heal" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="1488" levels="3" name="Restoration Impact" enchantGroup1="1">
@@ -3074,13 +3104,17 @@
 			<target active_effect_id="1487" />
 		</cond>
 		<for>
-			<effect name="HealPercent" val="#amount" />
+			<effect name="HealPercent">
+				<param power="#amount" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="LIFE_FORCE_KAMAEL,9" />
 			</effect>
 		</for>
 		<enchant1for>
-			<effect name="HealPercent" val="#ench1amount" />
+			<effect name="HealPercent">
+				<param power="#ench1amount" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="LIFE_FORCE_KAMAEL,9" />
 			</effect>
@@ -3238,7 +3272,9 @@
 		<set name="targetType" val="AURA" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 			<effect name="Debuff">
 				<mul order="0x30" stat="pAtk" val="0.5" />
 				<mul order="0x30" stat="pAtkSpd" val="0.5" />

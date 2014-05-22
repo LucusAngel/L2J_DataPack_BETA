@@ -45,7 +45,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -94,7 +94,7 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="SWORD,BLUNT" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -165,7 +165,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword" /> <!-- Requires a dualsword weapon -->
+				<using kind="DUAL" /> <!-- Requires a dualsword weapon -->
 				<player Charges="3" /> <!-- whose 3rd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -235,7 +235,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> <!-- Requires a dualsword, sword or blunt weapon weapon -->
+				<using kind="DUAL,SWORD,BLUNT" /> <!-- Requires a dualsword, sword or blunt weapon weapon -->
 				<player Charges="2" /> <!-- whose 2nd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -323,7 +323,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
+				<using kind="DUAL,SWORD,BLUNT" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
 				<player Charges="2" /> <!-- whose 2nd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -367,7 +367,7 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" />
+			<using kind="DUAL,SWORD,BLUNT" />
 		</cond>
 		<cond msgId="324">
 			<not>
@@ -375,7 +375,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="#maxCharges" />
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="9" levels="34" name="Sonic Buster" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -425,7 +427,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Sword,Sword,Big Sword,Blunt,Big Blunt" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
+				<using kind="DUAL,SWORD,BLUNT" /> <!-- Requires a sword, blunt weapon or dualsword weapon -->
 				<player Charges="2" /> <!-- whose 2nd energy stage has been recharged -->
 			</and>
 		</cond>
@@ -593,7 +595,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="DERANGEMENT" />
 		<for>
-			<effect name="AddHate" val="#power" />
+			<effect name="AddHate">
+				<param power="#power" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="16" levels="24" name="Mortal Blow">
@@ -617,7 +621,7 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger" />
+			<using kind="DAGGER" />
 		</cond>
 		<for>
 			<effect name="FatalBlow" />
@@ -670,7 +674,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Fist" /> <!-- Requires a hand-to-hand weapon -->
+				<using kind="DUALFIST" /> <!-- Requires a hand-to-hand weapon -->
 				<player Charges="1" /> <!-- whose 1st energy stage has been recharged -->
 			</and>
 		</cond>
@@ -788,7 +792,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -880,7 +884,7 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -1014,7 +1018,7 @@
 		<set name="reuseDelay" val="4000" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -1068,7 +1072,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
 			<effect name="Backstab" />
@@ -1174,7 +1178,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="Dual Fist" /> <!-- Requires a hand-to-hand weapon -->
+				<using kind="DUALFIST" /> <!-- Requires a hand-to-hand weapon -->
 				<player Charges="1" /> <!-- whose 1st energy stage has been recharged -->
 			</and>
 		</cond>
@@ -1249,7 +1253,7 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="pvpPower" val="#enchDuel" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -1283,12 +1287,16 @@
 		</for>
 		<enchant1for>
 			<effect name="Sweeper" />
-			<effect name="HpByLevel" val="#ench1DrainHp" />
+			<effect name="HpByLevel">
+				<param power="#ench1DrainHp" />
+			</effect>
 			<effect name="ConsumeBody" />
 		</enchant1for>
 		<enchant1for>
 			<effect name="Sweeper" />
-			<effect name="ManaHealByLevel" val="#ench2DrainMp" />
+			<effect name="ManaHealByLevel">
+				<param power="#ench2DrainMp" />
+			</effect>
 			<effect name="ConsumeBody" />
 		</enchant1for>
 	</skill>
@@ -1331,7 +1339,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="46" levels="15" name="Life Scavenge" enchantGroup1="2" enchantGroup2="2">
@@ -1358,11 +1368,15 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<for>
-			<effect name="HpByLevel" val="#drain" />
+			<effect name="HpByLevel">
+				<param power="#drain" />
+			</effect>
 			<effect name="ConsumeBody" />
 		</for>
 		<enchant1for>
-			<effect name="HpByLevel" val="#enchDrain" />
+			<effect name="HpByLevel">
+				<param power="#enchDrain" />
+			</effect>
 			<effect name="ConsumeBody" />
 		</enchant1for>
 	</skill>
@@ -1405,7 +1419,7 @@
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<enchant2 name="power" val="#ench2Power" />
 		<cond msgId="113" addName="1">
-			<using kind="Pole" />
+			<using kind="POLE" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -1469,7 +1483,7 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<cond msgId="324">
 			<not>
@@ -1477,7 +1491,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="#maxCharges" />
+			<effect name="FocusEnergy">
+				<param charge="#maxCharges" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="51" levels="1" name="Lure" enchantGroup1="1">
@@ -1502,7 +1518,9 @@
 		<enchant1 name="mpConsume" val="#ench1mpConsume" />
 		<enchant1 name="reuseDelay" val="2000" />
 		<for>
-			<effect name="AddHate" val="500" />
+			<effect name="AddHate">
+				<param power="500" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="54" levels="49" name="Force Blaster" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
@@ -1545,7 +1563,7 @@
 		<enchant6 name="magicLvl" val="#enchMagicLvl" />
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="EnergyAttack">
@@ -1593,7 +1611,7 @@
 		<set name="reuseDelay" val="6000" />
 		<set name="targetType" val="ONE" />
 		<cond msgId="113" addName="1">
-			<using kind="Bow" />
+			<using kind="BOW" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -1626,19 +1644,27 @@
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Heal" val="#ench1amount" />
+			<effect name="Heal">
+				<param power="#ench1amount" />
+			</effect>
 		</enchant1for>
 		<enchant3for>
-			<effect name="Heal" val="546" />
+			<effect name="Heal">
+				<param power="546" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="POISON,9" />
 			</effect>
 		</enchant3for>
 		<enchant4for>
-			<effect name="Heal" val="546" />
+			<effect name="Heal">
+				<param power="546" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="BLEEDING,9" />
 			</effect>
@@ -1652,7 +1678,9 @@
 		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="FakeDeath" ticks="5" val="10" />
+			<effect name="FakeDeath" ticks="5">
+				<param power="10" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="61" levels="3" name="Cure Bleeding">
@@ -1761,19 +1789,27 @@
 		<enchant4 name="hpConsume" val="#ench34HpConsume" />
 		<enchant4 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 		<enchant1for>
-			<effect name="Heal" val="#ench1amount" />
+			<effect name="Heal">
+				<param power="#ench1amount" />
+			</effect>
 		</enchant1for>
 		<enchant3for>
-			<effect name="Heal" val="1170" />
+			<effect name="Heal">
+				<param power="1170" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="POISON,9" />
 			</effect>
 		</enchant3for>
 		<enchant4for>
-			<effect name="Heal" val="1170" />
+			<effect name="Heal">
+				<param power="1170" />
+			</effect>
 			<effect name="DispelBySlot">
 				<param dispel="BLEEDING,9" />
 			</effect>
@@ -1814,10 +1850,14 @@
 		<enchant2 name="power" val="#ench2Power" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<for>
-			<effect name="HpDrain" val="0.2" />
+			<effect name="HpDrain">
+				<param power="0.2" />
+			</effect>
 		</for>
 		<enchant3for>
-			<effect name="HpDrain" val="#ench3Sap" />
+			<effect name="HpDrain">
+				<param power="#ench3Sap" />
+			</effect>
 		</enchant3for>
 	</skill>
 	<skill id="72" levels="3" name="Iron Will" enchantGroup1="1" enchantGroup2="1">
@@ -1890,15 +1930,15 @@
 		<set name="reuseDelay" val="23000" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.2">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</mul>
 				<mul order="0x30" stat="cAtk" val="1.2">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</mul>
 				<mul order="0x30" stat="runSpd" val="0.7" />
 			</effect>
@@ -2008,7 +2048,7 @@
 		<enchant3 name="elementPower" val="#enchElementPower" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
@@ -2065,15 +2105,15 @@
 		<set name="reuseDelay" val="23000" />
 		<set name="targetType" val="SELF" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="runSpd" val="1.2">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</mul>
 				<add order="0x40" stat="accCombat" val="3">
-					<using kind="Dual Fist" />
+					<using kind="DUALFIST" />
 				</add>
 			</effect>
 		</for>
@@ -2117,15 +2157,19 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Sword" />
+			<using kind="DUAL" />
 		</cond>
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="#dot" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dot" />
+			</effect>
 		</for>
 		<enchant1for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="63" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="63" />
+			</effect>
 		</enchant1for>
 	</skill>
 	<skill id="86" levels="3" name="Reflect Damage" enchantGroup1="1" enchantGroup2="1">
@@ -2278,7 +2322,7 @@
 		<enchant6 name="elementPower" val="20" />
 		<enchant6 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Shield" />
+			<using kind="SHIELD" />
 		</cond>
 		<for>
 			<effect name="Stun" />
@@ -2332,13 +2376,19 @@
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.2" />
 				<mul order="0x30" stat="pAtk" val="#swordbluntpole">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</mul>
 				<mul order="0x30" stat="pAtk" val="#twohands">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</mul>
 				<add order="0x40" stat="accCombat" val="#accCombat">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<mul order="0x30" stat="pDef" val="0.8" />
 				<sub order="0x40" stat="rEvas" val="3" />
@@ -2348,13 +2398,19 @@
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.2" />
 				<mul order="0x30" stat="pAtk" val="#ench1atk">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</mul>
 				<mul order="0x30" stat="pAtk" val="1.06">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</mul>
 				<add order="0x40" stat="accCombat" val="4">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<mul order="0x30" stat="pDef" val="0.8" />
 				<sub order="0x40" stat="rEvas" val="3" />
@@ -2364,13 +2420,19 @@
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.2" />
 				<mul order="0x30" stat="pAtk" val="1.29">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Pole" />
+					<using kind="SWORD,BLUNT,POLE" />
 				</mul>
 				<mul order="0x30" stat="pAtk" val="#ench2atk">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</mul>
 				<add order="0x40" stat="accCombat" val="4">
-					<using kind="Big Sword,Big Blunt" />
+					<and>
+						<using kind="SWORD,BLUNT" />
+						<using slot="lrhand" />
+					</and>
 				</add>
 				<mul order="0x30" stat="pDef" val="0.8" />
 				<sub order="0x40" stat="rEvas" val="3" />
@@ -2410,7 +2472,7 @@
 		<enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dual Fist" />
+			<using kind="DUALFIST" />
 		</cond>
 		<for>
 			<effect name="Debuff">
@@ -2454,21 +2516,26 @@
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant3 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
-			<using kind="Dagger,Dual Dagger" />
+			<using kind="DAGGER,DUALDAGGER" />
 		</cond>
 		<for>
-			<effect name="DamOverTime" ticks="5" val="#dot">
+			<effect name="DamOverTime" ticks="5">
+				<param power="#dot" />
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</for>
 		<enchant2for>
-			<effect name="HpByLevel" val="#ench2Sap" />
-			<effect name="DamOverTime" ticks="5" val="67">
+			<effect name="HpByLevel">
+				<param power="#ench2Sap" />
+			</effect>
+			<effect name="DamOverTime" ticks="5">
+				<param power="67" />
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</enchant2for>
 		<enchant3for>
-			<effect name="DamOverTime" ticks="5" val="#ench3dot">
+			<effect name="DamOverTime" ticks="5">
+				<param power="#ench3dot" />
 				<mul order="0x30" stat="runSpd" val="0.8" />
 			</effect>
 		</enchant3for>
@@ -2480,7 +2547,7 @@
 		<table name="#ench1ActivateRates"> 41 42 44 45 46 48 49 50 52 53 54 56 57 58 60 61 62 64 65 66 68 69 70 72 73 74 76 77 78 80 </table>
 		<table name="#ench2Cost"> 50 50 49 48 47 46 45 44 44 43 42 41 40 39 38 38 37 36 35 34 33 32 32 31 30 29 28 27 26 26 </table>
 		<table name="#ench3Attack"> 191 196 201 206 211 216 221 227 232 237 242 247 252 257 263 268 273 278 283 288 293 298 304 309 314 319 324 329 334 340 </table>
-		<table name="#ench4ModifyCritical"> 1.1 1.11 1.12 1.12 1.13 1.14 1.14 1.15 1.16 1.16 1.17 1.18 1.18 1.19 1.2 1.2 1.21 1.22 1.22 1.23 1.24 1.24 1.25 1.26 1.26 1.27 1.28 1.28 1.29 1.3 </table>
+		<table name="#ench4defCritRate"> 1.1 1.11 1.12 1.12 1.13 1.14 1.14 1.15 1.16 1.16 1.17 1.18 1.18 1.19 1.2 1.2 1.21 1.22 1.22 1.23 1.24 1.24 1.25 1.26 1.26 1.27 1.28 1.28 1.29 1.3 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
@@ -2523,7 +2590,7 @@
 		<enchant4for>
 			<effect name="Debuff">
 				<mul order="0x30" stat="pAtk" val="0.77" />
-				<mul order="0x30" stat="critVuln" val="#ench4ModifyCritical" />
+				<mul order="0x30" stat="defCritRate" val="#ench4defCritRate" />
 			</effect>
 		</enchant4for>
 	</skill>
@@ -2591,7 +2658,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtkSpd" val="#rate">
-					<using kind="Bow" />
+					<using kind="BOW" />
 				</mul>
 			</effect>
 		</for>

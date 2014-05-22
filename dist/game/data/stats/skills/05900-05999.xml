@@ -96,7 +96,9 @@
 		<set name="power" val="#power" />
 		<set name="targetType" val="AURA" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5905" levels="1" name="Confusing Nuph">
@@ -351,7 +353,9 @@
 		<set name="power" val="121" />
 		<set name="targetType" val="FRONT_AREA" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
 			<effect name="Debuff">
 				<mul order="0x30" stat="pAtk" val="0.9" />
 				<mul order="0x30" stat="pAtkSpd" val="0.95" />
@@ -1080,8 +1084,8 @@
 		<table name="#mpConsume"> 50 61 75 </table>
 		<table name="#power"> 2273 3547 6059 </table>
 		<set name="affectLimit" val="10-10" />
-		<set name="effectPoint" val="#effectPoints" />
 		<set name="affectRange" val="300" />
+		<set name="effectPoint" val="#effectPoints" />
 		<set name="hitTime" val="2500" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume" val="#mpConsume" />
@@ -1125,7 +1129,9 @@
 			<player landingZone="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="8" />
+			<effect name="Transformation">
+				<param id="8" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5983" levels="1" name="Aura Bird - Owl">
@@ -1150,7 +1156,9 @@
 			<player landingZone="true" />
 		</cond>
 		<for>
-			<effect name="Transformation" val="9" />
+			<effect name="Transformation">
+				<param id="9" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5984" levels="1" name="Hand of Death">
@@ -1203,13 +1211,13 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pAtk" val="1.05">
-					<using kind="Sword,Big Sword,Dagger,Dual Dagger,Pole,Rapier,Ancient,Dual Sword,Dual Fist,Blunt,Big Blunt,Bow,Crossbow" />
+					<using kind="SWORD,DAGGER,DUALDAGGER,POLE,RAPIER,ANCIENTSWORD,DUAL,DUALFIST,BLUNT,BOW,CROSSBOW" />
 				</mul>
 				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="Sword,Big Sword,Dagger,Dual Dagger,Pole,Rapier,Ancient,Dual Sword,Dual Fist" />
+					<using kind="SWORD,DAGGER,DUALDAGGER,POLE,RAPIER,ANCIENTSWORD,DUAL,DUALFIST" />
 				</basemul>
 				<add order="0x40" stat="pAtkRange" val="100">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</add>
 			</effect>
 			<effect name="AttackTrait">
@@ -1235,19 +1243,19 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pDef" val="1.1">
-					<using kind="Heavy" />
+					<using kind="HEAVY" />
 				</mul>
 				<mul order="0x30" stat="pDef" val="1.05">
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</mul>
 				<add order="0x40" stat="rEvas" val="2">
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</add>
 				<mul order="0x30" stat="pDef" val="1.05">
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</mul>
 				<add order="0x40" stat="regMp" val="2.0">
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</add>
 			</effect>
 		</for>

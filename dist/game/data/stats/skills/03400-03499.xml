@@ -99,6 +99,7 @@
 	</skill>
 	<skill id="3408" levels="1" name="Blessed Ring of Escape">
 		<!-- Confirmed CT2.5 -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="200" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="1" />
@@ -121,6 +122,7 @@
 	</skill>
 	<skill id="3409" levels="1" name="Blessed Ring of Resurrection">
 		<!-- Confirmed CT2.5 -->
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="1" />
 		<set name="effectRange" val="600" />
@@ -181,8 +183,8 @@
 				<mul order="0x30" stat="pDef" val="1.046" /> <!-- P. Def +4.6% -->
 				<add order="0x40" stat="maxHp" val="418" /> <!-- MaxHP +418 -->
 				<add order="0x40" stat="darkRes" val="6" /> <!-- Darkness Resistance +6 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="3413" levels="1" name="Dynasty Leather Armor">
@@ -197,8 +199,8 @@
 				<add order="0x40" stat="accCombat" val="1.72" /> <!-- Accuracy +1.72 -->
 				<add order="0x40" stat="maxHp" val="418" /> <!-- MaxHP +418 -->
 				<add order="0x40" stat="darkRes" val="6" /> <!-- Darkness Resistance +6 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="3414" levels="1" name="Dynasty Leather Armor - Force Master">
@@ -213,8 +215,8 @@
 				<add order="0x40" stat="maxHp" val="492" /> <!-- Max HP +492 Effect -->
 				<add order="0x40" stat="darkRes" val="8" /> <!-- Dark resistance +8 -->
 				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.95" /> <!-- MP consumption of the active skill is decreased -5% -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="3415" levels="1" name="Dynasty Leather Armor - Weapon Master">
@@ -230,8 +232,8 @@
 				<add order="0x40" stat="rCrit" val="24.6" /> <!-- Critical Damage Chance +24.6 -->
 				<add order="0x40" stat="cAtkAdd" val="234" /> <!-- Critical Damage +234 -->
 				<add order="0x40" stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="3416" levels="1" name="Dynasty Tunic">
@@ -245,8 +247,8 @@
 				<mul order="0x30" stat="mAtkSpd" val="1.12" /> <!-- Casting Spd. +12% -->
 				<add order="0x40" stat="maxMp" val="257" /> <!-- Max MP +257 -->
 				<add order="0x40" stat="darkRes" val="6" /> <!-- Darkness Resistance +6 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="3417" levels="1" name="Equipped with Shield">
@@ -274,11 +276,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="104" />
+			<effect name="Transformation">
+				<param id="104" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="3419" levels="1" name="Magic Immunity">
@@ -300,11 +301,12 @@
 				<mul order="0x30" stat="pDef" val="1.0266" /> <!-- Increase P. Def. +2.66% -->
 				<add order="0x40" stat="maxHp" val="492" /> <!-- MaxHP +492 -->
 				<add order="0x40" stat="darkRes" val="8" /> <!-- Dark Resistance +8 -->
-				<add order="0x10" stat="cloak" val="1" /> <!-- Opens cloak slot -->
 			</effect>
+			<effect name="EnableCloak" />
 		</for>
 	</skill>
 	<skill id="3421" levels="1" name="Wolf Mount">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="icon.skill0083" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="1" />
@@ -312,6 +314,7 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="3422" levels="1" name="Wolf Dismount">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="icon.skill0083" />
 		<set name="isMagic" val="1" /> <!-- Magic Skill -->
 		<set name="magicLvl" val="1" />
@@ -422,8 +425,12 @@
 		<set name="reuseDelay" val="1800000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="HealPercent" val="100" />
-			<effect name="ManaHealPercent" val="100" />
+			<effect name="HealPercent">
+				<param power="100" />
+			</effect>
+			<effect name="ManaHealPercent">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="3430" levels="1" name="White Talisman - Darkness">
@@ -1255,8 +1262,12 @@
 		<set name="reuseDelay" val="300000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="100" />
-			<effect name="CpHeal" val="100" />
+			<effect name="Heal">
+				<param power="100" />
+			</effect>
+			<effect name="CpHeal">
+				<param power="100" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="3497" levels="1" name="Yellow Talisman of MP Regeneration">

@@ -44,6 +44,7 @@ public final class DispelBySlot extends AbstractEffect
 	public DispelBySlot(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
+		
 		_dispel = params.getString("dispel", null);
 		if ((_dispel != null) && !_dispel.isEmpty())
 		{
@@ -103,7 +104,7 @@ public final class DispelBySlot extends AbstractEffect
 				continue;
 			}
 			
-			if ((entry.getKey() == toDispel.getSkill().getAbnormalType()) && (entry.getValue() >= toDispel.getSkill().getAbnormalLvl()))
+			if ((entry.getKey() == toDispel.getSkill().getAbnormalType()) && ((entry.getValue() < 0) || (entry.getValue() >= toDispel.getSkill().getAbnormalLvl())))
 			{
 				effectList.stopSkillEffects(true, entry.getKey());
 			}

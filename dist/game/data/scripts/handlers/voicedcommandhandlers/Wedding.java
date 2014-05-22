@@ -44,7 +44,6 @@ import com.l2jserver.gameserver.model.entity.TvTEvent;
 import com.l2jserver.gameserver.model.skills.AbnormalVisualEffect;
 import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.gameserver.model.zone.ZoneId;
-import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.ActionFailed;
 import com.l2jserver.gameserver.network.serverpackets.ConfirmDlg;
 import com.l2jserver.gameserver.network.serverpackets.MagicSkillUse;
@@ -243,9 +242,8 @@ public class Wedding implements IVoicedCommandHandler
 		ptarget.setEngageRequest(true, activeChar.getObjectId());
 		ptarget.addAction(PlayerAction.USER_ENGAGE);
 		
-		final ConfirmDlg dlg = new ConfirmDlg(SystemMessageId.S1);
+		final ConfirmDlg dlg = new ConfirmDlg(activeChar.getName() + " is asking to engage you. Do you want to start a new relationship?");
 		dlg.addTime(15 * 1000);
-		dlg.addString(activeChar.getName() + " is asking to engage you. Do you want to start a new relationship?");
 		ptarget.sendPacket(dlg);
 		return true;
 	}
@@ -319,7 +317,7 @@ public class Wedding implements IVoicedCommandHandler
 			return false;
 		}
 		
-		if ((SiegeManager.getInstance().getSiege(activeChar) != null) && SiegeManager.getInstance().getSiege(activeChar).getIsInProgress())
+		if ((SiegeManager.getInstance().getSiege(activeChar) != null) && SiegeManager.getInstance().getSiege(activeChar).isInProgress())
 		{
 			activeChar.sendMessage("You are in a siege, you cannot go to your partner.");
 			return false;
@@ -417,7 +415,7 @@ public class Wedding implements IVoicedCommandHandler
 			return false;
 		}
 		
-		if ((SiegeManager.getInstance().getSiege(partner) != null) && SiegeManager.getInstance().getSiege(partner).getIsInProgress())
+		if ((SiegeManager.getInstance().getSiege(partner) != null) && SiegeManager.getInstance().getSiege(partner).isInProgress())
 		{
 			activeChar.sendMessage("Your partner is in a siege, you cannot go to your partner.");
 			return false;
@@ -503,7 +501,7 @@ public class Wedding implements IVoicedCommandHandler
 				return;
 			}
 			
-			if ((SiegeManager.getInstance().getSiege(_partnerLoc) != null) && SiegeManager.getInstance().getSiege(_partnerLoc).getIsInProgress())
+			if ((SiegeManager.getInstance().getSiege(_partnerLoc) != null) && SiegeManager.getInstance().getSiege(_partnerLoc).isInProgress())
 			{
 				_activeChar.sendMessage("Your partner is in siege, you can't go to your partner.");
 				return;

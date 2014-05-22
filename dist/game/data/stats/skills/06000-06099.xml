@@ -304,11 +304,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="121" />
+			<effect name="Transformation">
+				<param id="121" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6036" levels="1" name="Blue Team Transformation">
@@ -324,11 +323,10 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="122" />
+			<effect name="Transformation">
+				<param id="122" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="6037" levels="1" name="Soul Unleash">
@@ -728,7 +726,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="cAtk" val="2">
-					<using kind="Sword,Big Sword,Blunt,Big Blunt,Dagger,Dual Dagger,Dual Sword,Dual Fist,Pole,Ancient,Rapier" />
+					<using kind="SWORD,BLUNT,DAGGER,DUALDAGGER,DUAL,DUALFIST,POLE,ANCIENTSWORD,RAPIER" />
 				</mul>
 			</effect>
 		</for>

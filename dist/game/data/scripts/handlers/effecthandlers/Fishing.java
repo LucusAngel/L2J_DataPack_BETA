@@ -31,8 +31,8 @@ import com.l2jserver.gameserver.model.effects.L2EffectType;
 import com.l2jserver.gameserver.model.itemcontainer.Inventory;
 import com.l2jserver.gameserver.model.items.L2Weapon;
 import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
-import com.l2jserver.gameserver.model.items.type.L2EtcItemType;
-import com.l2jserver.gameserver.model.items.type.L2WeaponType;
+import com.l2jserver.gameserver.model.items.type.EtcItemType;
+import com.l2jserver.gameserver.model.items.type.WeaponType;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
 import com.l2jserver.gameserver.model.zone.L2ZoneType;
 import com.l2jserver.gameserver.model.zone.ZoneId;
@@ -43,9 +43,10 @@ import com.l2jserver.gameserver.util.Util;
 import com.l2jserver.util.Rnd;
 
 /**
+ * Fishing effect implementation.
  * @author UnAfraid
  */
-public class Fishing extends AbstractEffect
+public final class Fishing extends AbstractEffect
 {
 	private static final int MIN_BAIT_DISTANCE = 90;
 	private static final int MAX_BAIT_DISTANCE = 250;
@@ -70,7 +71,6 @@ public class Fishing extends AbstractEffect
 	@Override
 	public void onStart(BuffInfo info)
 	{
-		super.onStart(info);
 		final L2Character activeChar = info.getEffector();
 		if (!activeChar.isPlayer())
 		{
@@ -102,7 +102,7 @@ public class Fishing extends AbstractEffect
 		
 		// check for equiped fishing rod
 		L2Weapon equipedWeapon = player.getActiveWeaponItem();
-		if (((equipedWeapon == null) || (equipedWeapon.getItemType() != L2WeaponType.FISHINGROD)))
+		if (((equipedWeapon == null) || (equipedWeapon.getItemType() != WeaponType.FISHINGROD)))
 		{
 			player.sendPacket(SystemMessageId.FISHING_POLE_NOT_EQUIPPED);
 			return;
@@ -110,7 +110,7 @@ public class Fishing extends AbstractEffect
 		
 		// check for equiped lure
 		L2ItemInstance equipedLeftHand = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LHAND);
-		if ((equipedLeftHand == null) || (equipedLeftHand.getItemType() != L2EtcItemType.LURE))
+		if ((equipedLeftHand == null) || (equipedLeftHand.getItemType() != EtcItemType.LURE))
 		{
 			player.sendPacket(SystemMessageId.BAIT_ON_HOOK_BEFORE_FISHING);
 			return;
@@ -215,7 +215,7 @@ public class Fishing extends AbstractEffect
 			}
 		}
 		
-		if (!player.destroyItem("FishingSkillHandler", equipedLeftHand, 1, null, false))
+		if (!player.destroyItem("Fishing", equipedLeftHand, 1, null, false))
 		{
 			player.sendPacket(SystemMessageId.NOT_ENOUGH_BAIT);
 			return;
@@ -234,7 +234,7 @@ public class Fishing extends AbstractEffect
 	 * @param waterZone the water zone
 	 * @return the bait z or {@link Integer#MIN_VALUE} when you cannot fish here
 	 */
-	private int computeBaitZ(final L2PcInstance player, final int baitX, final int baitY, final L2FishingZone fishingZone, final L2WaterZone waterZone)
+	private static int computeBaitZ(final L2PcInstance player, final int baitX, final int baitY, final L2FishingZone fishingZone, final L2WaterZone waterZone)
 	{
 		if ((fishingZone == null))
 		{

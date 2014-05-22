@@ -10,7 +10,9 @@
 		<set name="operateType" val="A1" /> <!-- FIXME: value unconfirmed -->
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="300" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="300" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="23301" levels="1" name="Dimensional Door A">
@@ -52,6 +54,7 @@
 		<!-- Increases HP Recovery Bonus by 30% and decreases damage from the topography by 80% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
 		<set name="abnormalTime" val="7" />
 		<set name="affectRange" val="200" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.totem_of_body" />
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="AURA" />
@@ -66,6 +69,7 @@
 		<!-- Increases MP Recovery Bonus by 30% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
 		<set name="abnormalTime" val="7" />
 		<set name="affectRange" val="200" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.totem_of_mind" />
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="AURA" />
@@ -79,6 +83,7 @@
 		<!-- Increases P. Def. by 15% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
 		<set name="abnormalTime" val="7" />
 		<set name="affectRange" val="200" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.totem_of_bravery" />
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="AURA" />
@@ -92,6 +97,7 @@
 		<!-- Increases M. Def. by 25% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
 		<set name="abnormalTime" val="7" />
 		<set name="affectRange" val="200" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="icon" val="BranchSys2.icon.totem_of_fortitude" />
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="AURA" />
@@ -144,6 +150,7 @@
 		<set name="abnormalType" val="BLEEDING" />
 		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
 		<set name="activateRate" val="80" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="80" />
 		<set name="effectRange" val="400" />
 		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
@@ -157,7 +164,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="170" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="170" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="23320" levels="1" name="Greedy Throat">
@@ -168,6 +177,7 @@
 		<set name="abnormalType" val="BLEEDING" />
 		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
 		<set name="activateRate" val="80" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="80" />
 		<set name="effectRange" val="400" />
 		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
@@ -181,7 +191,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="BLEED" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="230" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="230" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="23321" levels="1" name="Draconic Evolver">
@@ -192,6 +204,7 @@
 		<set name="abnormalType" val="TURN_FLEE" />
 		<set name="activateRate" val="80" />
 		<set name="basicProperty" val="MEN" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="80" />
 		<set name="effectPoint" val="-800" />
 		<set name="effectRange" val="400" />
@@ -218,6 +231,7 @@
 		<set name="abnormalType" val="PD_DOWN" />
 		<set name="activateRate" val="80" />
 		<set name="basicProperty" val="MEN" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="80" />
 		<set name="effectPoint" val="-800" />
 		<set name="effectRange" val="400" />
@@ -244,6 +258,7 @@
 		<set name="abnormalType" val="PD_DOWN" />
 		<set name="activateRate" val="80" />
 		<set name="basicProperty" val="CON" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="80" />
 		<set name="effectPoint" val="-800" />
 		<set name="effectRange" val="400" />
@@ -267,6 +282,7 @@
 		<!-- FIXME: value unconfirmed -->
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="15" />
+		<set name="blockedInOlympiad" val="true" />
 		<set name="effectPoint" val="800" />
 		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i00" />
 		<!-- set name="abnormalType" val="RAID_WEAPON" / --> <!-- FIXME: Value unconfirmed. -->

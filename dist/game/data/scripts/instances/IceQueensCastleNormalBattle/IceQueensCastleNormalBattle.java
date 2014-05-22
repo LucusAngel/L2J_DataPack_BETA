@@ -22,8 +22,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
-import javolution.util.FastList;
 import quests.Q10286_ReunionWithSirra.Q10286_ReunionWithSirra;
 import ai.npc.AbstractNpcAI;
 
@@ -66,9 +66,9 @@ public final class IceQueensCastleNormalBattle extends AbstractNpcAI
 {
 	protected class IQCNBWorld extends InstanceWorld
 	{
-		ArrayList<L2PcInstance> playersInside = new ArrayList<>();
-		ArrayList<L2Npc> knightStatues = new ArrayList<>();
-		List<L2Attackable> spawnedMobs = new FastList<>();
+		List<L2PcInstance> playersInside = new ArrayList<>();
+		List<L2Npc> knightStatues = new ArrayList<>();
+		List<L2Attackable> spawnedMobs = new CopyOnWriteArrayList<>();
 		L2NpcInstance controller = null;
 		L2GrandBossInstance freya = null;
 		L2QuestGuardInstance supp_Jinia = null;
@@ -1301,14 +1301,14 @@ public final class IceQueensCastleNormalBattle extends AbstractNpcAI
 		final List<L2PcInstance> players = new ArrayList<>();
 		for (L2PcInstance player : world.playersInside)
 		{
-			if ((player != null) && !player.isDead() && (player.getInstanceId() == world.getInstanceId()) && !player.getAppearance().getInvisible())
+			if ((player != null) && !player.isDead() && (player.getInstanceId() == world.getInstanceId()) && !player.isInvisible())
 			{
 				players.add(player);
 			}
 		}
 		
 		Collections.shuffle(players);
-		final L2PcInstance target = (players.size() > 0) ? players.get(0) : null;
+		final L2PcInstance target = (!players.isEmpty()) ? players.get(0) : null;
 		if (target != null)
 		{
 			mob.addDamageHate(target, 0, 999);

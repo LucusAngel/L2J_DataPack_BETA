@@ -26,7 +26,9 @@
 		<set name="trait" val="BLEED" />
 		<for>
 			<effect name="PhysicalAttack" />
-			<effect name="DamOverTime" ticks="5" val="52" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="52" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5501" levels="1" name="Stuns">
@@ -392,7 +394,6 @@
 	<skill id="5522" levels="1" name="Chain Magic - Dark Explosion">
 		<set name="affectRange" val="600" />
 		<set name="castRange" val="500" />
-		<set name="dependOnTargetBuff" val="0.2" /> <!-- NOTE: Divine Inspiration/Dance/Song/Trigger slots are ignored, so using (20 Default Buff Slots / 100) -->
 		<set name="effectPoint" val="-1063" />
 		<set name="effectRange" val="900" />
 		<set name="element" val="5" /> <!-- Dark -->
@@ -404,7 +405,7 @@
 		<set name="power" val="85" />
 		<set name="targetType" val="AREA" />
 		<for>
-			<effect name="MagicalAttack" />
+			<effect name="MagicalAttackByAbnormal" />
 		</for>
 	</skill>
 	<skill id="5523" levels="1" name="Chain Magic - Unholy Castle">
@@ -663,6 +664,7 @@
 		</cond>
 	</skill>
 	<skill id="5540" levels="1" name="Little Angel Agathion Special Skill - Power of Blessed Return">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="200" />
 		<set name="icon" val="icon.skill_agathion_special" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -688,6 +690,7 @@
 		</for>
 	</skill>
 	<skill id="5541" levels="1" name="Little Angel Agathion Special Skill - Power of Blessed Resurrection">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="1" />
 		<set name="effectRange" val="600" />
@@ -736,6 +739,7 @@
 		</cond>
 	</skill>
 	<skill id="5544" levels="1" name="Little Devil Agathion Special Skill - Power of Blessed Return">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="200" />
 		<set name="icon" val="icon.skill_agathion_special" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
@@ -761,6 +765,7 @@
 		</for>
 	</skill>
 	<skill id="5545" levels="1" name="Little Devil Agathion Special Skill - Power of Blessed Resurrection">
+		<set name="blockedInOlympiad" val="true" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="1" />
 		<set name="effectRange" val="600" />
@@ -822,7 +827,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusSouls" val="1" />
+			<effect name="FocusSouls">
+				<param charge="1" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5549" levels="1" name="Physical Short-range Weakness">
@@ -1155,7 +1162,7 @@
 		<for>
 			<effect name="Debuff">
 				<mul order="0x30" stat="pDef" val="0.8" />
-				<mul order="0x30" stat="critDamEvas" val="0.7" />
+				<mul order="0x30" stat="defCritRate" val="1.3" />
 			</effect>
 		</for>
 	</skill>
@@ -1259,8 +1266,12 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SERVITOR" />
 		<for>
-			<effect name="Heal" val="418" />
-			<effect name="ManaHealByLevel" val="73" />
+			<effect name="Heal">
+				<param power="418" />
+			</effect>
+			<effect name="ManaHealByLevel">
+				<param power="73" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5572" levels="1" name="Warrior Ability - Haste">
@@ -1334,7 +1345,9 @@
 		<set name="reuseDelay" val="10000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaHealByLevel" val="10" />
+			<effect name="ManaHealByLevel">
+				<param power="10" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5576" levels="1" name="Enchanter Ability - Barrier">
@@ -1365,7 +1378,9 @@
 		<set name="reuseDelay" val="10000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="150" />
+			<effect name="Heal">
+				<param power="150" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5578" levels="1" name="Summoner Ability - Spirit">
@@ -1406,6 +1421,7 @@
 		</for>
 	</skill>
 	<skill id="5580" levels="1" name="Divine Beast Bite">
+		<!-- Confirmed CT2.5 -->
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectPoint" val="-475" />
@@ -1422,6 +1438,7 @@
 		</for>
 	</skill>
 	<skill id="5581" levels="1" name="Divine Beast Stun Attack">
+		<!-- Confirmed CT2.5 -->
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="720" />
 		<set name="effectPoint" val="-1" />
@@ -1429,6 +1446,7 @@
 		<set name="hitTime" val="1080" />
 		<set name="icon" val="icon.skill0100" />
 		<set name="magicLvl" val="80" />
+		<set name="mpConsume" val="76" />
 		<set name="nextActionAttack" val="true" />
 		<set name="operateType" val="A1" />
 		<set name="overHit" val="true" />
@@ -1442,6 +1460,7 @@
 		</for>
 	</skill>
 	<skill id="5582" levels="1" name="Divine Beast Fire Breath">
+		<!-- Confirmed CT2.5 -->
 		<set name="affectLimit" val="5-12" />
 		<set name="affectRange" val="250" />
 		<set name="castRange" val="100" />
@@ -1463,6 +1482,7 @@
 		</for>
 	</skill>
 	<skill id="5583" levels="1" name="Divine Beast Roar">
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="PA_DOWN" />
@@ -1472,6 +1492,7 @@
 		<set name="basicProperty" val="MEN" />
 		<set name="effectPoint" val="-628" />
 		<set name="hitTime" val="1200" />
+		<set name="isDebuff" val="true" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume" val="80" />
@@ -1485,36 +1506,56 @@
 		</for>
 	</skill>
 	<skill id="5584" levels="1" name="Wolf Howl">
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="PA_DOWN" />
 		<set name="activateRate" val="40" />
 		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
 		<set name="basicProperty" val="MEN" />
 		<set name="effectPoint" val="-628" />
 		<set name="hitTime" val="1200" />
 		<set name="icon" val="icon.action109" />
+		<set name="isDebuff" val="true" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="55" />
+		<set name="mpConsume" val="55" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Debuff">
+				<mul order="0x30" stat="pAtk" val="0.77" />
+				<mul order="0x30" stat="mAtk" val="0.77" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="5585" levels="1" name="Strider Roar">
+		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="PA_DOWN" />
 		<set name="activateRate" val="40" />
 		<set name="affectLimit" val="10-10" />
+		<set name="affectRange" val="200" />
 		<set name="basicProperty" val="MEN" />
 		<set name="effectPoint" val="-628" />
 		<set name="hitTime" val="1200" />
 		<set name="icon" val="icon.action109" />
+		<set name="isDebuff" val="true" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="55" />
+		<set name="mpConsume" val="55" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="AURA" />
+		<for>
+			<effect name="Debuff">
+				<mul order="0x30" stat="mAtkSpd" val="0.77" />
+				<mul order="0x30" stat="pAtkSpd" val="0.9" />
+			</effect>
+		</for>
 	</skill>
 	<skill id="5586" levels="3" name="Pet Might">
 		<table name="#abnormalLvls"> 1 2 3 </table>
@@ -1648,7 +1689,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="OWNER_PET" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5591" levels="8" name="Light Flow">
@@ -1664,7 +1707,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5592" levels="16" name="Lightning Barrier">
@@ -1710,8 +1755,12 @@
 		<set name="reuseDelay" val="10000" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="HpDrain" val="0.8" />
-			<effect name="ManaDamOverTime" val="182" />
+			<effect name="HpDrain">
+				<param power="0.8" />
+			</effect>
+			<effect name="ManaDamOverTime">
+				<param power="182" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5594" levels="1" name="Poison">
@@ -1763,7 +1812,9 @@
 		<set name="operateType" val="A2" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="DamOverTime" ticks="1" val="200" />
+			<effect name="DamOverTime" ticks="1">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5597" levels="1" name="Invalid Skill cancel">
@@ -1777,11 +1828,12 @@
 		</for>
 	</skill>
 	<skill id="5598" levels="12" name="Flash Resistance">
-		<!-- TODO: Implement me! -->
+		<!-- Confirmed CT2.5 -->
+		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#trait_turn_stone"> 5 10 15 20 25 30 35 40 45 50 75 100 </table>
-		<set name="magicLvl" val="10" />
+		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="P" />
-		<set name="targetType" val="NONE" />
+		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="DefenceTrait">
 				<param TURN_STONE="#trait_turn_stone" />
@@ -1789,6 +1841,7 @@
 		</for>
 	</skill>
 	<skill id="5599" levels="12" name="Stun Resistance">
+		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#trait_shock"> 5 10 15 20 25 30 35 40 45 50 75 100 </table>
 		<set name="magicLvl" val="#magicLvl" />

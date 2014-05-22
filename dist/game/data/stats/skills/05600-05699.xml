@@ -17,8 +17,9 @@
 		</for>
 	</skill>
 	<skill id="5601" levels="12" name="Short-Range Physical Attack Resistance">
+		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
-		<table name="#traits"> 5 5 10 10 15 15 20 20 25 25 30 30 35 35 40 40 45 45 55 55 70 70 100 100 </table>
+		<table name="#traits"> 5 10 15 20 25 30 35 40 45 55 70 100 </table>
 		<set name="icon" val="icon.skill5601" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="P" />
@@ -52,7 +53,9 @@
 			<effect name="Debuff">
 				<mul order="0x30" stat="maxRecoverableHp" val="0.1" />
 			</effect>
-			<effect name="HealPercent" val="-99" />
+			<effect name="HealPercent">
+				<param power="-99" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5603" levels="1" name="Dagger Mastery">
@@ -109,10 +112,10 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="mDef" val="1.05"> <!-- magic defense power is increased by 5% -->
-					<using kind="Heavy" />
+					<using kind="HEAVY" />
 				</mul>
-				<sub order="0x40" stat="critAddVuln" val="3"> <!-- critical damage is decreased by 3 -->
-					<using kind="Heavy" />
+				<sub order="0x40" stat="defCritRateAdd" val="30"> <!-- critical damage is decreased by 3 -->
+					<using kind="HEAVY" />
 				</sub>
 				<add order="0x40" stat="rCrit" val="#rCrit" />
 			</effect>
@@ -134,10 +137,10 @@
 		<for>
 			<effect name="Buff">
 				<add order="0x40" stat="rEvas" val="2"> <!-- evasion is increased by 2 -->
-					<using kind="Light" />
+					<using kind="LIGHT" />
 				</add>
-				<sub order="0x40" stat="critAddVuln" val="86"> <!-- critical damage is decreased by 86 -->
-					<using kind="Light" />
+				<sub order="0x40" stat="defCritDamageAdd" val="86"> <!-- critical damage is decreased by 86 -->
+					<using kind="LIGHT" />
 				</sub>
 				<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
@@ -159,7 +162,7 @@
 		<for>
 			<effect name="Buff">
 				<mul order="0x30" stat="pDef" val="1.05"> <!-- defense power is increased by 5% -->
-					<using kind="Magic" />
+					<using kind="MAGIC" />
 				</mul>
 				<add order="0x40" stat="runSpd" val="10" /> <!-- Speed is increased by 10 -->
 				<mul order="0x30" stat="mAtk" val="#mAtk" />
@@ -242,8 +245,9 @@
 		<set name="targetType" val="NONE" />
 	</skill>
 	<skill id="5620" levels="12" name="Short-Range Physical Attack Weakness">
+		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
-		<table name="#traits"> -5 -5 -10 -10 -15 -15 -20 -20 -25 -25 -30 -30 -35 -35 -40 -40 -45 -45 -55 -55 -70 -70 -100 -100 </table>
+		<table name="#traits"> -5 -10 -15 -20 -25 -30 -35 -40 -45 -55 -70 -100 </table>
 		<set name="icon" val="icon.skill5620" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="P" />
@@ -272,7 +276,9 @@
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="ManaHeal" val="#amount" />
+			<effect name="ManaHeal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5622" levels="7" name="Double Skill Attack">
@@ -928,11 +934,9 @@
 		<cond>
 			<player canTransform="true" />
 		</cond>
-		<cond msgId="1509">
-			<player olympiad="false" />
-		</cond>
 		<for>
-			<effect name="Transformation" val="319">
+			<effect name="Transformation">
+				<param id="319" />
 				<sub order="0x40" stat="vitalityConsumeRate" val="10" />
 			</effect>
 		</for>
@@ -1209,7 +1213,9 @@
 		<set name="targetType" val="ONE" />
 		<set name="trait" val="POISON" />
 		<for>
-			<effect name="DamOverTime" ticks="5" val="63" />
+			<effect name="DamOverTime" ticks="5">
+				<param power="63" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5669" levels="1" name="Stun">
@@ -1361,7 +1367,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaHeal" val="41" />
+			<effect name="ManaHeal">
+				<param power="41" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5677" levels="1" name="Steal Mana">
@@ -1372,7 +1380,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaHeal" val="51" />
+			<effect name="ManaHeal">
+				<param power="51" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5678" levels="1" name="Steal Mana">
@@ -1383,7 +1393,9 @@
 		<set name="reuseDelay" val="3000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="ManaHeal" val="59" />
+			<effect name="ManaHeal">
+				<param power="59" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5679" levels="3" name="Oblivion Trap">
@@ -1432,7 +1444,9 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="CpHeal" val="200" />
+			<effect name="CpHeal">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5682" levels="1" name="PvP Weapon - Cancel">
@@ -1558,7 +1572,7 @@
 		<for>
 			<effect name="Debuff">
 				<sub order="0x40" stat="pAtkRange" val="200">
-					<using kind="Bow,Crossbow" />
+					<using kind="BOW,CROSSBOW" />
 				</sub>
 			</effect>
 		</for>
@@ -1649,8 +1663,8 @@
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff">
-				<mul order="0x30" stat="critDamEvas" val="1.15" />
-				<mul order="0x30" stat="critVuln" val="0.85" />
+				<mul order="0x30" stat="defCritRate" val="0.85" />
+				<mul order="0x30" stat="defCritDamage" val="0.85" />
 			</effect>
 		</for>
 	</skill>
@@ -1665,7 +1679,9 @@
 		<set name="staticReuse" val="true" />
 		<set name="targetType" val="ONE" />
 		<for>
-			<effect name="Heal" val="200" />
+			<effect name="Heal">
+				<param power="200" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5693" levels="1" name="PvP Armor - Speed Down">
@@ -1727,7 +1743,9 @@
 			</not>
 		</cond>
 		<for>
-			<effect name="FocusEnergy" val="5" />
+			<effect name="FocusEnergy">
+				<param charge="5" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5696" levels="1" name="Dizziness">
@@ -1782,7 +1800,9 @@
 		<set name="reuseDelay" val="4000" />
 		<set name="targetType" val="SELF" />
 		<for>
-			<effect name="Heal" val="#amount" />
+			<effect name="Heal">
+				<param power="#amount" />
+			</effect>
 		</for>
 	</skill>
 	<skill id="5699" levels="7" name="Decrease P. Def">

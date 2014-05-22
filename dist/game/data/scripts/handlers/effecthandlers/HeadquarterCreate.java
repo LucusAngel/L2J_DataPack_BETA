@@ -37,7 +37,7 @@ import com.l2jserver.gameserver.model.skills.BuffInfo;
  * Headquarter Create effect implementation.
  * @author Adry_85
  */
-public class HeadquarterCreate extends AbstractEffect
+public final class HeadquarterCreate extends AbstractEffect
 {
 	private static final int HQ_NPC_ID = 35062;
 	private final boolean _isAdvanced;
@@ -45,7 +45,8 @@ public class HeadquarterCreate extends AbstractEffect
 	public HeadquarterCreate(Condition attachCond, Condition applyCond, StatsSet set, StatsSet params)
 	{
 		super(attachCond, applyCond, set, params);
-		_isAdvanced = params != null ? params.getBoolean("isAdvanced", false) : false;
+		
+		_isAdvanced = params.getBoolean("isAdvanced", false);
 	}
 	
 	@Override
