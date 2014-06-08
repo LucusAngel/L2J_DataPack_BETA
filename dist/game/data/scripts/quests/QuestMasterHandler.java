@@ -92,6 +92,7 @@ import quests.Q00122_OminousNews.Q00122_OminousNews;
 import quests.Q00124_MeetingTheElroki.Q00124_MeetingTheElroki;
 import quests.Q00125_TheNameOfEvil1.Q00125_TheNameOfEvil1;
 import quests.Q00126_TheNameOfEvil2.Q00126_TheNameOfEvil2;
+import quests.Q00129_PailakaDevilsLegacy.Q00129_PailakaDevilsLegacy;
 import quests.Q00131_BirdInACage.Q00131_BirdInACage;
 import quests.Q00132_MatrasCuriosity.Q00132_MatrasCuriosity;
 import quests.Q00134_TempleMissionary.Q00134_TempleMissionary;
@@ -199,7 +200,10 @@ import quests.Q00291_RevengeOfTheRedbonnet.Q00291_RevengeOfTheRedbonnet;
 import quests.Q00292_BrigandsSweep.Q00292_BrigandsSweep;
 import quests.Q00293_TheHiddenVeins.Q00293_TheHiddenVeins;
 import quests.Q00294_CovertBusiness.Q00294_CovertBusiness;
+import quests.Q00295_DreamingOfTheSkies.Q00295_DreamingOfTheSkies;
+import quests.Q00296_TarantulasSpiderSilk.Q00296_TarantulasSpiderSilk;
 import quests.Q00297_GatekeepersFavor.Q00297_GatekeepersFavor;
+import quests.Q00298_LizardmensConspiracy.Q00298_LizardmensConspiracy;
 import quests.Q00300_HuntingLetoLizardman.Q00300_HuntingLetoLizardman;
 import quests.Q00303_CollectArrowheads.Q00303_CollectArrowheads;
 import quests.Q00306_CrystalOfFireAndIce.Q00306_CrystalOfFireAndIce;
@@ -451,6 +455,7 @@ public class QuestMasterHandler
 		Q00124_MeetingTheElroki.class,
 		Q00125_TheNameOfEvil1.class,
 		Q00126_TheNameOfEvil2.class,
+		Q00129_PailakaDevilsLegacy.class,
 		Q00131_BirdInACage.class,
 		Q00132_MatrasCuriosity.class,
 		Q00134_TempleMissionary.class,
@@ -558,7 +563,10 @@ public class QuestMasterHandler
 		Q00292_BrigandsSweep.class,
 		Q00293_TheHiddenVeins.class,
 		Q00294_CovertBusiness.class,
+		Q00295_DreamingOfTheSkies.class,
+		Q00296_TarantulasSpiderSilk.class,
 		Q00297_GatekeepersFavor.class,
+		Q00298_LizardmensConspiracy.class,
 		Q00300_HuntingLetoLizardman.class,
 		Q00303_CollectArrowheads.class,
 		Q00306_CrystalOfFireAndIce.class,
