@@ -26,7 +26,6 @@ import com.l2jserver.gameserver.model.conditions.Condition;
 import com.l2jserver.gameserver.model.effects.AbstractEffect;
 import com.l2jserver.gameserver.model.events.EventType;
 import com.l2jserver.gameserver.model.events.impl.character.playable.OnPlayableExpChanged;
-import com.l2jserver.gameserver.model.events.listeners.AbstractEventListener;
 import com.l2jserver.gameserver.model.events.listeners.ConsumerEventListener;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
 import com.l2jserver.gameserver.model.stats.Stats;
@@ -52,13 +51,7 @@ public final class SoulEating extends AbstractEffect
 	{
 		if (info.getEffected().isPlayer())
 		{
-			for (AbstractEventListener listener : info.getEffected().getListeners(EventType.ON_PLAYABLE_EXP_CHANGED))
-			{
-				if (listener.getOwner() == this)
-				{
-					listener.unregisterMe();
-				}
-			}
+			info.getEffected().removeListenerIf(EventType.ON_PLAYABLE_EXP_CHANGED, listener -> listener.getOwner() == this);
 		}
 	}
 	

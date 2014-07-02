@@ -92,6 +92,7 @@ import quests.Q00122_OminousNews.Q00122_OminousNews;
 import quests.Q00124_MeetingTheElroki.Q00124_MeetingTheElroki;
 import quests.Q00125_TheNameOfEvil1.Q00125_TheNameOfEvil1;
 import quests.Q00126_TheNameOfEvil2.Q00126_TheNameOfEvil2;
+import quests.Q00128_PailakaSongOfIceAndFire.Q00128_PailakaSongOfIceAndFire;
 import quests.Q00129_PailakaDevilsLegacy.Q00129_PailakaDevilsLegacy;
 import quests.Q00131_BirdInACage.Q00131_BirdInACage;
 import quests.Q00132_MatrasCuriosity.Q00132_MatrasCuriosity;
@@ -149,6 +150,7 @@ import quests.Q00195_SevenSignsSecretRitualOfThePriests.Q00195_SevenSignsSecretR
 import quests.Q00196_SevenSignsSealOfTheEmperor.Q00196_SevenSignsSealOfTheEmperor;
 import quests.Q00197_SevenSignsTheSacredBookOfSeal.Q00197_SevenSignsTheSacredBookOfSeal;
 import quests.Q00198_SevenSignsEmbryo.Q00198_SevenSignsEmbryo;
+import quests.Q00211_TrialOfTheChallenger.Q00211_TrialOfTheChallenger;
 import quests.Q00212_TrialOfDuty.Q00212_TrialOfDuty;
 import quests.Q00235_MimirsElixir.Q00235_MimirsElixir;
 import quests.Q00237_WindsOfChange.Q00237_WindsOfChange;
@@ -455,6 +457,7 @@ public class QuestMasterHandler
 		Q00124_MeetingTheElroki.class,
 		Q00125_TheNameOfEvil1.class,
 		Q00126_TheNameOfEvil2.class,
+		Q00128_PailakaSongOfIceAndFire.class,
 		Q00129_PailakaDevilsLegacy.class,
 		Q00131_BirdInACage.class,
 		Q00132_MatrasCuriosity.class,
@@ -512,6 +515,7 @@ public class QuestMasterHandler
 		Q00196_SevenSignsSealOfTheEmperor.class,
 		Q00197_SevenSignsTheSacredBookOfSeal.class,
 		Q00198_SevenSignsEmbryo.class,
+		Q00211_TrialOfTheChallenger.class,
 		Q00212_TrialOfDuty.class,
 		Q00235_MimirsElixir.class,
 		Q00237_WindsOfChange.class,
