@@ -252,6 +252,7 @@ import quests.Q00381_LetsBecomeARoyalMember.Q00381_LetsBecomeARoyalMember;
 import quests.Q00382_KailsMagicCoin.Q00382_KailsMagicCoin;
 import quests.Q00385_YokeOfThePast.Q00385_YokeOfThePast;
 import quests.Q00401_PathToWarrior.Q00401_PathToWarrior;
+import quests.Q00407_PathOfTheElvenScout.Q00407_PathOfTheElvenScout;
 import quests.Q00416_PathOfTheOrcShaman.Q00416_PathOfTheOrcShaman;
 import quests.Q00420_LittleWing.Q00420_LittleWing;
 import quests.Q00421_LittleWingsBigAdventure.Q00421_LittleWingsBigAdventure;
@@ -306,6 +307,7 @@ import quests.Q00628_HuntGoldenRam.Q00628_HuntGoldenRam;
 import quests.Q00629_CleanUpTheSwampOfScreams.Q00629_CleanUpTheSwampOfScreams;
 import quests.Q00631_DeliciousTopChoiceMeat.Q00631_DeliciousTopChoiceMeat;
 import quests.Q00633_InTheForgottenVillage.Q00633_InTheForgottenVillage;
+import quests.Q00634_InSearchOfFragmentsOfDimension.Q00634_InSearchOfFragmentsOfDimension;
 import quests.Q00635_IntoTheDimensionalRift.Q00635_IntoTheDimensionalRift;
 import quests.Q00636_TruthBeyond.Q00636_TruthBeyond;
 import quests.Q00637_ThroughOnceMore.Q00637_ThroughOnceMore;
@@ -617,6 +619,7 @@ public class QuestMasterHandler
 		Q00382_KailsMagicCoin.class,
 		Q00385_YokeOfThePast.class,
 		Q00401_PathToWarrior.class,
+		Q00407_PathOfTheElvenScout.class,
 		Q00416_PathOfTheOrcShaman.class,
 		Q00420_LittleWing.class,
 		Q00421_LittleWingsBigAdventure.class,
@@ -671,6 +674,7 @@ public class QuestMasterHandler
 		Q00629_CleanUpTheSwampOfScreams.class,
 		Q00631_DeliciousTopChoiceMeat.class,
 		Q00633_InTheForgottenVillage.class,
+		Q00634_InSearchOfFragmentsOfDimension.class,
 		Q00635_IntoTheDimensionalRift.class,
 		Q00636_TruthBeyond.class,
 		Q00637_ThroughOnceMore.class,
