@@ -21,4 +21,6 @@
 	<item id="4823" price="0" /> <!-- Eminence Bow - Miser -->
 	<item id="4824" price="0" /> <!-- Eminence Bow - Cheap Shot -->
 	<item id="1342" price="0" /> <!-- Steel Arrow -->
+	<!-- FIXME: replace the tea -->
+	<item id="32251" price="0" /> <!-- 無限鐵箭筒 -->
 </list>

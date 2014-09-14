@@ -116,4 +116,6 @@
 	<item id="16119" price="600000" /> <!-- Recipe - Refined Yellow Turban (10%) -->
 	<item id="16120" price="600000" /> <!-- Recipe - Refined Turtle Hat (10%) -->
 	<item id="16121" price="600000" /> <!-- Recipe - Refined Cow Hat (10%) -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

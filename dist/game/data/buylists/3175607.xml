@@ -159,4 +159,6 @@
 	<item id="15823" price="5734240" /> <!-- Recipe - Vesper Caster (60%) -->
 	<item id="15824" price="5734240" /> <!-- Recipe - Vesper Singer (60%) -->
 	<item id="15825" price="5734240" /> <!-- Recipe - Vesper Thrower (60%) -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

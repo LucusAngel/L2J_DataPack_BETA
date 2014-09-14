@@ -11,4 +11,6 @@
 	<item id="5612" price="0" /> <!-- Soul Bow - Quick Recovery -->
 	<item id="5613" price="0" /> <!-- Soul Bow - Critical Poison -->
 	<item id="1344" price="0" /> <!-- Mithril Arrow -->
+	<!-- FIXME: replace the tea -->
+	<item id="32253" price="0" /> <!-- 無限米索莉之箭筒 -->
 </list>

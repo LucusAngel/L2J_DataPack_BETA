@@ -122,4 +122,6 @@
 	<item id="10094" price="4100" /> <!-- Battle Manual - Rush -->
 	<item id="10180" price="1600" /> <!-- Battle Manual - Penetrate Shot -->
 	<item id="10181" price="2100" /> <!-- Battle Manual - Erase Mark -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

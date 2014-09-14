@@ -138,7 +138,7 @@ public class AdminEnchant implements IAdminCommandHandler
 				{
 					int ench = Integer.parseInt(command.substring(12));
 					
-					// check value
+					// check value (L2JTW has 127 max, check!)
 					if ((ench < 0) || (ench > 65535))
 					{
 						activeChar.sendMessage("You must set the enchant level to be between 0-65535.");

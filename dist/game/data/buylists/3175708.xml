@@ -182,4 +182,6 @@
 	<item id="10609" price="19300" /> <!-- Forgotten Scroll - Chant of Critical -->
 	<item id="10610" price="20000" /> <!-- Forgotten Scroll - Chant of Blood Awakening -->
 	<item id="7835" price="23200" /> <!-- Amulet: Seal of Disease -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

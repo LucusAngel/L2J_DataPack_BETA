@@ -170,6 +170,7 @@ public class AdminManor implements IAdminCommandHandler
 		
 		for (Castle c : CastleManager.getInstance().getCastles())
 		{
+			//L2JTW uses c.getCName() instead of c.getName()
 			StringUtil.append(replyMSG, "<tr><td>", c.getName(), "</td>" + "<td>", String.valueOf(c.getManorCost(CastleManorManager.PERIOD_CURRENT)), "a</td>" + "<td>", String.valueOf(c.getManorCost(CastleManorManager.PERIOD_NEXT)), "a</td>" + "</tr>");
 		}
 		

@@ -8,8 +8,8 @@
 		<set name="effectRange" val="400" />
 		<set name="hitTime" val="500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10017" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10017" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3000" />
@@ -735,8 +735,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10549" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10549" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -759,8 +759,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10550" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10550" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -783,8 +783,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10551" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10551" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -807,8 +807,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10552" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10552" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -831,8 +831,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10553" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10553" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -855,8 +855,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10554" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10554" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -879,8 +879,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10555" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10555" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -906,8 +906,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10556" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10556" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -930,8 +930,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10557" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10557" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -954,8 +954,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10558" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10558" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -978,8 +978,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10559" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10559" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1002,8 +1002,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10560" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10560" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1026,8 +1026,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10561" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10561" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1050,8 +1050,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10562" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10562" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1074,8 +1074,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10563" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10563" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1098,8 +1098,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10564" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10564" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1122,8 +1122,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10565" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10565" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1146,8 +1146,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10566" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10566" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1170,8 +1170,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10567" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10567" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1194,8 +1194,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10568" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10568" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1218,8 +1218,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10569" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10569" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1242,8 +1242,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10570" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10570" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1266,8 +1266,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10571" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10571" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1290,8 +1290,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10572" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10572" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1314,8 +1314,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10573" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10573" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1338,8 +1338,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10574" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10574" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1362,8 +1362,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10575" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10575" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1386,8 +1386,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10576" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10576" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1410,8 +1410,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10577" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10577" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1434,8 +1434,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10578" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10578" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1458,8 +1458,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10579" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10579" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1482,8 +1482,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10580" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10580" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1506,8 +1506,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10581" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10581" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1530,8 +1530,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10582" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10582" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1554,8 +1554,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10583" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10583" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1578,8 +1578,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10584" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10584" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1602,8 +1602,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10585" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10585" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1626,8 +1626,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10586" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10586" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1650,8 +1650,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10587" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10587" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1674,8 +1674,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10588" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10588" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1698,8 +1698,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10589" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10589" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1722,8 +1722,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10591" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10591" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1749,8 +1749,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10592" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10592" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1776,8 +1776,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10593" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10593" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1846,8 +1846,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10594" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10594" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />
@@ -1870,8 +1870,8 @@
 		<!-- Confirmed CT2.5 -->
 		<set name="hitTime" val="1500" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
-		<set name="itemConsumeCount" val="1" />
-		<set name="itemConsumeId" val="10595" />
+		<set name="itemConsumeCount" val="1" /> <!-- L2JTW commented out -->
+		<set name="itemConsumeId" val="10595" /> <!-- L2JTW commented out -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="targetType" val="SELF" />

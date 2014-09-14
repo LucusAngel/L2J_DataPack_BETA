@@ -685,12 +685,14 @@ public class AdminEffects implements IAdminCommandHandler
 					activeChar.sendPacket(SystemMessageId.NOTHING_HAPPENED);
 					return false;
 				}
-				if ((target instanceof L2Npc) && ((action < 1) || (action > 3)))
+				//L2JTW's 10 NPC social actions
+				if ((target instanceof L2Npc) && ((action < 1) || (action > 10)))
 				{
 					activeChar.sendPacket(SystemMessageId.NOTHING_HAPPENED);
 					return false;
 				}
-				if ((target instanceof L2PcInstance) && ((action < 2) || ((action > 18) && (action != SocialAction.LEVEL_UP))))
+				// l2jtw add L2Character Max_Social = 36
+				if ((target instanceof L2PcInstance) && ((action < 2) || ((action > 36) && (action != SocialAction.LEVEL_UP))))
 				{
 					activeChar.sendPacket(SystemMessageId.NOTHING_HAPPENED);
 					return false;
@@ -767,7 +769,10 @@ public class AdminEffects implements IAdminCommandHandler
 		PlaySound _snd = new PlaySound(1, sound, 0, 0, 0, 0, 0);
 		activeChar.sendPacket(_snd);
 		activeChar.broadcastPacket(_snd);
+		/* MessageTable
 		activeChar.sendMessage("Playing " + sound + ".");
+		 */
+		activeChar.sendMessage(MessageTable.Messages[1656].getExtra(1) + sound +  MessageTable.Messages[1656].getExtra(2));
 	}
 	
 	@Override

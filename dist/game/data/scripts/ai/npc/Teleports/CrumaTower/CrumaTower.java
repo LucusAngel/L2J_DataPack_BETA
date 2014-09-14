@@ -35,6 +35,11 @@ public final class CrumaTower extends AbstractNpcAI
 	// Locations
 	private static final Location TELEPORT_LOC1 = new Location(17776, 113968, -11671);
 	private static final Location TELEPORT_LOC2 = new Location(17680, 113968, -11671);
+	
+	/* L2JTW locs FIXME: verify this
+	private static final Location TELEPORT_LOC1 = new Location(17726, 114838, -11696);
+	private static final Location TELEPORT_LOC2 = new Location(17729, 114808, -11696);	
+	*/
 	// Misc
 	private static final int MAX_LEVEL = 55;
 	

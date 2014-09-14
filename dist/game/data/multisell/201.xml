@@ -382,4 +382,9 @@
 		<!-- Holy Crystal -->
 		<production count="1" id="9557" />
 	</item>
+	<item>
+	<!-- L2JTW has only this item -->
+		<ingredient count="9999999" id="57" />
+		<production count="1" id="1665" />
+	</item>
 </list>

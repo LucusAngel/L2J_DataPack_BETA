@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<project name="L2J_DataPack_BETA" default="build" basedir=".">
+<project name="L2J_DataPack_EXPERIMENTAL" default="build" basedir=".">
 	<description>
 		Copyright (C) 2004-2013 L2J DataPack
 		
@@ -37,7 +37,7 @@
 	</target>
 
 	<target name="build" depends="dist">
-		<zip destfile="${build}/L2J_DataPack_BETA.zip" basedir="${build.dist}" level="9" />
+		<zip destfile="${build}/L2J_DataPack_EXPERIMENTAL.zip" basedir="${build.dist}" level="9" />
 	</target>
 
 	<target name="checkRequirements" description="Check Requirements.">

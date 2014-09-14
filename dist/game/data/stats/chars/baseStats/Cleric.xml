@@ -2,17 +2,17 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/charTemplate.xsd">
 	<classId>15</classId>
 	<staticData>
-		<baseINT>41</baseINT>
-		<baseSTR>22</baseSTR>
-		<baseCON>27</baseCON>
-		<baseMEN>39</baseMEN>
-		<baseDEX>21</baseDEX>
-		<baseWIT>20</baseWIT>
+		<baseINT>79</baseINT>
+		<baseSTR>38</baseSTR>
+		<baseCON>41</baseCON>
+		<baseMEN>78</baseMEN>
+		<baseDEX>27</baseDEX>
+		<baseWIT>78</baseWIT>
 		<creationPoints>
-			<node x="-90875" y="248162" z="-3570" />
-			<node x="-90954" y="248118" z="-3570" />
-			<node x="-90918" y="248070" z="-3570" />
-			<node x="-90890" y="248027" z="-3570" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
 		</creationPoints>
 		<basePAtk>3</basePAtk>
 		<baseCritRate>4</baseCritRate>
@@ -46,19 +46,19 @@
 		<baseRndDam>10</baseRndDam>
 		<baseMoveSpd>
 			<walk>78</walk>
-			<run>120</run>
+			<run>124</run>
 			<slowSwim>50</slowSwim>
 			<fastSwim>50</fastSwim>
 		</baseMoveSpd>
 		<baseBreath>100</baseBreath>
 		<baseSafeFall>200</baseSafeFall>
 		<collisionMale>
-			<radius>7.5</radius>
-			<height>22.8</height>
+			<radius>9.0</radius>
+			<height>23</height>
 		</collisionMale>
 		<collisionFemale>
-			<radius>6.5</radius>
-			<height>22.5</height>
+			<radius>8.0</radius>
+			<height>23.5</height>
 		</collisionFemale>
 	</staticData>
 	<lvlUpgainData>
@@ -741,6 +741,118 @@
 			<hpRegen>9.9</hpRegen>
 			<mpRegen>3.0</mpRegen>
 			<cpRegen>8.5</cpRegen>
+		</level>
+		<level val="86">
+			<hp>3339.550</hp>
+			<mp>1320.600</mp>
+			<cp>1669.775</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="87">
+			<hp>3394.110</hp>
+			<mp>1341.720</mp>
+			<cp>1697.055</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="88">
+			<hp>3448.980</hp>
+			<mp>1362.960</mp>
+			<cp>1724.490</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="89">
+			<hp>3504.160</hp>
+			<mp>1384.320</mp>
+			<cp>1752.080</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="90">
+			<hp>3559.650</hp>
+			<mp>1405.800</mp>
+			<cp>1779.825</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="91">
+			<hp>3615.450</hp>
+			<mp>1427.400</mp>
+			<cp>1807.725</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="92">
+			<hp>3671.560</hp>
+			<mp>1449.120</mp>
+			<cp>1835.780</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="93">
+			<hp>3727.980</hp>
+			<mp>1470.960</mp>
+			<cp>1863.990</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="94">
+			<hp>3784.710</hp>
+			<mp>1492.920</mp>
+			<cp>1892.355</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="95">
+			<hp>3841.750</hp>
+			<mp>1515.000</mp>
+			<cp>1920.875</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="96">
+			<hp>3899.100</hp>
+			<mp>1537.200</mp>
+			<cp>1949.550</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="97">
+			<hp>3956.760</hp>
+			<mp>1559.520</mp>
+			<cp>1978.380</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="98">
+			<hp>4014.730</hp>
+			<mp>1581.960</mp>
+			<cp>2007.365</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="99">
+			<hp>4073.010</hp>
+			<mp>1604.520</mp>
+			<cp>2036.505</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
 		</level>
 	</lvlUpgainData>
 </list>

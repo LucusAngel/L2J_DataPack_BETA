@@ -71,4 +71,6 @@
 	<item id="8720" price="164800" /> <!-- Themis' Tongue Piece -->
 	<item id="8721" price="164800" /> <!-- Cabrio's Hand Head -->
 	<item id="8722" price="164800" /> <!-- Daimon Crystal Fragment -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

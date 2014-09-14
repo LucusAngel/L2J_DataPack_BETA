@@ -23,7 +23,7 @@
 							<xs:simpleType>
 								<xs:restriction base="xs:positiveInteger">
 									<xs:minInclusive value="1" />
-									<xs:maxInclusive value="65535" />
+									<xs:maxInclusive value="65535" /> <!-- FIXME: L2JTW has 127 -->
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>
@@ -43,6 +43,7 @@
 									<xs:enumeration value="C" />
 									<xs:enumeration value="D" />
 									<xs:enumeration value="S" />
+									<xs:enumeration value="R" /> <!-- l2jtw add -->
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>
@@ -56,7 +57,7 @@
 							<xs:simpleType>
 								<xs:restriction base="xs:positiveInteger">
 									<xs:minInclusive value="1" />
-									<xs:maxInclusive value="65535" />
+									<xs:maxInclusive value="65535" /> <!-- FIXME: L2JTW has 127 -->
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>
@@ -69,6 +70,7 @@
 									<xs:enumeration value="C" />
 									<xs:enumeration value="D" />
 									<xs:enumeration value="S" />
+									<xs:enumeration value="R" /> <!-- l2jtw add -->
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>

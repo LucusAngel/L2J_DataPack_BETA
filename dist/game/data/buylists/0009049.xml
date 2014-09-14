@@ -11,4 +11,6 @@
 	<item id="7577" price="0" /> <!-- Draconic Bow - Focus -->
 	<item id="7578" price="0" /> <!-- Draconic Bow - Critical Slow -->
 	<item id="1345" price="0" /> <!-- Shining Arrow -->
+	<!-- FIXME: replace the tea -->
+	<item id="32254" price="0" /> <!-- 無限閃耀箭筒 -->
 </list>

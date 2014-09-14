@@ -9,4 +9,6 @@
 	<item id="4829" price="0" /> <!-- Bow of Peril - Quick Recovery -->
 	<item id="4830" price="0" /> <!-- Bow of Peril - Cheap Shot -->
 	<item id="1343" price="0" /> <!-- Silver Arrow -->
+	<!-- FIXME: replace the tea -->
+	<item id="32252" price="0" /> <!-- 無限銀箭筒 -->
 </list>

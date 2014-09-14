@@ -6,6 +6,7 @@
 	<enchant id="951" targetGrade="C" />
 	<enchant id="955" targetGrade="D" />
 	<enchant id="959" targetGrade="S" />
+	<enchant id="17526" targetGrade="R" /> <!-- l2jtw add -->
 
 	<!-- Scrolls: Enchant Armor -->
 	<enchant id="730" targetGrade="A" />
@@ -13,6 +14,7 @@
 	<enchant id="952" targetGrade="C" />
 	<enchant id="956" targetGrade="D" scrollGroupId="0" /> <!-- Default scroll groups binding. -->
 	<enchant id="960" targetGrade="S" />
+	<enchant id="17527" targetGrade="R" /> <!-- l2jtw add -->
 
 	<!-- Blessed Scrolls: Enchant Weapon -->
 	<enchant id="6569" targetGrade="A" />
@@ -20,12 +22,14 @@
 	<enchant id="6573" targetGrade="C" />
 	<enchant id="6575" targetGrade="D" />
 	<enchant id="6577" targetGrade="S" />
+	<enchant id="19447" targetGrade="R" /> <!-- l2jtw add -->
 	<!-- Blessed Scrolls: Enchant Armor -->
 	<enchant id="6570" targetGrade="A" />
 	<enchant id="6572" targetGrade="B" />
 	<enchant id="6574" targetGrade="C" />
 	<enchant id="6576" targetGrade="D" />
 	<enchant id="6578" targetGrade="S" />
+	<enchant id="19448" targetGrade="R" /> <!-- l2jtw add -->
 
 	<!-- Not used anymore. -->
 	<!-- Crystal Scrolls: Enchant Weapon -->
@@ -47,38 +51,46 @@
 	<enchant id="22008" targetGrade="B" bonusRate="10" />
 	<enchant id="22009" targetGrade="A" bonusRate="10" />
 	<enchant id="20517" targetGrade="S" bonusRate="10" />
+	<enchant id="22425" targetGrade="R" bonusRate="10" /> <!-- l2jtw add -->
 	<!-- Armor Enchant Scrolls -->
 	<enchant id="22010" targetGrade="D" bonusRate="10" />
 	<enchant id="22011" targetGrade="C" bonusRate="10" />
 	<enchant id="22012" targetGrade="B" bonusRate="10" />
 	<enchant id="22013" targetGrade="A" bonusRate="10" />
 	<enchant id="20518" targetGrade="S" bonusRate="10" />
+	<enchant id="22428" targetGrade="R" bonusRate="10" /> <!-- l2jtw add -->
 
 	<!-- Ancient Weapon Enchant Crystal -->
 	<enchant id="22014" targetGrade="B" maxEnchant="16" bonusRate="10" />
 	<enchant id="22015" targetGrade="A" maxEnchant="16" bonusRate="10" />
 	<enchant id="20519" targetGrade="S" maxEnchant="16" bonusRate="10" />
+	<enchant id="22426" targetGrade="R" maxEnchant="16" bonusRate="10" /> <!-- l2jtw add -->
 	<!-- Ancient Armor Enchant Crystal -->
 	<enchant id="22016" targetGrade="B" maxEnchant="16" bonusRate="10" />
 	<enchant id="22017" targetGrade="A" maxEnchant="16" bonusRate="10" />
 	<enchant id="20520" targetGrade="S" maxEnchant="16" bonusRate="10" />
+	<enchant id="22429" targetGrade="R" maxEnchant="16" bonusRate="10" /> <!-- l2jtw add -->
 
 	<!-- Divine Weapon Enchant Crystal -->
 	<enchant id="22018" targetGrade="B" bonusRate="100" />
 	<enchant id="22019" targetGrade="A" bonusRate="100" />
 	<enchant id="20521" targetGrade="S" bonusRate="100" />
+	<enchant id="22427" targetGrade="R" bonusRate="100" /> <!-- l2jtw add -->
 	<!-- Divine Armor Enchant Crystal -->
 	<enchant id="22020" targetGrade="B" bonusRate="100" />
 	<enchant id="22021" targetGrade="A" bonusRate="100" />
 	<enchant id="20522" targetGrade="S" bonusRate="100" />
+	<enchant id="22430" targetGrade="R" bonusRate="100" /> <!-- l2jtw add -->
 
 	<!-- Scroll: Enchant Weapon of Destruction -->
+	<enchant id="33478" targetGrade="R" maxEnchant="15" /> <!-- l2jtw add -->
 	<enchant id="22221" targetGrade="S" maxEnchant="15" />
 	<enchant id="22223" targetGrade="A" maxEnchant="15" />
 	<enchant id="22225" targetGrade="B" maxEnchant="15" />
 	<enchant id="22227" targetGrade="C" maxEnchant="15" />
 	<enchant id="22229" targetGrade="D" maxEnchant="15" />
 	<!-- Scroll: Enchant Armor of Destruction -->
+	<enchant id="33479" targetGrade="R" maxEnchant="6" /> <!-- l2jtw add -->
 	<enchant id="22222" targetGrade="S" maxEnchant="6" />
 	<enchant id="22224" targetGrade="A" maxEnchant="6" />
 	<enchant id="22226" targetGrade="B" maxEnchant="6" />
@@ -230,6 +242,7 @@
 	<support id="12364" targetGrade="B" maxEnchant="9" bonusRate="15" />
 	<support id="12365" targetGrade="A" maxEnchant="9" bonusRate="12" />
 	<support id="12366" targetGrade="S" maxEnchant="9" bonusRate="10" />
+	<support id="23347" targetGrade="R" maxEnchant="9" bonusRate="10" /> <!-- l2jtw add -->
 
 	<!-- Armor-Type Enhance Backup Stone -->
 	<support id="12367" targetGrade="D" maxEnchant="9" bonusRate="35" />
@@ -237,6 +250,7 @@
 	<support id="12369" targetGrade="B" maxEnchant="9" bonusRate="23" />
 	<support id="12370" targetGrade="A" maxEnchant="9" bonusRate="18" />
 	<support id="12371" targetGrade="S" maxEnchant="9" bonusRate="15" />
+	<support id="23348" targetGrade="R" maxEnchant="9" bonusRate="15" /> <!-- l2jtw add -->
 
 	<!-- Agathion Auxiliary Stone: Enchant Weapon -->
 	<support id="14702" targetGrade="D" maxEnchant="9" bonusRate="20" />
@@ -244,6 +258,7 @@
 	<support id="14704" targetGrade="B" maxEnchant="9" bonusRate="15" />
 	<support id="14705" targetGrade="A" maxEnchant="9" bonusRate="12" />
 	<support id="14706" targetGrade="S" maxEnchant="9" bonusRate="10" />
+	<support id="30381" targetGrade="R" maxEnchant="9" bonusRate="10" /> <!-- l2jtw add -->
 
 	<!-- Agathion Auxiliary Stone: Enchant Armor -->
 	<support id="14707" targetGrade="D" maxEnchant="9" bonusRate="35" />
@@ -251,4 +266,5 @@
 	<support id="14709" targetGrade="B" maxEnchant="9" bonusRate="23" />
 	<support id="14710" targetGrade="A" maxEnchant="9" bonusRate="18" />
 	<support id="14711" targetGrade="S" maxEnchant="9" bonusRate="15" />
+	<support id="30382" targetGrade="R" maxEnchant="9" bonusRate="15" /> <!-- l2jtw add -->
 </list>

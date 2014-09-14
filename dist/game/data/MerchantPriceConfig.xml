@@ -10,13 +10,13 @@
 <!-- Merchant Price Formula price = baseItemPrice * (1 + baseTax/100 + castleTax/100) -->
 <merchantPriceConfig defaultPriceConfig="18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/MerchantPriceConfig.xsd">
 	<priceConfig id="0" name="Giran Town" baseTax="10" castleId="3" zoneId="11020" />
-	<priceConfig id="1" name="DE Village" baseTax="15" castleId="4" zoneId="11021" />
-	<priceConfig id="2" name="Talking Island" baseTax="15" castleId="1" zoneId="11022" />
-	<priceConfig id="3" name="Elven Village" baseTax="15" castleId="4" zoneId="11023" />
-	<priceConfig id="4" name="Orc Village" baseTax="15" castleId="9" zoneId="11024" />
+	<priceConfig id="1" name="DE Village" baseTax="15" castleId="4" zoneId="11021" /><!-- L2JTW baseTax="20" -->
+	<priceConfig id="2" name="Talking Island" baseTax="15" castleId="1" zoneId="11022" /><!-- L2JTW baseTax="20" -->
+	<priceConfig id="3" name="Elven Village" baseTax="15" castleId="4" zoneId="11023" /><!-- L2JTW baseTax="20" -->
+	<priceConfig id="4" name="Orc Village" baseTax="15" castleId="9" zoneId="11024" /><!-- L2JTW baseTax="20" -->
 	<priceConfig id="5" name="Gludin Village" baseTax="20" castleId="1" zoneId="11025" />
-	<priceConfig id="6" name="Dwarven Village" baseTax="15" castleId="9" zoneId="11026" />
-	<priceConfig id="7" name="Kamael Village" baseTax="15" castleId="5" zoneId="11038" />
+	<priceConfig id="6" name="Dwarven Village" baseTax="15" castleId="9" zoneId="11026" /><!-- L2JTW baseTax="20" -->
+	<priceConfig id="7" name="Kamael Village" baseTax="15" castleId="5" zoneId="11038" /><!-- L2JTW baseTax="20" -->
 	<priceConfig id="8" name="Gludio Town" baseTax="20" castleId="1" zoneId="11027" />
 	<priceConfig id="9" name="Dion Town" baseTax="20" castleId="2" zoneId="11028" />
 	<priceConfig id="10" name="Oren Town" baseTax="15" castleId="4" zoneId="11029" />

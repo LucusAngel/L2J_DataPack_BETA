@@ -42,6 +42,7 @@ public final class ShadowWeapons extends Quest
 		31977, 31996, 32092, 32093, 32094, 32095, 32096, 32097, 32098, 32193,
 		32196, 32199, 32202, 32205, 32206, 32213, 32214, 32221, 32222, 32229,
 		32230, 32233, 32234
+		// , 30508, 30594, 31279, 31755, 32209, 32210, 32217, 32218, 32225, 32226 // l2jtw add NPC, commented out for now (Battlecruiser)
 	};
 	// @formatter:on
 	private ShadowWeapons()

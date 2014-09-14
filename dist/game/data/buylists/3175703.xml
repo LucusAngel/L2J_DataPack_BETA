@@ -67,4 +67,6 @@
 	<item id="4118" price="96616" /> <!-- Evil Spirit Head -->
 	<item id="4114" price="91384" /> <!-- Sword of Damascus Blade -->
 	<item id="4085" price="23016" /> <!-- Tunic of Doom Pattern -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

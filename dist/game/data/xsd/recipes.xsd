@@ -57,7 +57,7 @@
 							<xs:simpleType>
 								<xs:restriction base="xs:integer">
 									<xs:minInclusive value="1" />
-									<xs:maxInclusive value="10" />
+									<xs:maxInclusive value="14" /> <!-- l2jtw fix Max_Level -->
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>

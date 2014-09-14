@@ -117,4 +117,6 @@
 	<item id="1825" price="5600" /> <!-- Recipe: Oriharukon -->
 	<item id="5231" price="5600" /> <!-- Recipe: Metal Hardener (100%) -->
 	<item id="5473" price="5600" /> <!-- Recipe: Durable Metal Plate(100%) -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

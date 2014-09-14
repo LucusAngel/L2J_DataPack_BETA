@@ -108,7 +108,8 @@ public class OlympiadManagerLink implements IBypassHandler
 					activeChar.sendPacket(html);
 					return false;
 				}
-				if (!activeChar.isNoble() || (activeChar.getClassId().level() < 3))
+				// GoD+ condition
+				if (!activeChar.isNoble() || !activeChar.isAwaken() || activeChar.getLevel() < 85)
 				{
 					html.setFile(activeChar.getHtmlPrefix(), Olympiad.OLYMPIAD_HTML_PATH + "noble_thirdclass.htm");
 					html.replace("%objectId%", String.valueOf(target.getObjectId()));
@@ -121,8 +122,10 @@ public class OlympiadManagerLink implements IBypassHandler
 				switch (val)
 				{
 					case 0: // H5 match selection
+						// L2JTW comment out start >>
 						if (!OlympiadManager.getInstance().isRegistered(activeChar))
 						{
+						// << L2JTW comment out end
 							final int olympiad_round = 0; // TODO : implement me
 							final int olympiad_week = 0; // TODO: implement me
 							final int olympiad_participant = 0; // TODO: implement me
@@ -133,6 +136,7 @@ public class OlympiadManagerLink implements IBypassHandler
 							html.replace("%olympiad_week%", String.valueOf(olympiad_week));
 							html.replace("%olympiad_participant%", String.valueOf(olympiad_participant));
 							activeChar.sendPacket(html);
+						// L2JTW comment out start >>
 						}
 						else
 						{
@@ -140,11 +144,12 @@ public class OlympiadManagerLink implements IBypassHandler
 							html.replace("%objectId%", String.valueOf(target.getObjectId()));
 							activeChar.sendPacket(html);
 						}
+						// << L2JTW comment out end
 						break;
 					case 1: // unregister
 						OlympiadManager.getInstance().unRegisterNoble(activeChar);
 						break;
-					case 2: // show waiting list | TODO: cleanup (not used anymore)
+					case 2: // show waiting list | TODO: cleanup (not used anymore) L2JTW commented whole block out
 						final int nonClassed = OlympiadManager.getInstance().getRegisteredNonClassBased().size();
 						final int teams = OlympiadManager.getInstance().getRegisteredTeamsBased().size();
 						final Collection<List<Integer>> allClassed = OlympiadManager.getInstance().getRegisteredClassBased().values();
@@ -182,11 +187,35 @@ public class OlympiadManagerLink implements IBypassHandler
 						html.replace("%objectId%", String.valueOf(target.getObjectId()));
 						activeChar.sendPacket(html);
 						break;
-					case 4: // register non classed
+					case 4: // register non classed, Seems like "combo" button in L2JTW, verify!
+						/* pmq
 						OlympiadManager.getInstance().registerNoble(activeChar, CompetitionType.NON_CLASSED);
+						 */
+						// Add by pmq Start
+						if (OlympiadManager.getInstance().isRegistered(activeChar))
+						{
+							html.setFile(activeChar.getHtmlPrefix(), Olympiad.OLYMPIAD_HTML_PATH + "noble_unregister.htm");
+							html.replace("%objectId%", String.valueOf(target.getObjectId()));
+							activeChar.sendPacket(html);
+						}
+						else
+							OlympiadManager.getInstance().registerNoble(activeChar, CompetitionType.NON_CLASSED);
+						// Add by pmq End
 						break;
-					case 5: // register classed
+					case 5: // register classed, Seems like "combo" button in L2JTW, verify!
+						/* pmq
 						OlympiadManager.getInstance().registerNoble(activeChar, CompetitionType.CLASSED);
+						 */
+						// Add by pmq Start
+						if (OlympiadManager.getInstance().isRegistered(activeChar))
+						{
+							html.setFile(activeChar.getHtmlPrefix(), Olympiad.OLYMPIAD_HTML_PATH + "noble_unregister.htm");
+							html.replace("%objectId%", String.valueOf(target.getObjectId()));
+							activeChar.sendPacket(html);
+						}
+						else
+							OlympiadManager.getInstance().registerNoble(activeChar, CompetitionType.CLASSED);
+						// Add by pmq End
 						break;
 					case 6: // request tokens reward
 						passes = Olympiad.getInstance().getNoblessePasses(activeChar, false);
@@ -232,8 +261,20 @@ public class OlympiadManagerLink implements IBypassHandler
 							activeChar.sendPacket(sm);
 						}
 						break;
-					case 11: // register team
+					case 11: // register team, Seems like "combo" button in L2JTW, verify! FIME: this is probably not used anymore (enable/disdable by config?)!!!
+						/* pmq
 						OlympiadManager.getInstance().registerNoble(activeChar, CompetitionType.TEAMS);
+						 */
+						// Add by pmq Start
+						if (OlympiadManager.getInstance().isRegistered(activeChar))
+						{
+							html.setFile(activeChar.getHtmlPrefix(), Olympiad.OLYMPIAD_HTML_PATH + "noble_unregister.htm");
+							html.replace("%objectId%", String.valueOf(target.getObjectId()));
+							activeChar.sendPacket(html);
+						}
+						else
+							OlympiadManager.getInstance().registerNoble(activeChar, CompetitionType.TEAMS);
+						// Add by pmq End
 						break;
 					default:
 						_log.warning("Olympiad System: Couldnt send packet for request " + val);
@@ -316,7 +357,8 @@ public class OlympiadManagerLink implements IBypassHandler
 					case 2: // show rank for a specific class
 						// for example >> Olympiad 1_88
 						int classId = Integer.parseInt(command.substring(11));
-						if (((classId >= 88) && (classId <= 118)) || ((classId >= 131) && (classId <= 134)) || (classId == 136))
+						// GoD+ classes
+						if (((classId >= 148) && (classId <= 181)) || (classId == 144) || (classId == 188) || (classId == 189))
 						{
 							List<String> names = Olympiad.getInstance().getClassLeaderBoard(classId);
 							reply.setFile(activeChar.getHtmlPrefix(), Olympiad.OLYMPIAD_HTML_PATH + "olympiad_ranking.htm");

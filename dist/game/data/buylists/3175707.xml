@@ -167,4 +167,6 @@
 	<item id="10196" price="18600" /> <!-- Battle Manual - Soul Harmony -->
 	<item id="10204" price="8500" /> <!-- Battle Manual - Soul Gathering -->
 	<item id="10183" price="7400" /> <!-- Battle Manual - Create Special Bolt -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

@@ -152,4 +152,6 @@
 	<item id="8709" price="1412000" /> <!-- Recipe: Cabrio's Hand (100%) -->
 	<item id="8710" price="1412000" /> <!-- Recipe: Daimon Crystal (60%) -->
 	<item id="8711" price="1412000" /> <!-- Recipe: Daimon Crystal (100%) -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

@@ -34,4 +34,17 @@
 	<item id="22091" price="0" /> <!-- Silver Quiver -->
 	<item id="22092" price="0" /> <!-- Mithril Quiver -->
 	<item id="22093" price="0" /> <!-- Quiver of Light -->
+	<!-- FIXME: replace the tea -->
+	<item id="32249" price="0" /> <!-- 無限木箭筒 -->
+	<item id="32250" price="0" /> <!-- 無限骨箭筒 -->
+	<item id="32251" price="0" /> <!-- 無限鐵箭筒 -->
+	<item id="32252" price="0" /> <!-- 無限銀箭筒 -->
+	<item id="32253" price="0" /> <!-- 無限米索莉之箭筒 -->
+	<item id="32254" price="0" /> <!-- 無限閃耀箭筒 -->
+	<item id="32256" price="0" /> <!-- 無限木製弩箭筒 -->
+	<item id="32257" price="0" /> <!-- 無限骨製弩箭筒 -->
+	<item id="32258" price="0" /> <!-- 無限鋼鐵弩箭筒 -->
+	<item id="32259" price="0" /> <!-- 無限銀弩箭筒 -->
+	<item id="32260" price="0" /> <!-- 無限米索莉弩箭筒 -->
+	<item id="32261" price="0" /> <!-- 無限閃耀弩箭筒 -->
 </list>

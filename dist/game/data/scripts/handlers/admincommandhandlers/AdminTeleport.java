@@ -96,6 +96,16 @@ public class AdminTeleport implements IAdminCommandHandler
 		{
 			activeChar.setTeleMode(2);
 		}
+		// l2jtw add-jump-Start
+		if (command.equals("admin_teleto f1")) 
+		{
+			activeChar.setTeleMode(3);
+		}
+		if (command.equals("admin_teleto f"))
+		{
+			activeChar.setTeleMode(4);
+		}
+		// l2jtw add-jump-End
 		if (command.equals("admin_teleto end"))
 		{
 			activeChar.setTeleMode(0);

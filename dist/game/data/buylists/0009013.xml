@@ -10,4 +10,6 @@
 	<item id="7823" price="0" /> <!-- Traveler's Dark Elven Bow -->
 	<item id="7824" price="0" /> <!-- Traveler's Long Bow -->
 	<item id="1341" price="0" /> <!-- Bone Arrow -->
+	<!-- FIXME: replace the tea -->
+	<item id="32250" price="0" /> <!-- 無限骨箭筒 -->
 </list>

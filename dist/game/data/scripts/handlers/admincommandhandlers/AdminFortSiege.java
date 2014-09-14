@@ -163,10 +163,11 @@ public class AdminFortSiege implements IAdminCommandHandler
 		{
 			if (fort != null)
 			{
+				//L2JTW uses fort.getCName() instead of fort.getName()
 				StringUtil.append(cList, "<td fixwidth=90><a action=\"bypass -h admin_fortsiege ", String.valueOf(fort.getResidenceId()), "\">", fort.getName(), " id: ", String.valueOf(fort.getResidenceId()), "</a></td>");
 				i++;
 			}
-			
+			//L2JTW: if (i > 0)
 			if (i > 2)
 			{
 				cList.append("</tr><tr>");
@@ -182,6 +183,7 @@ public class AdminFortSiege implements IAdminCommandHandler
 	{
 		final NpcHtmlMessage adminReply = new NpcHtmlMessage();
 		adminReply.setFile(activeChar.getHtmlPrefix(), "data/html/admin/fort.htm");
+		//L2JTW uses fort.getCName() instead of fort.getName()
 		adminReply.replace("%fortName%", fort.getName());
 		adminReply.replace("%fortId%", String.valueOf(fort.getResidenceId()));
 		activeChar.sendPacket(adminReply);

@@ -110,4 +110,57 @@
 	<class classId="134" name="Trickster" serverName="trickster" parentClassId="130" />
 	<class classId="135" name="Inspector" serverName="inspector" parentClassId="126" />
 	<class classId="136" name="Judicator" serverName="judicator" parentClassId="135" />
+	<!-- Legacy Awaken Classes -->
+	<class classId="139" name="Sigel Knight" serverName="sigel_knight" parentClassId="90" />
+	<class classId="140" name="Tyrr Warrior" serverName="tyrr_warrior" parentClassId="88" />
+	<class classId="141" name="Othell Rogue" serverName="othell_rogue" parentClassId="93" />
+	<class classId="142" name="Yul Archer" serverName="yul_archer" parentClassId="92" />
+	<class classId="143" name="Feoh Wizard" serverName="feoh_wizard" parentClassId="95" />
+	<class classId="144" name="Iss Enchanter" serverName="iss_enchanter" parentClassId="136" /> <!-- FIXME: IDK why this value is there (I think that so called Human Default should be here instead Battlecruiser) -->
+	<class classId="145" name="Wynn Summoner" serverName="wynn_summnoner" parentClassId="96" />
+	<class classId="146" name="Aeore Healer" serverName="aeore_healer" parentClassId="97" />
+	<!-- Current Awaken Classes -->
+	<class classId="148" name="Sigel Phoenix Knight" serverName="sigel_phoenix_knight" parentClassId="90" />
+	<class classId="149" name="Sigel Hell Knight" serverName="sigel_hell_knight" parentClassId="91" />
+	<class classId="150" name="Sigel Eva's Templar" serverName="sigel_evas_templar" parentClassId="99" />
+	<class classId="151" name="Sigel Shillien Templar" serverName="sigel_shillien_templar" parentClassId="106" />
+	<class classId="152" name="Tyrr Duelist" serverName="tyrr_duelist" parentClassId="88" />
+	<class classId="153" name="Tyrr Dreadnought" serverName="tyrr_dreadnought" parentClassId="89" />
+	<class classId="154" name="Tyrr Titan" serverName="tyrr_titan" parentClassId="113" />
+	<class classId="155" name="Tyrr Grand Khavatari" serverName="tyrr_grand_khavatari" parentClassId="114" />
+	<class classId="156" name="Tyrr Maestro" serverName="tyrr_maestro" parentClassId="118" />
+	<class classId="157" name="Tyrr Doombringer" serverName="tyrr_doombringer" parentClassId="131" />
+	<class classId="158" name="Othell Adventurer" serverName="othell_adventurer" parentClassId="93" />
+	<class classId="159" name="Othell Wind Rider" serverName="othell_wind_rider" parentClassId="101" />
+	<class classId="160" name="Othell Ghost Hunter" serverName="othell_ghost_hunter" parentClassId="108" />
+	<class classId="161" name="Othell Fortune Seeker" serverName="othell_fortune_seeker" parentClassId="117" />
+	<class classId="162" name="Yul Sagittarius" serverName="yul_sagittarius" parentClassId="92" />
+	<class classId="163" name="Yul Moonlight Sentinel" serverName="yul_moonlight_sentinel" parentClassId="102" />
+	<class classId="164" name="Yul Ghost Sentinel" serverName="yul_ghost_sentinel" parentClassId="109" />
+	<class classId="165" name="Yul Trickster" serverName="yul_trickster" parentClassId="134" />
+	<class classId="166" name="Feoh Archmage" serverName="feoh_archmage" parentClassId="94" />
+	<class classId="167" name="Feoh Soultaker" serverName="feoh_soultaker" parentClassId="95" />
+	<class classId="168" name="Feoh Mystic Muse" serverName="feoh_mystic_muse" parentClassId="103" />
+	<class classId="169" name="Feoh Storm Screamer" serverName="feoh_storm_screamer" parentClassId="110" />
+	<class classId="170" name="Feoh Soulhound" serverName="feoh_soulhound" parentClassId="132" />
+	<class classId="171" name="Iss Hierophant" serverName="iss_hierophant" parentClassId="98" />
+	<class classId="172" name="Iss Sword Muse" serverName="iss_sword_muse" parentClassId="100" />
+	<class classId="173" name="Iss Spectral Dancer" serverName="iss_spectral_dancer" parentClassId="107" />
+	<class classId="174" name="Iss Dominator" serverName="iss_dominator" parentClassId="115" />
+	<class classId="175" name="Iss Doomcryer" serverName="iss_doomcryer" parentClassId="116" />
+	<class classId="176" name="Wynn Arcana Lord" serverName="wynn_arcana_lord" parentClassId="96" />
+	<class classId="177" name="Wynn Elemental Master" serverName="wynn_elemental_master" parentClassId="104" />
+	<class classId="178" name="Wynn Spectral Master" serverName="wynn_spectral_master" parentClassId="111" />
+	<class classId="179" name="Aeore Cardinal" serverName="aeore_cardinal" parentClassId="97" />
+	<class classId="180" name="Aeore Eva's Saint" serverName="aeore_evas_saint" parentClassId="105" />
+	<class classId="181" name="Aeore Shillient Saint" serverName="aeore_shillient_saint" parentClassId="112" />
+	<!-- Ertheia race FIXME: verify & correct this! -->
+	<class classId="182" name="Ertheia Fighter" serverName="ertheia_fighter" />
+	<class classId="183" name="Marauder" serverName="marauder" />
+	<class classId="184" name="Ripper" serverName="ripper" parentClassId="182" />
+	<class classId="185" name="Eviscerator" serverName="eviscerator" parentClassId="183" />
+	<class classId="186" name="Ertheia Wizard" serverName="ertheia_wizard" parentClassId="184" />
+	<class classId="187" name="Cloud Breaker" serverName="cloud_breaker" parentClassId="185" />
+	<class classId="188" name="Stratomancer" serverName="stratomancer" parentClassId="186" />
+	<class classId="189" name="Sayha's Seer" serverName="sayhas_seer" parentClassId="187" />
 </list>

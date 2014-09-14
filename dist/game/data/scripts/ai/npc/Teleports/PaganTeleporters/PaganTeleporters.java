@@ -112,7 +112,7 @@ public final class PaganTeleporters extends AbstractNpcAI
 			{
 				openDoor(19160001, 0);
 				startQuestTimer("Close_Door1", 10000, null, null);
-				return "FadedMark.htm";
+				return "FadedMark.htm"; //FIXME: L2JTW: return "FadedMark1.htm";
 			}
 			case 32036:
 			{
@@ -130,7 +130,7 @@ public final class PaganTeleporters extends AbstractNpcAI
 				openDoor(19160010, 0);
 				openDoor(19160011, 0);
 				startQuestTimer("Close_Door2", 10000, null, null);
-				return "FadedMark.htm";
+				return "FadedMark.htm"; //FIXME: L2JTW: return "FadedMark1.htm";
 			}
 		}
 		return super.onTalk(npc, player);

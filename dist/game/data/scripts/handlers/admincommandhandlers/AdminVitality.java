@@ -98,7 +98,10 @@ public class AdminVitality implements IAdminCommandHandler
 					}
 					else
 					{
+						/* FIXME: verify this!
 						vitality = PcStat.VITALITY_LEVELS[level - 1];
+						 */
+						vitality = PcStat.VITALITY_LEVELS[level]; // rocknow-God
 					}
 					target.setVitalityPoints(vitality, true);
 					target.sendMessage("Admin set your Vitality level to " + level);

@@ -173,6 +173,8 @@ public class PlayerHandler implements ITelnetHandler
 						itemType = 0;
 				}
 				
+				//FIXME: L2JTW has max enchant 127
+				//FIXME: Unhardcode this!
 				if (enchant > 65535)
 				{
 					enchant = 65535;

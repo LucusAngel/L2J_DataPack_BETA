@@ -24,6 +24,7 @@ import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
+import com.l2jserver.Config; // l2jtw add
 
 /**
  * Teleport Bookmark Slot Handler
@@ -42,7 +43,8 @@ public class TeleportBookmark implements IItemHandler
 		
 		L2PcInstance player = playable.getActingPlayer();
 		
-		if (player.getBookMarkSlot() >= 9)
+		// L2JTW: unhardcoded bookmark slot count
+		if (player.getBookMarkSlot() >= Config.MAX_BOOKMARKSLOT)
 		{
 			player.sendPacket(SystemMessageId.YOUR_NUMBER_OF_MY_TELEPORTS_SLOTS_HAS_REACHED_ITS_MAXIMUM_LIMIT);
 			return false;

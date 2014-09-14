@@ -141,4 +141,6 @@
 	<item id="5000" price="524000" /> <!-- Recipe: Sword of Damascus (60%) -->
 	<item id="4162" price="96400" /> <!-- Recipe: Tunic of Doom (100%) -->
 	<item id="4987" price="96400" /> <!-- Recipe: Tunic of Doom (60%) -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

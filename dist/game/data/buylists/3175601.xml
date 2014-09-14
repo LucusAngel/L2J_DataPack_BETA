@@ -171,4 +171,6 @@
 	<item id="8563" price="4000000" /> <!-- Wizard Hat -->
 	<item id="8564" price="4000000" /> <!-- Dapper Cap -->
 	<item id="8565" price="4000000" /> <!-- Romantic Chapeau -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

@@ -158,4 +158,6 @@
 	<item id="2353" price="245200" /> <!-- Recipe: Samurai Longsword -->
 	<item id="3022" price="245200" /> <!-- Recipe: Yaksa Mace -->
 	<item id="5436" price="245200" /> <!-- Recipe: Berserker Blade(100%) -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

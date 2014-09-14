@@ -38,6 +38,7 @@ import com.l2jserver.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jserver.gameserver.network.serverpackets.PledgeSkillList;
 import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 import com.l2jserver.util.StringUtil;
+import com.l2jserver.gameserver.instancemanager.AwakingManager; // rocknow-God-Awaking
 
 /**
  * This class handles following admin commands:
@@ -224,6 +225,7 @@ public class AdminSkill implements IAdminCommandHandler
 		}
 		final L2PcInstance player = target.getActingPlayer();
 		// Notify player and admin
+		AwakingManager.getInstance().AwakingRemoveSkills(player); // rocknow-God-Awaking
 		activeChar.sendMessage("You gave " + player.giveAvailableSkills(includedByFs, true) + " skills to " + player.getName());
 		player.sendSkillList();
 	}

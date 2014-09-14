@@ -391,7 +391,7 @@ public final class Race extends Event
 		}
 		
 		player.getEffectList().stopSkillEffects(true, AbnormalType.SPEED_UP);
-		player.stopSkillEffects(true, 268);
+		player.stopSkillEffects(true, 268); // Song of Wind
 		player.stopSkillEffects(true, 298); // Rabbit Spirit Totem
 		SkillData.getInstance().getSkill(_skill, 1).applyEffects(player, player);
 	}

@@ -41,4 +41,6 @@
 	<item id="2139" price="2000" /> <!-- Recipe: Steel Mold -->
 	<item id="2143" price="2000" /> <!-- Recipe: Synthetic Cokes -->
 	<item id="2142" price="2000" /> <!-- Recipe: Varnish of Purity -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

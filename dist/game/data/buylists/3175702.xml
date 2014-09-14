@@ -143,4 +143,6 @@
 	<item id="2917" price="6964" /> <!-- Ring of Seal Gemstone -->
 	<item id="2115" price="87310" /> <!-- Samurai Longsword Blade -->
 	<item id="2969" price="83272" /> <!-- Yaksa Mace Head -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

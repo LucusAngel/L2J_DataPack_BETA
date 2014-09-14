@@ -157,4 +157,6 @@
 	<item id="16131" price="46000" /> <!-- Fabric of Refined Yellow Turban -->
 	<item id="16132" price="46000" /> <!-- Fabric of Refined Turtle Hat -->
 	<item id="16133" price="46000" /> <!-- Fabric of Refined Cow Hat -->
+	<!-- FIXME: replace the tea, validate this, Taiwan Tony has only this item -->
+	<item id="1665" price="9999999" /> <!-- 刪除轉職管理員賣的武器/防具 -->
 </list>

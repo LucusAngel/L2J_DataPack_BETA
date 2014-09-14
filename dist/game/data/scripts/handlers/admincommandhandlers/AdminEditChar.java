@@ -371,6 +371,13 @@ public class AdminEditChar implements IAdminCommandHandler
 				}
 				if (valid && (player.getClassId().getId() != classidval))
 				{
+					// 603 add start, looks like Ertheia female-only race
+					if ((classidval > 181) && (!player.getAppearance().getSex()))
+					{						
+						player.getAppearance().setSex(true);
+						player.sendMessage("A GM changed your gender to female.");
+					}
+					// 603 add end
 					player.setClassId(classidval);
 					if (!player.isSubClassActive())
 					{

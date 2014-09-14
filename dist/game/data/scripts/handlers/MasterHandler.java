@@ -173,6 +173,7 @@ import handlers.chathandlers.ChatPetition;
 import handlers.chathandlers.ChatShout;
 import handlers.chathandlers.ChatTell;
 import handlers.chathandlers.ChatTrade;
+import handlers.chathandlers.ChatGlobal; // l2jtw add
 import handlers.itemhandlers.BeastSoulShot;
 import handlers.itemhandlers.BeastSpiritShot;
 import handlers.itemhandlers.BlessedSpiritShot;
@@ -443,6 +444,7 @@ public class MasterHandler
 			ChatShout.class,
 			ChatTell.class,
 			ChatTrade.class,
+			ChatGlobal.class, // l2jtw add
 		},
 		{
 			// Item Handlers

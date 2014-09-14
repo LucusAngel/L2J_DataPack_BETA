@@ -13,4 +13,6 @@
 	<item id="6720" price="0" /> <!-- Monster Only(Shadow of Halisha) -->
 	<item id="7820" price="0" /> <!-- Apprentice Adventurer's Bow -->
 	<item id="17" price="0" /> <!-- Wooden Arrow -->
+	<!-- FIXME: replace the tea -->
+	<item id="32249" price="0" /> <!-- 無限木箭筒 -->
 </list>

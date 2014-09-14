@@ -2,19 +2,19 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/charTemplate.xsd">
 	<classId>44</classId>
 	<staticData>
-		<baseINT>18</baseINT>
-		<baseSTR>40</baseSTR>
-		<baseCON>47</baseCON>
-		<baseMEN>27</baseMEN>
-		<baseDEX>26</baseDEX>
-		<baseWIT>12</baseWIT>
+		<baseINT>37</baseINT>
+		<baseSTR>88</baseSTR>
+		<baseCON>87</baseCON>
+		<baseMEN>41</baseMEN>
+		<baseDEX>50</baseDEX>
+		<baseWIT>38</baseWIT>
 		<creationPoints>
-			<node x="-56733" y="-113459" z="-690" />
-			<node x="-56686" y="-113470" z="-690" />
-			<node x="-56728" y="-113610" z="-690" />
-			<node x="-56693" y="-113610" z="-690" />
-			<node x="-56743" y="-113757" z="-690" />
-			<node x="-56682" y="-113730" z="-690" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
+			<node x="-114452" y="259908" z="-1192" />
 		</creationPoints>
 		<basePAtk>4</basePAtk>
 		<baseCritRate>4</baseCritRate>
@@ -48,7 +48,7 @@
 		<baseRndDam>10</baseRndDam>
 		<baseMoveSpd>
 			<walk>70</walk>
-			<run>117</run>
+			<run>130</run>
 			<slowSwim>50</slowSwim>
 			<fastSwim>50</fastSwim>
 		</baseMoveSpd>
@@ -743,6 +743,118 @@
 			<hpRegen>9.9</hpRegen>
 			<mpRegen>3.0</mpRegen>
 			<cpRegen>8.5</cpRegen>
+		</level>
+		<level val="86">
+			<hp>1662.700</hp>
+			<mp>708.300</mp>
+			<cp>831.350</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="87">
+			<hp>1687.340</hp>
+			<mp>718.860</mp>
+			<cp>843.670</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="88">
+			<hp>1712.120</hp>
+			<mp>729.480</mp>
+			<cp>856.060</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="89">
+			<hp>1737.040</hp>
+			<mp>740.160</mp>
+			<cp>868.520</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="90">
+			<hp>1762.100</hp>
+			<mp>750.900</mp>
+			<cp>881.050</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="91">
+			<hp>1787.300</hp>
+			<mp>761.700</mp>
+			<cp>893.650</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="92">
+			<hp>1812.640</hp>
+			<mp>772.560</mp>
+			<cp>906.320</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="93">
+			<hp>1838.120</hp>
+			<mp>783.480</mp>
+			<cp>919.060</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="94">
+			<hp>1863.740</hp>
+			<mp>794.460</mp>
+			<cp>931.870</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="95">
+			<hp>1889.500</hp>
+			<mp>805.500</mp>
+			<cp>944.750</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="96">
+			<hp>1915.400</hp>
+			<mp>816.600</mp>
+			<cp>957.700</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="97">
+			<hp>1941.440</hp>
+			<mp>827.760</mp>
+			<cp>970.720</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="98">
+			<hp>1967.620</hp>
+			<mp>838.980</mp>
+			<cp>983.810</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
+		</level>
+		<level val="99">
+			<hp>1993.940</hp>
+			<mp>850.260</mp>
+			<cp>996.970</cp>
+			<hpRegen>9.9</hpRegen>
+			<mpRegen>3.3</mpRegen>
+			<cpRegen>9.5</cpRegen>
 		</level>
 	</lvlUpgainData>
 </list>

@@ -64,6 +64,7 @@ public class SummonItems extends ItemSkillsTemplate
 			return false;
 		}
 		
+		//FIXME: Verify: L2JTW has: if (activeChar.isAttackingNow() || activeChar.isInCombat())
 		if (activeChar.isAttackingNow())
 		{
 			activeChar.sendPacket(SystemMessageId.YOU_CANNOT_SUMMON_IN_COMBAT);

@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/zones.xsd">
 	<!-- Peace Zones -->
-	<zone name="talking_island_town_peace_zone1" type="PeaceZone" shape="NPoly" minZ="-3966" maxZ="-3466"> <!-- [17_25] -->
+	<zone name="new_talking_island_town_peace_zone1" type="PeaceZone" shape="NPoly" minZ="-2200" maxZ="-1000">
+		<node X="-114024" Y="251673" />
+		<node X="-112069" Y="251979" />
+		<node X="-111562" Y="251930" />
+		<node X="-110857" Y="251310" />
+		<node X="-110262" Y="251297" />
+		<node X="-109737" Y="251761" />
+		<node X="-109619" Y="252077" />
+		<node X="-109924" Y="252921" />
+		<node X="-109829" Y="253904" />
+		<node X="-109816" Y="254369" />
+		<node X="-108609" Y="255974" />
+		<node X="-108777" Y="257457" />
+		<node X="-112592" Y="260844" />
+		<node X="-115832" Y="260914" />
+		<node X="-117160" Y="258884" />
+		<node X="-118877" Y="255783" />
+		<node X="-119015" Y="255236" />
+		<node X="-117943" Y="254062" />
+		<node X="-117706" Y="253345" />
+		<node X="-116996" Y="252144" />
+		<node X="-116728" Y="251888" />
+		<node X="-114919" Y="251673" />
+	</zone>
+	<!-- 新說話之島的安全區域2 -->
+	<zone name="new_talking_island_town_peace_zone2" type="PeaceZone" shape="NPoly" minZ="-3200" maxZ="-2700">
+		<node X="-114903" Y="225188" />
+		<node X="-115945" Y="225284" />
+		<node X="-116293" Y="225656" />
+		<node X="-116287" Y="226817" />
+		<node X="-116261" Y="227129" />
+		<node X="-116187" Y="228051" />
+		<node X="-115834" Y="228415" />
+		<node X="-114813" Y="228493" />
+		<node X="-114430" Y="228488" />
+		<node X="-113455" Y="228404" />
+		<node X="-113104" Y="228054" />
+		<node X="-113025" Y="227024" />
+		<node X="-113017" Y="226715" />
+		<node X="-113106" Y="225695" />
+		<node X="-113463" Y="225328" />
+	</zone>
+	<!-- old zones
+	<zone name="talking_island_town_peace_zone1" type="PeaceZone" shape="NPoly" minZ="-3966" maxZ="-3466">
 		<node X="-84028" Y="239722" />
 		<node X="-81007" Y="243210" />
 		<node X="-81021" Y="243484" />
@@ -11,28 +54,28 @@
 		<node X="-87611" Y="242574" />
 		<node X="-84305" Y="239649" />
 	</zone>
-	<zone name="talking_island_town_peace_zone2" type="PeaceZone" shape="NPoly" minZ="-3820" maxZ="-3320"> <!-- [17_25] -->
+	<zone name="talking_island_town_peace_zone2" type="PeaceZone" shape="NPoly" minZ="-3820" maxZ="-3320">
 		<node X="-83428" Y="240398" />
 		<node X="-82605" Y="241262" />
 		<node X="-81512" Y="242568" />
 		<node X="-82035" Y="242583" />
 		<node X="-83396" Y="241129" />
 	</zone>
-	<zone name="talking_island_town_peace_zone3" type="PeaceZone" shape="NPoly" minZ="-3789" maxZ="-3289"> <!-- [17_25] -->
+	<zone name="talking_island_town_peace_zone3" type="PeaceZone" shape="NPoly" minZ="-3789" maxZ="-3289">
 		<node X="-86138" Y="243444" />
 		<node X="-85039" Y="244801" />
 		<node X="-84811" Y="245977" />
 		<node X="-86323" Y="244370" />
 		<node X="-87229" Y="243237" />
 	</zone>
-	<zone name="talking_island_town_peace_zone4" type="PeaceZone" shape="NPoly" minZ="-3846" maxZ="-3346"> <!-- [17_25] -->
+	<zone name="talking_island_town_peace_zone4" type="PeaceZone" shape="NPoly" minZ="-3846" maxZ="-3346">
 		<node X="-85539" Y="241748" />
 		<node X="-87612" Y="242572" />
 		<node X="-87470" Y="242383" />
 		<node X="-86310" Y="241337" />
 		<node X="-85622" Y="240814" />
 	</zone>
-	<zone name="mage_start_peace_1" type="PeaceZone" shape="NPoly" minZ="-3699" maxZ="-2699"> <!-- [17_25] -->
+	<zone name="mage_start_peace_1" type="PeaceZone" shape="NPoly" minZ="-3699" maxZ="-2699">
 		<node X="-90034" Y="248143" />
 		<node X="-89960" Y="248698" />
 		<node X="-90520" Y="248847" />
@@ -44,13 +87,13 @@
 		<node X="-90863" Y="247676" />
 		<node X="-90638" Y="247748" />
 	</zone>
-	<zone name="mage_start_peace_2" type="PeaceZone" shape="NPoly" minZ="-4043" maxZ="-3043"> <!-- [17_25] -->
+	<zone name="mage_start_peace_2" type="PeaceZone" shape="NPoly" minZ="-4043" maxZ="-3043">
 		<node X="-90165" Y="247096" />
 		<node X="-88576" Y="248162" />
 		<node X="-89962" Y="250239" />
 		<node X="-91512" Y="249150" />
 	</zone>
-	<zone name="mage_start_peace_3" type="PeaceZone" shape="NPoly" minZ="-3659" maxZ="-2659"> <!-- [17_25] -->
+	<zone name="mage_start_peace_3" type="PeaceZone" shape="NPoly" minZ="-3659" maxZ="-2659">
 		<node X="-88457" Y="248867" />
 		<node X="-88611" Y="249099" />
 		<node X="-89054" Y="249756" />
@@ -60,13 +103,13 @@
 		<node X="-88864" Y="248209" />
 		<node X="-88542" Y="248446" />
 	</zone>
-	<zone name="mage_start_peace_4" type="PeaceZone" shape="NPoly" minZ="-3659" maxZ="-2659"> <!-- [17_25] -->
+	<zone name="mage_start_peace_4" type="PeaceZone" shape="NPoly" minZ="-3659" maxZ="-2659">
 		<node X="-88732" Y="248912" />
 		<node X="-88418" Y="249116" />
 		<node X="-89005" Y="249980" />
 		<node X="-89311" Y="249787" />
 	</zone>
-	<zone name="mage_start_peace_5" type="PeaceZone" shape="NPoly" minZ="-3659" maxZ="-2659"> <!-- [17_25] -->
+	<zone name="mage_start_peace_5" type="PeaceZone" shape="NPoly" minZ="-3659" maxZ="-2659">
 		<node X="-88612" Y="249461" />
 		<node X="-88559" Y="249539" />
 		<node X="-88581" Y="249649" />
@@ -76,32 +119,33 @@
 		<node X="-89073" Y="249332" />
 		<node X="-88895" Y="249273" />
 	</zone>
-	<zone name="fighter_start_peace_1" type="PeaceZone" shape="NPoly" minZ="-3284" maxZ="-2284"> <!-- [17_25] -->
+	<zone name="fighter_start_peace_1" type="PeaceZone" shape="NPoly" minZ="-3284" maxZ="-2284">
 		<node X="-73436" Y="257725" />
 		<node X="-71668" Y="256229" />
 		<node X="-69952" Y="258077" />
 		<node X="-71896" Y="259701" />
 	</zone>
-	<zone name="fighter_start_peace_2" type="PeaceZone" shape="NPoly" minZ="-3272" maxZ="-2272"> <!-- [17_25] -->
+	<zone name="fighter_start_peace_2" type="PeaceZone" shape="NPoly" minZ="-3272" maxZ="-2272">
 		<node X="-73180" Y="257663" />
 		<node X="-72460" Y="258619" />
 		<node X="-72720" Y="258831" />
 		<node X="-73284" Y="258115" />
 		<node X="-73260" Y="257855" />
 	</zone>
-	<zone name="fighter_start_peace_3" type="PeaceZone" shape="NPoly" minZ="-3272" maxZ="-2272"> <!-- [17_25] -->
+	<zone name="fighter_start_peace_3" type="PeaceZone" shape="NPoly" minZ="-3272" maxZ="-2272">
 		<node X="-71279" Y="256408" />
 		<node X="-70679" Y="257116" />
 		<node X="-70939" Y="257328" />
 		<node X="-71575" Y="256612" />
 		<node X="-71634" Y="256392" />
 	</zone>
-	<zone name="fighter_start_peace_4" type="PeaceZone" shape="NPoly" minZ="-3306" maxZ="-2306"> <!-- [17_25] -->
+	<zone name="fighter_start_peace_4" type="PeaceZone" shape="NPoly" minZ="-3306" maxZ="-2306">
 		<node X="-72596" Y="259181" />
 		<node X="-70363" Y="257272" />
 		<node X="-70041" Y="257631" />
 		<node X="-72303" Y="259545" />
 	</zone>
+	end of old zones -->
 	<zone name="darkelf_town_peace_zone" type="PeaceZone" shape="NPoly" minZ="-8507" maxZ="-1507"> <!-- [20_18] -->
 		<node X="15719" Y="16735" />
 		<node X="14885" Y="19139" />

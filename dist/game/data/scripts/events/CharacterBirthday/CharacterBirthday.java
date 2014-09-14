@@ -23,6 +23,7 @@ import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.quest.Quest;
 import com.l2jserver.gameserver.model.quest.QuestState;
 import com.l2jserver.gameserver.model.quest.State;
+import com.l2jserver.gameserver.network.serverpackets.PlaySound; // pmq
 import com.l2jserver.gameserver.util.Util;
 
 /**
@@ -117,6 +118,7 @@ public final class CharacterBirthday extends Quest
 		if (!Util.checkIfInRange(10, npc, player, true))
 		{
 			L2Npc spawned = st.addSpawn(32600, player.getX() + 10, player.getY() + 10, player.getZ() + 10, 0, false, 0, true);
+			player.sendPacket(new PlaySound(1, "HB01", 0, 0, 0, 0, 0)); // pmq
 			st.setState(State.STARTED);
 			st.startQuestTimer("despawn_npc", 180000, spawned);
 			SPAWNS++;

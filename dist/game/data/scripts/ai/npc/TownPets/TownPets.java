@@ -49,6 +49,7 @@ public final class TownPets extends AbstractNpcAI
 		31593, // Dorothy
 		31758, // Rafi
 		31955, // Ruby
+		33580, // God
 	};
 	
 	private TownPets()

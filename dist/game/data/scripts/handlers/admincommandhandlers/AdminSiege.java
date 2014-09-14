@@ -352,7 +352,11 @@ public class AdminSiege implements IAdminCommandHandler
 			if (castle != null)
 			{
 				String name = castle.getName();
+				String cname = castle.getCName(); // l2jtw add CName
+				/* l2jtw add CName
 				StringUtil.append(cList, "<td fixwidth=90><a action=\"bypass -h admin_siege ", name, "\">", name, "</a></td>");
+				 */
+				StringUtil.append(cList, "<td fixwidth=90><a action=\"bypass -h admin_siege ", name, "\">", cname, "</a></td>");
 				i++;
 			}
 			if (i > 2)
