@@ -156,11 +156,11 @@
 	<class classId="181" name="Aeore Shillient Saint" serverName="aeore_shillient_saint" parentClassId="112" />
 	<!-- Ertheia race FIXME: verify & correct this! -->
 	<class classId="182" name="Ertheia Fighter" serverName="ertheia_fighter" />
-	<class classId="183" name="Marauder" serverName="marauder" />
-	<class classId="184" name="Ripper" serverName="ripper" parentClassId="182" />
-	<class classId="185" name="Eviscerator" serverName="eviscerator" parentClassId="183" />
-	<class classId="186" name="Ertheia Wizard" serverName="ertheia_wizard" parentClassId="184" />
-	<class classId="187" name="Cloud Breaker" serverName="cloud_breaker" parentClassId="185" />
-	<class classId="188" name="Stratomancer" serverName="stratomancer" parentClassId="186" />
+	<class classId="183" name="Ertheia Wizard" serverName="ertheia_wizard" />
+	<class classId="184" name="Marauder" serverName="marauder" parentClassId="182" />
+	<class classId="185" name="Cloud Breaker" serverName="cloud_breaker" parentClassId="183" />
+	<class classId="186" name="Ripper" serverName="ripper" parentClassId="184" />
+	<class classId="187" name="Stratomancer" serverName="stratomancer" parentClassId="185" />
+	<class classId="188" name="Eviscerator" serverName="eviscerator" parentClassId="186" />
 	<class classId="189" name="Sayha's Seer" serverName="sayhas_seer" parentClassId="187" />
 </list>
