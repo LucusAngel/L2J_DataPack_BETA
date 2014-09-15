@@ -1259,6 +1259,7 @@
 	</npc>
 	<npc id="25721" level="84" type="L2RaidBoss" name="Blackdagger Wing" title="Raid Boss">
 		<!-- Confirmed CT2.5 -->
+		<!-- FIXME: check if isn't just L2Monster -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill02_ID" id="6833" level="1" /> <!-- Power Strike -->

@@ -1909,6 +1909,7 @@
 	</npc>
 	<npc id="29030" level="84" type="L2RaidBoss" name="Fenril Hound Kerinne" title="Family of Valakas">
 		<!-- Confirmed CT2.5 -->
+		<!-- FIXME: check if isn't just L2Monster -->
 		<parameters>
 			<minions name="Privates">
 				<npc id="29031" respawnTime="360" weightPoint="1" /> <!-- Kerinne's Ifrit -->
