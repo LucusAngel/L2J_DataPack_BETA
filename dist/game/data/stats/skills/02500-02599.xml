@@ -219,7 +219,7 @@
 	<skill id="2512" levels="1" name="Herb of Vampiric Rage">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="4" />
+		<set name="abnormalLvl" val="1" />  <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="VAMPIRIC_ATTACK" />
 		<set name="effectPoint" val="100" />
@@ -271,7 +271,7 @@
 	<skill id="2514" levels="1" name="Herb of Critical Attack - Power">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="3" />
+		<set name="abnormalLvl" val="1" />  <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CRITICAL_DMG_UP" />
 		<set name="effectPoint" val="100" />

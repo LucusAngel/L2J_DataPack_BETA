@@ -1956,4 +1956,125 @@
 			</effect>
 		</enchant1for>
 	</skill>
+	<skill id="1566" levels="1" name="Class Change">
+		<!-- GoD skill -->
+		<set name="hitTime" val="5000" />
+		<set name="icon" val="icon.skill0810" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<set name="classIndex" val="0" />
+		<set name="showSkillListIcon" val="false" />
+		<cond msgId="3574">
+			<not>
+				<player active_effect_id="1570" />
+			</not>
+		</cond>
+		<for>
+			<effect name="Buff" />
+		</for>
+	</skill>
+	<skill id="1567" levels="1" name="Class Change">
+		<!-- GoD skill -->
+		<set name="hitTime" val="5000" />
+		<set name="icon" val="icon.skill0810" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<set name="classIndex" val="0" />
+		<set name="showSkillListIcon" val="false" />
+		<cond msgId="3574">
+			<not>
+				<player active_effect_id="1570" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="1568" levels="1" name="Class Change">
+		<!-- GoD skill -->
+		<set name="hitTime" val="5000" />
+		<set name="icon" val="icon.skill0810" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<set name="classIndex" val="0" />
+		<set name="showSkillListIcon" val="false" />
+		<cond msgId="3574">
+			<not>
+				<player active_effect_id="1570" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="1569" levels="1" name="Class Change">
+		<!-- GoD skill -->
+		<set name="hitTime" val="5000" />
+		<set name="icon" val="icon.skill0810" />
+		<set name="isMagic" val="2" /> <!-- Static Skill -->
+		<set name="operateType" val="A1" />
+		<set name="targetType" val="SELF" />
+		<set name="classIndex" val="0" />
+		<set name="showSkillListIcon" val="false" />
+		<cond msgId="3574">
+			<not>
+				<player active_effect_id="1570" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="1570" levels="1" name="Identity Crisis">
+		<!-- GoD skill -->
+		<!-- For 15 seconds, you are going through an Identity Crisis. Battle abilities are decreased and skills and items cannot be used. However, consumables items can still be used. Also, you cannot switch between main, dual, or sub classes while under the effect of Identity Crisis. -->
+		<set name="icon" val="icon.skill1570" />
+		<set name="abnormalLvl" val="85" />
+		<set name="abnormalTime" val="15" />
+		<set name="abnormalType" val="POISON" />
+		<set name="operateType" val="A2" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<mul order="0x30" stat="pAtk" val="0.6" />
+				<mul order="0x30" stat="mAtk" val="0.6" />
+				<mul order="0x30" stat="pAtkSpd" val="0.6" />
+				<mul order="0x30" stat="mAtkSpd" val="0.6" />
+				<sub order="0x40" stat="accCombat" val="8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1571" levels="1" name="Inventory Increase">
+		<!-- GoD skill -->
+		<!-- Increases inventory slots by 18. -->
+		<set name="icon" val="icon.skill0332" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add order="0x40" stat="inventoryLimit" val="18" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1572" levels="1" name="Weight Increase">
+		<!-- GoD skill -->
+		<!-- Increases weight capacity by 10000. -->
+		<set name="icon" val="icon.skill0150" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add order="0x40" stat="weightPenalty" val="10000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1597" levels="1" name="Weight Increase">
+		<!-- GoD skill -->
+		<!-- Increases weight capacity by 15000. -->
+		<set name="icon" val="icon.skill0150" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="P" />
+		<set name="targetType" val="SELF" />
+		<for>
+			<effect name="Buff">
+				<add order="0x40" stat="weightPenalty" val="15000" />
+			</effect>
+		</for>
+	</skill>
 </list>

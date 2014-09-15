@@ -1158,8 +1158,10 @@
 		<set name="reuseDelay" val="5000" />
 		<set name="targetType" val="AREA" />
 		<!-- charge values -->
+		<!-- This items are no longer used FIXME: verify!
 		<set name="itemConsumeCount" val="2" />
 		<set name="itemConsumeId" val="5589" />
+		-->
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="magicLvl" val="#enchMagicLvl" />
 		<enchant2 name="mpConsume" val="#ench2MpConsume" />
@@ -1178,8 +1180,8 @@
 		<enchant7 name="magicLvl" val="#enchMagicLvl" />
 		<cond msgId="113" addName="1">
 			<and>
-				<using kind="DUALFIST" /> <!-- Requires a hand-to-hand weapon -->
-				<player Charges="1" /> <!-- whose 1st energy stage has been recharged -->
+				<using kind="SWORD,BLUNT,POLE,DUALFIST,DUALBLUNT,DUAL" /> <!-- Any melee weapon: FIXME: verify! -->
+				<!--<player Charges="1" />  no longer needed --><!-- whose 1st energy stage has been recharged -->
 			</and>
 		</cond>
 		<for>

@@ -208,9 +208,9 @@
 	</skill>
 	<skill id="2213" levels="22" name="Escape - to X Town">
 		<!-- Confirmed CT2.5 -->
-		<table name="#coordX"> -84200 46915 9723 -45208 115158 -80831 -12728 15633 17860 83378 105760 111388 82916 85289 117052 146818 147922 43840 87326 149800 107946 -118092 </table>
-		<table name="#coordY"> 244566 51441 15576 -112502 -178170 149808 122726 142962 170191 147999 113064 219331 53210 16225 76884 25807 -55316 -47779 -143370 -79999 -52280 46955 </table>
-		<table name="#coordZ"> -3728 -2976 -4568 -240 -880 -3040 -3112 -2696 -3496 -3400 -3176 -3544 -1488 -3672 -2688 -2008 -2728 -792 -1319 -5568 -2408 342 </table>
+		<table name="#coordX"> -114558 46915 9723 -45208 115158 -80831 -12728 15633 17860 83378 105760 111388 82916 85289 117052 146818 147922 43840 87326 149800 107946 -118092 </table>
+		<table name="#coordY"> 253605 51441 15576 -112502 -178170 149808 122726 142962 170191 147999 113064 219331 53210 16225 76884 25807 -55316 -47779 -143370 -79999 -52280 46955 </table>
+		<table name="#coordZ"> -1536 -2976 -4568 -240 -880 -3040 -3112 -2696 -3496 -3400 -3176 -3544 -1488 -3672 -2688 -2008 -2728 -792 -1319 -5568 -2408 342 </table>
 		<set name="hitTime" val="20000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="1" />
@@ -233,9 +233,9 @@
 	<skill id="2214" levels="10" name="Scroll of Escape to Talking Island">
 		<!-- Confirmed CT2.5 -->
 		<!-- Levels 7, 8 and 9 doesn't exist in client. -->
-		<table name="#coordX"> -84200 46915 9723 -45208 115158 -118092 0 0 0 83378 </table>
-		<table name="#coordY"> 244566 51441 15576 -112502 -178170 46955 0 0 0 147999 </table>
-		<table name="#coordZ"> -3728 -2976 -4568 -240 -880 342 0 0 0 -3400 </table>
+		<table name="#coordX"> -114558 46915 9723 -45208 115158 -118092 0 0 0 83378 </table>
+		<table name="#coordY"> 253605 51441 15576 -112502 -178170 46955 0 0 0 147999 </table>
+		<table name="#coordZ"> -1536 -2976 -4568 -240 -880 342 0 0 0 -3400 </table>
 		<set name="hitTime" val="20000" />
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="1" />
@@ -1608,7 +1608,7 @@
 	<skill id="2280" levels="1" name="Herb of Power">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="3" />
+		<set name="abnormalLvl" val="1" /> <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="PA_UP" />
 		<set name="effectPoint" val="100" />
@@ -1631,7 +1631,7 @@
 	<skill id="2281" levels="1" name="Herb of Magic">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="3" />
+		<set name="abnormalLvl" val="1" />  <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="MA_UP" />
 		<set name="effectPoint" val="100" />
@@ -1654,7 +1654,7 @@
 	<skill id="2282" levels="1" name="Herb of Atk. Spd.">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="2" />
+		<set name="abnormalLvl" val="1" />  <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="effectPoint" val="100" />
@@ -1677,7 +1677,7 @@
 	<skill id="2283" levels="1" name="Herb of Casting Spd.">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="3" />
+		<set name="abnormalLvl" val="1" />  <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CASTING_TIME_DOWN" />
 		<set name="effectPoint" val="100" />
@@ -1700,7 +1700,7 @@
 	<skill id="2284" levels="1" name="Herb of Critical Attack">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="3" />
+		<set name="abnormalLvl" val="1" />  <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="CRITICAL_PROB_UP" />
 		<set name="effectPoint" val="100" />
@@ -1723,7 +1723,7 @@
 	<skill id="2285" levels="1" name="Herb of Speed">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalInstant" val="true" />
-		<set name="abnormalLvl" val="2" />
+		<set name="abnormalLvl" val="1" />  <!-- FIXME: verify this! -->
 		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="SPEED_UP" />
 		<set name="effectPoint" val="100" />
@@ -1745,7 +1745,7 @@
 	</skill>
 	<skill id="2286" levels="6" name="Scroll: Recovery">
 		<!-- Confirmed CT2.5 -->
-		<table name="#levelRange"> 1;19 20;39 40;51 52;60 61;75 76;85 </table>
+		<table name="#levelRange"> 1;19 20;39 40;51 52;60 61;75 76;99 </table>
 		<set name="isMagic" val="2" /> <!-- Static Skill -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />

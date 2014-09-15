@@ -242,19 +242,17 @@
 	</skill>
 	<skill id="7029" levels="4" name="Super Haste">
 		<!-- GM Skill -->
+		<!-- FIXME: verify those changes -->
 		<table name="#amount"> 1 1 1 2 </table>
 		<table name="#mAtkSpd"> 2 3 3 2 </table>
 		<table name="#pAtk"> 1 1 10000 1 </table>
 		<table name="#pAtkSpd"> 2 3 3 2 </table>
 		<table name="#reuse"> 0.01 0.01 0.01 1 </table>
 		<table name="#runSpd"> 2 3 3 1 </table>
-		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
-		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
-		<set name="effectPoint" val="1" />
+		<set name="abnormalVisualEffect" val="NONE" />
 		<set name="icon" val="icon.skill7029" />
 		<set name="magicLvl" val="1" />
-		<set name="operateType" val="A2" />
+		<set name="operateType" val="T" />
 		<set name="targetType" val="SELF" />
 		<for>
 			<effect name="Buff">
@@ -606,7 +604,7 @@
 		<!-- GM Skill -->
 		<set name="abnormalLvl" val="3" />
 		<set name="abnormalTime" val="3600" />
-		<set name="abnormalType" val="PD_UP" />
+		<set name="abnormalType" val="MD_UP" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="1" />
 		<set name="effectRange" val="900" />
