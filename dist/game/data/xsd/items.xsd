@@ -114,6 +114,14 @@
 																</xs:simpleType>
 															</xs:attribute>
 															<xs:attribute name="races" type="xs:token" />
+															<xs:attribute name="sex">
+																<xs:simpleType>
+																	<xs:restriction base="xs:nonNegativeInteger">
+																		<xs:minInclusive value="0" />
+																		<xs:maxInclusive value="1" />
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
 															<xs:attribute name="subclass" type="xs:boolean" />
 															<xs:attribute name="instanceId" type="xs:normalizedString" />
 															<xs:attribute name="categoryType" type="xs:normalizedString" />
