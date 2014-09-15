@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-	<item id="30310" name="亞貝里烏斯斗篷" type="Armor">
-		<table name="#Plus">席格爾騎士</table>
-		<table name="#Desc">繼承古代巨人-亞貝里烏斯之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30310" name="Abelius Cloak" type="Armor">
+		<!-- Sigel Knight -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Abelius. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -14,9 +14,9 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30311" name="薩菲洛斯斗篷" type="Armor">
-		<table name="#Plus">提爾鬥士</table>
-		<table name="#Desc">繼承古代巨人-薩菲洛斯之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30311" name="Sapyros Cloak" type="Armor">
+		<!-- Tyrr Warrior -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Sapyros. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -28,9 +28,9 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30312" name="凱修納格斗篷" type="Armor">
-		<table name="#Plus">歐瑟遊俠</table>
-		<table name="#Desc">繼承古代巨人-凱修納格之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30312" name="Ashagen Cloak" type="Armor">
+		<!-- Othell Rogue -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Ashagen. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -42,9 +42,9 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30313" name="克倫畢斯特斗篷" type="Armor">
-		<table name="#Plus">尤爾弓手</table>
-		<table name="#Desc">繼承古代巨人-克倫畢斯特之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30313" name="Cranigg Cloak" type="Armor">
+		<!-- Yul Archer -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Cranigg. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -56,9 +56,9 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30314" name="索特克里格斗篷" type="Armor">
-		<table name="#Plus">菲歐巫師</table>
-		<table name="#Desc">繼承古代巨人-索特克里格之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30314" name="Soltkreig Cloak" type="Armor">
+		<!-- Feoh Wizard -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Soltkreig. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -70,9 +70,9 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30315" name="納比亞羅普斗篷" type="Armor">
-		<table name="#Plus">維因召喚士</table>
-		<table name="#Desc">繼承古代巨人-納比亞羅普之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30315" name="Naviarope Cloak" type="Armor">
+		<!-- Wynn Summoner -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Naviarope. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -84,9 +84,9 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30316" name="拉伊斯特斗篷" type="Armor">
-		<table name="#Plus">伊斯法師</table>
-		<table name="#Desc">繼承古代巨人-拉伊斯特之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30316" name="Leister Cloak" type="Armor">
+		<!-- Iss Enchanter -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Leister. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -98,9 +98,9 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30317" name="拉奇西斯斗篷" type="Armor">
-		<table name="#Plus">艾羅牧師</table>
-		<table name="#Desc">繼承古代巨人-拉奇西斯之力的人所裝備的斗篷。魔法防禦+40。</table>
+	<item id="30317" name="Lakcis Cloak" type="Armor">
+		<!-- Aeore Healer -->
+		<!-- Description: Cloak that can only be worn by someone who has received the strength of the ancient giant Lakcis. M. Def. + 40. -->
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -112,8 +112,8 @@
 			<add order="0x10" stat="pDef" val="50" />
 		</for>
 	</item>
-	<item id="30381" name="武器用強化輔助石-R級" type="EtcItem">
-		<table name="#Desc">強化R級武器時，可將機率提升10%的道具。僅限使用於強化3~9的道具。無法交易、丟棄、刪除的道具，但可以保管在個人倉庫。</table>
+	<item id="30381" name="Lucky Enchant Stone: Weapon (R-grade)" type="EtcItem">
+		<!-- Enchant success rate + 10% for weapons (R-grade). Only for items enchanted between + 3 and + 9. -->
 		<set name="icon" val="icon.ench_wp_potion_violet_i00" />
 		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_WP" />
 		<set name="material" val="PAPER" />
@@ -123,8 +123,8 @@
 		<set name="handler" val="ItemSkills" />
 		<set name="item_skill" val="9207-1" />
 	</item>
-	<item id="30382" name="防具用強化輔助石-R級" type="EtcItem">
-		<table name="#Desc">強化R級防具時，可將機率提升15%的道具。僅限使用於強化3~9的道具；而連身防具則僅限使用於強化4~9的道具。無法交易、丟棄、刪除的道具，但可以保管在個人倉庫。</table>
+	<item id="30382" name="Lucky Enchant Stone: Armor (R-grade)" type="EtcItem">
+		<!-- Description: Enchant success rate + 15% for armor (R-grade). Only for items enchanted between + 3 and + 9. For one-piece armor, enchant must be between + 4 and + 9. -->
 		<set name="icon" val="icon.ench_am_potion_violet_i00" />
 		<set name="etcitem_type" val="SCRL_INC_ENCHANT_PROP_AM" />
 		<set name="material" val="PAPER" />

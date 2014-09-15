@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-	<item id="18550" name="奧里哈魯根箭" type="EtcItem">
-		<table name="#Desc">用奧里哈魯根合金製成的弓箭。R級弓使用。</table>
+	<item id="18550" name="Orichalcum Arrow" type="EtcItem">
+		<!-- Description: Arrow made of Orichalcum. Used as arrows for R-grade bows. -->
 		<set name="icon" val="icon.etc_oricalcum_quiver_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
@@ -10,8 +10,8 @@
 		<set name="material" val="GOLD" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="18563" name="生命石-R級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的一般礦石。等級85以上的角色可以使用。</table>
+	<item id="18563" name="Life Stone (R-grade)" type="EtcItem">
+		<!-- Description: Ordinary mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting at level 85 or above. -->
 		<set name="icon" val="icon.etc_mineral_general_i03" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -20,8 +20,8 @@
 			<player level="85" />
 		</cond>
 	</item>
-	<item id="18564" name="中級生命石-R級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的中級礦石。等級85以上的角色可以使用。</table>
+	<item id="18564" name="Mid-grade Life Stone (R-grade)" type="EtcItem">
+		<!-- Description: Mid-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting at level 85 or above. -->
 		<set name="icon" val="icon.r_mineral_special_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -30,8 +30,8 @@
 			<player level="85" />
 		</cond>
 	</item>
-	<item id="18565" name="高級生命石-R級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的高級礦石。等級85以上的角色可以使用。</table>
+	<item id="18565" name="High-grade Life Stone (R-grade)" type="EtcItem">
+		<!-- Description: High-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting at level 85 or above. -->
 		<set name="icon" val="icon.r_mineral_rare_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -40,8 +40,8 @@
 			<player level="85" />
 		</cond>
 	</item>
-	<item id="18566" name="特級生命石-R級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的最高級礦石。等級85以上的角色可以使用。</table>
+	<item id="18566" name="Top-grade Life Stone (R-grade)" type="EtcItem">
+		<!-- Description: Top-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon augmentation at level 85 or above. Can be exchanged or dropped. -->
 		<set name="icon" val="icon.r_mineral_unique_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -50,8 +50,8 @@
 			<player level="85" />
 		</cond>
 	</item>
-	<item id="18568" name="生命石-R95級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的一般礦石。等級95以上的角色可以使用。</table>
+	<item id="18568" name="Life Stone (R95-grade)" type="EtcItem">
+		<!-- Description: Ordinary mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 95. -->
 		<set name="icon" val="icon.etc_mineral_general_i03" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -60,8 +60,8 @@
 			<player level="85" />
 		</cond>
 	</item>
-	<item id="18569" name="中級生命石-R95級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的中級礦石。等級95以上的角色可以使用。</table>
+	<item id="18569" name="Mid-grade Life Stone (R95-grade)" type="EtcItem">
+		<!-- Description: Mid-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 95. -->
 		<set name="icon" val="icon.r95_mineral_special_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -70,8 +70,8 @@
 			<player level="95" />
 		</cond>
 	</item>
-	<item id="18570" name="高級生命石-R95級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的高級礦石。等級95以上的角色可以使用。</table>
+	<item id="18570" name="High-grade Life Stone (R95-grade)" type="EtcItem">
+		<!-- Description: High-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 95. -->
 		<set name="icon" val="icon.r95_mineral_rare_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -80,8 +80,8 @@
 			<player level="95" />
 		</cond>
 	</item>
-	<item id="18571" name="特級生命石-R95級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的最高級礦石。等級95以上的角色可以使用。</table>
+	<item id="18571" name="Top-grade Life Stone (R95-grade)" type="EtcItem">
+		<!-- Description: Top-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 95. -->
 		<set name="icon" val="icon.r95_mineral_unique_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -90,8 +90,8 @@
 			<player level="95" />
 		</cond>
 	</item>
-	<item id="18573" name="生命石-R99級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的一般礦石。等級99以上的角色可以使用。</table>
+	<item id="18573" name="Life Stone (R99-grade)" type="EtcItem">
+		<!-- Description: Ordinary mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 99. -->
 		<set name="icon" val="icon.etc_mineral_general_i03" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -100,8 +100,8 @@
 			<player level="95" />
 		</cond>
 	</item>
-	<item id="18574" name="中級生命石-R99級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的中級礦石。等級99以上的角色可以使用。</table>
+	<item id="18574" name="Mid-grade Life Stone (R99-grade)" type="EtcItem">
+		<!-- Description: Mid-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 99. -->
 		<set name="icon" val="icon.r99_mineral_special_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -110,8 +110,8 @@
 			<player level="99" />
 		</cond>
 	</item>
-	<item id="18575" name="高級生命石-R99級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的高級礦石。等級99以上的角色可以使用。</table>
+	<item id="18575" name="High-grade Life Stone (R99-grade)" type="EtcItem">
+		<!-- Description: High-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 99. -->
 		<set name="icon" val="icon.r99_mineral_rare_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
@@ -120,8 +120,8 @@
 			<player level="99" />
 		</cond>
 	</item>
-	<item id="18576" name="特級生命石-R99級" type="EtcItem">
-		<table name="#Desc">怪物內部的結石受到物理/魔法攻擊而僵硬的最高級礦石。等級99以上的角色可以使用。</table>
+	<item id="18576" name="Top-grade Life Stone (R99-grade)" type="EtcItem">
+		<!-- Description: Top-grade mineral that has been petrified by a creature's physical or magical damage. May be used as an ingredient in weapon crafting by characters above level 99. -->
 		<set name="icon" val="icon.r99_mineral_unique_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />

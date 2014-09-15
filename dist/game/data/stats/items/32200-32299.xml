@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-	<item id="32226" name="說話之島移動卷軸" type="EtcItem">
-		<table name="#Desc">能傳送至說話之島村莊的魔法卷軸。</table>
+	<item id="32226" name="Scroll of Escape: Talking Island Village" type="EtcItem">
+		<!-- Magical scroll that relocates you to Talking Island. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -14,16 +14,16 @@
 			<player flyMounted="false" />
 		</cond>
 	</item>
-	<item id="32249" name="無限木箭筒" type="EtcItem">
-		<table name="#Desc">內裝用木頭製作的箭之箭筒。普通弓使用。</table>
+	<item id="32249" name="Infinite Wooden Quiver" type="EtcItem">
+		<!-- Description: Quiver containing arrows made of wood. Used with a No-grade bow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_bone_arrows_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32250" name="無限骨箭筒" type="EtcItem">
-		<table name="#Desc">內裝將骨頭削尖製成的箭之箭筒。D級弓使用。</table>
+	<item id="32250" name="Infinite Bone Quiver" type="EtcItem">
+		<!-- Description: Quiver containing arrows made of sharply ground bone. Used with a D-grade bow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_bone_arrows_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
@@ -31,8 +31,8 @@
 		<set name="crystal_type" val="D" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32251" name="無限鐵箭筒" type="EtcItem">
-		<table name="#Desc">內裝用鋼鐵製成的強力箭之箭筒。C級弓使用。</table>
+	<item id="32251" name="Infinite Steel Quiver" type="EtcItem">
+		<!-- Description: Quiver containing arrows made of steel. Used with a C-grade bow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_fine_steel_arrows_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
@@ -40,8 +40,8 @@
 		<set name="crystal_type" val="C" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32252" name="無限銀箭筒" type="EtcItem">
-		<table name="#Desc">內裝外表鍍銀的鋼鐵箭之箭筒。B級弓使用。</table>
+	<item id="32252" name="Infinite Silver Quiver" type="EtcItem">
+		<!-- Description: Quiver containing steel arrows plated in silver. Used with a B-grade bow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_silver_arrows_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
@@ -49,8 +49,8 @@
 		<set name="crystal_type" val="B" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32253" name="無限米索莉之箭筒" type="EtcItem">
-		<table name="#Desc">內裝外表鍍米索莉的鋼鐵箭之箭筒。A級弓使用。</table>
+	<item id="32253" name="Infinite Mithril Quiver" type="EtcItem">
+		<!-- Description: Quiver containing steel arrows plated in mithril. Used with an A-grade bow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
@@ -58,8 +58,8 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32254" name="無限閃耀箭筒" type="EtcItem">
-		<table name="#Desc">內裝材質不明的箭之箭筒。S級弓使用。</table>
+	<item id="32254" name="Infinite Quiver of Light" type="EtcItem">
+		<!-- Description: This quiver contains arrows made of unknown material. Used with an S-grade bow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_shining_arrows_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
@@ -67,8 +67,8 @@
 		<set name="crystal_type" val="S" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32255" name="無限奧里哈魯根箭筒" type="EtcItem">
-		<table name="#Desc">內裝用奧里哈魯根合金製作的箭之箭筒。R級弓使用。</table>
+	<item id="32255" name="Infinite Orichalcum Quiver" type="EtcItem">
+		<!-- Description: Quiver containing arrows made of orichalcum. Used with an R-grade bow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="ARROW" />
@@ -76,16 +76,16 @@
 		<set name="crystal_type" val="R" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32256" name="無限木製弩箭筒" type="EtcItem">
-		<table name="#Desc">內裝用木頭製作的弩箭之箭筒。</table>
+	<item id="32256" name="Infinite Wooden Bolt Container" type="EtcItem">
+		<!-- Description: Container with bolts made of wood. Used with a No-grade Crossbow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_bone_bolts_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="BOLT" />
 		<set name="bodypart" val="lhand" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32257" name="無限骨製弩箭筒" type="EtcItem">
-		<table name="#Desc">內裝將骨頭削尖製成的弩箭之箭筒。D級弩使用。</table>
+	<item id="32257" name="Infinite Bone Bolt Container" type="EtcItem">
+		<!-- Description: Container with bolts made of sharply ground bone. Used with a D-grade Crossbow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_bone_bolts_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="BOLT" />
@@ -93,8 +93,8 @@
 		<set name="crystal_type" val="D" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32258" name="無限鋼鐵弩箭筒" type="EtcItem">
-		<table name="#Desc">內裝用鋼鐵製成的強力弩箭之箭筒。C級弩使用。</table>
+	<item id="32258" name="Infinite Steel Bolt Container" type="EtcItem">
+		<!-- Description: Container with bolts made of steel. Used with a C-grade Crossbow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_fine_steel_bolts_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="BOLT" />
@@ -102,8 +102,8 @@
 		<set name="crystal_type" val="C" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32259" name="無限銀弩箭筒" type="EtcItem">
-		<table name="#Desc">內裝外表鍍銀的鋼鐵弩箭之箭筒。B級弩使用。</table>
+	<item id="32259" name="Infinite Silver Bolt Container" type="EtcItem">
+		<!-- Description: Container with steel bolts plated in silver. Used with a B-grade Crossbow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_silver_bolts_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="BOLT" />
@@ -111,8 +111,8 @@
 		<set name="crystal_type" val="B" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32260" name="無限米索莉弩箭筒" type="EtcItem">
-		<table name="#Desc">內裝外表鍍米索莉的鋼鐵弩箭之箭筒。A級弩使用。</table>
+	<item id="32260" name="Infinite Mithril Bolt Container" type="EtcItem">
+		<!-- Description: Container with steel bolts plated in mithril. Used with an A-grade Crossbow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="BOLT" />
@@ -120,8 +120,8 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32261" name="無限閃耀弩箭筒" type="EtcItem">
-		<table name="#Desc">內裝材質不明的弩箭之箭筒。S級弩使用。</table>
+	<item id="32261" name="Infinite Light Bolt Container" type="EtcItem">
+		<!-- Description: This container Has bolts made of unknown material. Used with an S-grade Crossbow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_shining_bolts_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="BOLT" />
@@ -129,8 +129,8 @@
 		<set name="crystal_type" val="S" />
 		<set name="material" val="GOLD" />
 	</item>
-	<item id="32262" name="無限奧里哈魯根弩箭筒" type="EtcItem">
-		<table name="#Desc">內裝用奧里哈魯根合金製作的弩箭之箭筒。R級弩使用。</table>
+	<item id="32262" name="Infinite Orichalcum Bolt Container" type="EtcItem">
+		<!-- Description: Container with bolts made of orichalcum. Used with an R-grade Crossbow. -->
 		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="BOLT" />

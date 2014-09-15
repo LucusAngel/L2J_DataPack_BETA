@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-	<item id="17700" name="LV5 巨人智力紋章染料" type="EtcItem">
-		<table name="#Plus">Int+5</table>
-		<table name="#Desc">Lv5 巨人智力紋章染料（Int+5）。去找村莊的紋章製造人的話，可以在身體刻上變化能力的魔法紋章。若想刻上紋章的話，需要有10個染料。可以使用的職業：全系列。四次轉職之後可以使用。</table>
+	<item id="17700" name="Lv. 5 Giant INT Dye" type="EtcItem">
+		<!-- INT + 5 -->
+		<!-- Description: Lv. 5 Giant INT Dye (Int + 5). Collect and take 10 unit s of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after Awakening, or 3rd Liberation. All classes. -->
 		<set name="icon" val="icon.lv5_1_dye_int" />
 		<set name="etcitem_type" val="DYE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="17701" name="LV5 巨人智慧紋章染料" type="EtcItem">
-		<table name="#Plus">Wit+5</table>
-		<table name="#Desc">Lv5 巨人智慧紋章染料（Wit+5）。去找村莊的紋章製造人的話，可以在身體刻上變化能力的魔法紋章。若想刻上紋章的話，需要有10個染料。可以使用的職業：全系列。四次轉職之後可以使用。</table>
+	<item id="17701" name="Lv. 5 Giant WIT Dye" type="EtcItem">
+		<!-- WIT + 5 -->
+		<!-- Description Lv. 5 Giant WIT Dye (Wit + 5). Collect and take 10 unit s of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after Awakening, or 3rd Liberation. All classes. -->
 		<set name="icon" val="icon.lv5_1_dye_wit" />
 		<set name="etcitem_type" val="DYE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="17702" name="LV5 巨人精神紋章染料" type="EtcItem">
-		<table name="#Plus">Men+5</table>
-		<table name="#Desc">Lv5 巨人精神紋章染料（Men+5）。去找村莊的紋章製造人的話，可以在身體刻上變化能力的魔法紋章。若想刻上紋章的話，需要有10個染料。可以使用的職業：全系列。四次轉職之後可以使用。</table>
+	<item id="17702" name="Lv. 5 Giant MEN Dye" type="EtcItem">
+		<!-- MEN + 5 -->
+		<!-- Description: Lv. 5 Giant MEN Dye (Men + 5). Collect and take 10 unit s of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after Awakening, or 3rd Liberation. All classes. -->
 		<set name="icon" val="icon.lv5_1_dye_men" />
 		<set name="etcitem_type" val="DYE" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="17754" name="靈魂彈-R級" type="EtcItem">
-		<table name="#Desc">精靈之光加持於武器，瞬間對敵人加以強力衝擊。R級武器專用。</table>
+	<item id="17754" name="Soulshot (R-grade)" type="EtcItem">
+		<!-- Description: The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its P. Atk. significantly. Can be used with an R-grade weapon. -->
 		<set name="icon" val="icon.soulshot_r_i00" />
 		<set name="default_action" val="SOULSHOT" />
 		<set name="crystal_type" val="R" />
@@ -38,7 +38,7 @@
 		<set name="handler" val="SoulShots" />
 		<set name="item_skill" val="9193-1" />
 	</item>
-	<item id="17755" name="人類男性假髮-A" type="Armor">
+	<item id="17755" name="Human Male Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -51,7 +51,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17756" name="人類男性假髮-B" type="Armor">
+	<item id="17756" name="Human Male Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -64,7 +64,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17759" name="人類女性假髮-A" type="Armor">
+	<item id="17759" name="Human Female Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -77,7 +77,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17760" name="人類女性假髮-B" type="Armor">
+	<item id="17760" name="Human Female Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -90,7 +90,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17763" name="人類男性法師假髮-A" type="Armor">
+	<item id="17763" name="Human Male Wizard Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -103,7 +103,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17764" name="人類男性法師假髮-B" type="Armor">
+	<item id="17764" name="Human Male Wizard Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -116,7 +116,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17767" name="人類女性法師假髮-A" type="Armor">
+	<item id="17767" name="Human Female Wizard Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -129,7 +129,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17768" name="人類女性法師假髮-B" type="Armor">
+	<item id="17768" name="Human Female Wizard Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -142,7 +142,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17771" name="精靈男性假髮-A" type="Armor">
+	<item id="17771" name="Elf Male Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -155,7 +155,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17772" name="精靈男性假髮-B" type="Armor">
+	<item id="17772" name="Elf Male Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -168,7 +168,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17775" name="精靈女性假髮-A" type="Armor">
+	<item id="17775" name="Elf Female Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -182,7 +182,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17776" name="精靈女性假髮-B" type="Armor">
+	<item id="17776" name="Elf Female Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -195,7 +195,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17779" name="黑暗精靈男性假髮-A" type="Armor">
+	<item id="17779" name="Dark Elf Male Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -208,7 +208,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17780" name="黑暗精靈男性假髮-B" type="Armor">
+	<item id="17780" name="Dark Elf Male Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -221,7 +221,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17783" name="黑暗精靈女性假髮-A" type="Armor">
+	<item id="17783" name="Dark Elf Female Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -234,7 +234,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17784" name="黑暗精靈女性假髮-B" type="Armor">
+	<item id="17784" name="Dark Elf Female Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -247,7 +247,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17787" name="矮人男性假髮-A" type="Armor">
+	<item id="17787" name="Dwarf Male Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -260,7 +260,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17788" name="矮人男性假髮-B" type="Armor">
+	<item id="17788" name="Dwarf Male Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -273,7 +273,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17791" name="矮人女性假髮-A" type="Armor">
+	<item id="17791" name="Dwarf Female Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -286,7 +286,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17792" name="矮人女性假髮-B" type="Armor">
+	<item id="17792" name="Dwarf Female Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -299,7 +299,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17795" name="半獸人男性假髮-A" type="Armor">
+	<item id="17795" name="Orc Male Wig - A" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -312,7 +312,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17796" name="半獸人男性假髮-B" type="Armor">
+	<item id="17796" name="Orc Male Wig - B" type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -325,7 +325,7 @@
 			</and>
 		</cond>
 	</item>
-	<item id="17799" name="半獸人女性假髮-A" type="Armor">
+	<item id="17799" name=Orc Female Wig - A type="Armor">
 		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />

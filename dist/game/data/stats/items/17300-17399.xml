@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-	<item id="17371" type="EtcItem" name="結晶-R級">
-		<table name="#Desc">R級結晶</table>
+	<item id="17371" type="EtcItem" name="Crystal (R-grade)">
+		<!-- Description: R-grade Crystal -->
 		<set name="icon" val="icon.crystal_r_i00" />
 		<set name="crystal_type" val="R" />
 		<set name="material" val="PAPER" />
