@@ -322,10 +322,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="FORCE_MASTER" />
-			</and>
+			<player categoryType="FORCE_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="170" />

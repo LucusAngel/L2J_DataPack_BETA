@@ -630,10 +630,7 @@
 		<set name="weight" val="4180" />
 		<set name="price" val="18298000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="FORCE_MASTER" />
-			</and>
+			<player categoryType="FORCE_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="170" />
@@ -741,10 +738,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="24398000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="SHIELD_MASTER" />
-			</and>
+			<player categoryType="SHIELD_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -759,10 +753,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="24398000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="WEAPON_MASTER" />
-			</and>
+			<player categoryType="WEAPON_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -777,10 +768,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="24398000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="FORCE_MASTER" />
-			</and>
+			<player categoryType="FORCE_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -795,10 +783,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="24398000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="BARD" />
-			</and>
+			<player categoryType="BARD" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -849,10 +834,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="25255000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="HEAL_MASTER" />
-			</and>
+			<player categoryType="HEAL_MASTER" />
 		</cond>
 		<for>
 			<add order="0x40" stat="maxMp" val="592" />
@@ -867,10 +849,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="25255000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="BUFF_MASTER" />
-			</and>
+			<player categoryType="BUFF_MASTER" />
 		</cond>
 		<for>
 			<add order="0x40" stat="maxMp" val="592" />
@@ -885,10 +864,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="25255000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="SUMMON_MASTER" />
-			</and>
+			<player categoryType="SUMMON_MASTER" />
 		</cond>
 		<for>
 			<add order="0x40" stat="maxMp" val="592" />
@@ -903,10 +879,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="25255000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="WIZARD_MASTER" />
-			</and>
+			<player categoryType="WIZARD_MASTER" />
 		</cond>
 		<for>
 			<add order="0x40" stat="maxMp" val="592" />
@@ -1026,10 +999,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="18298000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="HEAL_MASTER" />
-			</and>
+			<player categoryType="HEAL_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
@@ -1045,10 +1015,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="18298000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="BUFF_MASTER" />
-			</and>
+			<player categoryType="BUFF_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
@@ -1064,10 +1031,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="18298000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="SUMMON_MASTER" />
-			</and>
+			<player categoryType="SUMMON_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
@@ -1083,10 +1047,7 @@
 		<set name="weight" val="1780" />
 		<set name="price" val="18298000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="WIZARD_MASTER" />
-			</and>
+			<player categoryType="WIZARD_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
@@ -1111,10 +1072,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="33673000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="SHIELD_MASTER" />
-			</and>
+			<player categoryType="SHIELD_MASTER" />
 		</cond>
 	</item>
 	<item id="12689" type="EtcItem" name="Foundation Dynasty Platinum Plate">
@@ -1126,10 +1084,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="33673000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="WEAPON_MASTER" />
-			</and>
+			<player categoryType="WEAPON_MASTER" />
 		</cond>
 	</item>
 	<item id="12690" type="EtcItem" name="Foundation Dynasty Platinum Plate">
@@ -1141,10 +1096,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="33673000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="FORCE_MASTER" />
-			</and>
+			<player categoryType="FORCE_MASTER" />
 		</cond>
 	</item>
 	<item id="12691" type="EtcItem" name="Foundation Dynasty Platinum Plate">
@@ -1156,10 +1108,7 @@
 		<set name="weight" val="7570" />
 		<set name="price" val="33673000" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="BARD" />
-			</and>
+			<player categoryType="BARD" />
 		</cond>
 	</item>
 	<item id="12692" type="EtcItem" name="Foundation Dynasty Helmet">

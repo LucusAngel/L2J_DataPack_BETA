@@ -192,10 +192,7 @@
 		<set name="weight" val="1380" />
 		<set name="price" val="9900" />
 		<cond msgId="1518">
-			<and>
-
-				<player castle="-1" />
-			</and>
+			<player castle="-1" />
 		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />

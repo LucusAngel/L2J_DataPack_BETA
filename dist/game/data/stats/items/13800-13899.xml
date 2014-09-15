@@ -1169,7 +1169,6 @@
 		<set name="price" val="28671000" />
 		<cond msgId="2453">
 			<and>
-
 				<player categoryType="ROGUE_CLOACK" />
 				<player cloakStatus="true" />
 			</and>
@@ -1190,7 +1189,6 @@
 		<set name="price" val="28671000" />
 		<cond msgId="2453">
 			<and>
-
 				<player categoryType="MAGE_CLOACK" />
 				<player cloakStatus="true" />
 			</and>

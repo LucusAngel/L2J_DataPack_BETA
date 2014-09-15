@@ -2050,10 +2050,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="293" />
@@ -2073,10 +2070,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="49" />
@@ -2096,10 +2090,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="49" />
@@ -2181,10 +2172,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="147" />
@@ -2205,10 +2193,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="49" />
@@ -2228,10 +2213,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="49" />

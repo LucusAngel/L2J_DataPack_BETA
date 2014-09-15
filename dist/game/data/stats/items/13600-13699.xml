@@ -1440,7 +1440,6 @@
 			<and>
 				<player castle="-1" /> <!-- owns a castle -->
 				<player pledgeClass="5" /> <!-- Baron -->
-
 				<player cloakStatus="true" />
 			</and>
 		</cond>
@@ -1489,7 +1488,6 @@
 				<player castle="-1" /> <!-- owns a castle -->
 				<player categoryType="ROGUE_CLOACK" />
 				<player pledgeClass="5" /> <!-- Baron -->
-
 				<player cloakStatus="true" />
 			</and>
 		</cond>
@@ -1515,7 +1513,6 @@
 				<player castle="-1" /> <!-- owns a castle -->
 				<player categoryType="MAGE_CLOACK" />
 				<player pledgeClass="5" /> <!-- Baron -->
-
 				<player cloakStatus="true" />
 			</and>
 		</cond>

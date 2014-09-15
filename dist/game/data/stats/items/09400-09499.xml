@@ -244,10 +244,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="SHIELD_MASTER" />
-			</and>
+			<player categoryType="SHIELD_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -268,10 +265,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="WEAPON_MASTER" />
-			</and>
+			<player categoryType="WEAPON_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -292,10 +286,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="FORCE_MASTER" />
-			</and>
+			<player categoryType="FORCE_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -316,10 +307,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="BARD" />
-			</and>
+			<player categoryType="BARD" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
@@ -557,10 +545,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="HEAL_MASTER" />
-			</and>
+			<player categoryType="HEAL_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
@@ -582,10 +567,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="BUFF_MASTER" />
-			</and>
+			<player categoryType="BUFF_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
@@ -607,10 +589,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="SUMMON_MASTER" />
-			</and>
+			<player categoryType="SUMMON_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
@@ -632,10 +611,7 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player categoryType="WIZARD_MASTER" />
-			</and>
+			<player categoryType="WIZARD_MASTER" />
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />

@@ -1004,10 +1004,7 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="equip_condition" val="{{ec_academy;1}}" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="1" /> <!-- Vassal (Academy) -->
-			</and>
+			<player pledgeClass="1" /> <!-- Vassal (Academy) -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="158" />
@@ -1027,10 +1024,7 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="equip_condition" val="{{ec_academy;1}}" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="1" /> <!-- Vassal (Academy) -->
-			</and>
+			<player pledgeClass="1" /> <!-- Vassal (Academy) -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="24" />
@@ -1050,10 +1044,7 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="equip_condition" val="{{ec_academy;1}}" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="1" /> <!-- Vassal (Academy) -->
-			</and>
+			<player pledgeClass="1" /> <!-- Vassal (Academy) -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="24" />
@@ -1135,10 +1126,7 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="equip_condition" val="{{ec_academy;1}}" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="1" /> <!-- Vassal (Academy) -->
-			</and>
+			<player pledgeClass="1" /> <!-- Vassal (Academy) -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="79" />
@@ -1159,10 +1147,7 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="equip_condition" val="{{ec_academy;1}}" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="1" /> <!-- Vassal (Academy) -->
-			</and>
+			<player pledgeClass="1" /> <!-- Vassal (Academy) -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="24" />
@@ -1182,10 +1167,7 @@
 		<set name="enchant_enabled" val="1" />
 		<set name="equip_condition" val="{{ec_academy;1}}" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="1" /> <!-- Vassal (Academy) -->
-			</and>
+			<player pledgeClass="1" /> <!-- Vassal (Academy) -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="24" />
@@ -1222,10 +1204,7 @@
 		<set name="price" val="5788000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="278" />
@@ -1243,10 +1222,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
@@ -1264,10 +1240,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
@@ -1341,10 +1314,7 @@
 		<set name="price" val="4341000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="139" />
@@ -1363,10 +1333,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
@@ -1384,10 +1351,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
@@ -1424,10 +1388,7 @@
 		<set name="price" val="5788000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="278" />
@@ -1445,10 +1406,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
@@ -1466,10 +1424,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
@@ -1543,10 +1498,7 @@
 		<set name="price" val="4341000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="139" />
@@ -1565,10 +1517,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
@@ -1586,10 +1535,7 @@
 		<set name="price" val="890000" />
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
-			<and>
-
-				<player pledgeClass="4" /> <!-- Elder -->
-			</and>
+			<player pledgeClass="4" /> <!-- Elder -->
 		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
