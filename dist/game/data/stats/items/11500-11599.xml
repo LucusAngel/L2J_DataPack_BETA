@@ -12,9 +12,6 @@
 		<set name="price" val="3195000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="55" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -32,9 +29,6 @@
 		<set name="price" val="3195000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="55" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -51,9 +45,6 @@
 		<set name="weight" val="1170" />
 		<set name="price" val="3355000" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -73,9 +64,6 @@
 		<set name="price" val="4793000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="83" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -94,9 +82,6 @@
 		<set name="price" val="12781000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="193" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -116,9 +101,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3783-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="128" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -137,9 +119,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3784-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="55" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -158,9 +137,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3785-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="55" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -178,9 +154,6 @@
 		<set name="price" val="3355000" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3786-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -201,9 +174,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3787-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="83" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -223,9 +193,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3788-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="205" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -261,9 +228,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3790-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="141" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -282,9 +246,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3791-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -303,9 +264,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3801-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -424,7 +382,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="FORCE_MASTER" />
 			</and>
 		</cond>
@@ -548,9 +506,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3792-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -570,9 +525,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3789-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -593,7 +545,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="SHIELD_MASTER" />
 			</and>
 		</cond>
@@ -617,7 +569,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="WEAPON_MASTER" />
 			</and>
 		</cond>
@@ -641,7 +593,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="FORCE_MASTER" />
 			</and>
 		</cond>
@@ -665,7 +617,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="BARD" />
 			</and>
 		</cond>
@@ -686,9 +638,6 @@
 		<set name="price" val="6404000" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3793-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -709,9 +658,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3802-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -731,9 +677,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3804-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
 			<add order="0x40" stat="maxMp" val="592" />
@@ -755,7 +698,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="HEAL_MASTER" />
 			</and>
 		</cond>
@@ -780,7 +723,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="BUFF_MASTER" />
 			</and>
 		</cond>
@@ -805,7 +748,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="SUMMON_MASTER" />
 			</and>
 		</cond>
@@ -830,7 +773,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="WIZARD_MASTER" />
 			</and>
 		</cond>
@@ -853,9 +796,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3803-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="92" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1020,9 +960,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3799-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="113" />
 			<add order="0x40" stat="maxMp" val="592" />
@@ -1044,7 +981,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="HEAL_MASTER" />
 			</and>
 		</cond>
@@ -1069,7 +1006,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="BUFF_MASTER" />
 			</and>
 		</cond>
@@ -1094,7 +1031,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="SUMMON_MASTER" />
 			</and>
 		</cond>
@@ -1119,7 +1056,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="WIZARD_MASTER" />
 			</and>
 		</cond>
@@ -1143,9 +1080,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3806-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1166,7 +1100,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="SHIELD_MASTER" />
 			</and>
 		</cond>
@@ -1190,7 +1124,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="WEAPON_MASTER" />
 			</and>
 		</cond>
@@ -1214,7 +1148,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="FORCE_MASTER" />
 			</and>
 		</cond>
@@ -1238,7 +1172,7 @@
 		<set name="enchant_enabled" val="1" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="BARD" />
 			</and>
 		</cond>
@@ -1260,9 +1194,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3794-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="92" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1282,9 +1213,6 @@
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
 		<set name="item_skill" val="3800-1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="71" />
 			<add order="0x40" stat="maxMp" val="370" />
@@ -1304,9 +1232,6 @@
 		<set name="price" val="15248000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="134" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1324,9 +1249,6 @@
 		<set name="price" val="6099000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1344,9 +1266,6 @@
 		<set name="price" val="6099000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1451,9 +1370,6 @@
 		<set name="price" val="6099000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1472,9 +1388,6 @@
 		<set name="price" val="24398000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="214" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1491,9 +1404,6 @@
 		<set name="weight" val="1370" />
 		<set name="price" val="6404000" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -1513,9 +1423,6 @@
 		<set name="price" val="6099000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="61" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1533,9 +1440,6 @@
 		<set name="price" val="9149000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="92" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1554,9 +1458,6 @@
 		<set name="price" val="18298000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="107" />
 			<add order="0x40" stat="maxMp" val="592" />
@@ -1575,9 +1476,6 @@
 		<set name="price" val="9149000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="92" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1596,9 +1494,6 @@
 		<set name="price" val="11436000" />
 		<set name="element_enabled" val="true" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="67" />
 			<add order="0x40" stat="maxMp" val="370" />

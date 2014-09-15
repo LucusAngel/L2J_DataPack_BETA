@@ -684,9 +684,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="250" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -727,9 +724,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="125" />
 			<add order="0x40" stat="maxMp" val="637" />
@@ -751,9 +745,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="250" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -794,9 +785,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="125" />
 			<add order="0x40" stat="maxMp" val="637" />
@@ -2063,7 +2051,7 @@
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player pledgeClass="4" /> <!-- Elder -->
 			</and>
 		</cond>
@@ -2086,7 +2074,7 @@
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player pledgeClass="4" /> <!-- Elder -->
 			</and>
 		</cond>
@@ -2109,7 +2097,7 @@
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player pledgeClass="4" /> <!-- Elder -->
 			</and>
 		</cond>
@@ -2194,7 +2182,7 @@
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player pledgeClass="4" /> <!-- Elder -->
 			</and>
 		</cond>
@@ -2218,7 +2206,7 @@
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player pledgeClass="4" /> <!-- Elder -->
 			</and>
 		</cond>
@@ -2241,7 +2229,7 @@
 		<set name="is_sellable" val="false" />
 		<cond msgId="1518">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player pledgeClass="4" /> <!-- Elder -->
 			</and>
 		</cond>

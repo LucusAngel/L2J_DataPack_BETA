@@ -1019,9 +1019,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="205" />
 		</for>
@@ -1039,9 +1036,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="128" />
 		</for>
@@ -1106,9 +1100,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -1209,9 +1200,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="166" />
 			<add order="0x40" stat="maxMp" val="866" />
@@ -1303,9 +1291,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="226" />
 		</for>
@@ -1323,9 +1308,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="141" />
 		</for>
@@ -1390,9 +1372,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="time" val="129600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />

@@ -1065,9 +1065,6 @@
 		<set name="weight" val="940" />
 		<set name="price" val="3355000" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<add order="0x10" stat="pDef" val="13" />
@@ -1086,9 +1083,6 @@
 		<set name="weight" val="930" />
 		<set name="price" val="6404000" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<add order="0x10" stat="pDef" val="15" />
@@ -1107,9 +1101,6 @@
 		<set name="weight" val="920" />
 		<set name="price" val="12250000" />
 		<set name="enchant_enabled" val="1" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<add order="0x10" stat="pDef" val="17" />
@@ -1125,9 +1116,6 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="220" />
 		<set name="price" val="28671000" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="2" />
 			<enchant order="0x0C" stat="pDef" val="0" />
@@ -1181,7 +1169,7 @@
 		<set name="price" val="28671000" />
 		<cond msgId="2453">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="ROGUE_CLOACK" />
 				<player cloakStatus="true" />
 			</and>
@@ -1202,7 +1190,7 @@
 		<set name="price" val="28671000" />
 		<cond msgId="2453">
 			<and>
-				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
+
 				<player categoryType="MAGE_CLOACK" />
 				<player cloakStatus="true" />
 			</and>

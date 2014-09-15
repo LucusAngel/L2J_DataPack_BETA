@@ -2,7 +2,7 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="40200" name="Sayha's Cloak" type="Armor">
 		<!-- Eviscerator -->
-		<!-- Description: Cloak for those that carry the power of Sayha. M. Def. + 40. -->
+		
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -16,7 +16,7 @@
 	</item>
 	<item id="40201" name="Sayha's Cloak" type="Armor">
 		<!-- Sayha's Seer -->
-		<!-- Description: Cloak for those that carry the power of Sayha. M. Def. + 40. -->
+		
 		<set name="icon" val="icon.vesper_cloack_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />

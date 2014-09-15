@@ -11,9 +11,6 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="323" />
 		<set name="price" val="8430" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="37" />
 			<add order="0x40" stat="maxMp" val="141" />
@@ -43,9 +40,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="427" />
 		<set name="price" val="5480" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -120,9 +114,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="420" />
 		<set name="price" val="5900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -154,9 +145,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1207" />
 		<set name="price" val="14000" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="80" />
 		</for>
@@ -172,9 +160,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="2690" />
 		<set name="price" val="22500" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="129" />
 		</for>
@@ -248,9 +233,6 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="833" />
 		<set name="price" val="27400" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="105" />
 			<add order="0x40" stat="maxMp" val="413" />
@@ -365,9 +347,6 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="663" />
 		<set name="price" val="31200" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="69" />
 			<add order="0x40" stat="maxMp" val="284" />
@@ -384,9 +363,6 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="327" />
 		<set name="price" val="19500" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="43" />
 			<add order="0x40" stat="maxMp" val="177" />
@@ -416,9 +392,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="410" />
 		<set name="price" val="10900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -450,9 +423,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="3660" />
 		<set name="price" val="67700" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="224" />
 		</for>
@@ -467,9 +437,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="413" />
 		<set name="price" val="10900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -602,9 +569,6 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="660" />
 		<set name="price" val="48900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="74" />
 			<add order="0x40" stat="maxMp" val="314" />
@@ -621,9 +585,6 @@
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="320" />
 		<set name="price" val="30600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="46" />
 			<add order="0x40" stat="maxMp" val="196" />
@@ -681,9 +642,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="407" />
 		<set name="price" val="17100" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -701,9 +659,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="3493" />
 		<set name="price" val="106000" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="239" />
 		</for>
@@ -819,9 +774,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="1190" />
 		<set name="price" val="52200" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="98" />
 		</for>
@@ -836,9 +788,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="197" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -867,9 +816,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="197" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -884,9 +830,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="393" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -915,9 +858,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="393" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -932,9 +872,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="403" />
 		<set name="price" val="21900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -966,9 +903,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="2657" />
 		<set name="price" val="83500" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="157" />
 		</for>
@@ -983,9 +917,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="197" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -1014,9 +945,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="197" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -1047,9 +975,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="847" />
 		<set name="price" val="102000" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="127" />
 			<add order="0x40" stat="maxMp" val="561" />
@@ -1065,9 +990,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="393" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -1096,9 +1018,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="393" />
 		<set name="price" val="20900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="41" />
 		</for>
@@ -1127,9 +1046,6 @@
 		<set name="material" val="DAMASCUS" />
 		<set name="weight" val="403" />
 		<set name="price" val="21900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -1147,9 +1063,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="1173" />
 		<set name="price" val="52200" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="98" />
 		</for>
@@ -1165,9 +1078,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="2640" />
 		<set name="price" val="83500" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="157" />
 		</for>
@@ -1197,9 +1107,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="653" />
 		<set name="price" val="62600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="78" />
 			<add order="0x40" stat="maxMp" val="345" />
@@ -1216,9 +1123,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="313" />
 		<set name="price" val="39100" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="49" />
 			<add order="0x40" stat="maxMp" val="216" />
@@ -1234,9 +1138,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="193" />
 		<set name="price" val="37600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="44" />
 		</for>
@@ -1265,9 +1166,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="193" />
 		<set name="price" val="37600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="44" />
 		</for>
@@ -1282,9 +1180,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="377" />
 		<set name="price" val="37600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="44" />
 		</for>
@@ -1313,9 +1208,6 @@
 		<set name="material" val="MITHRIL" />
 		<set name="weight" val="377" />
 		<set name="price" val="37600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="44" />
 		</for>
@@ -1330,9 +1222,6 @@
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="400" />
 		<set name="price" val="39400" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<sub order="0x10" stat="rEvas" val="8" />
 			<set order="0x08" stat="rShld" val="20" />
@@ -1350,9 +1239,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="3327" />
 		<set name="price" val="244000" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="270" />
 		</for>
@@ -1467,9 +1353,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="633" />
 		<set name="price" val="112700" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="83" />
 			<add order="0x40" stat="maxMp" val="377" />
@@ -1486,9 +1369,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="1123" />
 		<set name="price" val="93900" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="104" />
 		</for>
@@ -1518,9 +1398,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="377" />
 		<set name="price" val="37600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="44" />
 		</for>
@@ -1549,9 +1426,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="377" />
 		<set name="price" val="37600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="44" />
 		</for>
@@ -1566,9 +1440,6 @@
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="197" />
 		<set name="price" val="37600" />
-		<cond msgId="1518">
-			<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF,KAMAEL,ERTHEIA" /> <!-- l2jtw : 603 -->
-		</cond>
 		<for>
 			<add order="0x10" stat="pDef" val="44" />
 		</for>
