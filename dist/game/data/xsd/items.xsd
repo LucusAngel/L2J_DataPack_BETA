@@ -126,8 +126,8 @@
 											<xs:complexType>
 												<xs:attribute name="castle">
 													<xs:simpleType>
-														<xs:restriction base="xs:positiveInteger">
-															<xs:minInclusive value="1" />
+														<xs:restriction base="xs:integer">
+															<xs:minInclusive value="-1" />
 															<xs:maxInclusive value="9" />
 														</xs:restriction>
 													</xs:simpleType>
