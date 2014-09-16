@@ -1,17 +1,9 @@
 Set Names utf8;
-/************ Made in Taiwan ************/
 
-REPLACE INTO `auto_announcements` VALUES
-(1,900000,9000000,36000,'突然變成無法移動的狀態時，請先點選畫面左上角自己的名字或血條，再按鍵盤的「Esc」取消目標。','false'),
-(2,1800000,9000000,36000,'掉入地獄或是卡點的的玩家，請輸入「/脫逃」的自救指令 - 需5分鐘。','false'),
-(3,2700000,9000000,36000,'叫喊買賣時，請至交易頻道發言，勿使用一般頻道影響他人。','false'),
-(4,3600000,9000000,36000,'請玩家遵守官網公告之遊戲管理規章相關內容，並配合GM進行遊戲。','false'),
-(5,4500000,9000000,36000,'玩家可以使用「/GM」來查詢目前正在線上服務的GM名單。','false'),
-(6,5400000,9000000,36000,'請玩家注意個人商店設定金額，視窗右下顯示金額即為販售獲利之金額。','false'),
-(7,6300000,9000000,36000,'請大家發揮良好遊戲道德，互相尊重禮讓，共同打造天堂II優良文化。','false'),
-(8,7200000,9000000,36000,'提醒您慎重保管個人帳號、密碼；養成良好的網路使用環境，以確保你的帳號資料安全。','false'),
-(9,8100000,9000000,36000,'過度沉溺遊戲易造成身體及精神狀況不佳，請適度的休息，確保您的健康。','false'),
-(10,9000000,9000000,36000,'不論是在進行交易或是買賣物品的時候，請多加確認數量及所要交易的角色名稱，以避免交易錯誤造成您不必要的損失。','false');
+-- This SQL file contains various update thingy to the new L2 version (and also probably other thnings)
+-- Some thingy I've managed to identify. They've got appropriate comments.
+-- The rest is left "as is" so devs can inspect this
+-- Battlecruiser
 
 -- 刪除村莊的彩券商人,因為官服沒有彩券商人
 DELETE FROM `spawnlist` WHERE `npc_templateid` IN (30990,30991,30992,30993,30994);
@@ -48,20 +40,21 @@ INSERT INTO `spawnlist` (location,count,npc_templateid,locx,locy,locz,randomx,ra
 REPLACE INTO `teleport` VALUES
 ('Cruma Tower 2nd floor -> Cruma Tower 1st floor',24,17728,114750,-11688,0,0,57);
 
--- 「暫時」修正「古魯丁城鎮」傳送師的位置
+-- FIXME: verify this
 DELETE FROM `spawnlist` WHERE `npc_templateid` IN (30256);
 INSERT INTO `spawnlist` (location,count,npc_templateid,locx,locy,locz,randomx,randomy,heading,respawn_delay,loc_id,periodOfDay) VALUES
 ('gludio08_npc1921_020',1,30256,-14531,124060,-3104,0,0,0,60,0,0);
 
--- 「暫時」修正傳送到「說話之島」的位置
-REPLACE INTO `teleport` VALUES
-('Gludin -> TI Village',9,-111988,257240,-1376,9400,0,57),
-('DE Village -> TI Village',1010,-111988,257240,-1376,24000,0,57),
-('Elven Village -> TI Village',1015,-111988,257240,-1376,23000,0,57),
-('Dwarven Village -> TI Village',1019,-111988,257240,-1376,46000,0,57),
-('Orc Village -> TI Village',1027,-111988,257240,-1376,35000,0,57),
-('Kamael Vilage -> Talking Island Village',1123,-111988,257240,-1376,20000,0,57),
-('Airship dock -> Talking Island',12119,-111988,257240,-1376,0,0,57);
+-- TI teleport update
+-- Merged into main sqls
+--REPLACE INTO `teleport` VALUES
+--('Gludin -> TI Village',9,-111988,257240,-1376,9400,0,57),
+--('DE Village -> TI Village',1010,-111988,257240,-1376,24000,0,57),
+--('Elven Village -> TI Village',1015,-111988,257240,-1376,23000,0,57),
+--('Dwarven Village -> TI Village',1019,-111988,257240,-1376,46000,0,57),
+--('Orc Village -> TI Village',1027,-111988,257240,-1376,35000,0,57),
+--('Kamael Vilage -> Talking Island Village',1123,-111988,257240,-1376,20000,0,57),
+--('Airship dock -> Talking Island',12119,-111988,257240,-1376,0,0,57);
 
 -- 「精靈村莊」刪除舊的 NPC
 DELETE FROM `spawnlist` WHERE `npc_templateid` IN (30146,30147,30148,30149,30150,30151,30152,30153,30154,30155,30156,30157,30158,30216,30217,30218,30219,30220,30221,30222,30223,30284,30285,30361,30362,30363,30370,30400,30414,30599,31031,31358,31359,31563,31688,31769,31780,31781,31848,32478,32529,32783,35230);
@@ -85,7 +78,7 @@ DELETE FROM `spawnlist` WHERE `npc_templateid` IN (30129,30130,30131,30132,30133
 REPLACE INTO `spawnlist` (`location`, `count`, `npc_templateid`, `locx`, `locy`, `locz`, `heading`, `respawn_delay`) VALUES
 ('黑暗精靈村莊',1,30134,11171,15932,-4584,0,60);
 -- 「黑暗精靈村莊」加入新的傳送(尚未加入全價/半價收費的對話)
-REPLACE INTO `teleport` (`Description`, `id`, `loc_x`, `loc_y`, `loc_z`, `price`) VALUES
+INSERT INTO `teleport` (`Description`, `id`, `loc_x`, `loc_y`, `loc_z`, `price`) VALUES
 ('黑暗精靈村莊',3013400,-14593,123936,-3120,0),
 ('黑暗精靈村莊',3013401,115357,-178212,-928,0),
 ('黑暗精靈村莊',3013402,-111988,257240,-1376,0),
@@ -101,7 +94,7 @@ DELETE FROM `spawnlist` WHERE `npc_templateid` IN (30516,30517,30518,30519,30520
 REPLACE INTO `spawnlist` (`location`, `count`, `npc_templateid`, `locx`, `locy`, `locz`, `heading`, `respawn_delay`) VALUES
 ('矮人村莊',1,30540,115441,-178117,-928,0,60);
 -- 「矮人村莊」加入新的傳送(尚未加入全價/半價收費的對話)
-REPLACE INTO `teleport` (`Description`, `id`, `loc_x`, `loc_y`, `loc_z`, `price`) VALUES
+INSERT INTO `teleport` (`Description`, `id`, `loc_x`, `loc_y`, `loc_z`, `price`) VALUES
 ('矮人村莊',3054000,-14593,123936,-3120,0),
 ('矮人村莊',3054001,87126,-143520,-1288,0),
 ('矮人村莊',3054002,11167,16012,-4584,0),
