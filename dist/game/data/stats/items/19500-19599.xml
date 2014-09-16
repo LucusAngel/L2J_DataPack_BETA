@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+	<item id="19527" type="Armor" name="Immortal Shield - Attack Type / Heavy">
+		<set name="icon" val="icon.weapon_sacon_i00" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_count" val="82" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1130" />
+		<set name="price" val="0" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="415" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="19543" type="Armor" name="Twilight Shield - Attack Type / Heavy">
+		<set name="icon" val="icon.kratere_i00" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_count" val="199" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1130" />
+		<set name="price" val="0" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="458" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="19559" type="Armor" name="Seraph Shield - Attack Type / Heavy">
+		<set name="icon" val="icon.beranka_i00" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_count" val="429" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1130" />
+		<set name="price" val="0" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="505" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+	<item id="19575" type="Armor" name="Eternal Shield - Attack Type / Heavy">
+		<set name="icon" val="icon.weapon_akra_i00" />
+		<set name="default_action" val="equip" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_count" val="945" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1130" />
+		<set name="price" val="0" />
+		<set name="enchant_enabled" val="1" />
+		<for>
+			<sub order="0x10" stat="rEvas" val="8" />
+			<set order="0x08" stat="rShld" val="20" />
+			<set order="0x08" stat="sDef" val="526" />
+			<enchant val="0" order="0x0C" stat="sDef" />
+		</for>
+	</item>
+</list>

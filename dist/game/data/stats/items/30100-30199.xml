@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+	<item id="30106" type="Weapon" name="Specter Shaper - Guidance + Haste">
+		<set name="icon" val="icon.weapon_ignicion_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-9;3564-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="496" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30107" type="Weapon" name="Specter Shaper - Haste + Focus">
+		<set name="icon" val="icon.weapon_ignicion_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-2;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="496" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30108" type="Weapon" name="Specter Shaper - Focus + Guidance">
+		<set name="icon" val="icon.weapon_ignicion_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;3602-9" />
+		<for>
+			<set order="0x08" stat="pAtk" val="496" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30109" type="Weapon" name="Specter Cutter - Haste + Focus">
+		<set name="icon" val="icon.weapon_ninfea_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-2;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30110" type="Weapon" name="Specter Cutter - Focus + Health">
+		<set name="icon" val="icon.weapon_ninfea_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;3013-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30111" type="Weapon" name="Specter Cutter - Health + Haste">
+		<set name="icon" val="icon.weapon_ninfea_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3013-4;3564-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30112" type="Weapon" name="Specter Slasher - Focus + Damage Up">
+		<set name="icon" val="icon.weapon_skia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;13109-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30113" type="Weapon" name="Specter Slasher - Damage Up + Haste">
+		<set name="icon" val="icon.weapon_skia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-4;3564-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30114" type="Weapon" name="Specter Slasher - Haste + Focus">
+		<set name="icon" val="icon.weapon_skia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-2;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30115" type="Weapon" name="Specter Avenger - Haste + Critical Damage">
+		<set name="icon" val="icon.weapon_ikeon_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-2;3572-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30116" type="Weapon" name="Specter Avenger - Critical Damage + Focus">
+		<set name="icon" val="icon.weapon_ikeon_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3572-3;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30117" type="Weapon" name="Specter Avenger - Focus + Haste">
+		<set name="icon" val="icon.weapon_ikeon_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;3564-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30118" type="Weapon" name="Specter Fighter - Focus + Damage Up">
+		<set name="icon" val="icon.weapon_deodos_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;13109-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30119" type="Weapon" name="Specter Fighter - Damage Up + Haste">
+		<set name="icon" val="icon.weapon_deodos_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-4;3564-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30120" type="Weapon" name="Specter Fighter - Haste + Focus">
+		<set name="icon" val="icon.weapon_deodos_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-2;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30121" type="Weapon" name="Specter Stormer - HP Drain + Guidance">
+		<set name="icon" val="icon.weapon_transgredi_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3568-1;3602-9" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30122" type="Weapon" name="Specter Stormer - Guidance + Damage Up">
+		<set name="icon" val="icon.weapon_transgredi_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-9;13109-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30123" type="Weapon" name="Specter Stormer - Damage Up + HP Drain">
+		<set name="icon" val="icon.weapon_transgredi_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-4;3568-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30124" type="Weapon" name="Specter Thrower - Damage Up + Focus">
+		<set name="icon" val="icon.weapon_solenas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-4;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="1117" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30125" type="Weapon" name="Specter Thrower - Focus + Long Blow">
+		<set name="icon" val="icon.weapon_solenas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;13061-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="1117" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30126" type="Weapon" name="Specter Thrower - Long Blow + Damage Up">
+		<set name="icon" val="icon.weapon_solenas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13061-1;13109-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="1117" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30127" type="Weapon" name="Specter Shooter - Focus + Critical Slow">
+		<set name="icon" val="icon.weapon_lapis_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_skill" val="3574-2" />
+		<set name="item_skill" val="3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="719" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30128" type="Weapon" name="Specter Shooter - Critical Slow + Haste">
+		<set name="icon" val="icon.weapon_lapis_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_skill" val="3574-2" />
+		<set name="item_skill" val="3564-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="719" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30129" type="Weapon" name="Specter Shooter - Haste + Focus">
+		<set name="icon" val="icon.weapon_lapis_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-2;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="719" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30130" type="Weapon" name="Specter Buster - Acumen + Magic Hold">
+		<set name="icon" val="icon.weapon_zihel_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-1" />
+		<set name="item_skill" val="3047-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="454" />
+			<set order="0x08" stat="mAtk" val="330" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30131" type="Weapon" name="Specter Buster - Magic Hold + Mana Up">
+		<set name="icon" val="icon.weapon_zihel_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-1" />
+		<set name="item_skill" val="3014-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="454" />
+			<set order="0x08" stat="mAtk" val="330" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30132" type="Weapon" name="Specter Buster - Mana Up + Acumen">
+		<set name="icon" val="icon.weapon_zihel_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3014-2;3047-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="454" />
+			<set order="0x08" stat="mAtk" val="330" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30133" type="Weapon" name="Specter Caster - Empower + Acumen">
+		<set name="icon" val="icon.weapon_alacer_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3575-3;3047-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="454" />
+			<set order="0x08" stat="mAtk" val="330" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30134" type="Weapon" name="Specter Caster - Acumen + Magic Hold">
+		<set name="icon" val="icon.weapon_alacer_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-1" />
+		<set name="item_skill" val="3047-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="454" />
+			<set order="0x08" stat="mAtk" val="330" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30135" type="Weapon" name="Specter Caster - Magic Hold + Empower">
+		<set name="icon" val="icon.weapon_alacer_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-1" />
+		<set name="item_skill" val="3575-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="454" />
+			<set order="0x08" stat="mAtk" val="330" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30136" type="Weapon" name="Specter Retributer - MP Regeneration + Acumen">
+		<set name="icon" val="icon.weapon_rupe_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3576-3;3047-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="553" />
+			<set order="0x08" stat="mAtk" val="363" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30137" type="Weapon" name="Specter Retributer - Acumen + Empower">
+		<set name="icon" val="icon.weapon_rupe_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3047-2;3575-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="553" />
+			<set order="0x08" stat="mAtk" val="363" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30138" type="Weapon" name="Specter Retributer - Empower + MP Regeneration">
+		<set name="icon" val="icon.weapon_rupe_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3575-3;3576-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="553" />
+			<set order="0x08" stat="mAtk" val="363" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30139" type="Weapon" name="Specter Dual Sword - Haste + Damage Up">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-2;13109-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30140" type="Weapon" name="Specter Dual Sword - Damage Up + Health">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-4;3013-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30141" type="Weapon" name="Specter Dual Sword - Health + Haste">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3013-4;3564-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30142" type="Weapon" name="Specter Dual Dagger - Damage Up + Focus">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-4;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30143" type="Weapon" name="Specter Dual Dagger - Focus + Guidance">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;3602-9" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30144" type="Weapon" name="Specter Dual Dagger - Guidance + Damage Up">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-9;13109-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="567" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30145" type="Weapon" name="Specter Dual Blunt Weapon - Focus + Guidance">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-4;3602-9" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30146" type="Weapon" name="Specter Dual Blunt Weapon - Guidance + Damage Up">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-9;13109-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30147" type="Weapon" name="Specter Dual Blunt Weapon - Damage Up + Focus">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r95" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="472500000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-4;3566-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="690" />
+			<set order="0x08" stat="mAtk" val="275" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30190" type="Weapon" name="Amaranthine Shaper - Guidance + Haste">
+		<set name="icon" val="icon.weapon_stanpid_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-10;3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="527" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30191" type="Weapon" name="Amaranthine Shaper - Haste + Focus">
+		<set name="icon" val="icon.weapon_stanpid_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3;3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="527" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30192" type="Weapon" name="Amaranthine Shaper - Focus + Guidance">
+		<set name="icon" val="icon.weapon_stanpid_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5;3602-10" />
+		<for>
+			<set order="0x08" stat="pAtk" val="527" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30193" type="Weapon" name="Amaranthine Cutter - Haste + Focus">
+		<set name="icon" val="icon.weapon_plenitas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3;3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30194" type="Weapon" name="Amaranthine Cutter - Focus + Health">
+		<set name="icon" val="icon.weapon_plenitas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5;3013-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30195" type="Weapon" name="Amaranthine Cutter - Health + Haste">
+		<set name="icon" val="icon.weapon_plenitas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3013-5;3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30196" type="Weapon" name="Amaranthine Slasher - Focus + Damage Up">
+		<set name="icon" val="icon.weapon_bauen_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5;13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30197" type="Weapon" name="Amaranthine Slasher - Damage Up + Haste">
+		<set name="icon" val="icon.weapon_bauen_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5;3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30198" type="Weapon" name="Amaranthine Slasher - Haste + Focus">
+		<set name="icon" val="icon.weapon_bauen_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3;3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="30199" type="Weapon" name="Amaranthine Avenger - Haste + Critical Damage">
+		<set name="icon" val="icon.weapon_qutram_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3;3572-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+</list>

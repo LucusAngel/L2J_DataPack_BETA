@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+	<item id="18956" type="Weapon" name="Amaranthine Shaper - Guidance">
+		<set name="icon" val="icon.weapon_stanpid_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-10" />
+		<for>
+			<set order="0x08" stat="pAtk" val="527" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18957" type="Weapon" name="Amaranthine Shaper - Haste">
+		<set name="icon" val="icon.weapon_stanpid_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="527" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18958" type="Weapon" name="Amaranthine Shaper - Focus">
+		<set name="icon" val="icon.weapon_stanpid_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="527" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18959" type="Weapon" name="Amaranthine Cutter - Haste">
+		<set name="icon" val="icon.weapon_plenitas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18960" type="Weapon" name="Amaranthine Cutter - Focus">
+		<set name="icon" val="icon.weapon_plenitas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18961" type="Weapon" name="Amaranthine Cutter - Health">
+		<set name="icon" val="icon.weapon_plenitas_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3013-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18962" type="Weapon" name="Amaranthine Slasher - Focus">
+		<set name="icon" val="icon.weapon_bauen_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18963" type="Weapon" name="Amaranthine Slasher - Damage Up">
+		<set name="icon" val="icon.weapon_bauen_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18964" type="Weapon" name="Amaranthine Slasher - Haste">
+		<set name="icon" val="icon.weapon_bauen_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18965" type="Weapon" name="Amaranthine Avenger - Haste">
+		<set name="icon" val="icon.weapon_qutram_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18966" type="Weapon" name="Amaranthine Avenger - Critical Damage">
+		<set name="icon" val="icon.weapon_qutram_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3572-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18967" type="Weapon" name="Amaranthine Avenger - Focus">
+		<set name="icon" val="icon.weapon_qutram_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18968" type="Weapon" name="Amaranthine Fighter - Focus">
+		<set name="icon" val="icon.weapon_octoclaw_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18969" type="Weapon" name="Amaranthine Fighter - Damage Up">
+		<set name="icon" val="icon.weapon_octoclaw_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18970" type="Weapon" name="Amaranthine Fighter - Haste">
+		<set name="icon" val="icon.weapon_octoclaw_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18971" type="Weapon" name="Amaranthine Stormer - HP Drain">
+		<set name="icon" val="icon.weapon_crabel_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3568-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18972" type="Weapon" name="Amaranthine Stormer - Guidance">
+		<set name="icon" val="icon.weapon_crabel_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-10" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18973" type="Weapon" name="Amaranthine Stormer - Damage Up">
+		<set name="icon" val="icon.weapon_crabel_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18974" type="Weapon" name="Amaranthine Thrower - Damage Up">
+		<set name="icon" val="icon.weapon_castron_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="1185" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18975" type="Weapon" name="Amaranthine Thrower - Focus">
+		<set name="icon" val="icon.weapon_castron_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="1185" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18976" type="Weapon" name="Amaranthine Thrower - Long Blow">
+		<set name="icon" val="icon.weapon_castron_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13061-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="1185" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18977" type="Weapon" name="Amaranthine Shooter - Focus">
+		<set name="icon" val="icon.weapon_stilla_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="763" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18978" type="Weapon" name="Amaranthine Shooter - Critical Slow">
+		<set name="icon" val="icon.weapon_stilla_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_skill" val="3574-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="763" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18979" type="Weapon" name="Amaranthine Shooter - Haste">
+		<set name="icon" val="icon.weapon_stilla_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="763" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18980" type="Weapon" name="Amaranthine Buster - Acumen">
+		<set name="icon" val="icon.weaon_serapear_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3047-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="482" />
+			<set order="0x08" stat="mAtk" val="350" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18981" type="Weapon" name="Amaranthine Buster - Magic Hold">
+		<set name="icon" val="icon.weaon_serapear_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="482" />
+			<set order="0x08" stat="mAtk" val="350" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18982" type="Weapon" name="Amaranthine Buster - Mana Up">
+		<set name="icon" val="icon.weaon_serapear_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3014-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="482" />
+			<set order="0x08" stat="mAtk" val="350" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18983" type="Weapon" name="Amaranthine Caster - Empower">
+		<set name="icon" val="icon.weapon_pilia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3575-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="482" />
+			<set order="0x08" stat="mAtk" val="350" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18984" type="Weapon" name="Amaranthine Caster - Acumen">
+		<set name="icon" val="icon.weapon_pilia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3047-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="482" />
+			<set order="0x08" stat="mAtk" val="350" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18985" type="Weapon" name="Amaranthine Caster - Magic Hold">
+		<set name="icon" val="icon.weapon_pilia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="482" />
+			<set order="0x08" stat="mAtk" val="350" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18986" type="Weapon" name="Amaranthine Retributer - MP Regeneration">
+		<set name="icon" val="icon.weapon_shaelon_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3576-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="587" />
+			<set order="0x08" stat="mAtk" val="371" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18987" type="Weapon" name="Amaranthine Retributer - Acumen">
+		<set name="icon" val="icon.weapon_shaelon_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3047-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="587" />
+			<set order="0x08" stat="mAtk" val="371" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18988" type="Weapon" name="Amaranthine Retributer - Empower">
+		<set name="icon" val="icon.weapon_shaelon_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3575-4" />
+		<for>
+			<set order="0x08" stat="pAtk" val="587" />
+			<set order="0x08" stat="mAtk" val="371" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18989" type="Weapon" name="Amaranthine Dual Sword - Haste">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18990" type="Weapon" name="Amaranthine Dual Sword - Damage Up">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18991" type="Weapon" name="Amaranthine Dual Sword - Health">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3013-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18992" type="Weapon" name="Amaranthine Dual Dagger - Damage Up">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18993" type="Weapon" name="Amaranthine Dual Dagger - Focus">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18994" type="Weapon" name="Amaranthine Dual Dagger - Guidance">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-10" />
+		<for>
+			<set order="0x08" stat="pAtk" val="602" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18995" type="Weapon" name="Amaranthine Dual Blunt Weapon - Focus">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18996" type="Weapon" name="Amaranthine Dual Blunt Weapon - Guidance">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-10" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18997" type="Weapon" name="Amaranthine Dual Blunt Weapon - Damage Up">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r99" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="656220000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-5" />
+		<for>
+			<set order="0x08" stat="pAtk" val="733" />
+			<set order="0x08" stat="mAtk" val="298" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+</list>

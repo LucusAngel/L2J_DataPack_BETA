@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+	<item id="18704" type="Weapon" name="Apocalypse Shaper - Guidance">
+		<set name="icon" val="icon.weapon_phasian_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-8" />
+		<for>
+			<set order="0x08" stat="pAtk" val="428" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18705" type="Weapon" name="Apocalypse Shaper - Haste">
+		<set name="icon" val="icon.weapon_phasian_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="428" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18706" type="Weapon" name="Apocalypse Shaper - Focus">
+		<set name="icon" val="icon.weapon_phasian_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dagger" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="428" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18707" type="Weapon" name="Apocalypse Cutter - Haste">
+		<set name="icon" val="icon.weapon_pasis_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18708" type="Weapon" name="Apocalypse Cutter - Focus">
+		<set name="icon" val="icon.weapon_pasis_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18709" type="Weapon" name="Apocalypse Cutter - Health">
+		<set name="icon" val="icon.weapon_pasis_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3013-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18710" type="Weapon" name="Apocalypse Slasher - Focus">
+		<set name="icon" val="icon.weapon_volver_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18711" type="Weapon" name="Apocalypse Slasher - Damage Up">
+		<set name="icon" val="icon.weapon_volver_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18712" type="Weapon" name="Apocalypse Slasher - Haste">
+		<set name="icon" val="icon.weapon_volver_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigsword" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18713" type="Weapon" name="Apocalypse Avenger - Haste">
+		<set name="icon" val="icon.weapon_raksilion_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18714" type="Weapon" name="Apocalypse Avenger - Critical Damage">
+		<set name="icon" val="icon.weapon_raksilion_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3572-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18715" type="Weapon" name="Apocalypse Avenger - Focus">
+		<set name="icon" val="icon.weapon_raksilion_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18716" type="Weapon" name="Apocalypse Fighter - Focus">
+		<set name="icon" val="icon.weapon_kirche_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18717" type="Weapon" name="Apocalypse Fighter - Damage Up">
+		<set name="icon" val="icon.weapon_kirche_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18718" type="Weapon" name="Apocalypse Fighter - Haste">
+		<set name="icon" val="icon.weapon_kirche_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualfist" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1550" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18719" type="Weapon" name="Apocalypse Stormer - HP Drain">
+		<set name="icon" val="icon.weapon_grave_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3568-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18720" type="Weapon" name="Apocalypse Stormer - Guidance">
+		<set name="icon" val="icon.weapon_grave_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-8" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18721" type="Weapon" name="Apocalypse Stormer - Damage Up">
+		<set name="icon" val="icon.weapon_grave_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="pole" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="80" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2010" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18722" type="Weapon" name="Apocalypse Thrower - Damage Up">
+		<set name="icon" val="icon.weapon_spina_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="963" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18723" type="Weapon" name="Apocalypse Thrower - Focus">
+		<set name="icon" val="icon.weapon_spina_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="963" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18724" type="Weapon" name="Apocalypse Thrower - Long Blow">
+		<set name="icon" val="icon.weapon_spina_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="5" />
+		<set name="attack_range" val="500" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13061-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="963" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="293" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18725" type="Weapon" name="Apocalypse Shooter - Focus">
+		<set name="icon" val="icon.weapon_medianox_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="620" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18726" type="Weapon" name="Apocalypse Shooter - Critical Slow">
+		<set name="icon" val="icon.weapon_medianox_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncrit_skill" val="3574-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="620" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18727" type="Weapon" name="Apocalypse Shooter - Haste">
+		<set name="icon" val="icon.weapon_medianox_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="crossbow" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="400" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1580" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="620" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="10" />
+			<add order="0x10" stat="accCombat" val="-1.5" />
+			<set order="0x08" stat="pAtkSpd" val="303" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18728" type="Weapon" name="Apocalypse Buster - Acumen">
+		<set name="icon" val="icon.weapon_imerose_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3047-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="392" />
+			<set order="0x08" stat="mAtk" val="285" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18729" type="Weapon" name="Apocalypse Buster - Magic Hold">
+		<set name="icon" val="icon.weapon_imerose_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="392" />
+			<set order="0x08" stat="mAtk" val="285" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18730" type="Weapon" name="Apocalypse Buster - Mana Up">
+		<set name="icon" val="icon.weapon_imerose_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="sword" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3014-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="392" />
+			<set order="0x08" stat="mAtk" val="285" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18731" type="Weapon" name="Apocalypse Caster - Empower">
+		<set name="icon" val="icon.weapon_yuke_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3575-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="392" />
+			<set order="0x08" stat="mAtk" val="285" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18732" type="Weapon" name="Apocalypse Caster - Acumen">
+		<set name="icon" val="icon.weapon_yuke_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3047-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="392" />
+			<set order="0x08" stat="mAtk" val="285" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18733" type="Weapon" name="Apocalypse Caster - Magic Hold">
+		<set name="icon" val="icon.weapon_yuke_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="blunt" />
+		<set name="bodypart" val="rhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="oncast_skill" val="3577-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="392" />
+			<set order="0x08" stat="mAtk" val="285" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18734" type="Weapon" name="Apocalypse Retributer - MP Regeneration">
+		<set name="icon" val="icon.weapon_herencia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3576-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="477" />
+			<set order="0x08" stat="mAtk" val="314" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18735" type="Weapon" name="Apocalypse Retributer - Acumen">
+		<set name="icon" val="icon.weapon_herencia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3047-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="477" />
+			<set order="0x08" stat="mAtk" val="314" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18736" type="Weapon" name="Apocalypse Retributer - Empower">
+		<set name="icon" val="icon.weapon_herencia_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="bigblunt" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1080" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3575-2" />
+		<for>
+			<set order="0x08" stat="pAtk" val="477" />
+			<set order="0x08" stat="mAtk" val="314" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="325" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18737" type="Weapon" name="Apocalypse Dual sword - Haste">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3564-1" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18738" type="Weapon" name="Apocalypse Dual sword - Damage Up">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18739" type="Weapon" name="Apocalypse Dual sword - Health">
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1520" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3013-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="8" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18740" type="Weapon" name="Apocalypse Dual Dagger - Damage Up">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18741" type="Weapon" name="Apocalypse Dual Dagger - Focus">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18742" type="Weapon" name="Apocalypse Dual Dagger - Guidance">
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dualdagger" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="10" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="2050" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-8" />
+		<for>
+			<set order="0x08" stat="pAtk" val="489" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="12" />
+			<add order="0x10" stat="accCombat" val="-3.75" />
+			<set order="0x08" stat="pAtkSpd" val="433" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18743" type="Weapon" name="Apocalypse Dual Blunt Weapon - Focus">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3566-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18744" type="Weapon" name="Apocalypse Dual Blunt Weapon - Guidance">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="3602-8" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+	<item id="18745" type="Weapon" name="Apocalypse Dual Blunt Weapon - Damage Up">
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="equip" />
+		<set name="weapon_type" val="dual" />
+		<set name="bodypart" val="lrhand" />
+		<set name="random_damage" val="20" />
+		<set name="attack_range" val="40" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="crystal_type" val="r" />
+		<set name="material" val="adamantaite" />
+		<set name="weight" val="1740" />
+		<set name="price" val="340000000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="item_skill" val="13109-3" />
+		<for>
+			<set order="0x08" stat="pAtk" val="595" />
+			<set order="0x08" stat="mAtk" val="226" />
+			<set order="0x08" stat="rCrit" val="4" />
+			<add order="0x10" stat="accCombat" val="4.75" />
+			<set order="0x08" stat="pAtkSpd" val="379" />
+			<enchant val="0" order="0x0C" stat="pAtk" />
+			<enchant val="0" order="0x0C" stat="mAtk" />
+		</for>
+	</item>
+</list>
